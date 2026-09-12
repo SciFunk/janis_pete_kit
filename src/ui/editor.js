@@ -437,7 +437,7 @@ export const Editor = {
     const m = this.world.map, e = this.edits();
     e.size = [m.w + dw, m.h + dh];
     await this.save(); if (this.dirty) { delete e.size; return; }        // the save failed; nothing changed
-    await this.reload(); if (window.KIT) this.zoomFit();
+    await this.reload(true); if (window.KIT) this.zoomFit();
     this.status("the map is now " + this.world.map.w + " x " + this.world.map.h + " tiles; paint floor onto the black");
   },
 
@@ -458,7 +458,8 @@ export const Editor = {
     } catch (err) { this.status("save failed (" + err.message + "): is play.bat running?"); }
   },
 
-  async reload() {
+  async reload(force) {
+    if (!force && !window.confirm("Reload the map from the last save? Everything since then is lost.")) return;
     const w = this.world, id = w.map.id, p = w.player;
     delete w.maps[id]; delete w.defs[id];
     await w.setMap(id, p.tx, p.ty, p.dir);

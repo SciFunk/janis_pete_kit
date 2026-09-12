@@ -783,16 +783,6 @@
   "kind": "furniture",
   "cat": "seats"
  },
- "fur_furniture_2": {
-  "sheet": "furniture",
-  "sx": 320,
-  "sy": 0,
-  "sw": 192,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "decor"
- },
  "fur_furniture_3": {
   "sheet": "furniture",
   "sx": 256,
@@ -1233,52 +1223,12 @@
   "kind": "furniture",
   "cat": "tables"
  },
- "fur_furniture_47": {
-  "sheet": "furniture",
-  "sx": 208,
-  "sy": 640,
-  "sw": 32,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "storage"
- },
- "fur_furniture_48": {
-  "sheet": "furniture",
-  "sx": 240,
-  "sy": 640,
-  "sw": 64,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "statues"
- },
- "fur_furniture_49": {
-  "sheet": "furniture",
-  "sx": 304,
-  "sy": 640,
-  "sw": 128,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "statues"
- },
  "fur_furniture_50": {
   "sheet": "furniture",
   "sx": 432,
   "sy": 640,
   "sw": 80,
   "sh": 128,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_furniture_51": {
-  "sheet": "furniture",
-  "sx": 0,
-  "sy": 688,
-  "sw": 80,
-  "sh": 112,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants"
@@ -1943,16 +1893,6 @@
   "kind": "furniture",
   "cat": "decor"
  },
- "fur_furniture_118": {
-  "sheet": "furniture",
-  "sx": 448,
-  "sy": 944,
-  "sw": 32,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "decor"
- },
  "fur_furniture_119": {
   "sheet": "furniture",
   "sx": 480,
@@ -2302,16 +2242,6 @@
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "wall"
- },
- "fur_furniture_154": {
-  "sheet": "furniture",
-  "sx": 480,
-  "sy": 1312,
-  "sw": 32,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
  },
  "fur_furniture_155": {
   "sheet": "furniture",
@@ -3303,16 +3233,6 @@
   "kind": "furniture",
   "cat": "kitchen"
  },
- "fur_bakery_78": {
-  "sheet": "bakery",
-  "sx": 368,
-  "sy": 192,
-  "sw": 80,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "kitchen"
- },
  "fur_bakery_79": {
   "sheet": "bakery",
   "sx": 448,
@@ -4233,16 +4153,6 @@
   "kind": "furniture",
   "cat": "kitchen"
  },
- "fur_kitchen_clutter_22": {
-  "sheet": "kitchen_clutter",
-  "sx": 144,
-  "sy": 96,
-  "sw": 32,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "kitchen"
- },
  "fur_kitchen_clutter_23": {
   "sheet": "kitchen_clutter",
   "sx": 0,
@@ -4310,16 +4220,6 @@
   "sw": 32,
   "sh": 16,
   "solid": "all",
-  "kind": "furniture",
-  "cat": "kitchen"
- },
- "fur_kitchen_clutter_30": {
-  "sheet": "kitchen_clutter",
-  "sx": 0,
-  "sy": 128,
-  "sw": 32,
-  "sh": 48,
-  "solid": "bottom:1",
   "kind": "furniture",
   "cat": "kitchen"
  },
@@ -4450,16 +4350,6 @@
   "sw": 16,
   "sh": 16,
   "solid": "all",
-  "kind": "furniture",
-  "cat": "kitchen"
- },
- "fur_kitchen_clutter_44": {
-  "sheet": "kitchen_clutter",
-  "sx": 64,
-  "sy": 144,
-  "sw": 64,
-  "sh": 32,
-  "solid": "bottom:1",
   "kind": "furniture",
   "cat": "kitchen"
  },
@@ -4623,16 +4513,6 @@
   "kind": "furniture",
   "cat": "kitchen"
  },
- "fur_kitchen_clutter_61": {
-  "sheet": "kitchen_clutter",
-  "sx": 64,
-  "sy": 176,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "kitchen"
- },
  "fur_kitchen_clutter_62": {
   "sheet": "kitchen_clutter",
   "sx": 80,
@@ -4643,16 +4523,6 @@
   "kind": "furniture",
   "cat": "kitchen"
  },
- "fur_kitchen_clutter_63": {
-  "sheet": "kitchen_clutter",
-  "sx": 96,
-  "sy": 176,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "kitchen"
- },
  "fur_kitchen_clutter_64": {
   "sheet": "kitchen_clutter",
   "sx": 112,
@@ -4660,16 +4530,6 @@
   "sw": 16,
   "sh": 32,
   "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "kitchen"
- },
- "fur_kitchen_clutter_65": {
-  "sheet": "kitchen_clutter",
-  "sx": 128,
-  "sy": 176,
-  "sw": 32,
-  "sh": 16,
-  "solid": "all",
   "kind": "furniture",
   "cat": "kitchen"
  },
@@ -4963,16 +4823,6 @@
   "kind": "furniture",
   "cat": "decor"
  },
- "fur_lumi_town_interior_2": {
-  "sheet": "lumi_town_interior",
-  "sx": 0,
-  "sy": 224,
-  "sw": 192,
-  "sh": 144,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "storage"
- },
  "fur_lumi_town_interior_3": {
   "sheet": "lumi_town_interior",
   "sx": 192,
@@ -5103,16 +4953,6 @@
   "kind": "furniture",
   "cat": "beds"
  },
- "fur_lumi_town_interior_16": {
-  "sheet": "lumi_town_interior",
-  "sx": 336,
-  "sy": 320,
-  "sw": 48,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "seats"
- },
  "fur_lumi_town_interior_17": {
   "sheet": "lumi_town_interior",
   "sx": 384,
@@ -5233,42 +5073,12 @@
   "kind": "furniture",
   "cat": "screens"
  },
- "fur_lumi_town_interior_29": {
-  "sheet": "lumi_town_interior",
-  "sx": 144,
-  "sy": 368,
-  "sw": 16,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "lamps"
- },
- "fur_lumi_town_interior_30": {
-  "sheet": "lumi_town_interior",
-  "sx": 160,
-  "sy": 368,
-  "sw": 16,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "lamps"
- },
  "fur_lumi_town_interior_31": {
   "sheet": "lumi_town_interior",
   "sx": 176,
   "sy": 368,
   "sw": 16,
   "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_lumi_town_interior_32": {
-  "sheet": "lumi_town_interior",
-  "sx": 320,
-  "sy": 368,
-  "sw": 64,
-  "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants"
@@ -5523,26 +5333,6 @@
   "kind": "furniture",
   "cat": "decor"
  },
- "fur_lumi_town_interior_58": {
-  "sheet": "lumi_town_interior",
-  "sx": 0,
-  "sy": 624,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_lumi_town_interior_59": {
-  "sheet": "lumi_town_interior",
-  "sx": 16,
-  "sy": 624,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_lumi_town_interior_60": {
   "sheet": "lumi_town_interior",
   "sx": 32,
@@ -5550,46 +5340,6 @@
   "sw": 16,
   "sh": 16,
   "solid": "all",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_lumi_town_interior_61": {
-  "sheet": "lumi_town_interior",
-  "sx": 48,
-  "sy": 624,
-  "sw": 16,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_lumi_town_interior_62": {
-  "sheet": "lumi_town_interior",
-  "sx": 64,
-  "sy": 624,
-  "sw": 16,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_lumi_town_interior_63": {
-  "sheet": "lumi_town_interior",
-  "sx": 80,
-  "sy": 624,
-  "sw": 16,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_lumi_town_interior_64": {
-  "sheet": "lumi_town_interior",
-  "sx": 96,
-  "sy": 624,
-  "sw": 16,
-  "sh": 64,
-  "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants"
  },
@@ -5653,31 +5403,11 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_lumi_town_interior_71": {
-  "sheet": "lumi_town_interior",
-  "sx": 208,
-  "sy": 624,
-  "sw": 32,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_lumi_town_interior_72": {
   "sheet": "lumi_town_interior",
   "sx": 240,
   "sy": 624,
   "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_lumi_town_interior_73": {
-  "sheet": "lumi_town_interior",
-  "sx": 256,
-  "sy": 624,
-  "sw": 32,
   "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
@@ -5699,16 +5429,6 @@
   "sy": 624,
   "sw": 16,
   "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_lumi_town_interior_76": {
-  "sheet": "lumi_town_interior",
-  "sx": 32,
-  "sy": 640,
-  "sw": 16,
-  "sh": 48,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants"
@@ -6273,16 +5993,6 @@
   "kind": "furniture",
   "cat": "lamps"
  },
- "fur_lumi_town_interior_133": {
-  "sheet": "lumi_town_interior",
-  "sx": 336,
-  "sy": 1248,
-  "sw": 48,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "lamps"
- },
  "fur_lumi_town_interior_134": {
   "sheet": "lumi_town_interior",
   "sx": 304,
@@ -6352,16 +6062,6 @@
   "solid": "all",
   "kind": "furniture",
   "cat": "decor"
- },
- "fur_lumi_town_interior_141": {
-  "sheet": "lumi_town_interior",
-  "sx": 0,
-  "sy": 1296,
-  "sw": 288,
-  "sh": 208,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
  },
  "fur_lumi_town_interior_142": {
   "sheet": "lumi_town_interior",
@@ -6482,26 +6182,6 @@
   "solid": "all",
   "kind": "furniture",
   "cat": "plants"
- },
- "fur_lumi_town_interior_154": {
-  "sheet": "lumi_town_interior",
-  "sx": 32,
-  "sy": 1584,
-  "sw": 16,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "storage"
- },
- "fur_lumi_town_interior_155": {
-  "sheet": "lumi_town_interior",
-  "sx": 48,
-  "sy": 1584,
-  "sw": 16,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "kitchen"
  },
  "fur_lumi_town_interior_156": {
   "sheet": "lumi_town_interior",
@@ -6672,16 +6352,6 @@
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "wall"
- },
- "fur_lumi_town_interior_173": {
-  "sheet": "lumi_town_interior",
-  "sx": 128,
-  "sy": 1632,
-  "sw": 80,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "decor"
  },
  "fur_lumi_town_interior_174": {
   "sheet": "lumi_town_interior",
@@ -7163,21 +6833,6 @@
    "winter": "winter_hime_outdoorfurniture"
   }
  },
- "fur_outdoor_furniture_18": {
-  "sheet": "outdoor_furniture",
-  "sx": 48,
-  "sy": 32,
-  "sw": 144,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "outdoor",
-  "seasons": {
-   "summer": "summer_hime_outdoorfurniture",
-   "fall": "fall_hime_outdoorfurniture",
-   "winter": "winter_hime_outdoorfurniture"
-  }
- },
  "fur_outdoor_furniture_19": {
   "sheet": "outdoor_furniture",
   "sx": 496,
@@ -7358,21 +7013,6 @@
    "winter": "winter_hime_outdoorfurniture"
   }
  },
- "fur_outdoor_furniture_31": {
-  "sheet": "outdoor_furniture",
-  "sx": 528,
-  "sy": 176,
-  "sw": 32,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorfurniture",
-   "fall": "fall_hime_outdoorfurniture",
-   "winter": "winter_hime_outdoorfurniture"
-  }
- },
  "fur_outdoor_furniture_32": {
   "sheet": "outdoor_furniture",
   "sx": 560,
@@ -7393,21 +7033,6 @@
   "sx": 576,
   "sy": 176,
   "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "outdoor",
-  "seasons": {
-   "summer": "summer_hime_outdoorfurniture",
-   "fall": "fall_hime_outdoorfurniture",
-   "winter": "winter_hime_outdoorfurniture"
-  }
- },
- "fur_outdoor_furniture_34": {
-  "sheet": "outdoor_furniture",
-  "sx": 592,
-  "sy": 176,
-  "sw": 32,
   "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
@@ -32824,11 +32449,12 @@
   "sheet": "at_vanfurn",
   "sx": 80,
   "sy": 208,
-  "sw": 64,
+  "sw": 32,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_birch_bench": {
   "sheet": "at_vanfurn",
@@ -32854,11 +32480,12 @@
   "sheet": "at_vanfurn",
   "sx": 336,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_birch_dresser": {
   "sheet": "at_vanfurn",
@@ -33254,11 +32881,12 @@
   "sheet": "at_vanfurn",
   "sx": 144,
   "sy": 208,
-  "sw": 64,
+  "sw": 32,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_china_cabinet": {
   "sheet": "at_vanfurn",
@@ -33435,7 +33063,7 @@
   "sx": 608,
   "sy": 208,
   "sw": 48,
-  "sh": 64,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -33504,11 +33132,12 @@
   "sheet": "at_vanfurn",
   "sx": 720,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_deluxe_tree": {
   "sheet": "at_vanfurn",
@@ -33554,11 +33183,12 @@
   "sheet": "at_vanfurn",
   "sx": 816,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_dried_sunflowers": {
   "sheet": "at_vanfurn",
@@ -33584,11 +33214,12 @@
   "sheet": "at_vanfurn",
   "sx": 912,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_exotic_tree": {
   "sheet": "at_vanfurn",
@@ -33614,11 +33245,12 @@
   "sheet": "at_vanfurn",
   "sx": 1008,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_floor_divider_l_0": {
   "sheet": "at_vanfurn",
@@ -34565,7 +34197,7 @@
   "sx": 992,
   "sy": 208,
   "sw": 48,
-  "sh": 64,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -34704,11 +34336,12 @@
   "sheet": "at_vanfurn",
   "sx": 1200,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_modern_end_table": {
   "sheet": "at_vanfurn",
@@ -35124,11 +34757,12 @@
   "sheet": "at_vanfurn",
   "sx": 1296,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_pirate_flag": {
   "sheet": "at_vanfurn",
@@ -35395,8 +35029,8 @@
   "sx": 960,
   "sy": 400,
   "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
+  "sh": 16,
+  "solid": "all",
   "kind": "furniture",
   "cat": "statues"
  },
@@ -35564,11 +35198,12 @@
   "sheet": "at_vanfurn",
   "sx": 1488,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_stone_fireplace": {
   "sheet": "at_vanfurn",
@@ -35614,18 +35249,19 @@
   "sheet": "at_vanfurn",
   "sx": 1584,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_stump_seat": {
   "sheet": "at_vanfurn",
   "sx": 1376,
   "sy": 208,
-  "sw": 48,
-  "sh": 64,
+  "sw": 16,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -35784,18 +35420,19 @@
   "sheet": "at_vanfurn",
   "sx": 208,
   "sy": 208,
-  "sw": 64,
+  "sw": 32,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_tropical_chair": {
   "sheet": "at_vanfurn",
   "sx": 1424,
   "sy": 208,
   "sw": 48,
-  "sh": 64,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -35804,11 +35441,12 @@
   "sheet": "at_vanfurn",
   "sx": 1680,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_tropical_fish_173": {
   "sheet": "at_vanfurn",
@@ -35954,7 +35592,7 @@
   "sheet": "at_vanfurn",
   "sx": 1872,
   "sy": 368,
-  "sw": 32,
+  "sw": 16,
   "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
@@ -36064,11 +35702,12 @@
   "sheet": "at_vanfurn",
   "sx": 1776,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_vanfurn_winter_banner": {
   "sheet": "at_vanfurn",
@@ -36304,8 +35943,8 @@
   "sheet": "at_npcfurn",
   "sx": 1440,
   "sy": 208,
-  "sw": 80,
-  "sh": 48,
+  "sw": 48,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "rugs"
@@ -36715,7 +36354,7 @@
   "sx": 1616,
   "sy": 128,
   "sw": 48,
-  "sh": 64,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -36965,7 +36604,7 @@
   "sx": 1904,
   "sy": 128,
   "sw": 48,
-  "sh": 64,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -37044,61 +36683,67 @@
   "sheet": "at_npcfurn",
   "sx": 816,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_npcfurn_recolor_modern_double_bed_1": {
   "sheet": "at_npcfurn",
   "sx": 912,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_npcfurn_recolor_modern_double_bed_2": {
   "sheet": "at_npcfurn",
   "sx": 1008,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_npcfurn_recolor_modern_double_bed_3": {
   "sheet": "at_npcfurn",
   "sx": 1104,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_npcfurn_recolor_modern_double_bed_4": {
   "sheet": "at_npcfurn",
   "sx": 1200,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_npcfurn_recolor_modern_double_bed_5": {
   "sheet": "at_npcfurn",
   "sx": 1296,
   "sy": 128,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_npcfurn_recolor_modern_end_table": {
   "sheet": "at_npcfurn",
@@ -37185,7 +36830,7 @@
   "sx": 48,
   "sy": 208,
   "sw": 48,
-  "sh": 64,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -37194,8 +36839,8 @@
   "sheet": "at_npcfurn",
   "sx": 96,
   "sy": 208,
-  "sw": 48,
-  "sh": 64,
+  "sw": 16,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -37324,8 +36969,8 @@
   "sheet": "at_npcfurn",
   "sx": 144,
   "sy": 208,
-  "sw": 48,
-  "sh": 64,
+  "sw": 16,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -37574,9 +37219,9 @@
   "sheet": "at_npcfurn",
   "sx": 1824,
   "sy": 320,
-  "sw": 48,
-  "sh": 32,
-  "solid": "bottom:1",
+  "sw": 32,
+  "sh": 16,
+  "solid": "all",
   "kind": "furniture",
   "cat": "rugs"
  },
@@ -38925,7 +38570,7 @@
   "sx": 1408,
   "sy": 320,
   "sw": 16,
-  "sh": 48,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants"
@@ -39275,8 +38920,8 @@
   "sx": 432,
   "sy": 400,
   "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
+  "sh": 16,
+  "solid": "all",
   "kind": "furniture",
   "cat": "plants"
  },
@@ -39894,8 +39539,8 @@
   "sheet": "at_npcfurn",
   "sx": 640,
   "sy": 272,
-  "sw": 80,
-  "sh": 48,
+  "sw": 48,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "rugs"
@@ -39963,10 +39608,10 @@
  "at_npcfurn_vanilla_wall_sconce_2": {
   "sheet": "at_npcfurn",
   "sx": 1344,
-  "sy": 368,
-  "sw": 32,
-  "sh": 32,
-  "solid": "bottom:1",
+  "sy": 384,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
   "kind": "furniture",
   "cat": "lamps"
  },
@@ -39984,8 +39629,8 @@
   "sheet": "at_npcfurn",
   "sx": 224,
   "sy": 128,
-  "sw": 112,
-  "sh": 80,
+  "sw": 80,
+  "sh": 48,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "tables"
@@ -40174,11 +39819,12 @@
   "sheet": "at_opulence",
   "sx": 400,
   "sy": 160,
-  "sw": 64,
+  "sw": 32,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_opulence_birch_bench_1": {
   "sheet": "at_opulence",
@@ -40585,7 +40231,7 @@
   "sx": 640,
   "sy": 0,
   "sw": 48,
-  "sh": 48,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -40605,7 +40251,7 @@
   "sx": 896,
   "sy": 0,
   "sw": 48,
-  "sh": 48,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -40615,7 +40261,7 @@
   "sx": 1024,
   "sy": 0,
   "sw": 48,
-  "sh": 48,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -40625,7 +40271,7 @@
   "sx": 1152,
   "sy": 0,
   "sw": 48,
-  "sh": 48,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -41384,11 +41030,12 @@
   "sheet": "at_opulence",
   "sx": 576,
   "sy": 96,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_opulence_house_plant_1": {
   "sheet": "at_opulence",
@@ -42764,21 +42411,23 @@
   "sheet": "at_pink",
   "sx": 320,
   "sy": 0,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_pink_strawberry_double_bed_2": {
   "sheet": "at_pink",
   "sx": 416,
   "sy": 0,
-  "sw": 96,
+  "sw": 48,
   "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
-  "cat": "beds"
+  "cat": "beds",
+  "trim": "bed"
  },
  "at_pink_sun_44_1": {
   "sheet": "at_pink",
@@ -42804,8 +42453,8 @@
   "sheet": "at_pink",
   "sx": 512,
   "sy": 0,
-  "sw": 96,
-  "sh": 64,
+  "sw": 32,
+  "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
@@ -76995,31 +76644,11 @@
    "fh": 32
   }
  },
- "fur_aimon_cellar_z_tcc_0": {
-  "sheet": "aimon_cellar_z_tcc",
-  "sx": 352,
-  "sy": 0,
-  "sw": 32,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "structure"
- },
  "fur_aimon_cellar_z_tcc_1": {
   "sheet": "aimon_cellar_z_tcc",
   "sx": 384,
   "sy": 0,
   "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "structure"
- },
- "fur_aimon_cellar_z_tcc_2": {
-  "sheet": "aimon_cellar_z_tcc",
-  "sx": 416,
-  "sy": 0,
-  "sw": 48,
   "sh": 16,
   "solid": "all",
   "kind": "furniture",
@@ -77285,16 +76914,6 @@
   "kind": "furniture",
   "cat": "lamps"
  },
- "fur_aimon_cellar_z_tcc_29": {
-  "sheet": "aimon_cellar_z_tcc",
-  "sx": 208,
-  "sy": 592,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "structure"
- },
  "fur_aimon_cellar_z_tcc_30": {
   "sheet": "aimon_cellar_z_tcc",
   "sx": 480,
@@ -77375,31 +76994,11 @@
   "kind": "furniture",
   "cat": "structure"
  },
- "fur_aimon_cellar_z_tcc_light_0": {
-  "sheet": "aimon_cellar_z_tcc_light",
-  "sx": 352,
-  "sy": 0,
-  "sw": 32,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "structure"
- },
  "fur_aimon_cellar_z_tcc_light_1": {
   "sheet": "aimon_cellar_z_tcc_light",
   "sx": 384,
   "sy": 0,
   "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "structure"
- },
- "fur_aimon_cellar_z_tcc_light_2": {
-  "sheet": "aimon_cellar_z_tcc_light",
-  "sx": 416,
-  "sy": 0,
-  "sw": 48,
   "sh": 16,
   "solid": "all",
   "kind": "furniture",
@@ -77664,16 +77263,6 @@
   "solid": "all",
   "kind": "furniture",
   "cat": "lamps"
- },
- "fur_aimon_cellar_z_tcc_light_29": {
-  "sheet": "aimon_cellar_z_tcc_light",
-  "sx": 208,
-  "sy": 592,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "structure"
  },
  "fur_aimon_cellar_z_tcc_light_30": {
   "sheet": "aimon_cellar_z_tcc_light",
@@ -78012,16 +77601,6 @@
   "sw": 16,
   "sh": 16,
   "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_aimon_z_light_6": {
-  "sheet": "aimon_z_light",
-  "sx": 16,
-  "sy": 320,
-  "sw": 192,
-  "sh": 64,
-  "solid": "bottom:1",
   "kind": "furniture",
   "cat": "decor"
  },
@@ -78585,16 +78164,6 @@
   "kind": "furniture",
   "cat": "decor"
  },
- "fur_obf_bedroom_furniture_orangeblossom_22": {
-  "sheet": "obf_bedroom_furniture_orangeblossom",
-  "sx": 16,
-  "sy": 176,
-  "sw": 32,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "lamps"
- },
  "fur_obf_bedroom_furniture_orangeblossom_23": {
   "sheet": "obf_bedroom_furniture_orangeblossom",
   "sx": 64,
@@ -78614,26 +78183,6 @@
   "solid": "all",
   "kind": "furniture",
   "cat": "decor"
- },
- "fur_obf_bedroom_furniture_orangeblossom_25": {
-  "sheet": "obf_bedroom_furniture_orangeblossom",
-  "sx": 192,
-  "sy": 176,
-  "sw": 16,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "lamps"
- },
- "fur_obf_bedroom_furniture_orangeblossom_26": {
-  "sheet": "obf_bedroom_furniture_orangeblossom",
-  "sx": 208,
-  "sy": 176,
-  "sw": 16,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "lamps"
  },
  "fur_obf_bedroom_furniture_orangeblossom_27": {
   "sheet": "obf_bedroom_furniture_orangeblossom",
@@ -80105,16 +79654,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_117": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 272,
-  "sy": 32,
-  "sw": 48,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_118": {
   "sheet": "plants_hime_decoplants",
   "sx": 320,
@@ -80285,16 +79824,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_135": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 688,
-  "sy": 32,
-  "sw": 48,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_136": {
   "sheet": "plants_hime_decoplants",
   "sx": 736,
@@ -80335,26 +79864,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_140": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 0,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_141": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 16,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_142": {
   "sheet": "plants_hime_decoplants",
   "sx": 32,
@@ -80375,26 +79884,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_144": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 64,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_145": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 80,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_146": {
   "sheet": "plants_hime_decoplants",
   "sx": 96,
@@ -80412,26 +79901,6 @@
   "sw": 16,
   "sh": 16,
   "solid": "all",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_148": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 128,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_149": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 144,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants"
  },
@@ -80475,66 +79944,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_154": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 224,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_155": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 240,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_156": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 256,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_157": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 272,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_158": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 288,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_159": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 304,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_160": {
   "sheet": "plants_hime_decoplants",
   "sx": 320,
@@ -80548,26 +79957,6 @@
  "fur_plants_hime_decoplants_161": {
   "sheet": "plants_hime_decoplants",
   "sx": 336,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_162": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 416,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_163": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 432,
   "sy": 80,
   "sw": 16,
   "sh": 32,
@@ -80595,26 +79984,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_166": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 480,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_167": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 496,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_168": {
   "sheet": "plants_hime_decoplants",
   "sx": 512,
@@ -80632,26 +80001,6 @@
   "sw": 16,
   "sh": 16,
   "solid": "all",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_170": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 544,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_171": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 560,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants"
  },
@@ -80695,66 +80044,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_176": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 640,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_177": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 656,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_178": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 672,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_179": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 688,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_180": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 704,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_181": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 720,
-  "sy": 80,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_182": {
   "sheet": "plants_hime_decoplants",
   "sx": 736,
@@ -80772,16 +80061,6 @@
   "sw": 16,
   "sh": 32,
   "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_184": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 32,
-  "sy": 96,
-  "sw": 32,
-  "sh": 16,
-  "solid": "all",
   "kind": "furniture",
   "cat": "plants"
  },
@@ -80830,16 +80109,6 @@
   "sx": 208,
   "sy": 96,
   "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_190": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 448,
-  "sy": 96,
-  "sw": 32,
   "sh": 16,
   "solid": "all",
   "kind": "furniture",
@@ -80915,26 +80184,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_198": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 32,
-  "sy": 112,
-  "sw": 32,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_199": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 64,
-  "sy": 112,
-  "sw": 64,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_200": {
   "sheet": "plants_hime_decoplants",
   "sx": 128,
@@ -80950,16 +80199,6 @@
   "sx": 144,
   "sy": 112,
   "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_202": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 160,
-  "sy": 112,
-  "sw": 32,
   "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
@@ -81075,26 +80314,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_214": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 448,
-  "sy": 112,
-  "sw": 32,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_215": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 480,
-  "sy": 112,
-  "sw": 64,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_216": {
   "sheet": "plants_hime_decoplants",
   "sx": 544,
@@ -81110,16 +80329,6 @@
   "sx": 560,
   "sy": 112,
   "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_218": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 576,
-  "sy": 112,
-  "sw": 32,
   "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
@@ -81365,16 +80574,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_243": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 144,
-  "sy": 160,
-  "sw": 48,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_244": {
   "sheet": "plants_hime_decoplants",
   "sx": 192,
@@ -81485,16 +80684,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_255": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 560,
-  "sy": 160,
-  "sw": 48,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_256": {
   "sheet": "plants_hime_decoplants",
   "sx": 608,
@@ -81575,16 +80764,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_264": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 0,
-  "sy": 192,
-  "sw": 96,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_265": {
   "sheet": "plants_hime_decoplants",
   "sx": 256,
@@ -81600,16 +80779,6 @@
   "sx": 288,
   "sy": 192,
   "sw": 32,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_267": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 416,
-  "sy": 192,
-  "sw": 96,
   "sh": 48,
   "solid": "bottom:1",
   "kind": "furniture",
@@ -82625,16 +81794,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_369": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 272,
-  "sy": 320,
-  "sw": 48,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_370": {
   "sheet": "plants_hime_decoplants",
   "sx": 320,
@@ -82675,26 +81834,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_374": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 0,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_375": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 16,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_376": {
   "sheet": "plants_hime_decoplants",
   "sx": 32,
@@ -82715,26 +81854,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_378": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 64,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_379": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 80,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_380": {
   "sheet": "plants_hime_decoplants",
   "sx": 96,
@@ -82752,26 +81871,6 @@
   "sw": 16,
   "sh": 16,
   "solid": "all",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_382": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 128,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_383": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 144,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants"
  },
@@ -82815,66 +81914,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_388": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 224,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_389": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 240,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_390": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 256,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_391": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 272,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_392": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 288,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_393": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 304,
-  "sy": 368,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_394": {
   "sheet": "plants_hime_decoplants",
   "sx": 320,
@@ -82892,16 +81931,6 @@
   "sw": 16,
   "sh": 32,
   "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_396": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 32,
-  "sy": 384,
-  "sw": 32,
-  "sh": 16,
-  "solid": "all",
   "kind": "furniture",
   "cat": "plants"
  },
@@ -82975,26 +82004,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_404": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 32,
-  "sy": 400,
-  "sw": 32,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_405": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 64,
-  "sy": 400,
-  "sw": 64,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_406": {
   "sheet": "plants_hime_decoplants",
   "sx": 128,
@@ -83010,16 +82019,6 @@
   "sx": 144,
   "sy": 400,
   "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_408": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 160,
-  "sy": 400,
-  "sw": 32,
   "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
@@ -83205,16 +82204,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_decoplants_427": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 144,
-  "sy": 448,
-  "sw": 48,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_decoplants_428": {
   "sheet": "plants_hime_decoplants",
   "sx": 192,
@@ -83291,16 +82280,6 @@
   "sy": 448,
   "sw": 32,
   "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_decoplants_436": {
-  "sheet": "plants_hime_decoplants",
-  "sx": 0,
-  "sy": 480,
-  "sw": 96,
-  "sh": 48,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants"
@@ -83555,16 +82534,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_plantlovers_6": {
-  "sheet": "plants_hime_plantlovers",
-  "sx": 224,
-  "sy": 128,
-  "sw": 192,
-  "sh": 128,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_plantlovers_7": {
   "sheet": "plants_hime_plantlovers",
   "sx": 416,
@@ -83581,16 +82550,6 @@
   "sy": 128,
   "sw": 16,
   "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_plantlovers_9": {
-  "sheet": "plants_hime_plantlovers",
-  "sx": 672,
-  "sy": 128,
-  "sw": 192,
-  "sh": 128,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants"
@@ -83695,16 +82654,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_plantlovers_20": {
-  "sheet": "plants_hime_plantlovers",
-  "sx": 416,
-  "sy": 208,
-  "sw": 32,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_plantlovers_21": {
   "sheet": "plants_hime_plantlovers",
   "sx": 608,
@@ -83718,16 +82667,6 @@
  "fur_plants_hime_plantlovers_22": {
   "sheet": "plants_hime_plantlovers",
   "sx": 640,
-  "sy": 208,
-  "sw": 32,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_plantlovers_23": {
-  "sheet": "plants_hime_plantlovers",
-  "sx": 864,
   "sy": 208,
   "sw": 32,
   "sh": 48,
@@ -84425,16 +83364,6 @@
   "kind": "furniture",
   "cat": "plants"
  },
- "fur_plants_hime_plantlovers_93": {
-  "sheet": "plants_hime_plantlovers",
-  "sx": 224,
-  "sy": 672,
-  "sw": 192,
-  "sh": 128,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
  "fur_plants_hime_plantlovers_94": {
   "sheet": "plants_hime_plantlovers",
   "sx": 416,
@@ -84558,16 +83487,6 @@
  "fur_plants_hime_plantlovers_106": {
   "sheet": "plants_hime_plantlovers",
   "sx": 192,
-  "sy": 752,
-  "sw": 32,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants"
- },
- "fur_plants_hime_plantlovers_107": {
-  "sheet": "plants_hime_plantlovers",
-  "sx": 416,
   "sy": 752,
   "sw": 32,
   "sh": 48,
@@ -92010,21 +90929,6 @@
    "winter": "winter_hime_romanticfurniture"
   }
  },
- "fur_spring_hime_romanticfurniture_22": {
-  "sheet": "spring_hime_romanticfurniture",
-  "sx": 480,
-  "sy": 144,
-  "sw": 96,
-  "sh": 80,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "outdoor",
-  "seasons": {
-   "summer": "summer_hime_romanticfurniture",
-   "fall": "fall_hime_romanticfurniture",
-   "winter": "winter_hime_romanticfurniture"
-  }
- },
  "fur_spring_hime_romanticfurniture_23": {
   "sheet": "spring_hime_romanticfurniture",
   "sx": 192,
@@ -92190,36 +91094,6 @@
    "winter": "winter_hime_outdoorplants"
   }
  },
- "fur_spring_hime_outdoorplants_1": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 32,
-  "sy": 0,
-  "sw": 64,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_2": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 96,
-  "sy": 0,
-  "sw": 32,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
  "fur_spring_hime_outdoorplants_3": {
   "sheet": "spring_hime_outdoorplants",
   "sx": 128,
@@ -92310,41 +91184,11 @@
    "winter": "winter_hime_outdoorplants"
   }
  },
- "fur_spring_hime_outdoorplants_9": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 256,
-  "sy": 0,
-  "sw": 128,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
  "fur_spring_hime_outdoorplants_10": {
   "sheet": "spring_hime_outdoorplants",
   "sx": 384,
   "sy": 0,
   "sw": 32,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_11": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 432,
-  "sy": 0,
-  "sw": 48,
   "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
@@ -92392,36 +91236,6 @@
   "sw": 16,
   "sh": 16,
   "solid": "all",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_15": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 0,
-  "sy": 32,
-  "sw": 80,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_16": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 80,
-  "sy": 32,
-  "sw": 48,
-  "sh": 32,
-  "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants",
   "seasons": {
@@ -92580,41 +91394,11 @@
    "winter": "winter_hime_outdoorplants"
   }
  },
- "fur_spring_hime_outdoorplants_27": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 0,
-  "sy": 64,
-  "sw": 32,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
  "fur_spring_hime_outdoorplants_28": {
   "sheet": "spring_hime_outdoorplants",
   "sx": 32,
   "sy": 64,
   "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_29": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 64,
-  "sy": 64,
-  "sw": 112,
   "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
@@ -92706,21 +91490,6 @@
   "sy": 64,
   "sw": 48,
   "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_36": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 384,
-  "sy": 64,
-  "sw": 32,
-  "sh": 64,
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants",
@@ -93000,36 +91769,6 @@
    "winter": "winter_hime_outdoorplants"
   }
  },
- "fur_spring_hime_outdoorplants_55": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 288,
-  "sy": 96,
-  "sw": 96,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_56": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 432,
-  "sy": 96,
-  "sw": 32,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
  "fur_spring_hime_outdoorplants_57": {
   "sheet": "spring_hime_outdoorplants",
   "sx": 464,
@@ -93065,21 +91804,6 @@
   "sx": 16,
   "sy": 128,
   "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_60": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 32,
-  "sy": 128,
-  "sw": 48,
   "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
@@ -93195,21 +91919,6 @@
    "winter": "winter_hime_outdoorplants"
   }
  },
- "fur_spring_hime_outdoorplants_68": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 192,
-  "sy": 128,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
  "fur_spring_hime_outdoorplants_69": {
   "sheet": "spring_hime_outdoorplants",
   "sx": 224,
@@ -93245,36 +91954,6 @@
   "sx": 304,
   "sy": 128,
   "sw": 48,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_72": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 352,
-  "sy": 128,
-  "sw": 64,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_73": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 432,
-  "sy": 128,
-  "sw": 80,
   "sh": 32,
   "solid": "bottom:1",
   "kind": "furniture",
@@ -93525,21 +92204,6 @@
    "winter": "winter_hime_outdoorplants"
   }
  },
- "fur_spring_hime_outdoorplants_90": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 304,
-  "sy": 176,
-  "sw": 64,
-  "sh": 32,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
  "fur_spring_hime_outdoorplants_91": {
   "sheet": "spring_hime_outdoorplants",
   "sx": 368,
@@ -93675,21 +92339,6 @@
    "winter": "winter_hime_outdoorplants"
   }
  },
- "fur_spring_hime_outdoorplants_100": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 32,
-  "sy": 256,
-  "sw": 32,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
  "fur_spring_hime_outdoorplants_101": {
   "sheet": "spring_hime_outdoorplants",
   "sx": 64,
@@ -93742,21 +92391,6 @@
   "sw": 16,
   "sh": 16,
   "solid": "all",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_105": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 144,
-  "sy": 256,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants",
   "seasons": {
@@ -93825,101 +92459,11 @@
    "winter": "winter_hime_outdoorplants"
   }
  },
- "fur_spring_hime_outdoorplants_110": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 240,
-  "sy": 256,
-  "sw": 80,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
  "fur_spring_hime_outdoorplants_111": {
   "sheet": "spring_hime_outdoorplants",
   "sx": 320,
   "sy": 256,
   "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_112": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 336,
-  "sy": 256,
-  "sw": 144,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_113": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 480,
-  "sy": 256,
-  "sw": 32,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_114": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 0,
-  "sy": 272,
-  "sw": 144,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_115": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 160,
-  "sy": 272,
-  "sw": 48,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_116": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 208,
-  "sy": 272,
-  "sw": 32,
   "sh": 16,
   "solid": "all",
   "kind": "furniture",
@@ -93982,21 +92526,6 @@
   "sw": 16,
   "sh": 16,
   "solid": "all",
-  "kind": "furniture",
-  "cat": "plants",
-  "seasons": {
-   "summer": "summer_hime_outdoorplants",
-   "fall": "fall_hime_outdoorplants",
-   "winter": "winter_hime_outdoorplants"
-  }
- },
- "fur_spring_hime_outdoorplants_121": {
-  "sheet": "spring_hime_outdoorplants",
-  "sx": 320,
-  "sy": 288,
-  "sw": 16,
-  "sh": 32,
-  "solid": "bottom:1",
   "kind": "furniture",
   "cat": "plants",
   "seasons": {
@@ -94380,1686 +92909,6 @@
    "winter": "winter_winter_mod_lumisteria_tilesheetsoutdoor_decorations"
   }
  },
- "fur_geodes_0": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 0,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_1": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 16,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_2": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 32,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_3": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 48,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_4": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 64,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_5": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 80,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_6": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 96,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_7": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 112,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_8": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 128,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_9": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 144,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_10": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 160,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_11": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 176,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_12": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 192,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_13": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 208,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_14": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 224,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_15": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 240,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_16": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 256,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_17": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 272,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_18": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 288,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_19": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 304,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_20": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 320,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_21": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 336,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_22": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 352,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_23": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 368,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_24": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 384,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_25": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 400,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_26": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 416,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_27": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 432,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_28": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 448,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_29": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 464,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_30": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 480,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_31": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 496,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_32": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 512,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_33": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 528,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_34": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 544,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_35": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 560,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_36": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 576,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_37": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 592,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_38": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 608,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_39": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 624,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_40": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 640,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_41": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 656,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_42": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 672,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_43": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 688,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_44": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 704,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_45": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 720,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_46": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 736,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_47": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 752,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_48": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 768,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_49": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 784,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_50": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 800,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_51": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 816,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_52": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 832,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_53": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 848,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_54": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 864,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_55": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 880,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_56": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 896,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_57": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 912,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_58": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 928,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_59": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 944,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_60": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 960,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_61": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 976,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_62": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 992,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_63": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1008,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_64": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1024,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_65": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1040,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_66": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1056,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_67": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1072,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_68": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1088,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_69": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1104,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_70": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1120,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_71": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1136,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_72": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1152,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_73": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1168,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_74": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1184,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_75": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1200,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_76": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1216,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_77": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1232,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_78": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1248,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_79": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1264,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_80": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1280,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_81": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1296,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_82": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1312,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_83": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1328,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_84": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1344,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_85": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1360,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_86": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1376,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_87": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1392,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_88": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1408,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_89": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1424,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_90": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1440,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_91": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1456,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_92": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1472,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_93": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1488,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_94": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1504,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_95": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1520,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_96": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1536,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_97": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1552,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_98": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1568,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_99": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1584,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_100": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1600,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_101": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1616,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_102": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1632,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_103": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1648,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_104": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1664,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_105": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1680,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_106": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1696,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_107": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1712,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_108": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1728,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_109": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1744,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_110": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1760,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_111": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1776,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_112": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1792,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_113": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1808,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_114": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1824,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_115": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1840,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_116": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1856,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_117": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1872,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_118": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1888,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_119": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1904,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_120": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1920,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_121": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1936,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_122": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1952,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_123": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1968,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_124": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 1984,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_125": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2000,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_126": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2016,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_127": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2032,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_128": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2048,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_129": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2064,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_130": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2080,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_131": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2096,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_132": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2112,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_133": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2128,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_134": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2144,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_135": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2160,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_136": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2176,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_137": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2192,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_138": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2208,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_139": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2224,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_140": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2240,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_141": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2256,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_142": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2272,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_143": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2288,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_144": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2304,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_145": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2320,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_146": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2336,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_147": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2352,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_148": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2368,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_149": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2384,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_150": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2400,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_151": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2416,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_152": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2432,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_153": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2448,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_154": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2464,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_155": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2480,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_156": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2496,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_157": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2512,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_158": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2528,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_159": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2544,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_160": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2560,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_161": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2576,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_162": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2592,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_163": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2608,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_164": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2624,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_165": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2640,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_166": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2656,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
- "fur_geodes_167": {
-  "sheet": "geodes",
-  "sx": 0,
-  "sy": 2672,
-  "sw": 16,
-  "sh": 16,
-  "solid": "all",
-  "kind": "furniture",
-  "cat": "decor"
- },
  "fur_redfox_flowerrack1_0": {
   "sheet": "redfox_flowerrack1",
   "sx": 0,
@@ -96142,16 +92991,6 @@
  },
  "fur_redfox_lamp1_0": {
   "sheet": "redfox_lamp1",
-  "sx": 0,
-  "sy": 0,
-  "sw": 96,
-  "sh": 48,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "cat": "lamps"
- },
- "fur_redfox_lamp2_0": {
-  "sheet": "redfox_lamp2",
   "sx": 0,
   "sy": 0,
   "sw": 96,
@@ -97584,76 +94423,6 @@
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "outdoor"
- },
- "fur_frog_terrarium_0": {
-  "sheet": "frog_terrarium",
-  "sx": 0,
-  "sy": 0,
-  "sw": 32,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "anim": {
-   "frames": 4,
-   "ms": 300
-  },
-  "cat": "pets"
- },
- "fur_frog_terrarium_1": {
-  "sheet": "frog_terrarium",
-  "sx": 0,
-  "sy": 64,
-  "sw": 32,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "anim": {
-   "frames": 4,
-   "ms": 300
-  },
-  "cat": "pets"
- },
- "fur_frog_terrarium_2": {
-  "sheet": "frog_terrarium",
-  "sx": 0,
-  "sy": 128,
-  "sw": 32,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "anim": {
-   "frames": 4,
-   "ms": 300
-  },
-  "cat": "pets"
- },
- "fur_frog_terrarium_3": {
-  "sheet": "frog_terrarium",
-  "sx": 0,
-  "sy": 192,
-  "sw": 32,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "anim": {
-   "frames": 4,
-   "ms": 300
-  },
-  "cat": "pets"
- },
- "fur_frog_terrarium_4": {
-  "sheet": "frog_terrarium",
-  "sx": 0,
-  "sy": 256,
-  "sw": 32,
-  "sh": 64,
-  "solid": "bottom:1",
-  "kind": "furniture",
-  "anim": {
-   "frames": 4,
-   "ms": 300
-  },
-  "cat": "pets"
  },
  "at_vanfurn_bamboo_mat_v2": {
   "sheet": "at_vanfurn",
@@ -100167,11 +96936,11 @@
  },
  "at_opulence_blue_couch_6_v2": {
   "sheet": "at_opulence",
-  "sx": 688,
-  "sy": 0,
-  "sw": 32,
-  "sh": 48,
-  "solid": "bottom:1",
+  "sx": 640,
+  "sy": 32,
+  "sw": 48,
+  "sh": 16,
+  "solid": "all",
   "kind": "furniture",
   "cat": "seats"
  },
@@ -100197,31 +96966,31 @@
  },
  "at_opulence_blue_couch_8_v2": {
   "sheet": "at_opulence",
-  "sx": 944,
-  "sy": 0,
-  "sw": 80,
-  "sh": 80,
-  "solid": "bottom:1",
+  "sx": 896,
+  "sy": 32,
+  "sw": 48,
+  "sh": 16,
+  "solid": "all",
   "kind": "furniture",
   "cat": "seats"
  },
  "at_opulence_blue_couch_9_v2": {
   "sheet": "at_opulence",
-  "sx": 1072,
-  "sy": 0,
-  "sw": 80,
-  "sh": 80,
-  "solid": "bottom:1",
+  "sx": 1024,
+  "sy": 32,
+  "sw": 48,
+  "sh": 16,
+  "solid": "all",
   "kind": "furniture",
   "cat": "seats"
  },
  "at_opulence_blue_couch_10_v2": {
   "sheet": "at_opulence",
-  "sx": 1200,
-  "sy": 0,
-  "sw": 80,
-  "sh": 80,
-  "solid": "bottom:1",
+  "sx": 1152,
+  "sy": 32,
+  "sw": 48,
+  "sh": 16,
+  "solid": "all",
   "kind": "furniture",
   "cat": "seats"
  },
@@ -100474,5 +97243,3880 @@
   "solid": "bottom:1",
   "kind": "furniture",
   "cat": "seats"
+ },
+ "at_vanfurn_dark_throne_v2": {
+  "sheet": "at_vanfurn",
+  "sx": 608,
+  "sy": 240,
+  "sw": 48,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_vanfurn_mahogany_chair_v2": {
+  "sheet": "at_vanfurn",
+  "sx": 992,
+  "sy": 240,
+  "sw": 48,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_vanfurn_sloth_skeleton_m_v2": {
+  "sheet": "at_vanfurn",
+  "sx": 960,
+  "sy": 416,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "statues"
+ },
+ "at_vanfurn_stump_seat_v2": {
+  "sheet": "at_vanfurn",
+  "sx": 1392,
+  "sy": 208,
+  "sw": 32,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_vanfurn_tropical_chair_v2": {
+  "sheet": "at_vanfurn",
+  "sx": 1424,
+  "sy": 240,
+  "sw": 48,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_vanfurn_wall_sconce_3_v2": {
+  "sheet": "at_vanfurn",
+  "sx": 1888,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "at_npcfurn_duplicates_green_cottage_rug_1_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 1488,
+  "sy": 208,
+  "sw": 32,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "rugs"
+ },
+ "at_npcfurn_recolor_dark_throne_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 1616,
+  "sy": 160,
+  "sw": 48,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_npcfurn_recolor_mahogany_chair_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 1904,
+  "sy": 160,
+  "sw": 48,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_npcfurn_recolor_oak_chair_3_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 48,
+  "sy": 240,
+  "sw": 48,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_npcfurn_recolor_oak_chair_4_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 112,
+  "sy": 208,
+  "sw": 32,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_npcfurn_recolor_stump_seat_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 160,
+  "sy": 208,
+  "sw": 32,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_npcfurn_vanilla_bamboo_mat_2_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 1856,
+  "sy": 320,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "rugs"
+ },
+ "at_npcfurn_vanilla_indoor_palm_3_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 1408,
+  "sy": 352,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "at_npcfurn_vanilla_little_tree_27_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 432,
+  "sy": 416,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "at_npcfurn_vanilla_red_cottage_rug_4_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 688,
+  "sy": 272,
+  "sw": 32,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "rugs"
+ },
+ "at_npcfurn_vanilla_wall_sconce_2_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 1360,
+  "sy": 384,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "at_npcfurn_vanilla_winter_dining_table_0_v2": {
+  "sheet": "at_npcfurn",
+  "sx": 304,
+  "sy": 128,
+  "sw": 32,
+  "sh": 80,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "tables"
+ },
+ "at_pink_yellow_armchair_v2": {
+  "sheet": "at_pink",
+  "sx": 544,
+  "sy": 0,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_pink_yellow_armchair_v3": {
+  "sheet": "at_pink",
+  "sx": 544,
+  "sy": 32,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_pink_yellow_armchair_v4": {
+  "sheet": "at_pink",
+  "sx": 576,
+  "sy": 0,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "at_pink_yellow_armchair_v5": {
+  "sheet": "at_pink",
+  "sx": 576,
+  "sy": 32,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "fur_furniture_2": {
+  "sheet": "furniture",
+  "sx": 320,
+  "sy": 0,
+  "sw": 64,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_furniture_47": {
+  "sheet": "furniture",
+  "sx": 208,
+  "sy": 640,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "storage"
+ },
+ "fur_furniture_48": {
+  "sheet": "furniture",
+  "sx": 240,
+  "sy": 640,
+  "sw": 32,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "statues"
+ },
+ "fur_furniture_49": {
+  "sheet": "furniture",
+  "sx": 304,
+  "sy": 640,
+  "sw": 112,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "statues"
+ },
+ "fur_furniture_51": {
+  "sheet": "furniture",
+  "sx": 0,
+  "sy": 688,
+  "sw": 48,
+  "sh": 112,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_furniture_118": {
+  "sheet": "furniture",
+  "sx": 448,
+  "sy": 944,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_furniture_154": {
+  "sheet": "furniture",
+  "sx": 480,
+  "sy": 1312,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_bakery_78": {
+  "sheet": "bakery",
+  "sx": 368,
+  "sy": 192,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_kitchen_clutter_22": {
+  "sheet": "kitchen_clutter",
+  "sx": 144,
+  "sy": 96,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_kitchen_clutter_30": {
+  "sheet": "kitchen_clutter",
+  "sx": 0,
+  "sy": 128,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_kitchen_clutter_44": {
+  "sheet": "kitchen_clutter",
+  "sx": 64,
+  "sy": 144,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_kitchen_clutter_61": {
+  "sheet": "kitchen_clutter",
+  "sx": 64,
+  "sy": 176,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_kitchen_clutter_63": {
+  "sheet": "kitchen_clutter",
+  "sx": 96,
+  "sy": 176,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_kitchen_clutter_65": {
+  "sheet": "kitchen_clutter",
+  "sx": 128,
+  "sy": 176,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_lumi_town_interior_2": {
+  "sheet": "lumi_town_interior",
+  "sx": 0,
+  "sy": 224,
+  "sw": 176,
+  "sh": 144,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "storage"
+ },
+ "fur_lumi_town_interior_16": {
+  "sheet": "lumi_town_interior",
+  "sx": 336,
+  "sy": 320,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "fur_lumi_town_interior_29": {
+  "sheet": "lumi_town_interior",
+  "sx": 144,
+  "sy": 368,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "fur_lumi_town_interior_30": {
+  "sheet": "lumi_town_interior",
+  "sx": 160,
+  "sy": 368,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "fur_lumi_town_interior_32": {
+  "sheet": "lumi_town_interior",
+  "sx": 320,
+  "sy": 368,
+  "sw": 64,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_58": {
+  "sheet": "lumi_town_interior",
+  "sx": 0,
+  "sy": 624,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_59": {
+  "sheet": "lumi_town_interior",
+  "sx": 16,
+  "sy": 624,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_61": {
+  "sheet": "lumi_town_interior",
+  "sx": 48,
+  "sy": 624,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_62": {
+  "sheet": "lumi_town_interior",
+  "sx": 64,
+  "sy": 624,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_63": {
+  "sheet": "lumi_town_interior",
+  "sx": 80,
+  "sy": 624,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_64": {
+  "sheet": "lumi_town_interior",
+  "sx": 96,
+  "sy": 624,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_71": {
+  "sheet": "lumi_town_interior",
+  "sx": 208,
+  "sy": 624,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_73": {
+  "sheet": "lumi_town_interior",
+  "sx": 256,
+  "sy": 624,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_76": {
+  "sheet": "lumi_town_interior",
+  "sx": 32,
+  "sy": 640,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_133": {
+  "sheet": "lumi_town_interior",
+  "sx": 336,
+  "sy": 1248,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "fur_lumi_town_interior_141": {
+  "sheet": "lumi_town_interior",
+  "sx": 0,
+  "sy": 1296,
+  "sw": 112,
+  "sh": 208,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_154": {
+  "sheet": "lumi_town_interior",
+  "sx": 32,
+  "sy": 1584,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "storage"
+ },
+ "fur_lumi_town_interior_155": {
+  "sheet": "lumi_town_interior",
+  "sx": 48,
+  "sy": 1584,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_lumi_town_interior_173": {
+  "sheet": "lumi_town_interior",
+  "sx": 128,
+  "sy": 1632,
+  "sw": 64,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_outdoor_furniture_18": {
+  "sheet": "outdoor_furniture",
+  "sx": 48,
+  "sy": 32,
+  "sw": 48,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorfurniture",
+   "fall": "fall_hime_outdoorfurniture",
+   "winter": "winter_hime_outdoorfurniture"
+  },
+  "cat": "outdoor"
+ },
+ "fur_outdoor_furniture_31": {
+  "sheet": "outdoor_furniture",
+  "sx": 528,
+  "sy": 176,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorfurniture",
+   "fall": "fall_hime_outdoorfurniture",
+   "winter": "winter_hime_outdoorfurniture"
+  },
+  "cat": "plants"
+ },
+ "fur_outdoor_furniture_34": {
+  "sheet": "outdoor_furniture",
+  "sx": 592,
+  "sy": 176,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorfurniture",
+   "fall": "fall_hime_outdoorfurniture",
+   "winter": "winter_hime_outdoorfurniture"
+  },
+  "cat": "outdoor"
+ },
+ "fur_frog_terrarium_0": {
+  "sheet": "frog_terrarium",
+  "sx": 0,
+  "sy": 0,
+  "sw": 32,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "anim": {
+   "frames": 4,
+   "ms": 300
+  },
+  "cat": "pets"
+ },
+ "fur_frog_terrarium_1": {
+  "sheet": "frog_terrarium",
+  "sx": 0,
+  "sy": 64,
+  "sw": 32,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "anim": {
+   "frames": 4,
+   "ms": 300
+  },
+  "cat": "pets"
+ },
+ "fur_frog_terrarium_2": {
+  "sheet": "frog_terrarium",
+  "sx": 0,
+  "sy": 128,
+  "sw": 32,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "anim": {
+   "frames": 4,
+   "ms": 300
+  },
+  "cat": "pets"
+ },
+ "fur_frog_terrarium_3": {
+  "sheet": "frog_terrarium",
+  "sx": 0,
+  "sy": 192,
+  "sw": 32,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "anim": {
+   "frames": 4,
+   "ms": 300
+  },
+  "cat": "pets"
+ },
+ "fur_frog_terrarium_4": {
+  "sheet": "frog_terrarium",
+  "sx": 0,
+  "sy": 256,
+  "sw": 32,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "anim": {
+   "frames": 4,
+   "ms": 300
+  },
+  "cat": "pets"
+ },
+ "fur_geodes_0": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 0,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_1": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 32,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_2": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 64,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_3": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 96,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_4": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 128,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_5": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 160,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_6": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 192,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_7": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 224,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_8": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 256,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_9": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 288,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_10": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 320,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_11": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 352,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_12": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 384,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_13": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 416,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_14": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 448,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_15": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 480,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_16": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 512,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_17": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 544,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_18": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 576,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_19": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 608,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_20": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 640,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_21": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 672,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_22": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 704,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_23": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 736,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_24": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 768,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_25": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 800,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_26": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 832,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_27": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 864,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_28": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 896,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_29": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 928,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_30": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 960,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_31": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 992,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_32": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1024,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_33": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1056,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_34": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1088,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_35": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1120,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_36": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1152,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_37": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1184,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_38": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1216,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_39": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1248,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_40": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1280,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_41": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1312,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_42": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1344,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_43": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1376,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_44": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1408,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_45": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1440,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_46": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1472,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_47": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1504,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_48": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1536,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_49": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1568,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_50": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1600,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_51": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1632,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_52": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1664,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_53": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1696,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_54": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1728,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_55": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1760,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_56": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1792,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_57": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1824,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_58": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1856,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_59": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1888,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_60": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1920,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_61": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1952,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_62": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 1984,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_63": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2016,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_64": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2048,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_65": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2080,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_66": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_67": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2144,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_68": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2176,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_69": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2208,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_70": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2240,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_71": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2272,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_72": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2304,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_73": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2336,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_74": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_75": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2400,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_76": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2432,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_77": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2464,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_78": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2496,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_79": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2528,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_80": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2560,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_81": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2592,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_82": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2624,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_geodes_83": {
+  "sheet": "geodes",
+  "sx": 0,
+  "sy": 2656,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_aimon_cellar_z_tcc_0": {
+  "sheet": "aimon_cellar_z_tcc",
+  "sx": 352,
+  "sy": 0,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_cellar_z_tcc_2": {
+  "sheet": "aimon_cellar_z_tcc",
+  "sx": 416,
+  "sy": 0,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_cellar_z_tcc_29": {
+  "sheet": "aimon_cellar_z_tcc",
+  "sx": 208,
+  "sy": 592,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_cellar_z_tcc_light_0": {
+  "sheet": "aimon_cellar_z_tcc_light",
+  "sx": 352,
+  "sy": 0,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_cellar_z_tcc_light_2": {
+  "sheet": "aimon_cellar_z_tcc_light",
+  "sx": 416,
+  "sy": 0,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_cellar_z_tcc_light_29": {
+  "sheet": "aimon_cellar_z_tcc_light",
+  "sx": 208,
+  "sy": 592,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_z_light_6": {
+  "sheet": "aimon_z_light",
+  "sx": 16,
+  "sy": 320,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_obf_bedroom_furniture_orangeblossom_22": {
+  "sheet": "obf_bedroom_furniture_orangeblossom",
+  "sx": 16,
+  "sy": 176,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "fur_obf_bedroom_furniture_orangeblossom_25": {
+  "sheet": "obf_bedroom_furniture_orangeblossom",
+  "sx": 192,
+  "sy": 176,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "fur_obf_bedroom_furniture_orangeblossom_26": {
+  "sheet": "obf_bedroom_furniture_orangeblossom",
+  "sx": 208,
+  "sy": 176,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "fur_plants_hime_decoplants_117": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 272,
+  "sy": 32,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_135": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 688,
+  "sy": 32,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_140": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 0,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_141": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 16,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_144": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 64,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_145": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 80,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_148": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 128,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_149": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 144,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_154": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 224,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_155": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 240,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_156": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 256,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_157": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 272,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_158": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 288,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_159": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 304,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_162": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 416,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_163": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 432,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_166": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 480,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_167": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 496,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_170": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 544,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_171": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 560,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_176": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 640,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_177": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 656,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_178": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 672,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_179": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 688,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_180": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 704,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_181": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 720,
+  "sy": 80,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_184": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 32,
+  "sy": 96,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_190": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 448,
+  "sy": 96,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_198": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 32,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_199": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 64,
+  "sy": 112,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_202": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 160,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_214": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 448,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_215": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 480,
+  "sy": 112,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_218": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 576,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_243": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 144,
+  "sy": 160,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_255": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 560,
+  "sy": 160,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_264": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 0,
+  "sy": 192,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_267": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 416,
+  "sy": 192,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_369": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 272,
+  "sy": 320,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_374": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 0,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_375": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 16,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_378": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 64,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_379": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 80,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_382": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 128,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_383": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 144,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_388": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 224,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_389": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 240,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_390": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 256,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_391": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 272,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_392": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 288,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_393": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 304,
+  "sy": 368,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_396": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 32,
+  "sy": 384,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_404": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 32,
+  "sy": 400,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_405": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 64,
+  "sy": 400,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_408": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 160,
+  "sy": 400,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_427": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 144,
+  "sy": 448,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_436": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 0,
+  "sy": 480,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_6": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 224,
+  "sy": 128,
+  "sw": 96,
+  "sh": 128,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_9": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 672,
+  "sy": 128,
+  "sw": 96,
+  "sh": 128,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_20": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 416,
+  "sy": 208,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_23": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 864,
+  "sy": 208,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_93": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 224,
+  "sy": 672,
+  "sw": 96,
+  "sh": 128,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_107": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 416,
+  "sy": 752,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_redfox_lamp2_0": {
+  "sheet": "redfox_lamp2",
+  "sx": 0,
+  "sy": 0,
+  "sw": 48,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "fur_spring_hime_romanticfurniture_22": {
+  "sheet": "spring_hime_romanticfurniture",
+  "sx": 480,
+  "sy": 144,
+  "sw": 16,
+  "sh": 80,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_romanticfurniture",
+   "fall": "fall_hime_romanticfurniture",
+   "winter": "winter_hime_romanticfurniture"
+  },
+  "cat": "outdoor"
+ },
+ "fur_spring_hime_outdoorplants_1": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 32,
+  "sy": 0,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 96,
+  "sy": 0,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_9": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 256,
+  "sy": 0,
+  "sw": 48,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_11": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 432,
+  "sy": 0,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_15": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 0,
+  "sy": 32,
+  "sw": 64,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_16": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 80,
+  "sy": 32,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_27": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 0,
+  "sy": 64,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_29": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 64,
+  "sy": 64,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_36": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 384,
+  "sy": 64,
+  "sw": 32,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_55": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 288,
+  "sy": 96,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_56": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 432,
+  "sy": 96,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_60": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 32,
+  "sy": 128,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_68": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 192,
+  "sy": 128,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_72": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 352,
+  "sy": 128,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_73": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 432,
+  "sy": 128,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_90": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 304,
+  "sy": 176,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_100": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 32,
+  "sy": 256,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_105": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 144,
+  "sy": 256,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_110": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 240,
+  "sy": 256,
+  "sw": 64,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_112": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 336,
+  "sy": 256,
+  "sw": 128,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_113": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 480,
+  "sy": 256,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_114": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 0,
+  "sy": 272,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_115": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 160,
+  "sy": 272,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_116": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 208,
+  "sy": 272,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_121": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 320,
+  "sy": 288,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_furniture_2_v2": {
+  "sheet": "furniture",
+  "sx": 384,
+  "sy": 0,
+  "sw": 128,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_furniture_47_v2": {
+  "sheet": "furniture",
+  "sx": 224,
+  "sy": 640,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "storage"
+ },
+ "fur_furniture_48_v2": {
+  "sheet": "furniture",
+  "sx": 272,
+  "sy": 640,
+  "sw": 32,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "statues"
+ },
+ "fur_furniture_49_v2": {
+  "sheet": "furniture",
+  "sx": 416,
+  "sy": 640,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "statues"
+ },
+ "fur_furniture_51_v2": {
+  "sheet": "furniture",
+  "sx": 48,
+  "sy": 688,
+  "sw": 32,
+  "sh": 112,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_furniture_118_v2": {
+  "sheet": "furniture",
+  "sx": 464,
+  "sy": 944,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_furniture_154_v2": {
+  "sheet": "furniture",
+  "sx": 496,
+  "sy": 1312,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_bakery_78_v2": {
+  "sheet": "bakery",
+  "sx": 384,
+  "sy": 192,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_bakery_78_v3": {
+  "sheet": "bakery",
+  "sx": 400,
+  "sy": 192,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_bakery_78_v4": {
+  "sheet": "bakery",
+  "sx": 416,
+  "sy": 192,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_bakery_78_v5": {
+  "sheet": "bakery",
+  "sx": 432,
+  "sy": 192,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_kitchen_clutter_30_v2": {
+  "sheet": "kitchen_clutter",
+  "sx": 16,
+  "sy": 128,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_kitchen_clutter_44_v2": {
+  "sheet": "kitchen_clutter",
+  "sx": 80,
+  "sy": 144,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_kitchen_clutter_44_v3": {
+  "sheet": "kitchen_clutter",
+  "sx": 96,
+  "sy": 144,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_kitchen_clutter_44_v4": {
+  "sheet": "kitchen_clutter",
+  "sx": 112,
+  "sy": 144,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_kitchen_clutter_65_v2": {
+  "sheet": "kitchen_clutter",
+  "sx": 144,
+  "sy": 176,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "kitchen"
+ },
+ "fur_lumi_town_interior_2_v2": {
+  "sheet": "lumi_town_interior",
+  "sx": 176,
+  "sy": 224,
+  "sw": 16,
+  "sh": 144,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "storage"
+ },
+ "fur_lumi_town_interior_16_v2": {
+  "sheet": "lumi_town_interior",
+  "sx": 352,
+  "sy": 320,
+  "sw": 32,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "seats"
+ },
+ "fur_lumi_town_interior_71_v2": {
+  "sheet": "lumi_town_interior",
+  "sx": 224,
+  "sy": 624,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_73_v2": {
+  "sheet": "lumi_town_interior",
+  "sx": 272,
+  "sy": 624,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_133_v2": {
+  "sheet": "lumi_town_interior",
+  "sx": 352,
+  "sy": 1248,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "fur_lumi_town_interior_141_v2": {
+  "sheet": "lumi_town_interior",
+  "sx": 112,
+  "sy": 1296,
+  "sw": 144,
+  "sh": 208,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_141_v3": {
+  "sheet": "lumi_town_interior",
+  "sx": 256,
+  "sy": 1296,
+  "sw": 32,
+  "sh": 208,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_lumi_town_interior_173_v2": {
+  "sheet": "lumi_town_interior",
+  "sx": 192,
+  "sy": 1632,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_outdoor_furniture_18_v2": {
+  "sheet": "outdoor_furniture",
+  "sx": 96,
+  "sy": 32,
+  "sw": 80,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorfurniture",
+   "fall": "fall_hime_outdoorfurniture",
+   "winter": "winter_hime_outdoorfurniture"
+  },
+  "cat": "outdoor"
+ },
+ "fur_outdoor_furniture_18_v3": {
+  "sheet": "outdoor_furniture",
+  "sx": 176,
+  "sy": 32,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorfurniture",
+   "fall": "fall_hime_outdoorfurniture",
+   "winter": "winter_hime_outdoorfurniture"
+  },
+  "cat": "outdoor"
+ },
+ "fur_outdoor_furniture_31_v2": {
+  "sheet": "outdoor_furniture",
+  "sx": 544,
+  "sy": 176,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorfurniture",
+   "fall": "fall_hime_outdoorfurniture",
+   "winter": "winter_hime_outdoorfurniture"
+  },
+  "cat": "plants"
+ },
+ "fur_outdoor_furniture_34_v2": {
+  "sheet": "outdoor_furniture",
+  "sx": 608,
+  "sy": 176,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorfurniture",
+   "fall": "fall_hime_outdoorfurniture",
+   "winter": "winter_hime_outdoorfurniture"
+  },
+  "cat": "outdoor"
+ },
+ "fur_aimon_cellar_z_tcc_0_v2": {
+  "sheet": "aimon_cellar_z_tcc",
+  "sx": 368,
+  "sy": 0,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_cellar_z_tcc_2_v2": {
+  "sheet": "aimon_cellar_z_tcc",
+  "sx": 432,
+  "sy": 0,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_cellar_z_tcc_2_v3": {
+  "sheet": "aimon_cellar_z_tcc",
+  "sx": 448,
+  "sy": 0,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_cellar_z_tcc_light_0_v2": {
+  "sheet": "aimon_cellar_z_tcc_light",
+  "sx": 368,
+  "sy": 0,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_cellar_z_tcc_light_2_v2": {
+  "sheet": "aimon_cellar_z_tcc_light",
+  "sx": 432,
+  "sy": 0,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_cellar_z_tcc_light_2_v3": {
+  "sheet": "aimon_cellar_z_tcc_light",
+  "sx": 448,
+  "sy": 0,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "structure"
+ },
+ "fur_aimon_z_light_6_v2": {
+  "sheet": "aimon_z_light",
+  "sx": 32,
+  "sy": 320,
+  "sw": 48,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_aimon_z_light_6_v3": {
+  "sheet": "aimon_z_light",
+  "sx": 80,
+  "sy": 320,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_aimon_z_light_6_v4": {
+  "sheet": "aimon_z_light",
+  "sx": 96,
+  "sy": 320,
+  "sw": 48,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_aimon_z_light_6_v5": {
+  "sheet": "aimon_z_light",
+  "sx": 144,
+  "sy": 320,
+  "sw": 48,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_aimon_z_light_6_v6": {
+  "sheet": "aimon_z_light",
+  "sx": 192,
+  "sy": 320,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "decor"
+ },
+ "fur_obf_bedroom_furniture_orangeblossom_22_v2": {
+  "sheet": "obf_bedroom_furniture_orangeblossom",
+  "sx": 32,
+  "sy": 176,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "fur_plants_hime_decoplants_117_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 288,
+  "sy": 32,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_117_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 304,
+  "sy": 32,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_135_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 704,
+  "sy": 32,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_135_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 720,
+  "sy": 32,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_184_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 48,
+  "sy": 96,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_190_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 464,
+  "sy": 96,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_198_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 48,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_199_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 96,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_199_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 112,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_202_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 176,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_214_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 464,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_215_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 512,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_215_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 528,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_218_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 592,
+  "sy": 112,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_243_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 160,
+  "sy": 160,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_243_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 176,
+  "sy": 160,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_255_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 576,
+  "sy": 160,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_255_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 592,
+  "sy": 160,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_264_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 16,
+  "sy": 192,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_264_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 32,
+  "sy": 192,
+  "sw": 64,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_267_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 432,
+  "sy": 192,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_267_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 448,
+  "sy": 192,
+  "sw": 64,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_369_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 288,
+  "sy": 320,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_369_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 304,
+  "sy": 320,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_396_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 48,
+  "sy": 384,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_404_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 48,
+  "sy": 400,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_405_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 96,
+  "sy": 400,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_405_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 112,
+  "sy": 400,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_408_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 176,
+  "sy": 400,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_427_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 160,
+  "sy": 448,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_427_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 176,
+  "sy": 448,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_436_v2": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 16,
+  "sy": 480,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_decoplants_436_v3": {
+  "sheet": "plants_hime_decoplants",
+  "sx": 32,
+  "sy": 480,
+  "sw": 64,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_6_v2": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 320,
+  "sy": 128,
+  "sw": 96,
+  "sh": 128,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_9_v2": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 768,
+  "sy": 128,
+  "sw": 96,
+  "sh": 128,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_20_v2": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 432,
+  "sy": 208,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_23_v2": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 880,
+  "sy": 208,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_93_v2": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 320,
+  "sy": 672,
+  "sw": 96,
+  "sh": 128,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_plants_hime_plantlovers_107_v2": {
+  "sheet": "plants_hime_plantlovers",
+  "sx": 432,
+  "sy": 752,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "plants"
+ },
+ "fur_redfox_lamp2_0_v2": {
+  "sheet": "redfox_lamp2",
+  "sx": 48,
+  "sy": 0,
+  "sw": 48,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "lamps"
+ },
+ "fur_spring_hime_romanticfurniture_22_v2": {
+  "sheet": "spring_hime_romanticfurniture",
+  "sx": 496,
+  "sy": 144,
+  "sw": 80,
+  "sh": 80,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_romanticfurniture",
+   "fall": "fall_hime_romanticfurniture",
+   "winter": "winter_hime_romanticfurniture"
+  },
+  "cat": "outdoor"
+ },
+ "fur_spring_hime_outdoorplants_1_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 64,
+  "sy": 0,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_2_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 112,
+  "sy": 0,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_9_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 304,
+  "sy": 0,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_9_v3": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 336,
+  "sy": 0,
+  "sw": 48,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_11_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 448,
+  "sy": 0,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_15_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 64,
+  "sy": 32,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_16_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 112,
+  "sy": 32,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_27_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 16,
+  "sy": 64,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_29_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 80,
+  "sy": 64,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_29_v3": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 112,
+  "sy": 64,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_29_v4": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 144,
+  "sy": 64,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_55_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 320,
+  "sy": 96,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_55_v3": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 352,
+  "sy": 96,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_60_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 48,
+  "sy": 128,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_60_v3": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 64,
+  "sy": 128,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_72_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 384,
+  "sy": 128,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_73_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 464,
+  "sy": 128,
+  "sw": 16,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_73_v3": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 480,
+  "sy": 128,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_90_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 336,
+  "sy": 176,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_100_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 48,
+  "sy": 256,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_110_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 304,
+  "sy": 256,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_112_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 464,
+  "sy": 256,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_113_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 496,
+  "sy": 256,
+  "sw": 16,
+  "sh": 64,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_114_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 16,
+  "sy": 272,
+  "sw": 16,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_114_v3": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 32,
+  "sy": 272,
+  "sw": 112,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_115_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 176,
+  "sy": 272,
+  "sw": 32,
+  "sh": 48,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
+ },
+ "fur_spring_hime_outdoorplants_116_v2": {
+  "sheet": "spring_hime_outdoorplants",
+  "sx": 224,
+  "sy": 272,
+  "sw": 16,
+  "sh": 16,
+  "solid": "all",
+  "kind": "furniture",
+  "seasons": {
+   "summer": "summer_hime_outdoorplants",
+   "fall": "fall_hime_outdoorplants",
+   "winter": "winter_hime_outdoorplants"
+  },
+  "cat": "plants"
  }
 }
