@@ -48,10 +48,7 @@
    "Finishing a project feels nice... but I also love getting started on the next one."
   ],
   "gift_love": "Oh, %item! I already know exactly what I'm going to make with this.",
-  "gift_like": "%item? Thank you! Handmade or homegrown, it's the thought that counts.",
-  "fall_4": [
-   "It's my birthday, you know."
-  ]
+  "gift_like": "%item? Thank you! Handmade or homegrown, it's the thought that counts."
  },
  "pete": {
   "intro": [
@@ -77,10 +74,7 @@
    "People think snakes are scary. Most of them just want to be left alone. Sometimes I can't help but pick 'em up for a little snuggle though."
   ],
   "gift_love": "%item! Oh, this is going straight into tonight's dinner. Thank you.",
-  "gift_dislike": "Huh. %item. I'll... find a use for it.",
-  "rain": [
-   "Frogs love this weather."
-  ]
+  "gift_dislike": "Huh. %item. I'll... find a use for it."
  },
  "missy": {
   "intro": [

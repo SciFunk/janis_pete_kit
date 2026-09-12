@@ -39,6 +39,13 @@ export const World = {
         def.edits = ed || { added: [], removed: [] };
         for (const i of def.edits.removed) if (def.props && def.props[i]) def.props[i].removed = true;
         const ed2 = def.edits; ed2.tiles = ed2.tiles || []; ed2.paint = ed2.paint || []; ed2.floor = ed2.floor || []; ed2.wall = ed2.wall || [];
+        // the editor can grow a map (edits.size): pad the terrain with void, then the tile edits fill it in
+        if (ed2.size && (ed2.size[0] > def.w || ed2.size[1] > def.h)) {
+          const nw = Math.max(def.w, ed2.size[0] | 0), nh = Math.max(def.h, ed2.size[1] | 0);
+          def.terrain = def.terrain.map((r) => (r + "x".repeat(nw)).slice(0, nw));
+          while (def.terrain.length < nh) def.terrain.push("x".repeat(nw));
+          def.w = nw; def.h = nh;
+        }
         for (const [x, y, ch] of ed2.tiles) { const row = def.terrain[y]; if (row !== undefined && x >= 0 && x < row.length) def.terrain[y] = row.slice(0, x) + ch + row.slice(x + 1); }
         def.layers = def.layers || {}; def.layers.paint = (def.layers.paint || []).concat(ed2.paint); def.floorTiles = ed2.floor; def.wallTiles = ed2.wall;
       }

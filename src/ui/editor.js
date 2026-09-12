@@ -114,12 +114,12 @@ export const Editor = {
       solid.append(cb, " blocks walking");
       tools.append(sel, solid); this.showSheet();
     } else if (m === "floor" || m === "wall") {
-      help.textContent = m === "floor" ? "Pick a floor pattern, then click / drag on the floor. Brush = how many tiles at once; Fill does the whole room." : "Pick a wallpaper, then click / drag on the walls. Brush = how many tiles at once; Fill does the whole room.";
+      help.textContent = (m === "floor" ? "Pick a floor pattern, then click / drag. Painting onto the black makes new floor, so you can add rooms. " : "Pick a wallpaper, then click / drag. Painting onto the black makes new wall (walls are 3 tall above a floor). ") + "Right click clears a tile back to black (or removes a thing). Brush = how many tiles at once; Fill does every existing floor/wall tile. Out of space? More room →/↓ adds 8 tiles.";
       await this.showPatterns(m);
       const bs = document.createElement("select"); bs.style.cssText = "background:#3a2a1c;color:#f0e6d2;border:1px solid #8a5a2b;margin-left:6px"; bs.title = "brush size";
       for (const n of [1, 2, 3, 4]) { const op = document.createElement("option"); op.value = n; op.textContent = "brush " + n + "x" + n; if (n === this.brush) op.selected = true; bs.appendChild(op); }
       bs.onchange = (e) => { this.brush = +e.target.value; };
-      tools.append(bs, " ", this.btn("Fill the whole room", false, () => this.fillRoom(m)));
+      tools.append(bs, " ", this.btn("Fill the whole room", false, () => this.fillRoom(m)), " ", this.btn("More room →", false, () => this.grow(8, 0)), this.btn("More room ↓", false, () => this.grow(0, 8)));
     }
   },
 
@@ -377,23 +377,43 @@ export const Editor = {
     m.clearPaint(x, y); e.paint = e.paint.filter((r) => !(r[0] === x && r[1] === y)); this.touch();
   },
   paintFloor(x, y) {
-    const m = this.world.map; if (!m.inBounds(x, y) || m.t(x, y) !== 102) return;
+    const m = this.world.map; if (!m.inBounds(x, y)) return;
+    if (m.t(x, y) !== 102) { m.setTerrain(x, y, "f"); this.put(this.edits().tiles, x, y, ["f"]); this.touch(); }
     const v = this.floorSheet === "floors" ? this.floorIdx : this.floorSheet + ":" + this.floorIdx;
     if (m.floorTiles.get(x + "," + y) === v) return;
     m.setFloorTile(x, y, v); this.put(this.edits().floor, x, y, [v]); this.touch();
   },
   paintWall(x, y) {
-    const m = this.world.map; if (!m.inBounds(x, y) || m.t(x, y) !== 87) return;
+    const m = this.world.map; if (!m.inBounds(x, y)) return;
+    if (m.t(x, y) !== 87) { m.setTerrain(x, y, "W"); this.put(this.edits().tiles, x, y, ["W"]); this.touch(); }
     const v = this.wallSheet === "walls" ? this.wallIdx : this.wallSheet + ":" + this.wallIdx;
     if (m.wallTiles.get(x + "," + y) === v) return;
     m.setWallTile(x, y, v); this.put(this.edits().wall, x, y, [v]); this.touch();
+  },
+
+  // right click in Floor / Wallpaper: a floor or wall tile goes back to black (void)
+  clearTile(x, y) {
+    const m = this.world.map, e = this.edits(); if (!m.inBounds(x, y)) return;
+    const c = m.t(x, y); if (c !== 102 && c !== 87) return;
+    if (m.propAt(x, y)) { this.status("remove the thing on that tile first (right click it)"); return; }
+    m.floorTiles.delete(x + "," + y); m.wallTiles.delete(x + "," + y);
+    e.floor = e.floor.filter((r) => !(r[0] === x && r[1] === y)); e.wall = e.wall.filter((r) => !(r[0] === x && r[1] === y));
+    m.setTerrain(x, y, "x"); this.put(e.tiles, x, y, ["x"]); this.touch();
+  },
+  // add 8 tiles of black to the right / below (edits.size; World.getMap pads the map), keeping every edit
+  async grow(dw, dh) {
+    const m = this.world.map, e = this.edits();
+    e.size = [m.w + dw, m.h + dh];
+    await this.save(); if (this.dirty) { delete e.size; return; }        // the save failed; nothing changed
+    await this.reload(); if (window.KIT) this.zoomFit();
+    this.status("the map is now " + this.world.map.w + " x " + this.world.map.h + " tiles; paint floor onto the black");
   },
 
   refreshHeader() { if (this.panel && this.world.map) this.panel.querySelector("#ed-map").textContent = "· " + this.world.map.id + (this.dirty ? " (unsaved)" : ""); },
 
   async save() {
     const m = this.world.map, e = this.edits();
-    const body = JSON.stringify({ added: e.added.map((a) => { const o = Object.assign({}, a); if (o.solid === undefined) delete o.solid; return o; }), removed: e.removed, tiles: e.tiles, paint: e.paint, floor: e.floor, wall: e.wall }, null, 1);
+    const body = JSON.stringify({ added: e.added.map((a) => { const o = Object.assign({}, a); if (o.solid === undefined) delete o.solid; return o; }), removed: e.removed, tiles: e.tiles, paint: e.paint, floor: e.floor, wall: e.wall, size: e.size }, null, 1);
     if (window.KIT) {                       // design kit: kept in this browser; kit.html packs it into the zip
       try { localStorage.setItem("kit.edits." + m.id, body); this.dirty = false; this.refreshHeader(); this.status("saved in this browser (pack it up from the kit page when you're done)"); }
       catch (err) { this.status("save failed: " + err.message); }
@@ -437,7 +457,6 @@ export const Editor = {
         if (sheets.length) Promise.all(sheets.map((x) => w.loadSheet(x))).then(() => this.place(this.sel, t[0], t[1]));
         else this.place(this.sel, t[0], t[1]);
       } else if (Input.mouse.pressed) { const p = m.propAt(t[0], t[1]); if (p) this.inspect(p); }
-      if (Input.mouse.rpressed) { const p = m.propAt(t[0], t[1]); if (p) this.remove(p); }
       if (Input.justPressed("KeyX")) { const p = m.propAt(t[0], t[1]); if (p) this.toggleSolid(p); }
       if (Input.justPressed("KeyS") && this.sel) { const p = m.propAt(t[0], t[1]); if (p) this.swap(p, this.sel); }
       if (Input.justPressed("KeyN")) { const p = m.propAt(t[0], t[1]); if (p) this.newInterior(p); }
@@ -450,7 +469,12 @@ export const Editor = {
         else if (this.mode === "wall") this.paintWall(t[0] + dx, t[1] + dy);
       }
     }
-    if (this.mode === "tile" && Input.mouse.rpressed) this.eraseTile(t[0], t[1]);
+    if (Input.mouse.rpressed) {
+      const p = m.propAt(t[0], t[1]);
+      if (p) this.remove(p);
+      else if (this.mode === "tile") this.eraseTile(t[0], t[1]);
+      else if (this.mode === "floor" || this.mode === "wall") this.clearTile(t[0], t[1]);
+    }
     return true;
   },
 

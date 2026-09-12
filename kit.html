@@ -9,7 +9,7 @@
  .hint{color:#a09080;font-size:14px} #out{color:#9fd88a;margin-top:8px} #state{color:#c9b48a;font-size:14px;margin-top:6px}
 </style></head><body><main>
 <h1>Hi Pete & Janis. Make yourself at home.</h1>
-<p>One sprite each, the house you share, then one button. Then some lines to say. Everything you do is kept in this browser until you pack it up, so use the same browser throughout.</p>
+<p>One sprite each, the house you share, then one button. Paint floor onto the black to add rooms (More room adds space). Then some lines to say. Everything you do is kept in this browser until you pack it up, so use the same browser throughout.</p>
 <div class="step"><h2>1. Your characters</h2>
  <p>Pick a body, hair, clothes, glasses, hat. Type the name exactly as shown (<b>Pete, Janis</b>) and click <b>Save to game</b>. Save as often as you like; the last save under each name counts.</p>
  <a class="btn" href="tools/character_builder.html?kit=1" target="_blank">Open the character builder</a></div>
@@ -31,8 +31,6 @@
  <p>This downloads <b>send_back_pete_janis.zip</b>. Send that file back. It only contains your character and your house.</p>
  <button onclick="pack()">Pack it up</button><div id="state"></div><div id="out"></div></div>
 <script>
-try { if (!localStorage.getItem('kit.edits.house_pj')) localStorage.setItem('kit.edits.house_pj', "{\"added\": [{\"name\": \"plant_pot\", \"x\": 2, \"y\": 8}], \"removed\": [], \"tiles\": [], \"paint\": [], \"floor\": [], \"wall\": []}"); } catch (e) {}
-
 const INFO = {"name": "Pete & Janis", "slug": "pete_janis", "map": "house_pj", "people": [{"id": "pete", "name": "Pete"}, {"id": "janis", "name": "Janis"}], "created": "2026-09-12", "kit_version": 2};
 function crc32(buf){ let c, crc = 0xFFFFFFFF; for (let i = 0; i < buf.length; i++) { c = (crc ^ buf[i]) & 0xFF; for (let k = 0; k < 8; k++) c = c & 1 ? (c >>> 1) ^ 0xEDB88320 : c >>> 1; crc = (crc >>> 8) ^ c; } return (crc ^ 0xFFFFFFFF) >>> 0; }
 function zip(files){ // files: [{name, data: Uint8Array}] -> Blob (stored, no compression)
