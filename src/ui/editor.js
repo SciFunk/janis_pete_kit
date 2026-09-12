@@ -16,7 +16,7 @@ import { Assets } from "../engine/assets.js";
 // buildings offered as "your house" on a kit's outside map (same test as tools/make_kit.py)
 const HOUSE_RX = /cabin|house|cottage|home|villa/, HOUSE_EX = /barn|coop|shed|silo|stable|mill|greenhouse|hutch|winery|brewery|florist|teashop|well|obelisk|clock|pond|hut|tractor|slime|junimo|seasonal|winter|fall|summer/;
 // furniture categories, in dropdown order (keys match tools/furniture_cats.py)
-const CATS = [["beds", "Beds"], ["seats", "Chairs & sofas"], ["tables", "Tables & desks"], ["storage", "Shelves & cabinets"], ["kitchen", "Kitchen"], ["bathroom", "Bathroom"], ["lamps", "Lamps & candles"], ["fireplaces", "Fireplaces"], ["rugs", "Rugs"], ["wall", "Wall art & windows"], ["plants", "Plants & flowers"], ["screens", "TVs, music & games"], ["statues", "Statues & toys"], ["pets", "Pets & fish"], ["machines", "Machines"], ["shop", "Shop counters"], ["outdoor", "Garden & outdoor"], ["decor", "Little things"], ["structure", "Doors, stairs & walls"]];
+const CATS = [["beds", "Beds"], ["seats", "Chairs & sofas"], ["tables", "Tables & desks"], ["storage", "Shelves & cabinets"], ["kitchen", "Kitchen"], ["lamps", "Lamps & candles"], ["fireplaces", "Fireplaces"], ["rugs", "Rugs"], ["wall", "Wall art & windows"], ["plants", "Plants & flowers"], ["screens", "TVs, music & games"], ["statues", "Statues & toys"], ["pets", "Pets & fish"], ["machines", "Machines"], ["shop", "Shop counters"], ["outdoor", "Garden & outdoor"], ["decor", "Little things"], ["structure", "Doors, stairs & walls"]];
 import { TS } from "../world/tileset.js";
 
 const TERRAIN = [["g", "grass"], ["d", "dirt"], ["w", "water"], ["p", "plaza stone"], ["x", "void"], ["f", "floor (interior)"], ["W", "wall (interior)"]];
@@ -65,7 +65,7 @@ export const Editor = {
     p.querySelector("#ed-save").onclick = () => this.save();
     p.querySelector("#ed-revert").onclick = () => this.reload();
     p.querySelector("#ed-close").onclick = () => this.toggle();
-    if (this.showBlocked === null) this.showBlocked = !!window.KIT;     // on by default in a design kit
+    if (this.showBlocked === null) this.showBlocked = false;
     const bb = p.querySelector("#ed-blocked"); bb.textContent = "Blocked: " + (this.showBlocked ? "on" : "off");
     bb.onclick = () => { this.showBlocked = !this.showBlocked; bb.textContent = "Blocked: " + (this.showBlocked ? "on" : "off"); };
     p.querySelector("#ed-zoomout").onclick = () => this.zoom(-1);

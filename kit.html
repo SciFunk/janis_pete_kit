@@ -1,12 +1,14 @@
 <!doctype html>
 <html><head><meta charset="utf-8"><title>Design kit for Pete & Janis</title>
 <style>
- body{margin:0;background:#1f170f;color:#f0e6d2;font:16px 'Segoe UI',sans-serif}
+ body{margin:0;background:#0f1c14;color:#e6f0dc;font:16px 'Segoe UI',sans-serif}
  main{max-width:720px;margin:40px auto;padding:0 20px}
- h1{color:#ffd86b;font-weight:normal} .step{background:#2a2018;border:1px solid #5a3f2a;padding:16px 20px;margin:14px 0}
- .step h2{margin:0 0 8px;font-size:18px;color:#ffd86b;font-weight:normal}
- a.btn,button{display:inline-block;background:#3a2a1c;color:#f0e6d2;border:1px solid #c9955a;padding:8px 14px;text-decoration:none;font-size:16px;cursor:pointer;margin-top:8px}
- .hint{color:#a09080;font-size:14px} #out{color:#9fd88a;margin-top:8px} #state{color:#c9b48a;font-size:14px;margin-top:6px}
+ h1{color:#cfe9a3;font-weight:normal} .step{background:#182a1e;border:1px solid #33553d;padding:16px 20px;margin:14px 0}
+ .step h2{margin:0 0 8px;font-size:18px;color:#cfe9a3;font-weight:normal}
+ a.btn,button{display:inline-block;background:#1e3626;color:#e6f0dc;border:1px solid #7fb37f;padding:8px 14px;text-decoration:none;font-size:16px;cursor:pointer;margin-top:8px}
+ textarea,select,input[type=number]{background:#1e3626!important;color:#e6f0dc!important;border:1px solid #4f7a55!important}
+ .hint{color:#93a892;font-size:14px} #out{color:#9fd88a;margin-top:8px} #state{color:#b8caa8;font-size:14px;margin-top:6px}
+ .song.playing{background:#24402c}
 </style></head><body><main>
 <h1>Hi Pete & Janis. Make yourself at home.</h1>
 <p>One sprite each, the house you share inside and out, a song, some lines, then one button. Everything you do is kept in this browser (not the tab: closing and coming back later is fine, as long as it is the same browser on the same computer and you pressed Save). Pack it up at the end.</p>
@@ -23,7 +25,8 @@
  <p>A patch of grass with your house in the middle. <b>Your house</b> lists other looks for the building: click one and the house changes. <b>Trees</b>, <b>Plants &amp; flowers</b> and <b>Garden things</b> go anywhere on the grass (up to 8 tiles from the house; that's all the grass there is). Save with <b>F7</b>.</p>
  <a class="btn" href="play.html?kit=yard_pete_janis&name=Pete" target="_blank">Open the outside</a></div>
 <div class="step"><h2>4. Music</h2>
- <p>What plays inside your house. Press play for a 25 second taste, tick the one you want.</p>
+ <p>What plays inside your house. Press play for a 10 second taste, or <b>Play them all</b> to hear every clip one after another, then tick the one you want.</p>
+ <button onclick="playAll()">Play them all</button> <button onclick="stopSong()">Stop</button>
  <div id="songs"></div></div>
 <div class="step"><h2>5. Things you say</h2>
  <p>Add lines the character says when the farmer talks to them. Pick who, pick when, write the line, <b>Add</b>. As many as you like.</p>
@@ -39,7 +42,7 @@
  <p>This downloads <b>send_back_pete_janis.zip</b>. Send that file back. It only contains your character, your house, the outside, the song and the lines.</p>
  <button onclick="pack()">Pack it up</button><div id="state"></div><div id="out"></div></div>
 <script>
-const INFO = {"name": "Pete & Janis", "slug": "pete_janis", "map": "house_pj", "people": [{"id": "pete", "name": "Pete"}, {"id": "janis", "name": "Janis"}], "created": "2026-09-12", "kit_version": 3, "yard": "yard_pete_janis", "building": {"index": 178, "name": "cabin_log", "x": 10, "y": 22, "sheet": "cabins_nantucket"}, "yard_margin": 8, "music_now": "chill_04.mus", "songs": [["chill_01.mus", "Chill 1"], ["chill_02.mus", "Chill 2"], ["chill_03.mus", "Chill 3"], ["chill_04.mus", "Chill 4"], ["chill_05.mus", "Chill 5"], ["chill_06.mus", "Chill 6"], ["chill_07.mus", "Chill 7"], ["chill_08.mus", "Chill 8"], ["chill_09.mus", "Chill 9"], ["chill_10.mus", "Chill 10"], ["chill_11.mus", "Chill 11"], ["chill_12.mus", "Chill 12"], ["gem.mus", "Gem"]]};
+const INFO = {"name": "Pete & Janis", "slug": "pete_janis", "map": "house_pj", "people": [{"id": "pete", "name": "Pete"}, {"id": "janis", "name": "Janis"}], "created": "2026-09-12", "kit_version": 3, "yard": "yard_pete_janis", "building": {"index": 178, "name": "cabin_log", "x": 10, "y": 22, "sheet": "cabins_nantucket"}, "yard_margin": 8, "music_now": "chill_04.mus", "songs": [["chill_01.mus", "Chill 1", "Stardew & Chill"], ["chill_02.mus", "Chill 2", "Stardew & Chill"], ["chill_03.mus", "Chill 3", "Stardew & Chill"], ["chill_04.mus", "Chill 4", "Stardew & Chill"], ["chill_05.mus", "Chill 5", "Stardew & Chill"], ["chill_06.mus", "Chill 6", "Stardew & Chill"], ["chill_07.mus", "Chill 7", "Stardew & Chill"], ["chill_08.mus", "Chill 8", "Stardew & Chill"], ["chill_09.mus", "Chill 9", "Stardew & Chill"], ["chill_10.mus", "Chill 10", "Stardew & Chill"], ["chill_11.mus", "Chill 11", "Stardew & Chill"], ["chill_12.mus", "Chill 12", "Stardew & Chill"], ["gem.mus", "Gem", "Stardew & Chill"], ["rsv_beforeacceptance.mus", "Before Acceptance", "Ridgeside Village"], ["rsv_companion.mus", "Companion", "Ridgeside Village"], ["rsv_compathy.mus", "Compathy", "Ridgeside Village"], ["rsv_compunctious.mus", "Compunctious", "Ridgeside Village"], ["rsv_curiousheart.mus", "Curious Heart", "Ridgeside Village"], ["rsv_daydreaming.mus", "Daydreaming", "Ridgeside Village"], ["rsv_defending.mus", "Defending", "Ridgeside Village"], ["rsv_delighting.mus", "Delighting", "Ridgeside Village"], ["rsv_embraceafterdusk.mus", "Embrace After Dusk", "Ridgeside Village"], ["rsv_fallinridgeside.mus", "Fall In Ridgeside", "Ridgeside Village"], ["rsv_fidget.mus", "Fidget", "Ridgeside Village"], ["rsv_grownguppy.mus", "Grown Guppy", "Ridgeside Village"], ["rsv_mailmebackhome.mus", "Mail Me Back Home", "Ridgeside Village"], ["rsv_playdate.mus", "Playdate", "Ridgeside Village"], ["rsv_poise.mus", "Poise", "Ridgeside Village"], ["rsv_saliency.mus", "Saliency", "Ridgeside Village"], ["rsv_satiety.mus", "Satiety", "Ridgeside Village"], ["rsv_selfwhispers.mus", "Self Whispers", "Ridgeside Village"], ["rsv_sinceresteps.mus", "Sincere Steps", "Ridgeside Village"], ["rsv_smilingtears.mus", "Smiling Tears", "Ridgeside Village"], ["rsv_subtlegestures.mus", "Subtle Gestures", "Ridgeside Village"], ["rsv_subtlycomfy.mus", "Subtly Comfy", "Ridgeside Village"], ["rsv_sweetnightingale.mus", "Sweet Nightingale", "Ridgeside Village"], ["rsv_tinkering.mus", "Tinkering", "Ridgeside Village"], ["rsv_treetopdawn.mus", "Treetop Dawn", "Ridgeside Village"], ["coriel_600ad.mus", "600Ad", "Miss Coriel's pack"], ["coriel_7stown2.mus", "7Stown 2", "Miss Coriel's pack"], ["coriel_angelsfear.mus", "Angels Fear", "Miss Coriel's pack"], ["coriel_bonro.mus", "Bonro", "Miss Coriel's pack"], ["coriel_brinstar.mus", "Brinstar", "Miss Coriel's pack"], ["coriel_ctepilogue.mus", "Ctepilogue", "Miss Coriel's pack"], ["coriel_champ.mus", "Champ", "Miss Coriel's pack"], ["coriel_closeeyes.mus", "Close Eyes", "Miss Coriel's pack"], ["coriel_crystaltokyo.mus", "Crystal Tokyo", "Miss Coriel's pack"], ["coriel_duet.mus", "Duet", "Miss Coriel's pack"], ["coriel_flutesolo.mus", "Flute Solo", "Miss Coriel's pack"], ["coriel_foreverrachel.mus", "Forever Rachel", "Miss Coriel's pack"], ["coriel_frostforest.mus", "Frost Forest", "Miss Coriel's pack"], ["coriel_gforest.mus", "Gforest", "Miss Coriel's pack"], ["coriel_green.mus", "Green", "Miss Coriel's pack"], ["coriel_icecast.mus", "Ice Cast", "Miss Coriel's pack"], ["coriel_icecont.mus", "Ice Cont", "Miss Coriel's pack"], ["coriel_intruder.mus", "Intruder", "Miss Coriel's pack"], ["coriel_ivory.mus", "Ivory", "Miss Coriel's pack"], ["coriel_lemletown.mus", "Lemle Town", "Miss Coriel's pack"], ["coriel_lostwoods.mus", "Lost Woods", "Miss Coriel's pack"], ["coriel_maridia.mus", "Maridia", "Miss Coriel's pack"], ["coriel_overture.mus", "Overture", "Miss Coriel's pack"], ["coriel_pioneer.mus", "Pioneer", "Miss Coriel's pack"], ["coriel_rosatheme.mus", "Rosa Theme", "Miss Coriel's pack"], ["coriel_schala.mus", "Schala", "Miss Coriel's pack"], ["coriel_snowfield.mus", "Snowfield", "Miss Coriel's pack"], ["coriel_whatthe.mus", "Whatthe", "Miss Coriel's pack"], ["coriel_world_2.mus", "World 2", "Miss Coriel's pack"], ["coriel_abandoned.mus", "Abandoned", "Miss Coriel's pack"], ["coriel_area1.mus", "Area 1", "Miss Coriel's pack"], ["coriel_collosia.mus", "Collosia", "Miss Coriel's pack"], ["coriel_darkceremony.mus", "Darkceremony", "Miss Coriel's pack"], ["coriel_different_road.mus", "Different Road", "Miss Coriel's pack"], ["coriel_forbiddenpaths.mus", "Forbiddenpaths", "Miss Coriel's pack"], ["coriel_icepyramid.mus", "Icepyramid", "Miss Coriel's pack"], ["coriel_manafort.mus", "Manafort", "Miss Coriel's pack"], ["coriel_shadows.mus", "Shadows", "Miss Coriel's pack"], ["coriel_spring_distant_thunder.mus", "Spring Distant Thunder", "Miss Coriel's pack"], ["coriel_sunken.mus", "Sunken", "Miss Coriel's pack"], ["coriel_waterday.mus", "Waterday", "Miss Coriel's pack"]]};
 function crc32(buf){ let c, crc = 0xFFFFFFFF; for (let i = 0; i < buf.length; i++) { c = (crc ^ buf[i]) & 0xFF; for (let k = 0; k < 8; k++) c = c & 1 ? (c >>> 1) ^ 0xEDB88320 : c >>> 1; crc = (crc >>> 8) ^ c; } return (crc ^ 0xFFFFFFFF) >>> 0; }
 function zip(files){ // files: [{name, data: Uint8Array}] -> Blob (stored, no compression)
   const enc = new TextEncoder(), parts = [], central = []; let off = 0;
@@ -53,13 +56,17 @@ function zip(files){ // files: [{name, data: Uint8Array}] -> Blob (stored, no co
   const end = new Uint8Array([...u32(0x06054b50), ...u16(0), ...u16(0), ...u16(files.length), ...u16(files.length), ...u32(cd), ...u32(off), ...u16(0)]);
   return new Blob([...parts, ...central, end], { type: "application/zip" }); }
 function looks(){ let all = {}; try { all = JSON.parse(localStorage.getItem("kit.looks") || "{}"); } catch (e) {} const one = localStorage.getItem("kit.look"); if (one && !Object.keys(all).length) { const l = JSON.parse(one); all[l.file.replace(/^custom_/, "")] = l; } return all; }
-let actx = null, playing = null;
-function stopSong(){ if (playing) { try { playing.src.stop(); } catch (e) {} playing.btn.textContent = "▶ play 25 s"; playing = null; } }
-async function playSong(file, btn){ if (playing && playing.file === file) { stopSong(); return; } stopSong();
+let actx = null, playing = null, queue = null;
+function stopSong(){ queue = null; if (playing) { try { playing.src.stop(); } catch (e) {} playing.btn.textContent = "▶ play 10 s"; playing.btn.closest(".song").classList.remove("playing"); playing = null; } }
+function playAll(){ stopSong(); queue = INFO.songs.map((s) => s[0]); nextInQueue(); }
+function nextInQueue(){ if (!queue || !queue.length) { queue = null; return; } const f = queue.shift(); const b = document.getElementById("play_" + f); if (b) { b.scrollIntoView({ block: "nearest" }); playSong(f, b, true); } else nextInQueue(); }
+async function playSong(file, btn, fromQueue){ if (!fromQueue) { if (playing && playing.file === file) { stopSong(); return; } stopSong(); }
+  else if (playing) { try { playing.src.stop(); } catch (e) {} playing.btn.textContent = "▶ play 10 s"; playing.btn.closest(".song").classList.remove("playing"); playing = null; }
   try { actx = actx || new (window.AudioContext || window.webkitAudioContext)(); if (actx.state === "suspended") await actx.resume();
     btn.textContent = "loading..."; const ab = await (await fetch("assets/music_clips/" + file.replace(/\.mus$/, "_clip.oga"))).arrayBuffer();
     const buf = await actx.decodeAudioData(ab); const src = actx.createBufferSource(); src.buffer = buf; src.connect(actx.destination); src.start();
-    playing = { file: file, src: src, btn: btn }; btn.textContent = "■ stop"; src.onended = () => { if (playing && playing.src === src) { playing = null; btn.textContent = "▶ play 25 s"; } }; }
+    playing = { file: file, src: src, btn: btn }; btn.textContent = "■ stop"; btn.closest(".song").classList.add("playing");
+    src.onended = () => { if (playing && playing.src === src) { playing = null; btn.textContent = "▶ play 10 s"; btn.closest(".song").classList.remove("playing"); if (queue) nextInQueue(); } }; }
   catch (e) { btn.textContent = "could not play (" + e + ")"; } }
 function drawLayout(c, l){ const s = 3; c.width = l.w * s; c.height = l.h * s; const g = c.getContext("2d");
   for (let y = 0; y < l.h; y++) for (let x = 0; x < l.w; x++) { const ch = l.rows[y][x]; if (ch === "x") continue; g.fillStyle = ch === "W" ? "#e0b060" : "#b07a3c"; g.fillRect(x * s, y * s, s, s); }
@@ -76,12 +83,14 @@ async function renderLayouts(){ const box = document.getElementById("layouts"); 
     const p = document.createElement("div"); p.className = "hint"; p.textContent = l.blurb; d.append(c, document.createElement("br"), b, p); box.appendChild(d); } }
 renderLayouts();
 function songPick(){ return localStorage.getItem("kit.music") || INFO.music_now || "none"; }
-function renderSongs(){ const box = document.getElementById("songs"); box.innerHTML = ""; const cur = songPick();
-  for (const [file, label] of INFO.songs.concat([["none", "No music"]])) { const row = document.createElement("div"); row.style.margin = "4px 0";
+function renderSongs(){ const box = document.getElementById("songs"); box.innerHTML = ""; const cur = songPick(); let pack = null;
+  for (const [file, label, pk] of INFO.songs.concat([["none", "No music", ""]])) {
+    if (pk !== pack) { pack = pk; if (pk) { const h = document.createElement("div"); h.textContent = pk; h.style.cssText = "margin:12px 0 4px;color:#cfe9a3"; box.appendChild(h); } }
+    const row = document.createElement("div"); row.className = "song"; row.style.cssText = "margin:2px 0;padding:2px 4px";
     const r = document.createElement("input"); r.type = "radio"; r.name = "song"; r.value = file; r.checked = cur === file; r.id = "song_" + file; r.onchange = () => { localStorage.setItem("kit.music", file); showState(); };
     const l = document.createElement("label"); l.htmlFor = r.id; l.textContent = " " + label + (INFO.music_now === file ? " (what plays there today)" : "") + " "; l.style.display = "inline-block"; l.style.minWidth = "260px";
     row.append(r, l);
-    if (file !== "none") { const b = document.createElement("button"); b.textContent = "▶ play 25 s"; b.style.cssText = "font-size:13px;padding:3px 8px;margin:0"; b.onclick = () => playSong(file, b); row.appendChild(b); }
+    if (file !== "none") { const b = document.createElement("button"); b.id = "play_" + file; b.textContent = "▶ play 10 s"; b.style.cssText = "font-size:13px;padding:3px 8px;margin:0"; b.onclick = () => playSong(file, b); row.appendChild(b); }
     box.appendChild(row); } }
 renderSongs();
 function linesAll(){ try { return JSON.parse(localStorage.getItem("kit.lines") || "{}"); } catch (e) { return {}; } }

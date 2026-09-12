@@ -57110,16 +57110,6 @@
   "key": null
  },
  {
-  "path": "assets/characters/janis_custom.png",
-  "folder": "characters",
-  "name": "janis_custom",
-  "w": 96,
-  "h": 144,
-  "cols": 6,
-  "rows": 9,
-  "key": null
- },
- {
   "path": "assets/characters/jasper_cameronf.png",
   "folder": "characters",
   "name": "jasper_cameronf",
@@ -57437,16 +57427,6 @@
   "h": 416,
   "cols": 4,
   "rows": 26,
-  "key": null
- },
- {
-  "path": "assets/characters/pete_custom.png",
-  "folder": "characters",
-  "name": "pete_custom",
-  "w": 96,
-  "h": 144,
-  "cols": 6,
-  "rows": 9,
   "key": null
  },
  {
@@ -60860,6 +60840,76 @@
   "key": null
  },
  {
+  "path": "assets/tilesets/fall_fall_mod_lumisteria_tilesheetsoutdoor_buildings.png",
+  "folder": "tilesets",
+  "name": "fall_fall_mod_lumisteria_tilesheetsoutdoor_buildings",
+  "w": 400,
+  "h": 1200,
+  "cols": 25,
+  "rows": 75,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/fall_fall_mod_lumisteria_tilesheetsoutdoor_decorations.png",
+  "folder": "tilesets",
+  "name": "fall_fall_mod_lumisteria_tilesheetsoutdoor_decorations",
+  "w": 400,
+  "h": 256,
+  "cols": 25,
+  "rows": 16,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/fall_hime_outdoorfurniture.png",
+  "folder": "tilesets",
+  "name": "fall_hime_outdoorfurniture",
+  "w": 672,
+  "h": 592,
+  "cols": 42,
+  "rows": 37,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/fall_hime_outdoorplants.png",
+  "folder": "tilesets",
+  "name": "fall_hime_outdoorplants",
+  "w": 512,
+  "h": 320,
+  "cols": 32,
+  "rows": 20,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/fall_hime_romanticfountains.png",
+  "folder": "tilesets",
+  "name": "fall_hime_romanticfountains",
+  "w": 1792,
+  "h": 1008,
+  "cols": 112,
+  "rows": 63,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/fall_hime_romanticfurniture.png",
+  "folder": "tilesets",
+  "name": "fall_hime_romanticfurniture",
+  "w": 864,
+  "h": 512,
+  "cols": 54,
+  "rows": 32,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/fall_pink_hime_outdoors.png",
+  "folder": "tilesets",
+  "name": "fall_pink_hime_outdoors",
+  "w": 608,
+  "h": 352,
+  "cols": 38,
+  "rows": 22,
+  "key": null
+ },
+ {
   "path": "assets/tilesets/fences.png",
   "folder": "tilesets",
   "name": "fences",
@@ -61008,6 +61058,16 @@
   "cols": 32,
   "rows": 93,
   "key": "furniture"
+ },
+ {
+  "path": "assets/tilesets/geodes.png",
+  "folder": "tilesets",
+  "name": "geodes",
+  "w": 16,
+  "h": 2688,
+  "cols": 1,
+  "rows": 168,
+  "key": null
  },
  {
   "path": "assets/tilesets/hoedirt.png",
@@ -61170,6 +61230,196 @@
   "key": null
  },
  {
+  "path": "assets/tilesets/redfox_flowerrack1.png",
+  "folder": "tilesets",
+  "name": "redfox_flowerrack1",
+  "w": 64,
+  "h": 64,
+  "cols": 4,
+  "rows": 4,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_flowerrack2.png",
+  "folder": "tilesets",
+  "name": "redfox_flowerrack2",
+  "w": 64,
+  "h": 64,
+  "cols": 4,
+  "rows": 4,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_flowerrack3.png",
+  "folder": "tilesets",
+  "name": "redfox_flowerrack3",
+  "w": 64,
+  "h": 64,
+  "cols": 4,
+  "rows": 4,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_flowerrack4.png",
+  "folder": "tilesets",
+  "name": "redfox_flowerrack4",
+  "w": 64,
+  "h": 64,
+  "cols": 4,
+  "rows": 4,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_foxlargearch.png",
+  "folder": "tilesets",
+  "name": "redfox_foxlargearch",
+  "w": 160,
+  "h": 112,
+  "cols": 10,
+  "rows": 7,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_foxstatuearch.png",
+  "folder": "tilesets",
+  "name": "redfox_foxstatuearch",
+  "w": 96,
+  "h": 96,
+  "cols": 6,
+  "rows": 6,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_gardenterrace1.png",
+  "folder": "tilesets",
+  "name": "redfox_gardenterrace1",
+  "w": 144,
+  "h": 128,
+  "cols": 9,
+  "rows": 8,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_gardenterrace2.png",
+  "folder": "tilesets",
+  "name": "redfox_gardenterrace2",
+  "w": 144,
+  "h": 144,
+  "cols": 9,
+  "rows": 9,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_lamp1.png",
+  "folder": "tilesets",
+  "name": "redfox_lamp1",
+  "w": 96,
+  "h": 48,
+  "cols": 6,
+  "rows": 3,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_lamp2.png",
+  "folder": "tilesets",
+  "name": "redfox_lamp2",
+  "w": 96,
+  "h": 48,
+  "cols": 6,
+  "rows": 3,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_lamp3.png",
+  "folder": "tilesets",
+  "name": "redfox_lamp3",
+  "w": 96,
+  "h": 48,
+  "cols": 6,
+  "rows": 3,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_lampchair1.png",
+  "folder": "tilesets",
+  "name": "redfox_lampchair1",
+  "w": 96,
+  "h": 48,
+  "cols": 6,
+  "rows": 3,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_outdoorcouch1.png",
+  "folder": "tilesets",
+  "name": "redfox_outdoorcouch1",
+  "w": 128,
+  "h": 160,
+  "cols": 8,
+  "rows": 10,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_redfox1.png",
+  "folder": "tilesets",
+  "name": "redfox_redfox1",
+  "w": 48,
+  "h": 48,
+  "cols": 3,
+  "rows": 3,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_redfox2.png",
+  "folder": "tilesets",
+  "name": "redfox_redfox2",
+  "w": 48,
+  "h": 48,
+  "cols": 3,
+  "rows": 3,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_stonearch.png",
+  "folder": "tilesets",
+  "name": "redfox_stonearch",
+  "w": 96,
+  "h": 96,
+  "cols": 6,
+  "rows": 6,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_woodenlargearch1.png",
+  "folder": "tilesets",
+  "name": "redfox_woodenlargearch1",
+  "w": 128,
+  "h": 128,
+  "cols": 8,
+  "rows": 8,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_woodenlargearch2.png",
+  "folder": "tilesets",
+  "name": "redfox_woodenlargearch2",
+  "w": 128,
+  "h": 128,
+  "cols": 8,
+  "rows": 8,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/redfox_woodenlargearch3.png",
+  "folder": "tilesets",
+  "name": "redfox_woodenlargearch3",
+  "w": 128,
+  "h": 128,
+  "cols": 8,
+  "rows": 8,
+  "key": null
+ },
+ {
   "path": "assets/tilesets/spring_hime_outdoorfurniture.png",
   "folder": "tilesets",
   "name": "spring_hime_outdoorfurniture",
@@ -61233,6 +61483,76 @@
   "path": "assets/tilesets/spring_spring_mod_lumisteria_tilesheetsoutdoor_decorations.png",
   "folder": "tilesets",
   "name": "spring_spring_mod_lumisteria_tilesheetsoutdoor_decorations",
+  "w": 400,
+  "h": 256,
+  "cols": 25,
+  "rows": 16,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/summer_hime_outdoorfurniture.png",
+  "folder": "tilesets",
+  "name": "summer_hime_outdoorfurniture",
+  "w": 672,
+  "h": 592,
+  "cols": 42,
+  "rows": 37,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/summer_hime_outdoorplants.png",
+  "folder": "tilesets",
+  "name": "summer_hime_outdoorplants",
+  "w": 512,
+  "h": 320,
+  "cols": 32,
+  "rows": 20,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/summer_hime_romanticfountains.png",
+  "folder": "tilesets",
+  "name": "summer_hime_romanticfountains",
+  "w": 1792,
+  "h": 1008,
+  "cols": 112,
+  "rows": 63,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/summer_hime_romanticfurniture.png",
+  "folder": "tilesets",
+  "name": "summer_hime_romanticfurniture",
+  "w": 864,
+  "h": 512,
+  "cols": 54,
+  "rows": 32,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/summer_pink_hime_outdoors.png",
+  "folder": "tilesets",
+  "name": "summer_pink_hime_outdoors",
+  "w": 608,
+  "h": 352,
+  "cols": 38,
+  "rows": 22,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/summer_summer_mod_lumisteria_tilesheetsoutdoor_buildings.png",
+  "folder": "tilesets",
+  "name": "summer_summer_mod_lumisteria_tilesheetsoutdoor_buildings",
+  "w": 400,
+  "h": 1200,
+  "cols": 25,
+  "rows": 75,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/summer_summer_mod_lumisteria_tilesheetsoutdoor_decorations.png",
+  "folder": "tilesets",
+  "name": "summer_summer_mod_lumisteria_tilesheetsoutdoor_decorations",
   "w": 400,
   "h": 256,
   "cols": 25,
@@ -61437,6 +61757,76 @@
   "h": 336,
   "cols": 16,
   "rows": 21,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/winter_hime_outdoorfurniture.png",
+  "folder": "tilesets",
+  "name": "winter_hime_outdoorfurniture",
+  "w": 672,
+  "h": 592,
+  "cols": 42,
+  "rows": 37,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/winter_hime_outdoorplants.png",
+  "folder": "tilesets",
+  "name": "winter_hime_outdoorplants",
+  "w": 512,
+  "h": 320,
+  "cols": 32,
+  "rows": 20,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/winter_hime_romanticfountains.png",
+  "folder": "tilesets",
+  "name": "winter_hime_romanticfountains",
+  "w": 1792,
+  "h": 1008,
+  "cols": 112,
+  "rows": 63,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/winter_hime_romanticfurniture.png",
+  "folder": "tilesets",
+  "name": "winter_hime_romanticfurniture",
+  "w": 864,
+  "h": 512,
+  "cols": 54,
+  "rows": 32,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/winter_pink_hime_outdoors.png",
+  "folder": "tilesets",
+  "name": "winter_pink_hime_outdoors",
+  "w": 608,
+  "h": 352,
+  "cols": 38,
+  "rows": 22,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/winter_winter_mod_lumisteria_tilesheetsoutdoor_buildings.png",
+  "folder": "tilesets",
+  "name": "winter_winter_mod_lumisteria_tilesheetsoutdoor_buildings",
+  "w": 400,
+  "h": 1200,
+  "cols": 25,
+  "rows": 75,
+  "key": null
+ },
+ {
+  "path": "assets/tilesets/winter_winter_mod_lumisteria_tilesheetsoutdoor_decorations.png",
+  "folder": "tilesets",
+  "name": "winter_winter_mod_lumisteria_tilesheetsoutdoor_decorations",
+  "w": 400,
+  "h": 256,
+  "cols": 25,
+  "rows": 16,
   "key": null
  },
  {

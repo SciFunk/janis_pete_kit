@@ -53,6 +53,7 @@ export class Prop {
     else if (this.def.seasons && this.map && this.def.seasons[this.map.season]) sheet = this.def.seasons[this.map.season];   // one sheet per season
     const img = Assets.img[sheet];
     if (!img) return;
-    ctx.drawImage(img, this.sx, this.sy, this.sw, this.sh, this.px - camX, this.py - camY, this.sw, this.sh);
+    const an = this.def.anim, sx = an ? this.sx + (Math.floor(Date.now() / (an.ms || 300)) % an.frames) * this.sw : this.sx;   // frames side by side
+    ctx.drawImage(img, sx, this.sy, this.sw, this.sh, this.px - camX, this.py - camY, this.sw, this.sh);
   }
 }

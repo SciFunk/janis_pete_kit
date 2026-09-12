@@ -27,55 +27,398 @@
  "songs": [
   [
    "chill_01.mus",
-   "Chill 1"
+   "Chill 1",
+   "Stardew & Chill"
   ],
   [
    "chill_02.mus",
-   "Chill 2"
+   "Chill 2",
+   "Stardew & Chill"
   ],
   [
    "chill_03.mus",
-   "Chill 3"
+   "Chill 3",
+   "Stardew & Chill"
   ],
   [
    "chill_04.mus",
-   "Chill 4"
+   "Chill 4",
+   "Stardew & Chill"
   ],
   [
    "chill_05.mus",
-   "Chill 5"
+   "Chill 5",
+   "Stardew & Chill"
   ],
   [
    "chill_06.mus",
-   "Chill 6"
+   "Chill 6",
+   "Stardew & Chill"
   ],
   [
    "chill_07.mus",
-   "Chill 7"
+   "Chill 7",
+   "Stardew & Chill"
   ],
   [
    "chill_08.mus",
-   "Chill 8"
+   "Chill 8",
+   "Stardew & Chill"
   ],
   [
    "chill_09.mus",
-   "Chill 9"
+   "Chill 9",
+   "Stardew & Chill"
   ],
   [
    "chill_10.mus",
-   "Chill 10"
+   "Chill 10",
+   "Stardew & Chill"
   ],
   [
    "chill_11.mus",
-   "Chill 11"
+   "Chill 11",
+   "Stardew & Chill"
   ],
   [
    "chill_12.mus",
-   "Chill 12"
+   "Chill 12",
+   "Stardew & Chill"
   ],
   [
    "gem.mus",
-   "Gem"
+   "Gem",
+   "Stardew & Chill"
+  ],
+  [
+   "rsv_beforeacceptance.mus",
+   "Before Acceptance",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_companion.mus",
+   "Companion",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_compathy.mus",
+   "Compathy",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_compunctious.mus",
+   "Compunctious",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_curiousheart.mus",
+   "Curious Heart",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_daydreaming.mus",
+   "Daydreaming",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_defending.mus",
+   "Defending",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_delighting.mus",
+   "Delighting",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_embraceafterdusk.mus",
+   "Embrace After Dusk",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_fallinridgeside.mus",
+   "Fall In Ridgeside",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_fidget.mus",
+   "Fidget",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_grownguppy.mus",
+   "Grown Guppy",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_mailmebackhome.mus",
+   "Mail Me Back Home",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_playdate.mus",
+   "Playdate",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_poise.mus",
+   "Poise",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_saliency.mus",
+   "Saliency",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_satiety.mus",
+   "Satiety",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_selfwhispers.mus",
+   "Self Whispers",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_sinceresteps.mus",
+   "Sincere Steps",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_smilingtears.mus",
+   "Smiling Tears",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_subtlegestures.mus",
+   "Subtle Gestures",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_subtlycomfy.mus",
+   "Subtly Comfy",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_sweetnightingale.mus",
+   "Sweet Nightingale",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_tinkering.mus",
+   "Tinkering",
+   "Ridgeside Village"
+  ],
+  [
+   "rsv_treetopdawn.mus",
+   "Treetop Dawn",
+   "Ridgeside Village"
+  ],
+  [
+   "coriel_600ad.mus",
+   "600Ad",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_7stown2.mus",
+   "7Stown 2",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_angelsfear.mus",
+   "Angels Fear",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_bonro.mus",
+   "Bonro",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_brinstar.mus",
+   "Brinstar",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_ctepilogue.mus",
+   "Ctepilogue",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_champ.mus",
+   "Champ",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_closeeyes.mus",
+   "Close Eyes",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_crystaltokyo.mus",
+   "Crystal Tokyo",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_duet.mus",
+   "Duet",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_flutesolo.mus",
+   "Flute Solo",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_foreverrachel.mus",
+   "Forever Rachel",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_frostforest.mus",
+   "Frost Forest",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_gforest.mus",
+   "Gforest",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_green.mus",
+   "Green",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_icecast.mus",
+   "Ice Cast",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_icecont.mus",
+   "Ice Cont",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_intruder.mus",
+   "Intruder",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_ivory.mus",
+   "Ivory",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_lemletown.mus",
+   "Lemle Town",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_lostwoods.mus",
+   "Lost Woods",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_maridia.mus",
+   "Maridia",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_overture.mus",
+   "Overture",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_pioneer.mus",
+   "Pioneer",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_rosatheme.mus",
+   "Rosa Theme",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_schala.mus",
+   "Schala",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_snowfield.mus",
+   "Snowfield",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_whatthe.mus",
+   "Whatthe",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_world_2.mus",
+   "World 2",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_abandoned.mus",
+   "Abandoned",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_area1.mus",
+   "Area 1",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_collosia.mus",
+   "Collosia",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_darkceremony.mus",
+   "Darkceremony",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_different_road.mus",
+   "Different Road",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_forbiddenpaths.mus",
+   "Forbiddenpaths",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_icepyramid.mus",
+   "Icepyramid",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_manafort.mus",
+   "Manafort",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_shadows.mus",
+   "Shadows",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_spring_distant_thunder.mus",
+   "Spring Distant Thunder",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_sunken.mus",
+   "Sunken",
+   "Miss Coriel's pack"
+  ],
+  [
+   "coriel_waterday.mus",
+   "Waterday",
+   "Miss Coriel's pack"
   ]
  ]
 }
