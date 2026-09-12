@@ -13,5 +13,69 @@
   }
  ],
  "created": "2026-09-12",
- "kit_version": 2
+ "kit_version": 3,
+ "yard": "yard_pete_janis",
+ "building": {
+  "index": 178,
+  "name": "cabin_log",
+  "x": 10,
+  "y": 22,
+  "sheet": "cabins_nantucket"
+ },
+ "yard_margin": 8,
+ "music_now": "chill_04.mus",
+ "songs": [
+  [
+   "chill_01.mus",
+   "Chill 1"
+  ],
+  [
+   "chill_02.mus",
+   "Chill 2"
+  ],
+  [
+   "chill_03.mus",
+   "Chill 3"
+  ],
+  [
+   "chill_04.mus",
+   "Chill 4"
+  ],
+  [
+   "chill_05.mus",
+   "Chill 5"
+  ],
+  [
+   "chill_06.mus",
+   "Chill 6"
+  ],
+  [
+   "chill_07.mus",
+   "Chill 7"
+  ],
+  [
+   "chill_08.mus",
+   "Chill 8"
+  ],
+  [
+   "chill_09.mus",
+   "Chill 9"
+  ],
+  [
+   "chill_10.mus",
+   "Chill 10"
+  ],
+  [
+   "chill_11.mus",
+   "Chill 11"
+  ],
+  [
+   "chill_12.mus",
+   "Chill 12"
+  ],
+  [
+   "gem.mus",
+   "Gem"
+  ]
+ ]
 }

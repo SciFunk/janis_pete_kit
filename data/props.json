@@ -252,8 +252,8 @@
  },
  "plant_pot": {
   "sheet": "town_interiors",
-  "sx": 144,
-  "sy": 160,
+  "sx": 208,
+  "sy": 480,
   "sw": 16,
   "sh": 32,
   "solid": "all",

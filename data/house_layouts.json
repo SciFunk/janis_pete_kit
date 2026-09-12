@@ -1,0 +1,123 @@
+[
+ {
+  "id": "three_rooms",
+  "name": "Three rooms",
+  "blurb": "One room up top, a little hall down, two rooms side by side below.",
+  "w": 28,
+  "h": 22,
+  "rows": [
+   "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "xxxxxxWWWWWWWWWWWWWxxxxxxxxx",
+   "xxxxxxWWWWWWWWWWWWWxxxxxxxxx",
+   "xxxxxxWWWWWWWWWWWWWxxxxxxxxx",
+   "xxxxxxfffffffffffffxxxxxxxxx",
+   "xxxxxxfffffffffffffxxxxxxxxx",
+   "xxxxxxfffffffffffffxxxxxxxxx",
+   "xxxxxxfffffffffffffxxxxxxxxx",
+   "xxxxxxfffffffffffffxxxxxxxxx",
+   "xxxxxxfffffffffffffxxxxxxxxx",
+   "xxxxxxxxxxxffxxxxxxxxxxxxxxx",
+   "xxxxxxxxxxxffxxxxxxxxxxxxxxx",
+   "WWWWWWWWWWWffWWWWWWWWWWWWWWW",
+   "WWWWWWWWWWWffWWWWWWWWWWWWWWW",
+   "WWWWWWWWWWWffWWWWWWWWWWWWWWW",
+   "ffffffffffffffffffffffffffff",
+   "ffffffffffffffffffffffffffff",
+   "ffffffffffffffffffffffffffff",
+   "ffffffffffffffffffffffffffff",
+   "ffffffffffffffffffffffffffff",
+   "ffffffffffffffffffffffffffff",
+   "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ],
+  "door": [
+   20,
+   20
+  ],
+  "start": [
+   20,
+   19
+  ]
+ },
+ {
+  "id": "nook_and_below",
+  "name": "Big room, nook, room below",
+  "blurb": "A big room with a cosy corner off to the right, and a second room through a doorway below.",
+  "w": 21,
+  "h": 27,
+  "rows": [
+   "xxxxxxxxxxxxxxxxxxxxx",
+   "WWWWWWWWWWWWWWWWWWWWW",
+   "WWWWWWWWWWWWWWWWWWWWW",
+   "WWWWWWWWWWWWWWWWWWWWW",
+   "fffffffffffffffffffff",
+   "fffffffffffffffffffff",
+   "fffffffffffffffffffff",
+   "fffffffffffffffffffff",
+   "fffffffffffffffffffff",
+   "fffffffffffffffffffff",
+   "fffffffffffffxxxxxxxx",
+   "fffffffffffffxxxxxxxx",
+   "fffffffffffffxxxxxxxx",
+   "fffffffffffffxxxxxxxx",
+   "xxxxxffxxxxxxxxxxxxxx",
+   "WWWWWffWWWWWWxxxxxxxx",
+   "WWWWWffWWWWWWxxxxxxxx",
+   "WWWWWffWWWWWWxxxxxxxx",
+   "fffffffffffffxxxxxxxx",
+   "fffffffffffffxxxxxxxx",
+   "fffffffffffffxxxxxxxx",
+   "fffffffffffffxxxxxxxx",
+   "fffffffffffffxxxxxxxx",
+   "fffffffffffffxxxxxxxx",
+   "fffffffffffffxxxxxxxx",
+   "fffffffffffffxxxxxxxx",
+   "xxxxxxxxxxxxxxxxxxxxx"
+  ],
+  "door": [
+   6,
+   25
+  ],
+  "start": [
+   6,
+   24
+  ]
+ },
+ {
+  "id": "l_shape",
+  "name": "L-shape with a hall",
+  "blurb": "A long main room, a bedroom off the right end, and a small hall down to the front door.",
+  "w": 26,
+  "h": 21,
+  "rows": [
+   "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "WWWWWWWWWWWWWWWWWWWWWWWWWW",
+   "WWWWWWWWWWWWWWWWWWWWWWWWWW",
+   "WWWWWWWWWWWWWWWWWWWWWWWWWW",
+   "ffffffffffffffffffffffffff",
+   "ffffffffffffffffffffffffff",
+   "ffffffffffffffffffffffffff",
+   "ffffffffffffffffffffffffff",
+   "ffffffffffffffffffffffffff",
+   "ffffffffffffffffxxxxxxxxxx",
+   "ffffffffffffffffxxxxxxxxxx",
+   "ffffffffffffffffxxxxxxxxxx",
+   "ffffffffffffffffxxxxxxxxxx",
+   "xxxxWWWffWWWxxxxxxxxxxxxxx",
+   "xxxxWWWffWWWxxxxxxxxxxxxxx",
+   "xxxxWWWffWWWxxxxxxxxxxxxxx",
+   "xxxxffffffffxxxxxxxxxxxxxx",
+   "xxxxffffffffxxxxxxxxxxxxxx",
+   "xxxxffffffffxxxxxxxxxxxxxx",
+   "xxxxffffffffxxxxxxxxxxxxxx",
+   "xxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ],
+  "door": [
+   7,
+   19
+  ],
+  "start": [
+   7,
+   18
+  ]
+ }
+]

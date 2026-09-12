@@ -47,7 +47,15 @@ export const World = {
           def.w = nw; def.h = nh;
         }
         for (const [x, y, ch] of ed2.tiles) { const row = def.terrain[y]; if (row !== undefined && x >= 0 && x < row.length) def.terrain[y] = row.slice(0, x) + ch + row.slice(x + 1); }
-        def.layers = def.layers || {}; def.layers.paint = (def.layers.paint || []).concat(ed2.paint); def.floorTiles = ed2.floor; def.wallTiles = ed2.wall;
+        if (ed2.music !== undefined) def.music = ed2.music;                      // the kit's song pick
+        if (ed2.start) def.spawns = Object.assign({}, def.spawns, { start: ed2.start, bed: ed2.start });   // a starter layout moved the room
+        def.layers = def.layers || {};
+        if (ed2.door && def.indoor) {                                           // front door moved: exit warp + the painted door
+          const [dx, dy] = ed2.door;
+          if (def.warps && def.warps.length) { def.warps[0].x = dx; def.warps[0].y = dy; }
+          def.layers.paint = (def.layers.paint || []).filter((t) => !(t[2] === "town_interiors" && (t[3] === 88 || t[3] === 120))).concat([[dx, dy, "town_interiors", 88, 0], [dx, dy + 1, "town_interiors", 120, 0]]);
+        }
+        def.layers.paint = (def.layers.paint || []).concat(ed2.paint); def.floorTiles = ed2.floor; def.wallTiles = ed2.wall;
       }
       if (def.tileset && def.tileset !== "outdoors" && !Assets.img[def.tileset]) await Assets.image(def.tileset, "assets/tilesets/" + def.tileset + ".png");
       // lazy-load any sprite sheet the map's props need

@@ -1,0 +1,50 @@
+{
+ "id": "yard_pete_janis",
+ "name": "Outside Pete & Janis's house",
+ "w": 21,
+ "h": 23,
+ "tileset": "outdoors",
+ "music": null,
+ "terrain": [
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg",
+  "ggggggggggggggggggggg"
+ ],
+ "props": [
+  {
+   "name": "cabin_log",
+   "x": 8,
+   "y": 8,
+   "id": "house",
+   "note": "Your house. Pick another look under Your house.",
+   "sheet": "cabins_nantucket"
+  }
+ ],
+ "warps": [],
+ "spawns": {
+  "start": [
+   10,
+   16
+  ]
+ }
+}

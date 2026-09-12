@@ -116,6 +116,16 @@ function drawUI() {
   Editor.draw();
 }
 
+// the walkable tile nearest the middle of a map (kit houses: where to put the player)
+function floorSpot(m) {
+  let best = null, bd = Infinity;
+  for (let y = 0; y < m.h; y++) for (let x = 0; x < m.w; x++) {
+    if (m.isSolid(x, y) || (m.indoor && m.t(x, y) !== 102)) continue;
+    const d = (x - m.w / 2) ** 2 + (y - m.h / 2) ** 2; if (d < bd) { bd = d; best = [x, y]; }
+  }
+  return best;
+}
+
 // Begin play: either restore the save or set up a fresh farm.
 async function startGame(useSave, name, look, opts) {
   const params = new URLSearchParams(location.search);
@@ -148,7 +158,11 @@ async function startGame(useSave, name, look, opts) {
     const start = (opts && opts.map) || params.get("map") || "farm";
     if (params.get("time")) { const t = params.get("time"); Clock.minutes = parseInt(t.slice(0, -2), 10) * 60 + parseInt(t.slice(-2), 10); }
     await World.setMap(start, parseInt(params.get("x") || "32", 10), parseInt(params.get("y") || "14", 10), 0);
-    const sp = World.map.spawns.start;
+    let sp = World.map.spawns.start;
+    if (!sp && opts && opts.map) {           // a design kit house has no start spawn: the bed's spot if it is still floor, else the middle of the floor
+      const m = World.map, bed = m.spawns.bed;
+      sp = (bed && m.inBounds(bed[0], bed[1]) && !m.isSolid(bed[0], bed[1])) ? bed : floorSpot(m);
+    }
     if (sp && (start === "farm" || (opts && opts.map)) && !params.get("x")) { World.player.x = sp[0] * 16 + 8; World.player.y = sp[1] * 16 + 16; World.updateCamera(); }
   }
   Friendship.dayIndex = Clock.dayIndex();

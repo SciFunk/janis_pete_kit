@@ -178,5 +178,10 @@
   "id": "witch",
   "name": "Witch's Clearing",
   "indoor": false
+ },
+ {
+  "id": "yard_pete_janis",
+  "name": "Outside Pete & Janis's house",
+  "indoor": false
  }
 ]
