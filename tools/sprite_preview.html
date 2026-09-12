@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sprite preview</title>
+<style>
+  body { margin: 0; background: #1f170f; color: #f0e6d2; font: 14px 'Segoe UI', sans-serif; }
+  header { padding: 10px 14px; border-bottom: 1px solid #5a3f2a; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  select, input, button { background: #3a2a1c; color: #f0e6d2; border: 1px solid #8a5a2b; padding: 4px 8px; font-size: 14px; }
+  main { padding: 14px; display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+  canvas { image-rendering: pixelated; background: #2a3d2a; border: 1px solid #5a3f2a; }
+  .card { background: #2a2018; padding: 10px; border: 1px solid #5a3f2a; }
+  .card h3 { margin: 0 0 6px; font-size: 13px; color: #ffd86b; font-weight: normal; }
+  #status { color: #9fd88a; }
+  .hint { color: #a09080; font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <b style="color:#ffd86b">Sprite preview</b>
+  <label>sheet <select id="sheet"></select></label>
+  <label>zoom <select id="zoom"><option>4</option><option selected>6</option><option>8</option><option>10</option></select></label>
+  <label><input type="checkbox" id="walk" checked> walk</label>
+  <label>background <input type="color" id="bg" value="#2a3d2a"></label>
+  <span id="status"></span>
+  <span class="hint">Reloads by itself when the PNG changes on disk (save from Aseprite and look here).</span>
+</header>
+<main>
+  <div class="card"><h3>in motion (down / right / up / left)</h3><canvas id="anim"></canvas></div>
+  <div class="card"><h3>standing, next to a villager for scale</h3><canvas id="scale"></canvas></div>
+  <div class="card"><h3>the whole sheet, frame grid</h3><canvas id="sheetview"></canvas><div class="hint" id="dims"></div></div>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+let img = null, ref = null, mtimes = {}, current = null, t0 = performance.now();
+const params = new URLSearchParams(location.search);
+
+async function listSheets() {
+  try {
+    const r = await fetch("/__mtimes?dir=assets/characters", { cache: "no-store" });
+    if (!r.ok) throw 0;
+    const m = await r.json();
+    const names = Object.keys(m).sort((a, b) => a.localeCompare(b));
+    const sel = $("sheet"), was = sel.value;
+    sel.innerHTML = "";
+    for (const n of names) { const o = document.createElement("option"); o.value = n; o.textContent = n.replace(/\.png$/, ""); sel.appendChild(o); }
+    sel.value = was || params.get("sheet") || (names.find((n) => !/^(sc_|dw_|custom_)/.test(n)) || names[0]);
+    return m;
+  } catch (e) { $("status").textContent = "run play.bat first (needs the dev server)"; return {}; }
+}
+function load(name, stamp) {
+  return new Promise((res) => { const im = new Image(); im.onload = () => res(im); im.onerror = () => res(null); im.src = "assets/characters/" + name + "?t=" + stamp; });
+}
+async function pick() {
+  current = $("sheet").value; if (!current) return;
+  img = await load(current, mtimes[current] || Date.now());
+  $("status").textContent = img ? "loaded " + current + " " + img.width + "x" + img.height : "could not load " + current;
+  drawSheet();
+}
+function frameSize(im) { return im.width === 64 ? [16, 32] : [im.width / 4, im.height / 4]; }
+function drawSheet() {
+  if (!img) return;
+  const [fw, fh] = frameSize(img), z = Math.max(2, Math.min(4, Math.floor(400 / img.width)));
+  const c = $("sheetview"); c.width = img.width * z; c.height = img.height * z; const g = c.getContext("2d");
+  g.imageSmoothingEnabled = false; g.fillStyle = $("bg").value; g.fillRect(0, 0, c.width, c.height);
+  g.drawImage(img, 0, 0, c.width, c.height);
+  g.strokeStyle = "rgba(255,0,200,0.5)";
+  for (let x = 0; x <= img.width; x += fw) { g.beginPath(); g.moveTo(x * z + 0.5, 0); g.lineTo(x * z + 0.5, c.height); g.stroke(); }
+  for (let y = 0; y <= img.height; y += fh) { g.beginPath(); g.moveTo(0, y * z + 0.5); g.lineTo(c.width, y * z + 0.5); g.stroke(); }
+  $("dims").textContent = img.width + "x" + img.height + " = 4 columns of " + fw + "x" + fh + " frames; rows: down, right, up, left" + (img.height / fh > 4 ? " (+" + (img.height / fh - 4) + " extra rows the game ignores)" : "");
+}
+function tick() {
+  requestAnimationFrame(tick);
+  if (!img) return;
+  const z = +$("zoom").value, [fw, fh] = frameSize(img), walk = $("walk").checked;
+  const t = (performance.now() - t0) / 1000, frame = walk ? Math.floor(t * 7) % 4 : 0;
+  const c = $("anim"); c.width = (fw + 6) * 4 * z; c.height = (fh + 4) * z; const g = c.getContext("2d");
+  g.imageSmoothingEnabled = false; g.fillStyle = $("bg").value; g.fillRect(0, 0, c.width, c.height);
+  for (let d = 0; d < 4; d++) g.drawImage(img, frame * fw, d * fh, fw, fh, (d * (fw + 6) + 3) * z, 2 * z, fw * z, fh * z);
+  const s = $("scale"); s.width = (fw + 16 + 12) * z; s.height = (Math.max(fh, 32) + 4) * z; const h = s.getContext("2d");
+  h.imageSmoothingEnabled = false; h.fillStyle = $("bg").value; h.fillRect(0, 0, s.width, s.height);
+  h.drawImage(img, 0, 0, fw, fh, 2 * z, (Math.max(fh, 32) - fh + 2) * z, fw * z, fh * z);
+  if (ref) h.drawImage(ref, 0, 0, 16, 32, (fw + 8) * z, (Math.max(fh, 32) - 32 + 2) * z, 16 * z, 32 * z);
+}
+async function poll() {
+  const m = await listSheets();
+  if (current && m[current] && m[current] !== mtimes[current]) { mtimes = m; await pick(); $("status").textContent += "  (reloaded " + new Date().toLocaleTimeString() + ")"; }
+  else mtimes = m;
+}
+(async () => {
+  mtimes = await listSheets();
+  ref = await load("sc_gus.png", 0);
+  $("sheet").onchange = pick; $("bg").oninput = drawSheet;
+  await pick(); tick(); setInterval(poll, 1000);
+})();
+</script>
+</body>
+</html>

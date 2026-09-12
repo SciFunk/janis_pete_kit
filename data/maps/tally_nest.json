@@ -1,0 +1,102 @@
+{
+ "id": "tally_nest",
+ "name": "The Gilded Nest",
+ "w": 16,
+ "h": 13,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_08.mus",
+ "floor": 3,
+ "wallpaper": 20,
+ "terrain": [
+  "xxxxxxxxxxxxxxxx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xxxxxxxxxxxxxxxx"
+ ],
+ "props": [
+  {
+   "name": "counter",
+   "x": 5,
+   "y": 6,
+   "shop": "curios"
+  },
+  {
+   "name": "counter",
+   "x": 7,
+   "y": 6,
+   "shop": "curios"
+  },
+  {
+   "name": "counter",
+   "x": 9,
+   "y": 6,
+   "shop": "curios"
+  },
+  {
+   "name": "bookshelf",
+   "x": 1,
+   "y": 2,
+   "note": "Shelves of things people left behind in a hurry."
+  },
+  {
+   "name": "bookshelf",
+   "x": 12,
+   "y": 2
+  },
+  {
+   "name": "plant_pot",
+   "x": 3,
+   "y": 3
+  },
+  {
+   "name": "chest",
+   "x": 13,
+   "y": 8,
+   "note": "A chest of odds and ends. It rattles."
+  }
+ ],
+ "warps": [
+  {
+   "x": 7,
+   "y": 11,
+   "to": "town",
+   "tx": 87,
+   "ty": 32,
+   "dir": 0
+  }
+ ],
+ "spawns": {
+  "bed": [
+   5,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    7,
+    11,
+    "town_interiors",
+    88,
+    0
+   ],
+   [
+    7,
+    12,
+    "town_interiors",
+    120,
+    0
+   ]
+  ]
+ }
+}

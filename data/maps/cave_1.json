@@ -1,0 +1,154 @@
+{
+ "id": "cave_1",
+ "name": "The Long Lunch",
+ "w": 11,
+ "h": 8,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_08.mus",
+ "floor": "floors_cave:0",
+ "wallpaper": "walls_cave:0",
+ "terrain": [
+  "WWWWWWWWWWW",
+  "WfffffffffW",
+  "WfffffffffW",
+  "WfffFFFfffW",
+  "WfffFfFfffW",
+  "WfffFFFfffW",
+  "Wffffffffff",
+  "WWfWWWWWWWW"
+ ],
+ "props": [],
+ "warps": [
+  {
+   "x": 2,
+   "y": 7,
+   "to": "cave_hub",
+   "tx": 3,
+   "ty": 2,
+   "dir": 0,
+   "roomExit": true
+  }
+ ],
+ "spawns": {
+  "start": [
+   2,
+   6
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    4,
+    3,
+    "mine",
+    37,
+    0
+   ],
+   [
+    5,
+    3,
+    "mine",
+    37,
+    0
+   ],
+   [
+    6,
+    3,
+    "mine",
+    37,
+    0
+   ],
+   [
+    4,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    6,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    4,
+    5,
+    "mine",
+    37,
+    0
+   ],
+   [
+    5,
+    5,
+    "mine",
+    37,
+    0
+   ],
+   [
+    6,
+    5,
+    "mine",
+    37,
+    0
+   ],
+   [
+    2,
+    7,
+    "mine",
+    100,
+    0
+   ]
+  ]
+ },
+ "puzzle": {
+  "start": [
+   2,
+   6
+  ],
+  "prints": [
+   "pig"
+  ],
+  "animals": [
+   {
+    "sp": "pig",
+    "x": 2,
+    "y": 1
+   }
+  ],
+  "items": [
+   {
+    "kind": "food",
+    "x": 4,
+    "y": 1
+   }
+  ],
+  "plates": [
+   {
+    "id": "p1",
+    "x": 5,
+    "y": 4,
+    "need": 3
+   }
+  ],
+  "gates": [
+   {
+    "x": 10,
+    "y": 6,
+    "plates": [
+     "p1"
+    ],
+    "latch": false,
+    "next": "cave_2",
+    "final": false
+   }
+  ],
+  "beams": [],
+  "levers": [],
+  "hedges": [],
+  "nests": [],
+  "doors": []
+ }
+}

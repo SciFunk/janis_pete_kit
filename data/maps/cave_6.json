@@ -1,0 +1,115 @@
+{
+ "id": "cave_6",
+ "name": "Two Latches",
+ "w": 15,
+ "h": 7,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_08.mus",
+ "floor": "floors_cave:0",
+ "wallpaper": "walls_cave:0",
+ "terrain": [
+  "WWWWWWWWWWWWWWW",
+  "WffffffffffCffW",
+  "WffffffffffCffW",
+  "WffffffffffCffW",
+  "WffffffffffCffW",
+  "ffffffffffffffW",
+  "WWfWWWWWWWWWWWW"
+ ],
+ "props": [],
+ "warps": [
+  {
+   "x": 2,
+   "y": 6,
+   "to": "cave_hub",
+   "tx": 9,
+   "ty": 8,
+   "dir": 2,
+   "roomExit": true
+  }
+ ],
+ "spawns": {
+  "start": [
+   2,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    2,
+    6,
+    "mine",
+    100,
+    0
+   ]
+  ]
+ },
+ "puzzle": {
+  "start": [
+   2,
+   5
+  ],
+  "prints": [
+   "quail",
+   "crow"
+  ],
+  "animals": [
+   {
+    "sp": "quail",
+    "x": 2,
+    "y": 3
+   },
+   {
+    "sp": "crow",
+    "x": 12,
+    "y": 4
+   }
+  ],
+  "items": [
+   {
+    "kind": "shiny",
+    "x": 12,
+    "y": 2
+   }
+  ],
+  "plates": [
+   {
+    "id": "p1",
+    "x": 7,
+    "y": 1,
+    "need": 1
+   },
+   {
+    "id": "p2",
+    "x": 12,
+    "y": 3,
+    "need": 1
+   }
+  ],
+  "gates": [
+   {
+    "x": 0,
+    "y": 5,
+    "plates": [
+     "p1",
+     "p2"
+    ],
+    "latch": true,
+    "next": "cave_hub",
+    "final": true
+   }
+  ],
+  "beams": [],
+  "levers": [],
+  "hedges": [],
+  "nests": [
+   {
+    "x": 12,
+    "y": 3
+   }
+  ],
+  "doors": []
+ }
+}

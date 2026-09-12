@@ -1,0 +1,269 @@
+{
+ "bases": {
+  "male": {
+   "file": "base_male.png"
+  },
+  "female": {
+   "file": "base_female.png"
+  }
+ },
+ "hair": {
+  "vanilla": {
+   "file": "hair_vanilla.png",
+   "label": "Vanilla",
+   "cols": 8,
+   "count": 80
+  },
+  "hair_coii_long": {
+   "file": "hair_coii_long.png",
+   "label": "Coii long",
+   "cols": 8,
+   "count": 56
+  },
+  "hair_coii_short": {
+   "file": "hair_coii_short.png",
+   "label": "Coii short",
+   "cols": 8,
+   "count": 56
+  },
+  "hair_coii_girls": {
+   "file": "hair_coii_girls.png",
+   "label": "Coii girls",
+   "cols": 8,
+   "count": 56
+  },
+  "hair_barberella": {
+   "file": "hair_barberella.png",
+   "label": "Barber-ella",
+   "cols": 8,
+   "count": 44
+  },
+  "hair_unbraided": {
+   "file": "hair_unbraided.png",
+   "label": "Un-braided",
+   "names": [
+    "Hair 1",
+    "Hair 2",
+    "Hair 3",
+    "Hair 4",
+    "Hair 5",
+    "Hair 6",
+    "Hair 7",
+    "Hair 8",
+    "Hair 9",
+    "Hair 1",
+    "Hair 2",
+    "Hair 3",
+    "Hair 4",
+    "Hair 5",
+    "Hair 6",
+    "Hair 7",
+    "Hair 8",
+    "Hair 9",
+    "Hair 1",
+    "Hair 2",
+    "Hair 3",
+    "Hair 4",
+    "Hair 5",
+    "Hair 6",
+    "Hair 7",
+    "Hair 8",
+    "Hair 9",
+    "Hair 1",
+    "Hair 2",
+    "Hair 3",
+    "Hair 4",
+    "Hair 5",
+    "Hair 6",
+    "Hair 7",
+    "Hair 8",
+    "Hair 9"
+   ],
+   "cols": 8,
+   "count": 36
+  },
+  "hair_lumisteria": {
+   "file": "hair_lumisteria.png",
+   "label": "Lumisteria",
+   "names": [
+    "Hair01",
+    "Hair01Vibrant",
+    "Hair02",
+    "Hair02Vibrant",
+    "Hair03",
+    "Hair03Vibrant",
+    "Hair04",
+    "Hair04Vibrant",
+    "Hair05",
+    "Hair05Vibrant",
+    "Hair06",
+    "Hair06Vibrant",
+    "Hair07",
+    "Hair07Vibrant",
+    "Hair08",
+    "Hair08Vibrant",
+    "Hair09",
+    "Hair09Vibrant",
+    "Hair10",
+    "Hair10Vibrant",
+    "Hair17",
+    "Hair17Vibrant"
+   ],
+   "cols": 8,
+   "count": 22
+  }
+ },
+ "shirts": {
+  "vanilla": {
+   "file": "shirts_vanilla.png",
+   "label": "Vanilla",
+   "cols": 16,
+   "count": 299
+  },
+  "shirts_coii_basic": {
+   "file": "shirts_coii_basic.png",
+   "label": "Coii basic",
+   "cols": 16,
+   "count": 293
+  },
+  "shirts_coii_girls": {
+   "file": "shirts_coii_girls.png",
+   "label": "Coii girls",
+   "cols": 16,
+   "count": 293
+  },
+  "shirts_lumisteria": {
+   "file": "shirts_lumisteria.png",
+   "label": "Lumisteria",
+   "names": [
+    "LumisteriaClothes-Shirt01",
+    "LumisteriaClothes-Shirt02",
+    "LumisteriaClothes-Shirt03",
+    "LumisteriaClothes-Shirt04",
+    "LumisteriaClothes-Shirt05",
+    "LumisteriaClothes-Shirt06",
+    "LumisteriaClothes-Shirt07",
+    "LumisteriaClothes-Shirt08",
+    "LumisteriaClothes-Shirt09",
+    "LumisteriaClothes-Shirt10",
+    "LumisteriaClothes-Shirt11",
+    "LumisteriaClothes-Shirt12",
+    "LumisteriaClothes-Shirt13",
+    "LumisteriaClothes-Shirt14",
+    "LumisteriaClothes-Shirt15",
+    "LumisteriaClothes-Shirt16",
+    "LumisteriaClothes-Shirt17",
+    "LumisteriaClothes-Shirt18",
+    "LumisteriaClothes-Shirt19"
+   ],
+   "cols": 16,
+   "count": 19
+  },
+  "shirts_beachwear": {
+   "file": "shirts_beachwear.png",
+   "label": "Beachwear",
+   "names": [
+    "OnePieceTopA",
+    "OnePieceTopB",
+    "Shirtless",
+    "SwimTopA",
+    "SwimTopB",
+    "SwimTopC",
+    "SwimTopD",
+    "SwimTopE",
+    "SwimTopF",
+    "SwimTopG",
+    "SwimTopVanilla"
+   ],
+   "cols": 16,
+   "count": 11
+  }
+ },
+ "hats": {
+  "vanilla": {
+   "file": "hats_vanilla.png",
+   "label": "Vanilla",
+   "cols": 24,
+   "count": 94
+  },
+  "hats_coii_female": {
+   "file": "hats_coii_female.png",
+   "label": "Coii (f)",
+   "cols": 12,
+   "count": 75
+  },
+  "hats_coii_male": {
+   "file": "hats_coii_male.png",
+   "label": "Coii (m)",
+   "cols": 12,
+   "count": 75
+  },
+  "hats_lumisteria": {
+   "file": "hats_lumisteria.png",
+   "label": "Lumisteria",
+   "names": [
+    "Autumn Leaves Crown",
+    "Dandelion Crown",
+    "Enchanter Hat",
+    "Fancy Spellcaster Hat",
+    "Gem Hat",
+    "Marigold Pin",
+    "Pansies Crown",
+    "Simple White Headband",
+    "Spring Leaves Crown",
+    "Starry Wizard Hat",
+    "Sweet Roses Crown",
+    "Traveling Witch Hat"
+   ],
+   "cols": 12,
+   "count": 12
+  }
+ },
+ "pants": {
+  "pants_coii_skirts": {
+   "file": "pants_coii_skirts.png",
+   "label": "Coii skirts",
+   "cols": 10,
+   "count": 16
+  },
+  "beachwear": {
+   "file": "pants_beachwear.png",
+   "label": "Beachwear",
+   "names": [
+    "OnePieceBottomA",
+    "OnePieceBottomB",
+    "SwimBottomA",
+    "SwimBottomB",
+    "SwimBottomC",
+    "SwimBottomD",
+    "SwimBottomE",
+    "SwimBottomF",
+    "SwimBottomG",
+    "SwimShortsPatterned",
+    "SwimShortsPlain",
+    "SwimShortsStriped",
+    "SwimTrunksPlain",
+    "SwimTrunksTwoTone"
+   ],
+   "cols": 10,
+   "count": 14
+  }
+ },
+ "shoes": {
+  "shoes_all": {
+   "file": "shoes_all.png",
+   "label": "Get Dressed + Beachwear",
+   "names": [
+    "female_shoes0",
+    "female_shoes1",
+    "female_shoes2",
+    "female_shoes3",
+    "Barefoot",
+    "BarefootAlt",
+    "Sandals"
+   ],
+   "count": 7,
+   "cols": 7
+  }
+ }
+}

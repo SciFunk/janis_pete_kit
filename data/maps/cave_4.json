@@ -1,0 +1,91 @@
+{
+ "id": "cave_4",
+ "name": "One Step Behind",
+ "w": 11,
+ "h": 7,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_08.mus",
+ "floor": "floors_cave:0",
+ "wallpaper": "walls_cave:0",
+ "terrain": [
+  "WWWWWWWWWWW",
+  "WfffffffffW",
+  "WfffffffffW",
+  "WfffffffffW",
+  "WfffffffffW",
+  "Wffffffffff",
+  "WWfWWWWWWWW"
+ ],
+ "props": [],
+ "warps": [
+  {
+   "x": 2,
+   "y": 6,
+   "to": "cave_hub",
+   "tx": 15,
+   "ty": 2,
+   "dir": 0,
+   "roomExit": true
+  }
+ ],
+ "spawns": {
+  "start": [
+   2,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    2,
+    6,
+    "mine",
+    100,
+    0
+   ]
+  ]
+ },
+ "puzzle": {
+  "start": [
+   2,
+   5
+  ],
+  "prints": [
+   "quail"
+  ],
+  "animals": [
+   {
+    "sp": "quail",
+    "x": 2,
+    "y": 4
+   }
+  ],
+  "items": [],
+  "plates": [
+   {
+    "id": "p1",
+    "x": 5,
+    "y": 2,
+    "need": 1
+   }
+  ],
+  "gates": [
+   {
+    "x": 10,
+    "y": 5,
+    "plates": [
+     "p1"
+    ],
+    "latch": false,
+    "next": "cave_5",
+    "final": false
+   }
+  ],
+  "beams": [],
+  "levers": [],
+  "hedges": [],
+  "nests": [],
+  "doors": []
+ }
+}

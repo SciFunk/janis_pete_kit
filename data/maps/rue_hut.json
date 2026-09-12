@@ -1,0 +1,92 @@
+{
+ "id": "rue_hut",
+ "name": "Rue's Hut",
+ "w": 16,
+ "h": 13,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_12.mus",
+ "floor": 5,
+ "wallpaper": 16,
+ "terrain": [
+  "xxxxxxxxxxxxxxxx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xxxxxxxxxxxxxxxx"
+ ],
+ "props": [
+  {
+   "name": "plant_pot",
+   "x": 2,
+   "y": 3
+  },
+  {
+   "name": "plant_pot",
+   "x": 3,
+   "y": 3
+  },
+  {
+   "name": "plant_pot",
+   "x": 12,
+   "y": 3
+  },
+  {
+   "name": "plant_pot",
+   "x": 13,
+   "y": 3
+  },
+  {
+   "name": "table_small",
+   "x": 7,
+   "y": 5
+  },
+  {
+   "name": "bookshelf",
+   "x": 9,
+   "y": 2
+  }
+ ],
+ "warps": [
+  {
+   "x": 7,
+   "y": 11,
+   "to": "witch",
+   "tx": 18,
+   "ty": 14,
+   "dir": 0
+  }
+ ],
+ "spawns": {
+  "bed": [
+   5,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    7,
+    11,
+    "town_interiors",
+    88,
+    0
+   ],
+   [
+    7,
+    12,
+    "town_interiors",
+    120,
+    0
+   ]
+  ]
+ }
+}

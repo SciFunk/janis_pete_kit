@@ -1,0 +1,234 @@
+[
+ {
+  "id": "tree_mahogany",
+  "seasonal": true
+ },
+ {
+  "id": "tree_maple",
+  "seasonal": true
+ },
+ {
+  "id": "tree_mushroom",
+  "seasonal": false
+ },
+ {
+  "id": "tree_oak",
+  "seasonal": true
+ },
+ {
+  "id": "tree_palm_1",
+  "seasonal": false
+ },
+ {
+  "id": "tree_palm_2_0",
+  "seasonal": false
+ },
+ {
+  "id": "tree_palm_2_1",
+  "seasonal": false
+ },
+ {
+  "id": "tree_pine",
+  "seasonal": true
+ },
+ {
+  "id": "tree_earthy_tree1",
+  "seasonal": true
+ },
+ {
+  "id": "tree_earthy_tree2",
+  "seasonal": true
+ },
+ {
+  "id": "tree_earthy_tree3",
+  "seasonal": true
+ },
+ {
+  "id": "tree_earthy_tree8",
+  "seasonal": true
+ },
+ {
+  "id": "tree_earthy_mushroom",
+  "seasonal": false
+ },
+ {
+  "id": "tree_earthy_mystic",
+  "seasonal": false
+ },
+ {
+  "id": "tree_earthy_palm",
+  "seasonal": false
+ },
+ {
+  "id": "tree_earthy_palm2",
+  "seasonal": false
+ },
+ {
+  "id": "tree_fruit_0",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_1",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_2",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_3",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_4",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_5",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_6",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_7",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_8",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_9",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_10",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_11",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_12",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_13",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_14",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_15",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_16",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_17",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_18",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_19",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_20",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_21",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_22",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_23",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_24",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_25",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_26",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_27",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_28",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_29",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_30",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_31",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_32",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_33",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_34",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_35",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_36",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_37",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_38",
+  "seasonal": true
+ },
+ {
+  "id": "tree_fruit_39",
+  "seasonal": true
+ },
+ {
+  "id": "tree_eastscarp_0",
+  "seasonal": true
+ },
+ {
+  "id": "tree_eastscarp_1",
+  "seasonal": true
+ }
+]

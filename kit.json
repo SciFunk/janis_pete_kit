@@ -1,0 +1,17 @@
+{
+ "name": "Pete & Janis",
+ "slug": "pete_janis",
+ "map": "house_pj",
+ "people": [
+  {
+   "id": "pete",
+   "name": "Pete"
+  },
+  {
+   "id": "janis",
+   "name": "Janis"
+  }
+ ],
+ "created": "2026-09-12",
+ "kit_version": 2
+}

@@ -1,0 +1,72 @@
+{
+ "id": "bathhouse",
+ "name": "Bathhouse",
+ "w": 16,
+ "h": 13,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_06.mus",
+ "floor": 7,
+ "wallpaper": 6,
+ "terrain": [
+  "xxxxxxxxxxxxxxxx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xxxxxxxxxxxxxxxx"
+ ],
+ "props": [
+  {
+   "name": "plant_pot",
+   "x": 1,
+   "y": 3
+  },
+  {
+   "name": "plant_pot",
+   "x": 13,
+   "y": 3
+  }
+ ],
+ "warps": [
+  {
+   "x": 7,
+   "y": 11,
+   "to": "hotsprings",
+   "tx": 11,
+   "ty": 16,
+   "dir": 0
+  }
+ ],
+ "spawns": {
+  "bed": [
+   5,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    7,
+    11,
+    "town_interiors",
+    88,
+    0
+   ],
+   [
+    7,
+    12,
+    "town_interiors",
+    120,
+    0
+   ]
+  ]
+ }
+}

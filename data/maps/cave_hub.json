@@ -1,0 +1,292 @@
+{
+ "id": "cave_hub",
+ "name": "The Cave",
+ "w": 21,
+ "h": 10,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_08.mus",
+ "floor": "floors_cave:0",
+ "wallpaper": "walls_cave:0",
+ "terrain": [
+  "WWWWWWWWWWWWWWWWWWWWW",
+  "WWWfWWWfWWWfWWWfWWWfW",
+  "WfffffffffffffffffffW",
+  "WfffffffffffffffffffW",
+  "WfffffffffffFFFFFfffW",
+  "WfffffffffffFfffFfffW",
+  "WfffffffffffFfffFfffW",
+  "WfffffffffffFFfFFfffW",
+  "WfffffffffffffffffffW",
+  "WWWWWWWWWfWWWWWWWWWWW"
+ ],
+ "props": [],
+ "warps": [
+  {
+   "x": 3,
+   "y": 1,
+   "to": "cave_1",
+   "tx": 2,
+   "ty": 6,
+   "dir": 2
+  },
+  {
+   "x": 7,
+   "y": 1,
+   "to": "cave_2",
+   "tx": 5,
+   "ty": 5,
+   "dir": 2
+  },
+  {
+   "x": 11,
+   "y": 1,
+   "to": "cave_3",
+   "tx": 6,
+   "ty": 5,
+   "dir": 2
+  },
+  {
+   "x": 15,
+   "y": 1,
+   "to": "cave_4",
+   "tx": 2,
+   "ty": 5,
+   "dir": 2
+  },
+  {
+   "x": 19,
+   "y": 1,
+   "to": "cave_5",
+   "tx": 2,
+   "ty": 5,
+   "dir": 2
+  },
+  {
+   "x": 9,
+   "y": 9,
+   "to": "cave_6",
+   "tx": 2,
+   "ty": 5,
+   "dir": 2
+  }
+ ],
+ "spawns": {
+  "start": [
+   6,
+   6
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    3,
+    1,
+    "mine",
+    100,
+    0
+   ],
+   [
+    7,
+    1,
+    "mine",
+    100,
+    0
+   ],
+   [
+    11,
+    1,
+    "mine",
+    100,
+    0
+   ],
+   [
+    15,
+    1,
+    "mine",
+    100,
+    0
+   ],
+   [
+    19,
+    1,
+    "mine",
+    100,
+    0
+   ],
+   [
+    12,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    13,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    14,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    15,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    16,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    12,
+    5,
+    "mine",
+    37,
+    0
+   ],
+   [
+    16,
+    5,
+    "mine",
+    37,
+    0
+   ],
+   [
+    12,
+    6,
+    "mine",
+    37,
+    0
+   ],
+   [
+    16,
+    6,
+    "mine",
+    37,
+    0
+   ],
+   [
+    12,
+    7,
+    "mine",
+    37,
+    0
+   ],
+   [
+    13,
+    7,
+    "mine",
+    37,
+    0
+   ],
+   [
+    15,
+    7,
+    "mine",
+    37,
+    0
+   ],
+   [
+    16,
+    7,
+    "mine",
+    37,
+    0
+   ],
+   [
+    9,
+    9,
+    "mine",
+    100,
+    0
+   ]
+  ]
+ },
+ "puzzle": {
+  "start": [
+   6,
+   6
+  ],
+  "prints": [],
+  "animals": [
+   {
+    "sp": "pig",
+    "x": 13,
+    "y": 5
+   },
+   {
+    "sp": "sheep",
+    "x": 15,
+    "y": 5
+   },
+   {
+    "sp": "goat",
+    "x": 13,
+    "y": 6
+   },
+   {
+    "sp": "sheep",
+    "x": 15,
+    "y": 6
+   }
+  ],
+  "items": [],
+  "plates": [],
+  "gates": [],
+  "beams": [],
+  "levers": [],
+  "hedges": [],
+  "nests": [],
+  "doors": [
+   {
+    "x": 3,
+    "y": 1,
+    "to": "cave_1",
+    "label": "1"
+   },
+   {
+    "x": 7,
+    "y": 1,
+    "to": "cave_2",
+    "label": "2"
+   },
+   {
+    "x": 11,
+    "y": 1,
+    "to": "cave_3",
+    "label": "3"
+   },
+   {
+    "x": 15,
+    "y": 1,
+    "to": "cave_4",
+    "label": "4"
+   },
+   {
+    "x": 19,
+    "y": 1,
+    "to": "cave_5",
+    "label": "5"
+   },
+   {
+    "x": 9,
+    "y": 9,
+    "to": "cave_6",
+    "label": "6"
+   }
+  ],
+  "hub": true
+ }
+}

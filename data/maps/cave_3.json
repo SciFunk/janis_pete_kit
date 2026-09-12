@@ -1,0 +1,103 @@
+{
+ "id": "cave_3",
+ "name": "The Chew Timer",
+ "w": 13,
+ "h": 7,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_08.mus",
+ "floor": "floors_cave:0",
+ "wallpaper": "walls_cave:0",
+ "terrain": [
+  "WWWWWWWWWWWWW",
+  "WfffffffffffW",
+  "Wffffffffffff",
+  "WfffffffffffW",
+  "WfffffffffffW",
+  "WfffffffffffW",
+  "WWWWWWfWWWWWW"
+ ],
+ "props": [],
+ "warps": [
+  {
+   "x": 6,
+   "y": 6,
+   "to": "cave_hub",
+   "tx": 11,
+   "ty": 2,
+   "dir": 0,
+   "roomExit": true
+  }
+ ],
+ "spawns": {
+  "start": [
+   6,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    6,
+    6,
+    "mine",
+    100,
+    0
+   ]
+  ]
+ },
+ "puzzle": {
+  "start": [
+   6,
+   5
+  ],
+  "prints": [
+   "goat",
+   "bull"
+  ],
+  "animals": [
+   {
+    "sp": "goat",
+    "x": 11,
+    "y": 1
+   },
+   {
+    "sp": "bull",
+    "x": 2,
+    "y": 3
+   }
+  ],
+  "items": [],
+  "plates": [
+   {
+    "id": "p1",
+    "x": 8,
+    "y": 3,
+    "need": 4
+   }
+  ],
+  "gates": [
+   {
+    "x": 12,
+    "y": 2,
+    "plates": [
+     "p1"
+    ],
+    "latch": false,
+    "next": "cave_4",
+    "final": false
+   }
+  ],
+  "beams": [],
+  "levers": [],
+  "hedges": [
+   {
+    "x": 5,
+    "y": 3,
+    "chew": 8
+   }
+  ],
+  "nests": [],
+  "doors": []
+ }
+}

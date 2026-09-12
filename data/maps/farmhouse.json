@@ -1,0 +1,78 @@
+{
+ "id": "farmhouse",
+ "name": "Farmhouse",
+ "w": 16,
+ "h": 13,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_03.mus",
+ "floor": 0,
+ "wallpaper": 0,
+ "terrain": [
+  "xxxxxxxxxxxxxxxx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xxxxxxxxxxxxxxxx"
+ ],
+ "props": [
+  {
+   "name": "bed_single",
+   "x": 2,
+   "y": 3,
+   "id": "bed"
+  },
+  {
+   "name": "plant_pot",
+   "x": 13,
+   "y": 3
+  },
+  {
+   "name": "table_small",
+   "x": 8,
+   "y": 6
+  }
+ ],
+ "warps": [
+  {
+   "x": 7,
+   "y": 11,
+   "to": "farm",
+   "tx": 14,
+   "ty": 14,
+   "dir": 0
+  }
+ ],
+ "spawns": {
+  "bed": [
+   5,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    7,
+    11,
+    "town_interiors",
+    88,
+    0
+   ],
+   [
+    7,
+    12,
+    "town_interiors",
+    120,
+    0
+   ]
+  ]
+ }
+}

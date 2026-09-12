@@ -1,0 +1,88 @@
+{
+ "id": "cc",
+ "name": "Community Center",
+ "w": 20,
+ "h": 14,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_02.mus",
+ "floor": 1,
+ "wallpaper": 1,
+ "terrain": [
+  "xxxxxxxxxxxxxxxxxxxx",
+  "xWWWWWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWWWWWx",
+  "xffffffffffffffffffx",
+  "xffffffffffffffffffx",
+  "xffffffffffffffffffx",
+  "xffffffffffffffffffx",
+  "xffffffffffffffffffx",
+  "xffffffffffffffffffx",
+  "xffffffffffffffffffx",
+  "xffffffffffffffffffx",
+  "xffffffffffffffffffx",
+  "xxxxxxxxxxxxxxxxxxxx"
+ ],
+ "props": [
+  {
+   "name": "table_small",
+   "x": 5,
+   "y": 6
+  },
+  {
+   "name": "table_small",
+   "x": 12,
+   "y": 6
+  },
+  {
+   "name": "plant_pot",
+   "x": 1,
+   "y": 3
+  },
+  {
+   "name": "plant_pot",
+   "x": 18,
+   "y": 3
+  },
+  {
+   "name": "bookshelf",
+   "x": 8,
+   "y": 2
+  }
+ ],
+ "warps": [
+  {
+   "x": 9,
+   "y": 12,
+   "to": "town",
+   "tx": 48,
+   "ty": 13,
+   "dir": 0
+  }
+ ],
+ "spawns": {
+  "bed": [
+   5,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    7,
+    12,
+    "town_interiors",
+    88,
+    0
+   ],
+   [
+    7,
+    13,
+    "town_interiors",
+    120,
+    0
+   ]
+  ]
+ }
+}

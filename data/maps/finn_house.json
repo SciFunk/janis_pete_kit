@@ -1,0 +1,109 @@
+{
+ "id": "finn_house",
+ "name": "Finn's Cottage",
+ "w": 16,
+ "h": 13,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_10.mus",
+ "floor": 2,
+ "wallpaper": 2,
+ "terrain": [
+  "xxxxxxxxxxxxxxxx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xxxxxxxxxxxxxxxx"
+ ],
+ "props": [
+  {
+   "name": "bed_single",
+   "x": 2,
+   "y": 3,
+   "note": "A wooden sign hangs over the bed: SAVE POINT"
+  },
+  {
+   "name": "chest",
+   "x": 6,
+   "y": 4,
+   "note": "A chest labeled 'Wood'."
+  },
+  {
+   "name": "chest",
+   "x": 7,
+   "y": 4,
+   "note": "A chest labeled 'Stone'."
+  },
+  {
+   "name": "chest",
+   "x": 8,
+   "y": 4,
+   "note": "A chest labeled 'Crafting'."
+  },
+  {
+   "name": "chest",
+   "x": 9,
+   "y": 4,
+   "note": "A chest labeled 'Misc.'."
+  },
+  {
+   "name": "chest",
+   "x": 10,
+   "y": 4,
+   "note": "A chest labeled 'Rare'."
+  },
+  {
+   "name": "chest",
+   "x": 11,
+   "y": 4,
+   "note": "A chest labeled 'Definitely Important'."
+  },
+  {
+   "name": "plant_pot",
+   "x": 13,
+   "y": 3
+  }
+ ],
+ "warps": [
+  {
+   "x": 7,
+   "y": 11,
+   "to": "town",
+   "tx": 86,
+   "ty": 44,
+   "dir": 0
+  }
+ ],
+ "spawns": {
+  "bed": [
+   5,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    7,
+    11,
+    "town_interiors",
+    88,
+    0
+   ],
+   [
+    7,
+    12,
+    "town_interiors",
+    120,
+    0
+   ]
+  ]
+ }
+}

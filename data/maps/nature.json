@@ -1,0 +1,385 @@
+{
+ "id": "nature",
+ "name": "Nature Walk",
+ "w": 64,
+ "h": 48,
+ "tileset": "outdoors",
+ "music": "chill_09.mus",
+ "terrain": [
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "ggggggggggggggggggggggggggggggppppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggpppppgggggggggggggggggggggggggggggg",
+  "ggggggggggggggggggggggggggggpppppggggggggggggggggggggggggggggggg",
+  "gggggggggggggppppggggggggggpppppgggggggggggggggggggggggggggggggg",
+  "gggggggggggggppppppgggggggpppppggggggggggggggggggggggggggggggggg",
+  "gggggggggggggpppppppppgggpppppgggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggppppppppppppppggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggpppppppppppgggggggggggggggggggggggggggggggggggg",
+  "ggggggggggggggggggggpppppppggggggggggggggggggggggggggggggggggggg",
+  "ggggggggggggggggggggggppppgggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggpppgggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggpppgggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggpppgggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggpppgggggggggggggggggggpppgggggggggggggggg",
+  "gggggggggggggggggggggggpppggggggggggggggggggppppgggggggggggggggg",
+  "gggggggggggggggggggggggpppgggggggggggggggggpppppgggggggggggggggg",
+  "gggggggggggggggggggggggpppggggggggggggggggpppppggggggggggggggggg",
+  "gggggggggggggggggggggggpppgggggggggggggggpppppgggggggggggggggggg",
+  "gggggggggggwwwgggggggggpppggggggggggggggpppppggggggggggggggggggg",
+  "ggggggggggwwwwwggggggggpppppppppppppppppppppgggggggggggggggggggg",
+  "ggggggggggwwwwwwgggggggppppppppppppppppppppggggggggggggggggggggg",
+  "gggggggggwwwwwwwgggggggpppppppppppppppppppgggggggggggggggggggggg",
+  "gggggggggwwwwwwwggggggggppppppgggggggggggggggggggggggggggggggggg",
+  "gggggggggwwwwwwwgggggggggpppppgggggggggggggggggggggggggggggggggg",
+  "gggggggggwwwwwwwggggggggggpppppggggggggggggggggggggggggggggggggg",
+  "ggggggggggwwwwwggggggggggggpppppgggggggggggggggggggggggggggggggg",
+  "ggggggggggggggggggggggggggggpppppggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggpppppgggggggggggggggggggggggggggggg",
+  "ggggggggggggggggggggggggggggggppppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggpppgggggggggggggggggggggggggggggg"
+ ],
+ "props": [
+  {
+   "name": "witchy_wizard",
+   "x": 46,
+   "y": 8,
+   "id": "observatory",
+   "note": "The observatory. The dome is closed during the day.",
+   "door": {
+    "to": "observatory",
+    "tx": 7,
+    "ty": 10,
+    "dir": 2
+   }
+  },
+  {
+   "name": "bench",
+   "x": 10,
+   "y": 34,
+   "note": "A bench by the pond. Nothing to do here. That's the point."
+  },
+  {
+   "name": "bench",
+   "x": 40,
+   "y": 26,
+   "note": "A bench. The hedge gap across the path lines up with the observatory dome from this exact spot."
+  },
+  {
+   "name": "sign_post",
+   "x": 34,
+   "y": 44,
+   "note": "The nature walk. Please stay on the path."
+  },
+  {
+   "name": "sign_post",
+   "x": 34,
+   "y": 2,
+   "note": "North: the forest. Watch for the ghost. (It's fine. It's friendly.)"
+  },
+  {
+   "name": "oak_a",
+   "x": 38,
+   "y": 29
+  },
+  {
+   "name": "oak_b",
+   "x": 37,
+   "y": 0
+  },
+  {
+   "name": "oak_a",
+   "x": 16,
+   "y": 2
+  },
+  {
+   "name": "oak_a",
+   "x": 61,
+   "y": 25
+  },
+  {
+   "name": "oak_a",
+   "x": 61,
+   "y": 36
+  },
+  {
+   "name": "oak_b",
+   "x": 2,
+   "y": 19
+  },
+  {
+   "name": "sakura",
+   "x": 57,
+   "y": 10
+  },
+  {
+   "name": "oak_a",
+   "x": 3,
+   "y": 35
+  },
+  {
+   "name": "tree_big",
+   "x": 5,
+   "y": 39
+  },
+  {
+   "name": "oak_a",
+   "x": 51,
+   "y": 33
+  },
+  {
+   "name": "oak_a",
+   "x": 9,
+   "y": 8
+  },
+  {
+   "name": "oak_a",
+   "x": 22,
+   "y": 1
+  },
+  {
+   "name": "tree_big",
+   "x": 59,
+   "y": 31
+  },
+  {
+   "name": "oak_a",
+   "x": 2,
+   "y": 41
+  },
+  {
+   "name": "sakura",
+   "x": 41,
+   "y": 1
+  },
+  {
+   "name": "tree_big",
+   "x": 0,
+   "y": 25
+  },
+  {
+   "name": "tree_big",
+   "x": 18,
+   "y": 20
+  },
+  {
+   "name": "oak_b",
+   "x": 43,
+   "y": 38
+  },
+  {
+   "name": "oak_b",
+   "x": 56,
+   "y": 4
+  },
+  {
+   "name": "oak_a",
+   "x": 13,
+   "y": -1
+  },
+  {
+   "name": "oak_a",
+   "x": 8,
+   "y": 37
+  },
+  {
+   "name": "oak_a",
+   "x": 9,
+   "y": 11
+  },
+  {
+   "name": "tree_big",
+   "x": 24,
+   "y": -4
+  },
+  {
+   "name": "tree_big",
+   "x": 1,
+   "y": 2
+  },
+  {
+   "name": "tree_big",
+   "x": 6,
+   "y": 12
+  },
+  {
+   "name": "oak_b",
+   "x": 39,
+   "y": 34
+  },
+  {
+   "name": "sakura",
+   "x": 50,
+   "y": -4
+  },
+  {
+   "name": "oak_a",
+   "x": 54,
+   "y": 9
+  },
+  {
+   "name": "tree_big",
+   "x": 34,
+   "y": 15
+  },
+  {
+   "name": "tree_big",
+   "x": 58,
+   "y": 35
+  },
+  {
+   "name": "oak_b",
+   "x": 55,
+   "y": 20
+  },
+  {
+   "name": "oak_a",
+   "x": 6,
+   "y": 16
+  },
+  {
+   "name": "oak_b",
+   "x": 2,
+   "y": 8
+  },
+  {
+   "name": "oak_a",
+   "x": 16,
+   "y": 36
+  },
+  {
+   "name": "oak_b",
+   "x": 52,
+   "y": 26
+  },
+  {
+   "name": "oak_b",
+   "x": 25,
+   "y": 0
+  },
+  {
+   "name": "oak_b",
+   "x": 4,
+   "y": 1
+  },
+  {
+   "name": "oak_a",
+   "x": 41,
+   "y": 6
+  },
+  {
+   "name": "tree_big",
+   "x": 50,
+   "y": 37
+  },
+  {
+   "name": "oak_b",
+   "x": 48,
+   "y": 33
+  },
+  {
+   "name": "oak_b",
+   "x": 22,
+   "y": 35
+  },
+  {
+   "name": "sakura",
+   "x": 20,
+   "y": -4
+  },
+  {
+   "name": "tree_big",
+   "x": 1,
+   "y": 13
+  },
+  {
+   "name": "sakura",
+   "x": 53,
+   "y": 1
+  },
+  {
+   "name": "tree_big",
+   "x": 35,
+   "y": 5
+  },
+  {
+   "name": "weeds_c",
+   "x": 23,
+   "y": 11
+  },
+  {
+   "name": "weeds_a",
+   "x": 49,
+   "y": 40
+  },
+  {
+   "name": "weeds_a",
+   "x": 61,
+   "y": 24
+  },
+  {
+   "name": "weeds_a",
+   "x": 39,
+   "y": 13
+  },
+  {
+   "name": "weeds_c",
+   "x": 14,
+   "y": 45
+  },
+  {
+   "name": "weeds_a",
+   "x": 2,
+   "y": 37
+  },
+  {
+   "name": "weeds_a",
+   "x": 33,
+   "y": 25
+  },
+  {
+   "name": "weeds_c",
+   "x": 58,
+   "y": 31
+  }
+ ],
+ "warps": [
+  {
+   "x": 31,
+   "y": 47,
+   "w": 3,
+   "h": 1,
+   "to": "town",
+   "tx": 61,
+   "ty": 1,
+   "dir": 0
+  },
+  {
+   "x": 31,
+   "y": 0,
+   "w": 3,
+   "h": 1,
+   "to": "forest",
+   "tx": 32,
+   "ty": 38,
+   "dir": 2
+  }
+ ],
+ "spawns": {}
+}

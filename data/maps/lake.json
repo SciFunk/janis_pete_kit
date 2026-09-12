@@ -1,0 +1,343 @@
+{
+ "id": "lake",
+ "name": "Lake",
+ "w": 48,
+ "h": 40,
+ "tileset": "outdoors",
+ "music": "chill_05.mus",
+ "terrain": [
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "ddddddddddddgggggggggggggggggggggggggggggggggggg",
+  "ddddddddddddddgggggggggggggggggggggggggggggggggg",
+  "dddddddddddddddggggggggggggggggggggggggggggggggg",
+  "ggggggggggdddddddggggggggggggggggggggggggggggggg",
+  "ggggggggggggddddddddgggggggggggggggggggggggggggg",
+  "gggggggggggggddddddddddddggggggggggggggggggggggg",
+  "gggggggggggggggggggdddddddddgggggggggggggggggggg",
+  "gggggggggggggwwwwwggggggddddgggggggggggggggggggg",
+  "gggggggggwwwwwwwwwwwwwwgggdddggggggggggggggggggg",
+  "ggggggggwwwwwwwwwwwwwwwwwggddggggggggggggggggggg",
+  "ggggggwwwwwwwwwwwwwwwwwwwwgddggggggggggggggggggg",
+  "gggggwwwwwwwwwwwwwwwwwwwwwgdddgggggggggggggggggg",
+  "gggggwwwwwwwwwwwwwwwwwwwwwggddgggggggggggggggggg",
+  "gggggwwwwwwwwwwwwwwwwwwwwwwgddgggggggggggggggggg",
+  "gggggwwwwwwwwwwwwwwwwwwwwwwgdddggggggggggggggggg",
+  "gggggwwwwwwwwwwwwwwwwwwwwwwgdddggggddddddddddddd",
+  "ggggwwwwwwwwwwwwwwwwwwwwwwwggddgdddddddddddddddd",
+  "ggggwwwwwwwwwwwwwwwwwwwwwwwwgddddddddddddddddddd",
+  "ggggwwwwwwwwwwwwwwwwwwwwwwwwgddddddddggggggggggg",
+  "ggggwwwwwwwwwwwwwwwwwwwwwwwwgdddddgggggggggggggg",
+  "ggggwwwwwwwwwwwwwwwwwwwwwwwwgddddggggggggggggggg",
+  "ggggwwwwwwwwwwwwwwwwwwwwwwwggggggggggggggggggggg",
+  "ggggwwwwwwwwwwwwwwwwwwwwwwwggggggggggggggggggggg",
+  "gggggwwwwwwwwwwwwwwwwwwwwwwwwwwwgggggggggggggggg",
+  "ggggggwwwwwwwwwwwwwwwwwwwwwwwwwwwggggggggggggggg",
+  "gggggggggwwwwwwwwwwwwwwwwwwwwwwwwggggggggggggggg",
+  "ggggggggggwwwwwwwwwwwwwwwwwwwwwwwwgggggggggggggg",
+  "gggggggggggwwwwwwwwwwwwwwwwwwwwwwwgggggggggggggg",
+  "ggggggggggggwwwwwwwwwwwwwwwwwwwwwwgggggggggggggg",
+  "gggggggggggggggggggggggwwwwwwwwwwggggggggggggggg",
+  "ggggggggggggggggggggggggwwwwwwwwgggggggggggggggg",
+  "gggggggggggggggggggggggggwwwwwwggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg"
+ ],
+ "props": [
+  {
+   "name": "bench",
+   "x": 30,
+   "y": 17,
+   "note": "A bench facing the water. Pete says the frogs sing here at dusk."
+  },
+  {
+   "name": "sign_post",
+   "x": 44,
+   "y": 17,
+   "note": "East: town"
+  },
+  {
+   "name": "sign_post",
+   "x": 3,
+   "y": 2,
+   "note": "West: the mountain path, and the witch at the top of it."
+  },
+  {
+   "name": "oak_a",
+   "x": 36,
+   "y": 7
+  },
+  {
+   "name": "tree_big",
+   "x": 5,
+   "y": 28
+  },
+  {
+   "name": "oak_b",
+   "x": 25,
+   "y": 0
+  },
+  {
+   "name": "pine",
+   "x": 35,
+   "y": 30
+  },
+  {
+   "name": "pine",
+   "x": 40,
+   "y": 2
+  },
+  {
+   "name": "tree_big",
+   "x": 22,
+   "y": 0
+  },
+  {
+   "name": "tree_big",
+   "x": 40,
+   "y": 30
+  },
+  {
+   "name": "oak_b",
+   "x": 41,
+   "y": 7
+  },
+  {
+   "name": "pine",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "name": "pine",
+   "x": 45,
+   "y": 24
+  },
+  {
+   "name": "oak_b",
+   "x": 38,
+   "y": 25
+  },
+  {
+   "name": "oak_a",
+   "x": 43,
+   "y": -1
+  },
+  {
+   "name": "tree_big",
+   "x": 20,
+   "y": 32
+  },
+  {
+   "name": "pine",
+   "x": 42,
+   "y": 25
+  },
+  {
+   "name": "pine",
+   "x": 45,
+   "y": 29
+  },
+  {
+   "name": "tree_big",
+   "x": 9,
+   "y": 32
+  },
+  {
+   "name": "tree_big",
+   "x": 40,
+   "y": -4
+  },
+  {
+   "name": "oak_a",
+   "x": 1,
+   "y": 10
+  },
+  {
+   "name": "oak_b",
+   "x": 29,
+   "y": 3
+  },
+  {
+   "name": "oak_a",
+   "x": 41,
+   "y": 21
+  },
+  {
+   "name": "pine",
+   "x": 40,
+   "y": 10
+  },
+  {
+   "name": "pine",
+   "x": 36,
+   "y": 0
+  },
+  {
+   "name": "oak_b",
+   "x": 28,
+   "y": -4
+  },
+  {
+   "name": "oak_a",
+   "x": 32,
+   "y": 0
+  },
+  {
+   "name": "oak_a",
+   "x": 44,
+   "y": 9
+  },
+  {
+   "name": "oak_a",
+   "x": 31,
+   "y": 8
+  },
+  {
+   "name": "tree_big",
+   "x": 45,
+   "y": 20
+  },
+  {
+   "name": "oak_a",
+   "x": 22,
+   "y": -4
+  },
+  {
+   "name": "tree_big",
+   "x": 15,
+   "y": 32
+  },
+  {
+   "name": "tree_big",
+   "x": 1,
+   "y": 27
+  },
+  {
+   "name": "pine",
+   "x": 4,
+   "y": 33
+  },
+  {
+   "name": "tree_big",
+   "x": 19,
+   "y": -2
+  },
+  {
+   "name": "pine",
+   "x": 37,
+   "y": 10
+  },
+  {
+   "name": "tree_big",
+   "x": 35,
+   "y": 24
+  },
+  {
+   "name": "tree_big",
+   "x": 38,
+   "y": 21
+  },
+  {
+   "name": "oak_a",
+   "x": 1,
+   "y": 32
+  },
+  {
+   "name": "oak_b",
+   "x": 36,
+   "y": 33
+  },
+  {
+   "name": "pine",
+   "x": 13,
+   "y": -4
+  },
+  {
+   "name": "oak_b",
+   "x": 45,
+   "y": 4
+  },
+  {
+   "name": "pine",
+   "x": 32,
+   "y": -4
+  },
+  {
+   "name": "weeds_b",
+   "x": 30,
+   "y": 37
+  },
+  {
+   "name": "weeds_c",
+   "x": 3,
+   "y": 16
+  },
+  {
+   "name": "weeds_b",
+   "x": 32,
+   "y": 35
+  },
+  {
+   "name": "stone_a",
+   "x": 7,
+   "y": 9
+  },
+  {
+   "name": "weeds_a",
+   "x": 43,
+   "y": 31
+  },
+  {
+   "name": "weeds_a",
+   "x": 45,
+   "y": 11
+  },
+  {
+   "name": "weeds_a",
+   "x": 33,
+   "y": 10
+  },
+  {
+   "name": "weeds_c",
+   "x": 44,
+   "y": 35
+  },
+  {
+   "name": "stone_a",
+   "x": 33,
+   "y": 34
+  },
+  {
+   "name": "weeds_c",
+   "x": 44,
+   "y": 37
+  }
+ ],
+ "warps": [
+  {
+   "x": 47,
+   "y": 18,
+   "w": 1,
+   "h": 3,
+   "to": "town",
+   "tx": 1,
+   "ty": 33,
+   "dir": 1
+  },
+  {
+   "x": 0,
+   "y": 3,
+   "w": 1,
+   "h": 3,
+   "to": "mountains",
+   "tx": 30,
+   "ty": 44,
+   "dir": 3
+  }
+ ],
+ "spawns": {}
+}

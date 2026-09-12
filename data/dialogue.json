@@ -1,0 +1,293 @@
+{
+ "_generic": {
+  "friendly": [
+   "Oh! You must be the new farmer. Welcome to the valley.",
+   "It's always nice to see someone breathing new life into that old farm.",
+   "You picked a beautiful place to settle down.",
+   "I was wondering when we'd finally meet. Welcome!",
+   "The town isn't very big, so I'm sure we'll see each other again.",
+   "Moving is exhausting. I hope you've had a chance to catch your breath.",
+   "A new neighbor is always something to celebrate.",
+   "I hope the valley treats you kindly.",
+   "Welcome! Around here, everyone ends up knowing everyone.",
+   "The old farmhouse has good bones. I bet it'll feel cozy before long.",
+   "The valley always feels a little brighter when someone new arrives."
+  ],
+  "reserved": [
+   "You're the new farmer, I assume.",
+   "I heard someone bought the old farm.",
+   "Best of luck getting that place back into shape.",
+   "You'll have your hands full.",
+   "The valley grows on people... eventually.",
+   "I don't usually introduce myself, but welcome.",
+   "It'll be interesting to see what becomes of that farm.",
+   "The previous owner left quite a mess.",
+   "You're a long way from wherever you came from.",
+   "Hope you enjoy quiet days."
+  ],
+  "gift_love": "Oh! %item? This is wonderful. Thank you!",
+  "gift_like": "%item! That's really thoughtful of you.",
+  "gift_neutral": "Oh, %item. Thanks.",
+  "gift_dislike": "Hm. %item. I... appreciate the thought.",
+  "gift_hate": "Why would you give me this?"
+ },
+ "janis": {
+  "intro": [
+   "You're the new farmer? Awesome! You seem like someone who appreciates handmade things."
+  ],
+  "moving_in": [
+   "I almost made you a welcome quilt... then I realized I don't know your favorite colors.",
+   "Moving means unpacking boxes. My least favorite kind of crafting."
+  ],
+  "spring": [
+   "Have you walked around much? I love finding stumps covered in mushrooms!"
+  ],
+  "any": [
+   "The best gifts are the ones that take time to make.",
+   "Some colors just belong together. You don't realize it until you put them side by side.",
+   "Finishing a project feels nice... but I also love getting started on the next one."
+  ],
+  "gift_love": "Oh, %item! I already know exactly what I'm going to make with this.",
+  "gift_like": "%item? Thank you! Handmade or homegrown, it's the thought that counts.",
+  "fall_4": [
+   "It's my birthday, you know."
+  ]
+ },
+ "pete": {
+  "intro": [
+   "Have you started growing anything yet? Just throw some seeds in the ground!"
+  ],
+  "moving_in": [
+   "Welcome! Watch where you step around the ponds. The frogs were here first.",
+   "If you happen to see any unusual reptiles, I'd love to hear about it.",
+   "The valley has an incredible variety of amphibians. It's one of the reasons I stayed.",
+   "The farm borders some wonderful habitat. Lucky you.",
+   "Don't worry if a snake wanders through your fields. It's probably just passing by.",
+   "You're bound to discover interesting wildlife while clearing your land.",
+   "Welcome. I hope you don't mind sharing the valley with its smaller residents."
+  ],
+  "spring": [
+   "Some people would start growing their peppers from seed now, but I brought my peppers inside for winter so they're ready to go.",
+   "Have you heard any wood frogs yet? They usually start chirping right around now."
+  ],
+  "any": [
+   "Reptiles have terrible public relations.",
+   "Lizards can sit perfectly still for so long. I wish I had that kind of patience.",
+   "I spotted a little skink sunning herself earlier on the Warm Rock. I'm glad people share with the smaller residents.",
+   "People think snakes are scary. Most of them just want to be left alone. Sometimes I can't help but pick 'em up for a little snuggle though."
+  ],
+  "gift_love": "%item! Oh, this is going straight into tonight's dinner. Thank you.",
+  "gift_dislike": "Huh. %item. I'll... find a use for it.",
+  "rain": [
+   "Frogs love this weather."
+  ]
+ },
+ "missy": {
+  "intro": [
+   "Welcome newcomer! If you hear someone talking to themselves around town... I'm probably just working out dialogue."
+  ],
+  "moving_in": [
+   "I was outlining a chapter when I heard someone moving in. Hello!"
+  ],
+  "spring": [
+   "Spring. New chapters, new drafts. Same desk."
+  ],
+  "any": [
+   "Every draft teaches you something. Usually humility.",
+   "Some days the words flow. Other days I reorganize my desk and pretend that counts as progress.",
+   "I'm heading to a convention next month. It's nice meeting people who get excited about fictional worlds.",
+   "Someone once brought me fan art. I don't think I'll ever forget that.",
+   "Nothing motivates you to finish a book quite like meeting excited fans at a con.",
+   "Panels are just controlled chaos with microphones."
+  ]
+ },
+ "lucas": {
+  "intro": [
+   "Nice to meet you! I'm usually at home so I'm pretty easy to find for a chat."
+  ],
+  "spring": [
+   "It looks nice outside. Unfortunately, I'm already committed to this chair."
+  ],
+  "any": [
+   "My chair has molded itself perfectly to me. I think we've become one.",
+   "I was going to clean today... then I remembered I had a perfectly good game waiting.",
+   "I don't mind staying home. There's always something to do.",
+   "Sleep schedules are more of a suggestion than a rule.",
+   "I should probably enjoy the sunshine while it's here. :/",
+   "It's too nice to stay inside... which is inconvenient.",
+   "Maybe I'll sit on the porch today. That counts as going out."
+  ],
+  "rain": [
+   "I almost went outside today... then I heard the rain.",
+   "Perfect. No expectations to leave the house."
+  ],
+  "friendly": [
+   "It's nice having someone who doesn't expect me to be out doing something all the time.",
+   "I don't usually invite people over, but I like it when you stop by."
+  ]
+ },
+ "fig": {
+  "intro": [
+   "Everything in here's washed and everything in here's fair and nothing in here gets wasted. That's the shop. That's the whole shop. Welcome to it."
+  ],
+  "any": [
+   "Seeds are by the season. Don't ask me for summer seeds in spring, I won't have them and I won't pretend to.",
+   "Bring me what you grow. I'll pay what it's worth. Not a coin more, not a coin less.",
+   "Washed, weighed, fair. Say it with me."
+  ],
+  "rain": [
+   "Rain's good for the crops and bad for the floor. Wipe your feet."
+  ]
+ },
+ "tally": {
+  "intro": [
+   "A new face. I'll remember it the rest of my life... as well as how you treat my family."
+  ],
+  "moving_in": [
+   "Don't look so surprised. I'm the merchant. The humans got used to it years ago.",
+   "A fresh face. Fresh opportunities. Welcome.",
+   "You have interesting eyes. They suggest you'll find interesting things.",
+   "Every traveler leaves something behind. Every newcomer brings something unexpected.",
+   "If you find anything shiny, I'll know before you do."
+  ],
+  "any": [
+   "Never underestimate a bird with a good memory.",
+   "See anything you like? If not... perhaps you brought something I like.",
+   "You'd be amazed what people leave behind when they're in a hurry.",
+   "That ring catches the light nicely...",
+   "Did you mean to leave that unattended?"
+  ],
+  "rain": [
+   "Wet feathers are bad for business.",
+   "Rain keeps customers indoors. Fortunately, I can wait."
+  ],
+  "friendly": [
+   "Most people only see 'a raven.' You actually stop to talk.",
+   "You're one of my favorite regulars. Don't make me regret saying that.",
+   "If I find something with your name on it... I'll set it aside."
+  ]
+ },
+ "sabine": {
+  "intro": [
+   "Moving is exhausting - here, I saved you a loaf of bread. On a normal day everything sells out quick so it's best to come early."
+  ],
+  "any": [
+   "Come early. Everything's gone by ten and I don't bake twice.",
+   "Bread wants patience and a hot oven. People want it now. We compromise.",
+   "You smell like the farm. That's a compliment."
+  ],
+  "gift_love": "%item! Oh, I know exactly what this becomes. Come by tomorrow."
+ },
+ "vesper": {
+  "intro": [
+   "You're a farmer? My job is to make sure the town stays lit at night and any unwanted animals have a home. Good, honest, hands-on work - just like farming."
+  ],
+  "any": [
+   "I'll be lighting the lamps at dusk. Watch your step until then.",
+   "The pen's got a goat with opinions this week.",
+   "Everyone needs somewhere to go at night. People, animals, same thing."
+  ]
+ },
+ "rue": {
+  "intro": [
+   "Symptoms, duration, anything you've already taken. In that order.#$b#...Oh. You're not ill. Then what are you doing way out in the forest?"
+  ],
+  "any": [
+   "Don't touch that. Actually, touch it and tell me what happens.",
+   "Most 'magic' is just a plant nobody bothered to name.",
+   "If it's bleeding, apply pressure. If it isn't, why are you here?"
+  ]
+ },
+ "pip": {
+  "intro": [
+   "You didn't jump! Most people jump. Jumping's fair, I get it, but it's nice when someone new doesn't."
+  ],
+  "any": [
+   "Do you ever feel like you're walking through someone?",
+   "The graveyard's quiet. I'd know.",
+   "I don't remember my name. The town gave me this one. I like it fine."
+  ]
+ },
+ "derrick": {
+  "intro": [
+   "Hello I am Derrick. That is short for my full designation DERRICK-32. I prefer just Derrick."
+  ],
+  "any": [
+   "I apologize for the noise earlier. Hydraulics.",
+   "Derrick is a crane. Derrick is also me. Both lift things.",
+   "Today's task list: lift, carry, wait, repeat. It is a good list."
+  ]
+ },
+ "quire": {
+  "intro": [
+   "I love how quiet this town is. Please don't change that."
+  ],
+  "any": [
+   "Shh. Not for you. For the books. They startle.",
+   "There is a chair by the window that no one uses. It's yours if you're quiet.",
+   "Overdue books are a personal failing."
+  ]
+ },
+ "finn": {
+  "intro": [
+   "Ah! The new player character has arrived.#$b#Don't worry, I know how these stories go.#$b#You're probably looking for your first quest."
+  ],
+  "any": [
+   "The music feels unusually peaceful today.",
+   "I'm saving this. You never know when a fetch quest will appear.",
+   "Someone around here definitely has dialogue that changes after sunset.",
+   "You should talk to everyone twice.",
+   "Always check behind waterfalls.",
+   "I'd wave, but I'm waiting for my idle animation.",
+   "You can't fool me. That suspicious-looking wall is hiding something.",
+   "The developers love hiding treasure in barrels.",
+   "Every village has one oddly important chicken.",
+   "I think I just completed a side quest."
+  ],
+  "rain": [
+   "Rain usually means better fishing loot.",
+   "Weather systems always increase rare spawn rates."
+  ],
+  "gift_neutral": "Quest item? No... crafting ingredient.",
+  "gift_dislike": "...Vendor trash.",
+  "gift_love": "...Legendary? I'll know eventually.",
+  "moving_in": [
+   "I've been waiting for the opening cutscene.",
+   "You're probably looking for your first quest."
+  ]
+ },
+ "amora": {
+  "intro": [
+   "You're the new variable. Amora. I do rocks, mostly. Don't say 'geology' like it's a hobby."
+  ],
+  "any": [
+   "The effect is trending toward significance, but n is small.",
+   "This one's a chert. That one's also a chert. They're different cherts.",
+   "I don't 'like' things. I record them. Recording is going well."
+  ],
+  "gift_love": "...I don't have this one. Where did you find it? Exactly where.",
+  "gift_dislike": "Noted. Filed under 'given'."
+ },
+ "beaux": {
+  "intro": [
+   "Oh! Hello! Sorry, the cat wanted to see you first. She's decided you're fine."
+  ],
+  "any": [
+   "The cat picked this out for you. Don't ask what it is.",
+   "Every heart event I've ever had, there was a cat in it. Uninvited.",
+   "She's asleep on the sweater again. I'm not moving her."
+  ],
+  "gift_love": "The cat says thank you. I say thank you too, but she said it first."
+ },
+ "cara": {
+  "intro": [
+   "Cara. I've got half a cabinet, half a sweater, and a board game we'll play once we get four people. You count."
+  ],
+  "any": [
+   "Finishing is overrated. Starting is where the good feeling lives.",
+   "The second sleeve is coming. It has been coming for two years.",
+   "Wood or yarn? Don't answer, I've already started both."
+  ],
+  "gift_love": "Oh, I can do something with this. Something. I'll start tonight."
+ }
+}

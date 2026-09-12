@@ -1,0 +1,812 @@
+{
+ "id": "forest",
+ "name": "Forest",
+ "w": 48,
+ "h": 40,
+ "tileset": "outdoors",
+ "music": "chill_11.mus",
+ "terrain": [
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "ggggggggggggggggggggggggggggwwwwwggggdddgggggggg",
+  "gggggggggggggggggggggggggggwwwwwwwgggdddgggggggg",
+  "gggggggggggggggggggggggggggwwwwwwwgggdddgggggggg",
+  "ggggggggggggggggggggggggggwwwwwwwwggddddgggggggg",
+  "ggggggggggggggggggggggggggwwwwwwwwggddddgggggggg",
+  "gggggggggggggggggggggggggggwwwwwwwggdddggggggggg",
+  "ggggggggggggggggggggggggggggwwwwwggddddggggggggg",
+  "gggggggggggggggggggggggggggggggggggddddggggggggg",
+  "gggggggggggggggggggggggggggggggggggdddgggggggggg",
+  "ggggggggggggggggggggggggggggggggggddddgggggggggg",
+  "ggggggggggggggggggggggggggggggggddddddgggggggggg",
+  "gggggggggggggggggggggggggggggggddddddggggggggggg",
+  "gggggggggggggggggggdddggggggggddddddgggggggggggg",
+  "gggggggggggggggggdddddddgggggdddddgggggggggggggg",
+  "ggggggggggggggggdddddddddggddddddggggggggggggggg",
+  "ggggggggggggggddddddddddddddddddgggggggggggggggg",
+  "gggggggggggggddddddgggdddddddddggggggggggggggggg",
+  "gggggggggggggdddddgggggdddddddgggggggggggggggggg",
+  "gggggggggggggdddgggggggggdddddgggggggggggggggggg",
+  "ggggggggggggggggggggggggggddddgggggggggggggggggg",
+  "gggggggggggggggggggggggggggddddggggggggggggggggg",
+  "gggggggggggggggggggggggggggdddddgggggggggggggggg",
+  "ggggggggggggggggggggggggggggddddgggggggggggggggg",
+  "gggggggggggggggggggggggggggggddddggggggggggggggg",
+  "gggggggggggggggggggggggggggggdddddgggggggggggggg",
+  "ggggggggggggggggggggggggggggggddddgggggggggggggg",
+  "gggggggggggggggggggggggggggggggdddgggggggggggggg",
+  "gggggggggggggggggggggggggggggggdddgggggggggggggg",
+  "gggggggggggggggggggggggggggggggdddgggggggggggggg",
+  "gggggggggggggggggggggggggggggggdddgggggggggggggg",
+  "gggggggggggggggggggggggggggggggdddgggggggggggggg",
+  "gggggggggggggggggggggggggggggggdddgggggggggggggg",
+  "gggggggggggggggggggggggggggggggdddgggggggggggggg",
+  "gggggggggggggggggggggggggggggggdddgggggggggggggg",
+  "gggggggggggggggggggggggggggggggdddgggggggggggggg"
+ ],
+ "props": [
+  {
+   "name": "gravestone",
+   "x": 6,
+   "y": 22
+  },
+  {
+   "name": "gravestone",
+   "x": 6,
+   "y": 25
+  },
+  {
+   "name": "gravestone",
+   "x": 6,
+   "y": 28
+  },
+  {
+   "name": "gravestone",
+   "x": 6,
+   "y": 31
+  },
+  {
+   "name": "gravestone",
+   "x": 8,
+   "y": 22
+  },
+  {
+   "name": "gravestone",
+   "x": 8,
+   "y": 25
+  },
+  {
+   "name": "gravestone",
+   "x": 8,
+   "y": 28
+  },
+  {
+   "name": "gravestone",
+   "x": 8,
+   "y": 31
+  },
+  {
+   "name": "gravestone",
+   "x": 10,
+   "y": 22
+  },
+  {
+   "name": "gravestone",
+   "x": 10,
+   "y": 25
+  },
+  {
+   "name": "gravestone",
+   "x": 10,
+   "y": 28
+  },
+  {
+   "name": "gravestone",
+   "x": 10,
+   "y": 31
+  },
+  {
+   "name": "gravestone",
+   "x": 12,
+   "y": 22
+  },
+  {
+   "name": "gravestone",
+   "x": 12,
+   "y": 25
+  },
+  {
+   "name": "gravestone",
+   "x": 12,
+   "y": 28
+  },
+  {
+   "name": "gravestone",
+   "x": 12,
+   "y": 31
+  },
+  {
+   "name": "gravestone",
+   "x": 14,
+   "y": 22
+  },
+  {
+   "name": "gravestone",
+   "x": 14,
+   "y": 25
+  },
+  {
+   "name": "gravestone",
+   "x": 14,
+   "y": 28
+  },
+  {
+   "name": "gravestone",
+   "x": 14,
+   "y": 31
+  },
+  {
+   "name": "gravestone",
+   "x": 16,
+   "y": 22
+  },
+  {
+   "name": "gravestone",
+   "x": 16,
+   "y": 25
+  },
+  {
+   "name": "gravestone",
+   "x": 16,
+   "y": 28
+  },
+  {
+   "name": "gravestone",
+   "x": 16,
+   "y": 31
+  },
+  {
+   "name": "fence_post",
+   "x": 4,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 5,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 6,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 7,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 8,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 9,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 10,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 11,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 12,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 13,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 14,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 15,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 16,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 17,
+   "y": 20
+  },
+  {
+   "name": "fence_h",
+   "x": 18,
+   "y": 20
+  },
+  {
+   "name": "fence_post",
+   "x": 19,
+   "y": 20
+  },
+  {
+   "name": "fence_v",
+   "x": 19,
+   "y": 21
+  },
+  {
+   "name": "fence_v",
+   "x": 19,
+   "y": 22
+  },
+  {
+   "name": "fence_v",
+   "x": 19,
+   "y": 23
+  },
+  {
+   "name": "fence_v",
+   "x": 19,
+   "y": 24
+  },
+  {
+   "name": "fence_post",
+   "x": 19,
+   "y": 25
+  },
+  {
+   "name": "fence_post",
+   "x": 19,
+   "y": 28
+  },
+  {
+   "name": "fence_v",
+   "x": 19,
+   "y": 29
+  },
+  {
+   "name": "fence_v",
+   "x": 19,
+   "y": 30
+  },
+  {
+   "name": "fence_v",
+   "x": 19,
+   "y": 31
+  },
+  {
+   "name": "fence_v",
+   "x": 19,
+   "y": 32
+  },
+  {
+   "name": "fence_post",
+   "x": 19,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 18,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 17,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 16,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 15,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 14,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 13,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 12,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 11,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 10,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 9,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 8,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 7,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 6,
+   "y": 33
+  },
+  {
+   "name": "fence_h",
+   "x": 5,
+   "y": 33
+  },
+  {
+   "name": "fence_post",
+   "x": 4,
+   "y": 33
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 32
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 31
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 30
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 29
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 28
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 27
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 26
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 25
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 24
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 23
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 22
+  },
+  {
+   "name": "fence_v",
+   "x": 4,
+   "y": 21
+  },
+  {
+   "name": "sign_post",
+   "x": 20,
+   "y": 24,
+   "note": "The old graveyard. Pip lives here, in a sense."
+  },
+  {
+   "name": "bench",
+   "x": 36,
+   "y": 4,
+   "note": "A bench under one tree that keeps its leaves all winter."
+  },
+  {
+   "name": "pine",
+   "x": 44,
+   "y": 4
+  },
+  {
+   "name": "pine",
+   "x": 21,
+   "y": 1
+  },
+  {
+   "name": "tree_big",
+   "x": 0,
+   "y": 27
+  },
+  {
+   "name": "oak_a",
+   "x": 23,
+   "y": 33
+  },
+  {
+   "name": "oak_a",
+   "x": 4,
+   "y": 1
+  },
+  {
+   "name": "pine",
+   "x": 45,
+   "y": 17
+  },
+  {
+   "name": "oak_a",
+   "x": 0,
+   "y": 10
+  },
+  {
+   "name": "pine",
+   "x": 15,
+   "y": -4
+  },
+  {
+   "name": "tree_big",
+   "x": 18,
+   "y": 5
+  },
+  {
+   "name": "pine",
+   "x": 41,
+   "y": 24
+  },
+  {
+   "name": "pine",
+   "x": 11,
+   "y": 9
+  },
+  {
+   "name": "pine",
+   "x": 13,
+   "y": 33
+  },
+  {
+   "name": "oak_b",
+   "x": 12,
+   "y": 4
+  },
+  {
+   "name": "pine",
+   "x": 1,
+   "y": 0
+  },
+  {
+   "name": "pine",
+   "x": 9,
+   "y": 3
+  },
+  {
+   "name": "pine",
+   "x": 23,
+   "y": 29
+  },
+  {
+   "name": "tree_big",
+   "x": 42,
+   "y": 16
+  },
+  {
+   "name": "pine",
+   "x": 35,
+   "y": 18
+  },
+  {
+   "name": "oak_a",
+   "x": 40,
+   "y": 32
+  },
+  {
+   "name": "oak_b",
+   "x": 24,
+   "y": 25
+  },
+  {
+   "name": "oak_b",
+   "x": 0,
+   "y": 13
+  },
+  {
+   "name": "oak_a",
+   "x": 8,
+   "y": -1
+  },
+  {
+   "name": "oak_a",
+   "x": 40,
+   "y": 19
+  },
+  {
+   "name": "oak_b",
+   "x": 42,
+   "y": 8
+  },
+  {
+   "name": "oak_b",
+   "x": 44,
+   "y": -2
+  },
+  {
+   "name": "tree_big",
+   "x": 43,
+   "y": 29
+  },
+  {
+   "name": "oak_a",
+   "x": 24,
+   "y": 10
+  },
+  {
+   "name": "pine",
+   "x": 39,
+   "y": -4
+  },
+  {
+   "name": "pine",
+   "x": 40,
+   "y": 28
+  },
+  {
+   "name": "pine",
+   "x": 16,
+   "y": 32
+  },
+  {
+   "name": "tree_big",
+   "x": 31,
+   "y": -4
+  },
+  {
+   "name": "tree_big",
+   "x": 23,
+   "y": -3
+  },
+  {
+   "name": "oak_a",
+   "x": 15,
+   "y": 4
+  },
+  {
+   "name": "oak_a",
+   "x": 8,
+   "y": 10
+  },
+  {
+   "name": "oak_a",
+   "x": 45,
+   "y": 33
+  },
+  {
+   "name": "pine",
+   "x": 26,
+   "y": -3
+  },
+  {
+   "name": "tree_big",
+   "x": 5,
+   "y": 8
+  },
+  {
+   "name": "oak_a",
+   "x": 5,
+   "y": -3
+  },
+  {
+   "name": "oak_b",
+   "x": 35,
+   "y": 26
+  },
+  {
+   "name": "oak_a",
+   "x": 45,
+   "y": 7
+  },
+  {
+   "name": "pine",
+   "x": 20,
+   "y": 9
+  },
+  {
+   "name": "tree_big",
+   "x": 0,
+   "y": 3
+  },
+  {
+   "name": "pine",
+   "x": 5,
+   "y": 11
+  },
+  {
+   "name": "oak_b",
+   "x": 0,
+   "y": -4
+  },
+  {
+   "name": "pine",
+   "x": 2,
+   "y": 33
+  },
+  {
+   "name": "pine",
+   "x": 12,
+   "y": -1
+  },
+  {
+   "name": "oak_b",
+   "x": 14,
+   "y": 8
+  },
+  {
+   "name": "tree_big",
+   "x": 22,
+   "y": 5
+  },
+  {
+   "name": "pine",
+   "x": 35,
+   "y": 32
+  },
+  {
+   "name": "oak_a",
+   "x": 18,
+   "y": -4
+  },
+  {
+   "name": "pine",
+   "x": 27,
+   "y": 29
+  },
+  {
+   "name": "pine",
+   "x": 0,
+   "y": 19
+  },
+  {
+   "name": "pine",
+   "x": 9,
+   "y": 32
+  },
+  {
+   "name": "oak_a",
+   "x": 0,
+   "y": 23
+  },
+  {
+   "name": "pine",
+   "x": 16,
+   "y": -1
+  },
+  {
+   "name": "oak_a",
+   "x": 41,
+   "y": 11
+  },
+  {
+   "name": "tree_big",
+   "x": 44,
+   "y": 22
+  },
+  {
+   "name": "pine",
+   "x": 41,
+   "y": 0
+  },
+  {
+   "name": "oak_a",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "name": "pine",
+   "x": 35,
+   "y": 22
+  },
+  {
+   "name": "pine",
+   "x": 41,
+   "y": 4
+  },
+  {
+   "name": "pine",
+   "x": 6,
+   "y": 32
+  },
+  {
+   "name": "tree_big",
+   "x": 45,
+   "y": 11
+  },
+  {
+   "name": "pine",
+   "x": 35,
+   "y": -4
+  },
+  {
+   "name": "pine",
+   "x": 38,
+   "y": 22
+  },
+  {
+   "name": "oak_b",
+   "x": 38,
+   "y": 14
+  },
+  {
+   "name": "oak_a",
+   "x": 27,
+   "y": 32
+  },
+  {
+   "name": "oak_b",
+   "x": 21,
+   "y": 25
+  },
+  {
+   "name": "tree_big",
+   "x": 12,
+   "y": 12
+  }
+ ],
+ "warps": [
+  {
+   "x": 31,
+   "y": 39,
+   "w": 3,
+   "h": 1,
+   "to": "nature",
+   "tx": 32,
+   "ty": 1,
+   "dir": 0
+  }
+ ],
+ "spawns": {}
+}

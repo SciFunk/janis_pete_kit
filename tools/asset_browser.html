@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Asset browser</title>
+<style>
+  body { margin: 0; font: 13px 'Segoe UI', sans-serif; background: #2b2118; color: #f0e6d2; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+  header { padding: 8px 12px; background: #1f170f; border-bottom: 2px solid #5a3f2a; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  h1 { font-size: 15px; margin: 0; color: #ffd86b; }
+  button, select, input { background: #3a2a1c; color: #f0e6d2; border: 1px solid #8a5a2b; padding: 3px 8px; font: inherit; }
+  button.on { background: #8a5a2b; }
+  main { flex: 1; overflow: auto; padding: 10px; }
+  .grid { display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start; }
+  .card { background: #1f170f; border: 1px solid #5a3f2a; padding: 4px; width: 118px; text-align: center; cursor: pointer; }
+  .card.sel { border-color: #ffd86b; }
+  .card canvas { image-rendering: pixelated; background: #3a2a1c; display: block; margin: 0 auto 3px; }
+  .card div { font-size: 10px; color: #c9b48a; word-break: break-all; }
+  #detail { position: fixed; right: 0; top: 46px; bottom: 0; width: 280px; background: #1f170f; border-left: 2px solid #5a3f2a; padding: 10px; overflow: auto; box-sizing: border-box; }
+  #detail canvas { image-rendering: pixelated; background: #3a2a1c; max-width: 100%; }
+  #sheetwrap { position: relative; display: inline-block; }
+  #sheet { image-rendering: pixelated; background: #3a2a1c; }
+  #hud { position: sticky; top: 0; background: #2b2118; padding: 4px 0; color: #ffd86b; }
+  code { background: #120d08; padding: 1px 4px; }
+  small { color: #a09080; }
+  table { border-collapse: collapse; } td, th { border-bottom: 1px solid #5a3f2a; padding: 2px 8px; text-align: left; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Asset browser</h1>
+  <button data-tab="props" class="on">Props</button><button data-tab="sheets">Sheets</button><button data-tab="items">Items</button><button data-tab="crops">Crops</button><button data-tab="icons">Icons</button><button data-tab="characters">Characters</button>
+  <input id="q" placeholder="search…" style="width:220px">
+  <select id="kind"><option value="all">all kinds</option><option value="furniture">furniture</option><option value="building">buildings</option><option value="prop">props</option><option value="tree">trees</option><option value="animal">animals</option><option value="debris">debris</option></select>
+  <select id="season"><option value="spring">spring</option><option value="summer">summer</option><option value="fall">fall</option><option value="winter">winter</option></select>
+  <span id="count" style="color:#a09080"></span>
+  <small>Click a card for details. In the game press <b>F6</b> to place any prop by its id.</small>
+</header>
+<main id="main"></main>
+<div id="detail"><small>nothing selected</small></div>
+<script>
+const $ = (s) => document.querySelector(s);
+const D = {}; const IMG = {}; let tab = "props";
+function load(src) { return new Promise((res, rej) => { const im = new Image(); im.onload = () => res(im); im.onerror = () => rej(src); im.src = src; }); }
+function sheetPath(key) {   // same lookup order as the engine's World.loadSheet: file name under the asset folders
+  const pref = /^(imp_|gen_house|witchy_|cabins_|logcabins_|plankcabins_|stonecabins_|neighborcabins_|farmhouses_|fountains$|well$|mill$|shipping_bin$|barn$|coop$|shed$|greenhouse$|witch_)/.test(key) ? ["buildings", "tilesets"] : ["tilesets", "buildings", "characters", "items", "animals", "ui"];
+  for (const f of pref) { const e = D.index.find((x) => x.folder === f && x.name === key); if (e) return e.path; }
+  const e = D.index.find((x) => x.name === key); return e ? e.path : null;
+}
+async function img(key) {
+  if (IMG[key] !== undefined) return IMG[key];
+  const p = sheetPath(key); if (!p) { IMG[key] = null; return null; }
+  try { IMG[key] = await load("../" + p + "?v=1"); } catch (e) { IMG[key] = null; }
+  return IMG[key];
+}
+async function boot() {
+  const v = "?v=" + Date.now();
+  [D.props, D.index, D.items, D.crops] = await Promise.all(["props", "asset_index", "items", "crops"].map((n) => fetch("../data/" + n + ".json" + v).then((r) => r.json())));
+  try { D.catalog = await (await fetch("../data/buildings_catalog.json" + v)).json(); } catch (e) { D.catalog = []; }
+  try { D.icons = await (await fetch("../data/icons_catalog.json" + v)).json(); } catch (e) { D.icons = []; }
+  try { D.outfits = await (await fetch("../data/outfits_catalog.json" + v)).json(); } catch (e) { D.outfits = {}; }
+  document.querySelectorAll("header button").forEach((b) => b.onclick = () => { tab = b.dataset.tab; document.querySelectorAll("header button").forEach((x) => x.classList.toggle("on", x === b)); render(); });
+  $("#q").oninput = render; $("#kind").onchange = render; $("#season").onchange = render;
+  render();
+}
+function card(title, sub, drawFn, onclick) {
+  const c = document.createElement("div"); c.className = "card";
+  const cv = document.createElement("canvas"); cv.width = 96; cv.height = 72; c.appendChild(cv);
+  const t = document.createElement("div"); t.textContent = title; c.appendChild(t);
+  if (sub) { const s = document.createElement("div"); s.textContent = sub; c.appendChild(s); }
+  drawFn(cv); c.onclick = () => { document.querySelectorAll(".card").forEach((x) => x.classList.remove("sel")); c.classList.add("sel"); onclick(); };
+  return c;
+}
+function sheetFor(d) {   // the sheet a prop uses in the selected season
+  const s = $("#season").value;
+  if (d.seasonal) return "outdoors_" + s;
+  if (d.seasons && d.seasons[s]) return d.seasons[s];
+  return d.sheet;
+}
+function thumb(cv, im, sx, sy, sw, sh) {
+  const g = cv.getContext("2d"); g.imageSmoothingEnabled = false; g.clearRect(0, 0, cv.width, cv.height);
+  if (!im) { g.fillStyle = "#f66"; g.fillText("missing sheet", 4, 40); return; }
+  const z = Math.min((cv.width - 4) / sw, (cv.height - 4) / sh, 3);
+  g.drawImage(im, sx, sy, sw, sh, (cv.width - sw * z) / 2, (cv.height - sh * z) / 2, sw * z, sh * z);
+}
+function detailProp(id, d, im) {
+  const el = $("#detail"); el.innerHTML = "";
+  const cv = document.createElement("canvas"); const z = Math.max(1, Math.min(4, Math.floor(260 / d.sw)));
+  cv.width = d.sw * z; cv.height = d.sh * z; const g = cv.getContext("2d"); g.imageSmoothingEnabled = false;
+  if (im) g.drawImage(im, d.sx, d.sy, d.sw, d.sh, 0, 0, d.sw * z, d.sh * z);
+  // tile grid + solid rows + door
+  g.strokeStyle = "rgba(255,255,255,0.25)"; for (let x = 0; x <= d.sw; x += 16) { g.beginPath(); g.moveTo(x * z, 0); g.lineTo(x * z, d.sh * z); g.stroke(); } for (let y = 0; y <= d.sh; y += 16) { g.beginPath(); g.moveTo(0, y * z); g.lineTo(d.sw * z, y * z); g.stroke(); }
+  const tw = d.sw / 16, th = d.sh / 16; let sr = [0, 0, tw, th];
+  if (d.solid === "none" || d.solid === false) sr = null; else if (typeof d.solid === "string" && d.solid.startsWith("bottom:")) { const n = +d.solid.slice(7); sr = [0, th - n, tw, n]; } else if (Array.isArray(d.solid)) sr = d.solid; else if (d.solid === "trunk") sr = [Math.floor(tw / 2), th - 1, 1, 1];
+  if (sr) { g.fillStyle = "rgba(255,80,80,0.3)"; g.fillRect(sr[0] * 16 * z, sr[1] * 16 * z, sr[2] * 16 * z, sr[3] * 16 * z); }
+  if (d.door) { g.fillStyle = "rgba(80,255,120,0.5)"; g.fillRect(d.door[0] * 16 * z, d.door[1] * 16 * z, 16 * z, 16 * z); }
+  el.appendChild(cv);
+  const info = document.createElement("div");
+  info.innerHTML = `<p><b>${id}</b></p><p>kind: ${d.kind || "prop"}<br>size: ${tw}x${th} tiles (${d.sw}x${d.sh} px)<br>sheet: <code>${d.sheet}</code> at ${d.sx},${d.sy}<br>solid: ${d.solid === undefined ? "all" : d.solid} (red)<br>${d.door ? "door: " + d.door + " (green)<br>" : ""}${d.hp ? "hp: " + d.hp + "<br>" : ""}</p><p><small>In game: F6, search this id, click a tile.</small></p>`;
+  el.appendChild(info);
+}
+async function render() {
+  const q = $("#q").value.toLowerCase(), kind = $("#kind").value, main = $("#main"); main.innerHTML = "";
+  if (tab === "props") {
+    const ids = Object.keys(D.props).filter((id) => (kind === "all" || (D.props[id].kind || "prop") === kind) && (!q || id.includes(q)));
+    $("#count").textContent = ids.length + " props"; const grid = document.createElement("div"); grid.className = "grid"; main.appendChild(grid);
+    const shown = ids.slice(0, 600); if (ids.length > 600) $("#count").textContent += " (showing 600; narrow the search)";
+    const sheets = [...new Set(shown.map((id) => sheetFor(D.props[id])))]; await Promise.all(sheets.map(img));
+    for (const id of shown) { const d = D.props[id]; const im = IMG[sheetFor(d)]; grid.appendChild(card(id, (d.sw / 16) + "x" + (d.sh / 16) + " · " + (d.kind || "prop") + (d.seasons || d.seasonal ? " · 4 seasons" : ""), (cv) => thumb(cv, im, d.sx, d.sy, d.sw, d.sh), () => detailProp(id, d, im))); }
+  } else if (tab === "sheets") {
+    const list = D.index.filter((e) => !q || e.path.toLowerCase().includes(q));
+    $("#count").textContent = list.length + " sheets (click a thumbnail to open it below)";
+    const folders = [...new Set(list.map((e) => e.path.split("/").slice(0, 2).join("/")))];
+    const gal = document.createElement("div");
+    for (const f of folders) {
+      const h = document.createElement("h3"); h.textContent = f + " (" + list.filter((e) => e.path.startsWith(f + "/")).length + ")"; h.style.cssText = "font-size:12px;color:#ffd86b;margin:10px 0 4px"; gal.appendChild(h);
+      const g = document.createElement("div"); g.className = "grid";
+      for (const e of list.filter((x) => x.path.startsWith(f + "/")).slice(0, 300)) {
+        g.appendChild(card(e.name, e.w + "x" + e.h, (cv) => { load("../" + e.path + "?v=1").then((im) => thumb(cv, im, 0, 0, Math.min(im.width, 96), Math.min(im.height, 72))).catch(() => {}); }, () => { sel.value = e.path; show(); wrap.scrollIntoView(); }));
+      }
+      gal.appendChild(g);
+    }
+    main.appendChild(gal);
+    const sel = document.createElement("select"); for (const e of list) { const o = document.createElement("option"); o.value = e.path; o.textContent = e.path + "  (" + e.w + "x" + e.h + (e.key ? ", loaded as " + e.key : "") + ")"; sel.appendChild(o); }
+    const zoom = document.createElement("select"); [1, 2, 3, 4].forEach((z) => { const o = document.createElement("option"); o.value = z; o.textContent = "zoom " + z; if (z === 2) o.selected = true; zoom.appendChild(o); });
+    const hud = document.createElement("div"); hud.id = "hud"; hud.append(sel, " ", zoom, " "); const pos = document.createElement("span"); hud.appendChild(pos); main.appendChild(hud);
+    const wrap = document.createElement("div"); wrap.id = "sheetwrap"; const cv = document.createElement("canvas"); cv.id = "sheet"; wrap.appendChild(cv); main.appendChild(wrap);
+    const show = async () => {
+      const e = D.index.find((x) => x.path === sel.value); if (!e) return;
+      const im = await load("../" + e.path + "?v=1"); const z = +zoom.value; cv.width = im.width * z; cv.height = im.height * z;
+      const g = cv.getContext("2d"); g.imageSmoothingEnabled = false; g.drawImage(im, 0, 0, im.width * z, im.height * z);
+      g.strokeStyle = "rgba(255,255,255,0.18)"; for (let x = 0; x <= im.width; x += 16) { g.beginPath(); g.moveTo(x * z, 0); g.lineTo(x * z, cv.height); g.stroke(); } for (let y = 0; y <= im.height; y += 16) { g.beginPath(); g.moveTo(0, y * z); g.lineTo(cv.width, y * z); g.stroke(); }
+      cv.onmousemove = (ev) => { const r = cv.getBoundingClientRect(); const px = Math.floor((ev.clientX - r.left) / z), py = Math.floor((ev.clientY - r.top) / z); const tx = Math.floor(px / 16), ty = Math.floor(py / 16); pos.textContent = `px ${px},${py} · tile ${tx},${ty} · index ${ty * e.cols + tx} (${e.cols} columns)`; };
+      cv.onclick = () => { navigator.clipboard && navigator.clipboard.writeText(pos.textContent); };
+    };
+    const first = list.find((e) => e.folder === "tilesets" && e.name === "furniture") || list.find((e) => e.folder === "tilesets"); if (first) sel.value = first.path;
+    sel.onchange = show; zoom.onchange = show; show();
+  } else if (tab === "items") {
+    const so = await img("springobjects"); const ids = Object.keys(D.items).filter((id) => !q || id.includes(q) || (D.items[id].name || "").toLowerCase().includes(q));
+    $("#count").textContent = ids.length + " items"; const grid = document.createElement("div"); grid.className = "grid"; main.appendChild(grid);
+    const extra = [...new Set(ids.map((id) => D.items[id].icon && D.items[id].icon.sheet).filter(Boolean))]; await Promise.all(extra.map(img));
+    for (const id of ids) { const d = D.items[id]; let src = null; if (typeof d.icon === "number") src = [so, (d.icon % 24) * 16, Math.floor(d.icon / 24) * 16, 16, 16]; else if (d.icon) src = [IMG[d.icon.sheet], d.icon.sx, d.icon.sy, d.icon.w || 16, d.icon.h || 16];
+      grid.appendChild(card(d.name || id, d.type + (d.sell ? " · " + d.sell + "g" : ""), (cv) => { if (src) thumb(cv, ...src); }, () => { $("#detail").innerHTML = `<p><b>${d.name}</b> <code>${id}</code></p><p>${d.desc || ""}</p><p>type ${d.type}<br>sell ${d.sell || 0}g${d.buy ? "<br>buy " + d.buy + "g" : ""}${d.crop ? "<br>grows " + d.crop : ""}</p>`; })); }
+  } else if (tab === "icons") {
+    const list = D.icons.filter((e) => !q || e.name.includes(q) || e.pack.includes(q));
+    $("#count").textContent = list.length + " icons (packs: " + [...new Set(D.icons.map((e) => e.pack))].join(", ") + ")";
+    const shown = list.slice(0, 1200); if (list.length > 1200) $("#count").textContent += " (showing 1200; narrow the search)";
+    const grid = document.createElement("div"); grid.className = "grid"; main.appendChild(grid);
+    await Promise.all([...new Set(shown.map((e) => e.sheet))].map(img));
+    for (const e of shown) { const im = IMG[e.sheet]; grid.appendChild(card(e.name, e.pack, (cv) => thumb(cv, im, e.sx, e.sy, e.w, e.h), () => { $("#detail").innerHTML = `<p><b>${e.name}</b></p><p>pack ${e.pack}<br>sheet <code>${e.sheet}</code> at ${e.sx},${e.sy} (${e.w}x${e.h})</p><p><small>Use as an item icon: {"sheet": "${e.sheet}", "sx": ${e.sx}, "sy": ${e.sy}}</small></p>`; })); }
+  } else if (tab === "characters") {
+    const list = D.index.filter((e) => e.folder === "characters" && (!q || e.name.includes(q)));
+    $("#count").textContent = list.length + " character sheets";
+    const grid = document.createElement("div"); grid.className = "grid"; main.appendChild(grid);
+    for (const e of list.slice(0, 800)) {
+      grid.appendChild(card(e.name, e.w + "x" + e.h, (cv) => { load("../" + e.path + "?v=1").then((im) => { const fw = im.width === 64 ? 16 : im.width / 4, fh = im.width === 64 ? 32 : im.height / 4; const g = cv.getContext("2d"); g.imageSmoothingEnabled = false; g.drawImage(im, 0, 0, fw, fh, (96 - fw * 2) / 2, 4, fw * 2, fh * 2); }).catch(() => {}); },
+        () => { const outfit = Object.keys(D.outfits).find((k) => e.name.startsWith("dw_" + k + "_")); $("#detail").innerHTML = `<p><b>${e.name}</b></p><p>${e.path}</p><p>Use in data/npcs.json as <code>"sheet": "${e.name}"</code>${outfit ? " or <code>\"outfits\": \"" + outfit + "\"</code> for a random seasonal outfit each day (" + Object.entries(D.outfits[outfit]).map(([s, v]) => s + " " + v.length).join(", ") + ")" : ""}. The character builder's "Use as NPC" does the same.</p>`; }));
+    }
+  } else if (tab === "crops") {
+    const ids = Object.keys(D.crops).filter((id) => !q || id.includes(q)); $("#count").textContent = ids.length + " crops";
+    const t = document.createElement("table"); t.innerHTML = "<tr><th>crop</th><th>seasons</th><th>days</th><th>regrow</th><th>yield</th><th>seed</th></tr>";
+    for (const id of ids) { const c = D.crops[id]; const tr = document.createElement("tr"); tr.innerHTML = `<td>${c.name}</td><td>${(c.seasons || []).join(", ")}</td><td>${(c.phases || []).reduce((a, b) => a + b, 0)}</td><td>${c.regrow || "-"}</td><td>${c.minYield}-${c.maxYield}</td><td>${c.seed}</td>`; t.appendChild(tr); }
+    main.appendChild(t);
+  }
+}
+boot();
+</script>
+</body>
+</html>

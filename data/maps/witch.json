@@ -1,0 +1,331 @@
+{
+ "id": "witch",
+ "name": "Witch's Clearing",
+ "w": 40,
+ "h": 32,
+ "tileset": "outdoors",
+ "music": "chill_12.mus",
+ "terrain": [
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggdddgggggggggggggggggggg",
+  "ggggggggggggggggddddgggggggggggggggggggg",
+  "gggggggggggggggdddddgggggggggggggggggggg",
+  "gggggggggggggddddddggggggggggggggggggggg",
+  "ggggggggggggddddddgggggggggggggggggggggg",
+  "gggggggggggddddddggggggggggggwwwgggggggg",
+  "ggggggggggdddddgggggggggggggwwwwwggggggg",
+  "ggggggggggddddggggggggggggggwwwwwggggggg",
+  "ggggggggggdddgggggggggggggggwwwwwggggggg",
+  "ggggggggggdddgggggggggggggggwwwwgggggggg",
+  "ggggggggggdddggggggggggggggggwwggggggggg",
+  "ggggggggggdddggggggggggggggggggggggggggg",
+  "ggggggggggdddggggggggggggggggggggggggggg",
+  "ggggggggggdddggggggggggggggggggggggggggg",
+  "ggggggggggdddggggggggggggggggggggggggggg"
+ ],
+ "props": [
+  {
+   "name": "witch_hut",
+   "x": 12,
+   "y": 2,
+   "id": "rue_hut",
+   "note": "Rue's hut. Smells of drying herbs.",
+   "door": {
+    "to": "rue_hut",
+    "tx": 7,
+    "ty": 10,
+    "dir": 2
+   }
+  },
+  {
+   "name": "sign_post",
+   "x": 16,
+   "y": 16,
+   "note": "Remedies, tinctures, opinions. Knock."
+  },
+  {
+   "name": "pine",
+   "x": 33,
+   "y": -1
+  },
+  {
+   "name": "pine",
+   "x": 0,
+   "y": 21
+  },
+  {
+   "name": "oak_b",
+   "x": 0,
+   "y": 1
+  },
+  {
+   "name": "tree_big",
+   "x": 4,
+   "y": 9
+  },
+  {
+   "name": "tree_big",
+   "x": 32,
+   "y": 13
+  },
+  {
+   "name": "pine",
+   "x": 15,
+   "y": 24
+  },
+  {
+   "name": "pine",
+   "x": 30,
+   "y": 8
+  },
+  {
+   "name": "tree_big",
+   "x": 21,
+   "y": 21
+  },
+  {
+   "name": "tree_big",
+   "x": 34,
+   "y": 24
+  },
+  {
+   "name": "pine",
+   "x": 33,
+   "y": 4
+  },
+  {
+   "name": "tree_big",
+   "x": 8,
+   "y": 12
+  },
+  {
+   "name": "oak_b",
+   "x": 6,
+   "y": 15
+  },
+  {
+   "name": "oak_b",
+   "x": 6,
+   "y": 4
+  },
+  {
+   "name": "pine",
+   "x": 1,
+   "y": 4
+  },
+  {
+   "name": "oak_b",
+   "x": 35,
+   "y": 16
+  },
+  {
+   "name": "pine",
+   "x": 1,
+   "y": 9
+  },
+  {
+   "name": "pine",
+   "x": 22,
+   "y": 14
+  },
+  {
+   "name": "pine",
+   "x": 37,
+   "y": 1
+  },
+  {
+   "name": "pine",
+   "x": 6,
+   "y": 25
+  },
+  {
+   "name": "pine",
+   "x": 1,
+   "y": 15
+  },
+  {
+   "name": "pine",
+   "x": 7,
+   "y": 7
+  },
+  {
+   "name": "pine",
+   "x": 18,
+   "y": 22
+  },
+  {
+   "name": "tree_big",
+   "x": 2,
+   "y": -3
+  },
+  {
+   "name": "pine",
+   "x": 3,
+   "y": 18
+  },
+  {
+   "name": "tree_big",
+   "x": 6,
+   "y": 18
+  },
+  {
+   "name": "pine",
+   "x": 35,
+   "y": 9
+  },
+  {
+   "name": "oak_b",
+   "x": 30,
+   "y": -2
+  },
+  {
+   "name": "pine",
+   "x": 6,
+   "y": 0
+  },
+  {
+   "name": "oak_b",
+   "x": 4,
+   "y": 21
+  },
+  {
+   "name": "tree_big",
+   "x": 23,
+   "y": 24
+  },
+  {
+   "name": "oak_b",
+   "x": 35,
+   "y": 20
+  },
+  {
+   "name": "pine",
+   "x": 37,
+   "y": 5
+  },
+  {
+   "name": "oak_b",
+   "x": 28,
+   "y": 13
+  },
+  {
+   "name": "oak_b",
+   "x": 29,
+   "y": 1
+  },
+  {
+   "name": "pine",
+   "x": 7,
+   "y": -4
+  },
+  {
+   "name": "pine",
+   "x": 37,
+   "y": 23
+  },
+  {
+   "name": "tree_big",
+   "x": 18,
+   "y": 25
+  },
+  {
+   "name": "pine",
+   "x": 29,
+   "y": 4
+  },
+  {
+   "name": "pine",
+   "x": 36,
+   "y": -4
+  },
+  {
+   "name": "pine",
+   "x": 2,
+   "y": 24
+  },
+  {
+   "name": "oak_b",
+   "x": 25,
+   "y": 14
+  },
+  {
+   "name": "weeds_b",
+   "x": 36,
+   "y": 26
+  },
+  {
+   "name": "weeds_c",
+   "x": 21,
+   "y": 21
+  },
+  {
+   "name": "weeds_c",
+   "x": 37,
+   "y": 7
+  },
+  {
+   "name": "weeds_b",
+   "x": 7,
+   "y": 26
+  },
+  {
+   "name": "weeds_b",
+   "x": 22,
+   "y": 21
+  },
+  {
+   "name": "weeds_c",
+   "x": 29,
+   "y": 14
+  },
+  {
+   "name": "weeds_a",
+   "x": 37,
+   "y": 18
+  },
+  {
+   "name": "weeds_c",
+   "x": 4,
+   "y": 6
+  },
+  {
+   "name": "weeds_a",
+   "x": 36,
+   "y": 3
+  },
+  {
+   "name": "weeds_c",
+   "x": 34,
+   "y": 6
+  }
+ ],
+ "warps": [
+  {
+   "x": 10,
+   "y": 31,
+   "w": 3,
+   "h": 1,
+   "to": "mountains",
+   "tx": 11,
+   "ty": 1,
+   "dir": 0
+  }
+ ],
+ "spawns": {}
+}

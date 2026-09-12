@@ -1,0 +1,119 @@
+{
+ "id": "cave_2",
+ "name": "The Pocket",
+ "w": 11,
+ "h": 7,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_08.mus",
+ "floor": "floors_cave:0",
+ "wallpaper": "walls_cave:0",
+ "terrain": [
+  "WWWWWWWWWWW",
+  "WfffffffffW",
+  "WfWWWFWWWfW",
+  "WfWWWfWWWfW",
+  "WfWWWWWWWfW",
+  "WfffffffffW",
+  "WfWWWfWWWWW"
+ ],
+ "props": [],
+ "warps": [
+  {
+   "x": 5,
+   "y": 6,
+   "to": "cave_hub",
+   "tx": 7,
+   "ty": 2,
+   "dir": 0,
+   "roomExit": true
+  }
+ ],
+ "spawns": {
+  "start": [
+   5,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    5,
+    2,
+    "mine",
+    37,
+    0
+   ],
+   [
+    5,
+    6,
+    "mine",
+    100,
+    0
+   ]
+  ]
+ },
+ "puzzle": {
+  "start": [
+   5,
+   5
+  ],
+  "prints": [
+   "deer",
+   "cat"
+  ],
+  "animals": [
+   {
+    "sp": "deer",
+    "x": 8,
+    "y": 1
+   },
+   {
+    "sp": "cat",
+    "x": 1,
+    "y": 5
+   }
+  ],
+  "items": [],
+  "plates": [
+   {
+    "id": "p1",
+    "x": 5,
+    "y": 3,
+    "need": 2
+   }
+  ],
+  "gates": [
+   {
+    "x": 1,
+    "y": 6,
+    "plates": [
+     "p1"
+    ],
+    "latch": false,
+    "next": "cave_3",
+    "final": false
+   }
+  ],
+  "beams": [
+   {
+    "id": "b1",
+    "x": 4,
+    "y": 1,
+    "lit": false
+   }
+  ],
+  "levers": [
+   {
+    "x": 9,
+    "y": 5,
+    "beams": [
+     "b1"
+    ]
+   }
+  ],
+  "hedges": [],
+  "nests": [],
+  "doors": []
+ }
+}

@@ -1,0 +1,859 @@
+{
+ "janis": {
+  "name": "Janis",
+  "sheet": "janis_custom",
+  "birthday": [
+   "fall",
+   4
+  ],
+  "home": {
+   "map": "house_pj",
+   "x": 7,
+   "y": 7
+  },
+  "loves": [
+   "fiber",
+   "sunflower",
+   "fairy_rose"
+  ],
+  "likes": [
+   "@crop",
+   "tulip",
+   "blue_jazz",
+   "poppy"
+  ],
+  "dislikes": [
+   "stone"
+  ],
+  "hates": [],
+  "wander": 2,
+  "schedule": {
+   "default": [
+    [
+     360,
+     "house_pj",
+     7,
+     7,
+     0
+    ],
+    [
+     540,
+     "town",
+     50,
+     38,
+     0
+    ],
+    [
+     780,
+     "house_pj",
+     7,
+     7,
+     0
+    ],
+    [
+     960,
+     "town",
+     14,
+     32,
+     0
+    ],
+    [
+     1200,
+     "house_pj",
+     7,
+     7,
+     0
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "house_pj",
+     7,
+     7,
+     0
+    ]
+   ]
+  }
+ },
+ "pete": {
+  "name": "Pete",
+  "sheet": "pete_custom",
+  "birthday": [
+   "fall",
+   26
+  ],
+  "home": {
+   "map": "house_pj",
+   "x": 11,
+   "y": 7
+  },
+  "loves": [
+   "hot_pepper",
+   "bell_pepper",
+   "jalapeno"
+  ],
+  "likes": [
+   "@crop"
+  ],
+  "dislikes": [
+   "wood"
+  ],
+  "hates": [],
+  "wander": 3,
+  "schedule": {
+   "default": [
+    [
+     360,
+     "house_pj",
+     11,
+     7,
+     0
+    ],
+    [
+     480,
+     "lake",
+     32,
+     22,
+     3
+    ],
+    [
+     780,
+     "house_pj",
+     11,
+     7,
+     0
+    ],
+    [
+     900,
+     "town",
+     56,
+     38,
+     0
+    ],
+    [
+     1140,
+     "house_pj",
+     11,
+     7,
+     0
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "house_pj",
+     11,
+     7,
+     0
+    ],
+    [
+     600,
+     "lake",
+     32,
+     22,
+     3
+    ],
+    [
+     900,
+     "house_pj",
+     11,
+     7,
+     0
+    ]
+   ]
+  }
+ },
+ "missy": {
+  "name": "Missy",
+  "sheet": "stella",
+  "birthday": [
+   "summer",
+   12
+  ],
+  "home": {
+   "map": "house_missy",
+   "x": 7,
+   "y": 7
+  },
+  "loves": [
+   "coffee",
+   "strawberry"
+  ],
+  "likes": [
+   "@crop",
+   "bread"
+  ],
+  "dislikes": [
+   "fiber"
+  ],
+  "hates": [],
+  "wander": 2,
+  "schedule": {
+   "default": [
+    [
+     360,
+     "house_missy",
+     7,
+     7,
+     0
+    ],
+    [
+     840,
+     "town",
+     56,
+     40,
+     0
+    ],
+    [
+     1020,
+     "house_missy",
+     7,
+     7,
+     0
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "house_missy",
+     7,
+     7,
+     0
+    ]
+   ]
+  }
+ },
+ "lucas": {
+  "name": "Luke",
+  "sheet": "shiro",
+  "birthday": [
+   "fall",
+   17
+  ],
+  "home": {
+   "map": "house_luke",
+   "x": 8,
+   "y": 7
+  },
+  "loves": [
+   "bread",
+   "potato"
+  ],
+  "likes": [
+   "@food",
+   "@crop"
+  ],
+  "dislikes": [
+   "fiber",
+   "stone",
+   "wood"
+  ],
+  "hates": [],
+  "wander": 1,
+  "schedule": {
+   "default": [
+    [
+     360,
+     "house_luke",
+     8,
+     7,
+     0
+    ],
+    [
+     1020,
+     "town",
+     64,
+     76,
+     0
+    ],
+    [
+     1140,
+     "house_luke",
+     8,
+     7,
+     0
+    ]
+   ],
+   "rain": [
+    [
+     360,
+     "house_luke",
+     8,
+     7,
+     0
+    ]
+   ]
+  }
+ },
+ "fig": {
+  "name": "Fig",
+  "sheet": "animal_adopt_raccoon",
+  "birthday": [
+   "spring",
+   19
+  ],
+  "home": {
+   "map": "shop",
+   "x": 7,
+   "y": 5,
+   "dir": 0
+  },
+  "loves": [
+   "@crop"
+  ],
+  "likes": [
+   "@food"
+  ],
+  "dislikes": [],
+  "hates": [],
+  "shop": "general",
+  "schedule": {
+   "default": [
+    [
+     360,
+     "shop",
+     7,
+     5,
+     0
+    ]
+   ]
+  },
+  "frame": [
+   32,
+   32
+  ]
+ },
+ "sabine": {
+  "name": "Sabine",
+  "sheet": "sabine_leopard",
+  "birthday": [
+   "summer",
+   3
+  ],
+  "home": {
+   "map": "bakery",
+   "x": 7,
+   "y": 5,
+   "dir": 0
+  },
+  "loves": [
+   "wheat",
+   "c_wheat",
+   "bread"
+  ],
+  "likes": [
+   "@crop"
+  ],
+  "dislikes": [],
+  "hates": [],
+  "shop": "bakery",
+  "schedule": {
+   "default": [
+    [
+     360,
+     "bakery",
+     7,
+     5,
+     0
+    ],
+    [
+     1080,
+     "town",
+     48,
+     38,
+     0
+    ],
+    [
+     1200,
+     "bakery",
+     7,
+     5,
+     0
+    ]
+   ]
+  },
+  "frame": [
+   32,
+   32
+  ]
+ },
+ "tally": {
+  "name": "Tally",
+  "sheet": "animal_adopt_crow",
+  "birthday": [
+   "fall",
+   13
+  ],
+  "home": {
+   "map": "tally_nest",
+   "x": 7,
+   "y": 5,
+   "dir": 0
+  },
+  "loves": [
+   "starfruit",
+   "ancient_fruit"
+  ],
+  "likes": [
+   "@crop"
+  ],
+  "dislikes": [
+   "fiber"
+  ],
+  "hates": [],
+  "shop": "curios",
+  "schedule": {
+   "default": [
+    [
+     360,
+     "tally_nest",
+     7,
+     5,
+     0
+    ]
+   ]
+  },
+  "frame": [
+   32,
+   32
+  ]
+ },
+ "quire": {
+  "name": "Quire",
+  "sheet": "sc_penny",
+  "birthday": [
+   "winter",
+   8
+  ],
+  "home": {
+   "map": "library",
+   "x": 6,
+   "y": 6,
+   "dir": 0
+  },
+  "reserved": true,
+  "loves": [
+   "coffee"
+  ],
+  "likes": [
+   "@crop"
+  ],
+  "dislikes": [
+   "stone"
+  ],
+  "hates": [],
+  "wander": 2,
+  "schedule": {
+   "default": [
+    [
+     360,
+     "library",
+     6,
+     6,
+     0
+    ],
+    [
+     1140,
+     "nature",
+     41,
+     29,
+     0
+    ],
+    [
+     1260,
+     "library",
+     6,
+     6,
+     0
+    ]
+   ]
+  }
+ },
+ "vesper": {
+  "name": "Vesper",
+  "sheet": "sc_sebastian",
+  "birthday": [
+   "spring",
+   27
+  ],
+  "home": {
+   "map": "house_vesper",
+   "x": 7,
+   "y": 7,
+   "dir": 0
+  },
+  "wander": 2,
+  "loves": [
+   "@crop"
+  ],
+  "likes": [
+   "@food"
+  ],
+  "dislikes": [],
+  "hates": [],
+  "schedule": {
+   "default": [
+    [
+     360,
+     "house_vesper",
+     7,
+     7,
+     0
+    ],
+    [
+     600,
+     "town",
+     65,
+     64,
+     0
+    ],
+    [
+     1080,
+     "town",
+     55,
+     36,
+     0
+    ],
+    [
+     1320,
+     "house_vesper",
+     7,
+     7,
+     0
+    ]
+   ]
+  }
+ },
+ "finn": {
+  "name": "Finn",
+  "sheet": "sc_sam",
+  "birthday": [
+   "summer",
+   20
+  ],
+  "home": {
+   "map": "finn_house",
+   "x": 7,
+   "y": 7,
+   "dir": 0
+  },
+  "wander": 3,
+  "loves": [
+   "stone"
+  ],
+  "likes": [
+   "@material"
+  ],
+  "dislikes": [],
+  "hates": [],
+  "schedule": {
+   "default": [
+    [
+     360,
+     "finn_house",
+     7,
+     7,
+     0
+    ],
+    [
+     600,
+     "town",
+     60,
+     30,
+     0
+    ],
+    [
+     900,
+     "nature",
+     30,
+     30,
+     0
+    ],
+    [
+     1200,
+     "finn_house",
+     7,
+     7,
+     0
+    ]
+   ]
+  }
+ },
+ "rue": {
+  "name": "Rue",
+  "sheet": "sc_leah",
+  "birthday": [
+   "fall",
+   2
+  ],
+  "home": {
+   "map": "witch",
+   "x": 18,
+   "y": 16,
+   "dir": 0
+  },
+  "reserved": true,
+  "wander": 2,
+  "loves": [
+   "@crop"
+  ],
+  "likes": [
+   "fiber"
+  ],
+  "dislikes": [
+   "bread"
+  ],
+  "hates": [],
+  "schedule": {
+   "default": [
+    [
+     360,
+     "witch",
+     18,
+     16,
+     0
+    ],
+    [
+     780,
+     "witch",
+     28,
+     20,
+     0
+    ],
+    [
+     1020,
+     "witch",
+     18,
+     16,
+     0
+    ]
+   ]
+  }
+ },
+ "pip": {
+  "name": "Pip",
+  "sheet": "pip_ice",
+  "birthday": [
+   "winter",
+   1
+  ],
+  "home": {
+   "map": "forest",
+   "x": 12,
+   "y": 26,
+   "dir": 0
+  },
+  "wander": 3,
+  "loves": [],
+  "likes": [],
+  "dislikes": [],
+  "hates": [],
+  "schedule": {
+   "default": [
+    [
+     360,
+     "forest",
+     12,
+     26,
+     0
+    ]
+   ]
+  },
+  "frame": [
+   32,
+   32
+  ]
+ },
+ "derrick": {
+  "name": "Derrick",
+  "sheet": "derrick_excavator",
+  "birthday": [
+   "spring",
+   6
+  ],
+  "home": {
+   "map": "quarry",
+   "x": 30,
+   "y": 18,
+   "dir": 0
+  },
+  "wander": 1,
+  "loves": [
+   "stone",
+   "wood"
+  ],
+  "likes": [
+   "@material"
+  ],
+  "dislikes": [
+   "@food"
+  ],
+  "hates": [],
+  "schedule": {
+   "default": [
+    [
+     360,
+     "quarry",
+     30,
+     18,
+     0
+    ]
+   ]
+  },
+  "frame": [
+   32,
+   32
+  ]
+ },
+ "amora": {
+  "name": "Amora",
+  "sheet": "sc_maru",
+  "birthday": [
+   "summer",
+   1
+  ],
+  "home": {
+   "map": "house_amora",
+   "x": 7,
+   "y": 7,
+   "dir": 0
+  },
+  "loves": [
+   "stone"
+  ],
+  "likes": [
+   "stone",
+   "@material"
+  ],
+  "dislikes": [],
+  "hates": [],
+  "wander": 2,
+  "reserved": true,
+  "schedule": {
+   "default": [
+    [
+     360,
+     "house_amora",
+     7,
+     7,
+     0
+    ],
+    [
+     660,
+     "town",
+     5,
+     46,
+     0
+    ],
+    [
+     1080,
+     "house_amora",
+     7,
+     7,
+     0
+    ]
+   ]
+  }
+ },
+ "beaux": {
+  "name": "Beaux",
+  "sheet": "sc_abigail",
+  "birthday": [
+   "summer",
+   2
+  ],
+  "home": {
+   "map": "house_beaux",
+   "x": 7,
+   "y": 7,
+   "dir": 0
+  },
+  "loves": [
+   "@crop"
+  ],
+  "likes": [
+   "@crop",
+   "@food"
+  ],
+  "dislikes": [],
+  "hates": [],
+  "wander": 2,
+  "reserved": false,
+  "schedule": {
+   "default": [
+    [
+     360,
+     "house_beaux",
+     7,
+     7,
+     0
+    ],
+    [
+     660,
+     "town",
+     12,
+     46,
+     0
+    ],
+    [
+     1080,
+     "house_beaux",
+     7,
+     7,
+     0
+    ]
+   ]
+  }
+ },
+ "cara": {
+  "name": "Cara",
+  "sheet": "sc_emily",
+  "birthday": [
+   "summer",
+   3
+  ],
+  "home": {
+   "map": "house_cara",
+   "x": 7,
+   "y": 7,
+   "dir": 0
+  },
+  "loves": [
+   "wood"
+  ],
+  "likes": [
+   "wood",
+   "fiber"
+  ],
+  "dislikes": [],
+  "hates": [],
+  "wander": 2,
+  "reserved": false,
+  "schedule": {
+   "default": [
+    [
+     360,
+     "house_cara",
+     7,
+     7,
+     0
+    ],
+    [
+     660,
+     "town",
+     23,
+     47,
+     0
+    ],
+    [
+     1080,
+     "house_cara",
+     7,
+     7,
+     0
+    ]
+   ]
+  }
+ }
+}

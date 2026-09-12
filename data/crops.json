@@ -1,0 +1,2125 @@
+{
+ "parsnip": {
+  "name": "Parsnip",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "parsnip_seeds",
+  "harvest": "parsnip",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 0
+ },
+ "green_bean": {
+  "name": "Green Bean",
+  "phases": [
+   1,
+   1,
+   1,
+   3,
+   4
+  ],
+  "regrow": 3,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "green_bean_seeds",
+  "harvest": "green_bean",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 1
+ },
+ "cauliflower": {
+  "name": "Cauliflower",
+  "phases": [
+   1,
+   2,
+   4,
+   4,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "cauliflower_seeds",
+  "harvest": "cauliflower",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 2
+ },
+ "potato": {
+  "name": "Potato",
+  "phases": [
+   1,
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "potato_seeds",
+  "harvest": "potato",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.2,
+  "row": 3
+ },
+ "garlic": {
+  "name": "Garlic",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "garlic_seeds",
+  "harvest": "garlic",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 4
+ },
+ "kale": {
+  "name": "Kale",
+  "phases": [
+   1,
+   2,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "kale_seeds",
+  "harvest": "kale",
+  "scythe": true,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 5
+ },
+ "rhubarb": {
+  "name": "Rhubarb",
+  "phases": [
+   2,
+   2,
+   2,
+   3,
+   4
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "rhubarb_seeds",
+  "harvest": "rhubarb",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 6
+ },
+ "strawberry": {
+  "name": "Strawberry",
+  "phases": [
+   1,
+   1,
+   2,
+   2,
+   2
+  ],
+  "regrow": 4,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "strawberry_seeds",
+  "harvest": "strawberry",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.02,
+  "row": 7
+ },
+ "tulip": {
+  "name": "Tulip",
+  "phases": [
+   1,
+   1,
+   2,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "tulip_seeds",
+  "harvest": "tulip",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 8
+ },
+ "blue_jazz": {
+  "name": "Blue Jazz",
+  "phases": [
+   1,
+   2,
+   2,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "blue_jazz_seeds",
+  "harvest": "blue_jazz",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 9
+ },
+ "melon": {
+  "name": "Melon",
+  "phases": [
+   1,
+   2,
+   3,
+   3,
+   3
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "melon_seeds",
+  "harvest": "melon",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 10
+ },
+ "tomato": {
+  "name": "Tomato",
+  "phases": [
+   2,
+   2,
+   2,
+   2,
+   3
+  ],
+  "regrow": 4,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "tomato_seeds",
+  "harvest": "tomato",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.05,
+  "row": 11
+ },
+ "blueberry": {
+  "name": "Blueberry",
+  "phases": [
+   1,
+   3,
+   3,
+   4,
+   2
+  ],
+  "regrow": 4,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "blueberry_seeds",
+  "harvest": "blueberry",
+  "scythe": false,
+  "minYield": 3,
+  "maxYield": 3,
+  "extraChance": 0.02,
+  "row": 12
+ },
+ "hot_pepper": {
+  "name": "Hot Pepper",
+  "phases": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 3,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "hot_pepper_seeds",
+  "harvest": "hot_pepper",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.03,
+  "row": 13
+ },
+ "wheat": {
+  "name": "Wheat",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer",
+   "fall"
+  ],
+  "seed": "wheat_seeds",
+  "harvest": "wheat",
+  "scythe": true,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 14
+ },
+ "radish": {
+  "name": "Radish",
+  "phases": [
+   2,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "radish_seeds",
+  "harvest": "radish",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 15
+ },
+ "red_cabbage": {
+  "name": "Red Cabbage",
+  "phases": [
+   2,
+   1,
+   2,
+   2,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "red_cabbage_seeds",
+  "harvest": "red_cabbage",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 16
+ },
+ "starfruit": {
+  "name": "Starfruit",
+  "phases": [
+   2,
+   3,
+   2,
+   3,
+   3
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "starfruit_seeds",
+  "harvest": "starfruit",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 17
+ },
+ "corn": {
+  "name": "Corn",
+  "phases": [
+   2,
+   3,
+   3,
+   3,
+   3
+  ],
+  "regrow": 4,
+  "seasons": [
+   "summer",
+   "fall"
+  ],
+  "seed": "corn_seeds",
+  "harvest": "corn",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 18
+ },
+ "hops": {
+  "name": "Hops",
+  "phases": [
+   1,
+   1,
+   2,
+   3,
+   4
+  ],
+  "regrow": 1,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "hops_seeds",
+  "harvest": "hops",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 19
+ },
+ "poppy": {
+  "name": "Poppy",
+  "phases": [
+   1,
+   2,
+   2,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "poppy_seeds",
+  "harvest": "poppy",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 20
+ },
+ "summer_spangle": {
+  "name": "Summer Spangle",
+  "phases": [
+   1,
+   2,
+   3,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "summer_spangle_seeds",
+  "harvest": "summer_spangle",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 21
+ },
+ "sunflower": {
+  "name": "Sunflower",
+  "phases": [
+   1,
+   2,
+   3,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer",
+   "fall"
+  ],
+  "seed": "sunflower_seeds",
+  "harvest": "sunflower",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 22
+ },
+ "eggplant": {
+  "name": "Eggplant",
+  "phases": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 5,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "eggplant_seeds",
+  "harvest": "eggplant",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.002,
+  "row": 23
+ },
+ "pumpkin": {
+  "name": "Pumpkin",
+  "phases": [
+   1,
+   2,
+   3,
+   4,
+   3
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "pumpkin_seeds",
+  "harvest": "pumpkin",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 24
+ },
+ "bok_choy": {
+  "name": "Bok Choy",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "bok_choy_seeds",
+  "harvest": "bok_choy",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 25
+ },
+ "yam": {
+  "name": "Yam",
+  "phases": [
+   1,
+   3,
+   3,
+   3
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "yam_seeds",
+  "harvest": "yam",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 26
+ },
+ "cranberry": {
+  "name": "Cranberry",
+  "phases": [
+   1,
+   2,
+   1,
+   1,
+   2
+  ],
+  "regrow": 5,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "cranberry_seeds",
+  "harvest": "cranberry",
+  "scythe": false,
+  "minYield": 2,
+  "maxYield": 2,
+  "extraChance": 0.1,
+  "row": 27
+ },
+ "beet": {
+  "name": "Beet",
+  "phases": [
+   1,
+   1,
+   2,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "beet_seeds",
+  "harvest": "beet",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 28
+ },
+ "artichoke": {
+  "name": "Artichoke",
+  "phases": [
+   2,
+   2,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "artichoke_seeds",
+  "harvest": "artichoke",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 29
+ },
+ "amaranth": {
+  "name": "Amaranth",
+  "phases": [
+   1,
+   2,
+   2,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "amaranth_seeds",
+  "harvest": "amaranth",
+  "scythe": true,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 30
+ },
+ "grape": {
+  "name": "Grape",
+  "phases": [
+   1,
+   1,
+   2,
+   3,
+   3
+  ],
+  "regrow": 3,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "grape_seeds",
+  "harvest": "grape",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 31
+ },
+ "fairy_rose": {
+  "name": "Fairy Rose",
+  "phases": [
+   1,
+   4,
+   4,
+   3
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "fairy_rose_seeds",
+  "harvest": "fairy_rose",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 32
+ },
+ "ancient_fruit": {
+  "name": "Ancient Fruit",
+  "phases": [
+   2,
+   7,
+   7,
+   7,
+   5
+  ],
+  "regrow": 7,
+  "seasons": [
+   "spring",
+   "summer",
+   "fall"
+  ],
+  "seed": "ancient_fruit_seeds",
+  "harvest": "ancient_fruit",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0,
+  "row": 33
+ },
+ "coffee": {
+  "name": "Coffee Bean",
+  "phases": [
+   1,
+   2,
+   2,
+   3,
+   2
+  ],
+  "regrow": 2,
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "seed": "coffee_seeds",
+  "harvest": "coffee",
+  "scythe": false,
+  "minYield": 4,
+  "maxYield": 4,
+  "extraChance": 0.02,
+  "row": 34
+ },
+ "rice": {
+  "name": "Rice",
+  "phases": [
+   1,
+   2,
+   2,
+   3
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "rice_seeds",
+  "harvest": "rice",
+  "scythe": true,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.1,
+  "row": 35
+ },
+ "basil": {
+  "name": "Basil",
+  "phases": [
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "basil_seeds",
+  "harvest": "basil",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 36
+ },
+ "bell_pepper": {
+  "name": "Bell Pepper",
+  "phases": [
+   1,
+   2,
+   3,
+   2,
+   2
+  ],
+  "regrow": 4,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "bell_pepper_seeds",
+  "harvest": "bell_pepper",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 37
+ },
+ "turnip": {
+  "name": "Turnip",
+  "phases": [
+   1,
+   2,
+   1,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "turnip_seeds",
+  "harvest": "turnip",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 38
+ },
+ "cotton_boll": {
+  "name": "Cotton Boll",
+  "phases": [
+   1,
+   1,
+   2,
+   2,
+   2
+  ],
+  "regrow": 2,
+  "seasons": [
+   "summer",
+   "fall"
+  ],
+  "seed": "cotton_boll_seeds",
+  "harvest": "cotton_boll",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 39
+ },
+ "cucumber": {
+  "name": "Cucumber",
+  "phases": [
+   1,
+   2,
+   3,
+   3,
+   2
+  ],
+  "regrow": 3,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "cucumber_seeds",
+  "harvest": "cucumber",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 40
+ },
+ "lettuce": {
+  "name": "Lettuce",
+  "phases": [
+   1,
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "lettuce_seeds",
+  "harvest": "lettuce",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 41
+ },
+ "onion": {
+  "name": "Onion",
+  "phases": [
+   1,
+   2,
+   3,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "onion_seeds",
+  "harvest": "onion",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 42
+ },
+ "peanut": {
+  "name": "Peanut",
+  "phases": [
+   2,
+   4,
+   4,
+   5,
+   5
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "peanut_seeds",
+  "harvest": "peanut",
+  "scythe": false,
+  "minYield": 6,
+  "maxYield": 8,
+  "extraChance": 0.0,
+  "row": 43
+ },
+ "spinach": {
+  "name": "Spinach",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring",
+   "fall"
+  ],
+  "seed": "spinach_seeds",
+  "harvest": "spinach",
+  "scythe": true,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 44
+ },
+ "watermelon": {
+  "name": "Watermelon",
+  "phases": [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "watermelon_seeds",
+  "harvest": "watermelon",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 45
+ },
+ "zucchini": {
+  "name": "Zucchini",
+  "phases": [
+   2,
+   2,
+   3,
+   4,
+   3
+  ],
+  "regrow": 2,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "zucchini_seeds",
+  "harvest": "zucchini",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 46
+ },
+ "adzuki_bean": {
+  "name": "Adzuki Bean",
+  "phases": [
+   1,
+   2,
+   3,
+   2,
+   1
+  ],
+  "regrow": 4,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "adzuki_bean_seeds",
+  "harvest": "adzuki_bean",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 47
+ },
+ "asparagus": {
+  "name": "Asparagus",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "asparagus_seeds",
+  "harvest": "asparagus",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 48
+ },
+ "barley": {
+  "name": "Barley",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "barley_seeds",
+  "harvest": "barley",
+  "scythe": true,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 49
+ },
+ "black_beans": {
+  "name": "Black Beans",
+  "phases": [
+   1,
+   2,
+   3,
+   2,
+   2
+  ],
+  "regrow": 3,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "black_beans_seeds",
+  "harvest": "black_beans",
+  "scythe": false,
+  "minYield": 2,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 50
+ },
+ "buckwheat": {
+  "name": "Buckwheat",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "buckwheat_seeds",
+  "harvest": "buckwheat",
+  "scythe": true,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 51
+ },
+ "butternut_squash": {
+  "name": "Butternut Squash",
+  "phases": [
+   1,
+   2,
+   3,
+   2,
+   2
+  ],
+  "regrow": 5,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "butternut_squash_seeds",
+  "harvest": "butternut_squash",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 52
+ },
+ "cabbage": {
+  "name": "Cabbage",
+  "phases": [
+   1,
+   2,
+   2,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "cabbage_seeds",
+  "harvest": "cabbage",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 53
+ },
+ "canary_melon": {
+  "name": "Canary Melon",
+  "phases": [
+   2,
+   2,
+   3,
+   3,
+   2
+  ],
+  "regrow": 5,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "canary_melon_seeds",
+  "harvest": "canary_melon",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 54
+ },
+ "canola_flower": {
+  "name": "Canola Flower",
+  "phases": [
+   1,
+   1,
+   2,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "seed": "canola_flower_seeds",
+  "harvest": "canola_flower",
+  "scythe": true,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 55
+ },
+ "cantaloupe": {
+  "name": "Cantaloupe",
+  "phases": [
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "cantaloupe_seeds",
+  "harvest": "cantaloupe",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 56
+ },
+ "cassava": {
+  "name": "Cassava",
+  "phases": [
+   1,
+   2,
+   2,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "cassava_seeds",
+  "harvest": "cassava",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 57
+ },
+ "celery": {
+  "name": "Celery",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "celery_seeds",
+  "harvest": "celery",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 58
+ },
+ "chickpea": {
+  "name": "Chickpea",
+  "phases": [
+   1,
+   2,
+   3,
+   2,
+   2
+  ],
+  "regrow": 5,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "chickpea_seeds",
+  "harvest": "chickpea",
+  "scythe": false,
+  "minYield": 2,
+  "maxYield": 3,
+  "extraChance": 0.0,
+  "row": 59
+ },
+ "daikon": {
+  "name": "Daikon",
+  "phases": [
+   1,
+   2,
+   2,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "daikon_seeds",
+  "harvest": "daikon",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 60
+ },
+ "durum": {
+  "name": "Durum",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "durum_seeds",
+  "harvest": "durum",
+  "scythe": true,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 61
+ },
+ "green_peas": {
+  "name": "Green Peas",
+  "phases": [
+   1,
+   2,
+   2,
+   2,
+   1
+  ],
+  "regrow": 3,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "green_peas_seeds",
+  "harvest": "green_peas",
+  "scythe": false,
+  "minYield": 2,
+  "maxYield": 3,
+  "extraChance": 0.0,
+  "row": 62
+ },
+ "groundcherries": {
+  "name": "Groundcherries",
+  "phases": [
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  "regrow": 3,
+  "seasons": [
+   "summer",
+   "fall"
+  ],
+  "seed": "groundcherries_seeds",
+  "harvest": "groundcherries",
+  "scythe": false,
+  "minYield": 2,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 63
+ },
+ "habanero": {
+  "name": "Habanero",
+  "phases": [
+   1,
+   2,
+   3,
+   2,
+   2
+  ],
+  "regrow": 5,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "habanero_seeds",
+  "harvest": "habanero",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 64
+ },
+ "honeydew": {
+  "name": "Honeydew",
+  "phases": [
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "honeydew_seeds",
+  "harvest": "honeydew",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 65
+ },
+ "jalapeno": {
+  "name": "Jalape\u00f1o",
+  "phases": [
+   1,
+   2,
+   1,
+   2,
+   2
+  ],
+  "regrow": 4,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "jalapeno_seeds",
+  "harvest": "jalapeno",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 66
+ },
+ "kidney_beans": {
+  "name": "Kidney Beans",
+  "phases": [
+   1,
+   2,
+   3,
+   2,
+   2
+  ],
+  "regrow": 4,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "kidney_beans_seeds",
+  "harvest": "kidney_beans",
+  "scythe": false,
+  "minYield": 2,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 67
+ },
+ "navy_beans": {
+  "name": "Navy Beans",
+  "phases": [
+   1,
+   2,
+   3,
+   2,
+   2
+  ],
+  "regrow": 3,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "navy_beans_seeds",
+  "harvest": "navy_beans",
+  "scythe": false,
+  "minYield": 2,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 68
+ },
+ "oats": {
+  "name": "Oats",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "oats_seeds",
+  "harvest": "oats",
+  "scythe": true,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 69
+ },
+ "okra": {
+  "name": "Okra",
+  "phases": [
+   1,
+   2,
+   3,
+   2,
+   2
+  ],
+  "regrow": 4,
+  "seasons": [
+   "summer",
+   "fall"
+  ],
+  "seed": "okra_seeds",
+  "harvest": "okra",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 2,
+  "extraChance": 0.0,
+  "row": 70
+ },
+ "pinto_beans": {
+  "name": "Pinto Beans",
+  "phases": [
+   1,
+   2,
+   3,
+   2,
+   2
+  ],
+  "regrow": 3,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "pinto_beans_seeds",
+  "harvest": "pinto_beans",
+  "scythe": false,
+  "minYield": 2,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 71
+ },
+ "quinoa": {
+  "name": "Quinoa",
+  "phases": [
+   1,
+   1,
+   2,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "quinoa_seeds",
+  "harvest": "quinoa",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 72
+ },
+ "red_onion": {
+  "name": "Red Onion",
+  "phases": [
+   1,
+   2,
+   3,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "red_onion_seeds",
+  "harvest": "red_onion",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 73
+ },
+ "shallot": {
+  "name": "Shallot",
+  "phases": [
+   1,
+   2,
+   3,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "shallot_seeds",
+  "harvest": "shallot",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 74
+ },
+ "sugar_beet": {
+  "name": "Sugar Beet",
+  "phases": [
+   1,
+   1,
+   2,
+   3,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "sugar_beet_seeds",
+  "harvest": "sugar_beet",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 75
+ },
+ "sweet_potato": {
+  "name": "Sweet Potato",
+  "phases": [
+   1,
+   2,
+   2,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "sweet_potato_seeds",
+  "harvest": "sweet_potato",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 76
+ },
+ "wasabi_root": {
+  "name": "Wasabi Root",
+  "phases": [
+   1,
+   2,
+   3,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "wasabi_root_seeds",
+  "harvest": "wasabi_root",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 77
+ },
+ "white_grape": {
+  "name": "White Grape",
+  "phases": [
+   1,
+   1,
+   2,
+   3,
+   3
+  ],
+  "regrow": 3,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "white_grape_seeds",
+  "harvest": "white_grape",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 78
+ },
+ "chives": {
+  "name": "Chives",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "chives_seeds",
+  "harvest": "chives",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 79
+ },
+ "cilantro": {
+  "name": "Cilantro",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "cilantro_seeds",
+  "harvest": "cilantro",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 80
+ },
+ "dill": {
+  "name": "Dill",
+  "phases": [
+   1,
+   2,
+   2,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "dill_seeds",
+  "harvest": "dill",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 81
+ },
+ "fennel": {
+  "name": "Fennel",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "fennel_seeds",
+  "harvest": "fennel",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 82
+ },
+ "fenugreek": {
+  "name": "Fenugreek",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "fenugreek_seeds",
+  "harvest": "fenugreek",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 83
+ },
+ "marjoram": {
+  "name": "Marjoram",
+  "phases": [
+   1,
+   2,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "marjoram_seeds",
+  "harvest": "marjoram",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 84
+ },
+ "mint": {
+  "name": "Mint",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "winter"
+  ],
+  "seed": "mint_seeds",
+  "harvest": "mint",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 85
+ },
+ "oregano": {
+  "name": "Oregano",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "oregano_seeds",
+  "harvest": "oregano",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 86
+ },
+ "parsley": {
+  "name": "Parsley",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "spring"
+  ],
+  "seed": "parsley_seeds",
+  "harvest": "parsley",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 87
+ },
+ "perilla_leaves": {
+  "name": "Perilla Leaves",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "summer"
+  ],
+  "seed": "perilla_leaves_seeds",
+  "harvest": "perilla_leaves",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 88
+ },
+ "rosemary": {
+  "name": "Rosemary",
+  "phases": [
+   1,
+   2,
+   2,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "rosemary_seeds",
+  "harvest": "rosemary",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 89
+ },
+ "sage": {
+  "name": "Sage",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "sage_seeds",
+  "harvest": "sage",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 90
+ },
+ "tarragon": {
+  "name": "Tarragon",
+  "phases": [
+   1,
+   2,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "tarragon_seeds",
+  "harvest": "tarragon",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 91
+ },
+ "thyme": {
+  "name": "Thyme",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "fall"
+  ],
+  "seed": "thyme_seeds",
+  "harvest": "thyme",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 92
+ },
+ "mustard": {
+  "name": "Mustard",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "winter"
+  ],
+  "seed": "mustard_seeds",
+  "harvest": "mustard",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.0,
+  "row": 93
+ },
+ "ja_brussel_sprouts": {
+  "name": "Brussel Sprout",
+  "phases": [
+   1,
+   1,
+   1,
+   2,
+   2
+  ],
+  "regrow": 3,
+  "seasons": [
+   "winter"
+  ],
+  "seed": "ja_brussel_sprouts_seeds",
+  "harvest": "ja_brussel_sprouts",
+  "scythe": false,
+  "minYield": 2,
+  "maxYield": 4,
+  "extraChance": 0.3,
+  "row": 94
+ },
+ "ja_christmas_rose": {
+  "name": "Christmas Rose",
+  "phases": [
+   1,
+   1,
+   1,
+   1,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "winter"
+  ],
+  "seed": "ja_christmas_rose_seeds",
+  "harvest": "ja_christmas_rose",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.1,
+  "row": 95
+ },
+ "ja_iceberg_lettuce": {
+  "name": "Iceberg Lettuce",
+  "phases": [
+   1,
+   2,
+   2,
+   3
+  ],
+  "regrow": 0,
+  "seasons": [
+   "winter"
+  ],
+  "seed": "ja_iceberg_lettuce_seeds",
+  "harvest": "ja_iceberg_lettuce",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.1,
+  "row": 96
+ },
+ "ja_mahonia_plant": {
+  "name": "Mahonia",
+  "phases": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "winter"
+  ],
+  "seed": "ja_mahonia_plant_seeds",
+  "harvest": "ja_mahonia_plant",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.1,
+  "row": 97
+ },
+ "ja_nettles": {
+  "name": "Nettle Leaves",
+  "phases": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "regrow": 3,
+  "seasons": [
+   "winter"
+  ],
+  "seed": "ja_nettles_seeds",
+  "harvest": "ja_nettles",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.4,
+  "row": 98
+ },
+ "ja_winter_carrot_plant": {
+  "name": "Winter Carrot",
+  "phases": [
+   1,
+   1,
+   2,
+   1
+  ],
+  "regrow": 0,
+  "seasons": [
+   "winter"
+  ],
+  "seed": "ja_winter_carrot_plant_seeds",
+  "harvest": "ja_winter_carrot_plant",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.2,
+  "row": 99
+ },
+ "ja_winter_onion_plant": {
+  "name": "Winter Onion",
+  "phases": [
+   1,
+   2,
+   3
+  ],
+  "regrow": 0,
+  "seasons": [
+   "winter"
+  ],
+  "seed": "ja_winter_onion_plant_seeds",
+  "harvest": "ja_winter_onion_plant",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.2,
+  "row": 100
+ },
+ "ja_winter_spinach_plant": {
+  "name": "Winter Spinach",
+  "phases": [
+   1,
+   2,
+   2,
+   2
+  ],
+  "regrow": 0,
+  "seasons": [
+   "winter"
+  ],
+  "seed": "ja_winter_spinach_plant_seeds",
+  "harvest": "ja_winter_spinach_plant",
+  "scythe": true,
+  "minYield": 1,
+  "maxYield": 3,
+  "extraChance": 0.5,
+  "row": 101
+ },
+ "ja_winter_squash_plant": {
+  "name": "Winter Squash",
+  "phases": [
+   1,
+   2,
+   3,
+   3,
+   3
+  ],
+  "regrow": 0,
+  "seasons": [
+   "winter"
+  ],
+  "seed": "ja_winter_squash_plant_seeds",
+  "harvest": "ja_winter_squash_plant",
+  "scythe": false,
+  "minYield": 1,
+  "maxYield": 1,
+  "extraChance": 0.1,
+  "row": 102
+ }
+}

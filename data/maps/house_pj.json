@@ -1,0 +1,58 @@
+{
+ "id": "house_pj",
+ "name": "Pete & Janis's House",
+ "w": 16,
+ "h": 13,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": null,
+ "floor": 1,
+ "wallpaper": 3,
+ "terrain": [
+  "xxxxxxxxxxxxxxxx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWWWx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xffffffffffffffx",
+  "xxxxxxxxxxxxxxxx"
+ ],
+ "props": [
+  {
+   "name": "bed_single",
+   "x": 2,
+   "y": 3
+  },
+  {
+   "name": "plant_pot",
+   "x": 13,
+   "y": 3
+  },
+  {
+   "name": "plant_pot",
+   "x": 12,
+   "y": 3
+  },
+  {
+   "name": "table_small",
+   "x": 8,
+   "y": 5
+  }
+ ],
+ "warps": [],
+ "spawns": {
+  "bed": [
+   5,
+   5
+  ]
+ },
+ "layers": {
+  "paint": []
+ }
+}

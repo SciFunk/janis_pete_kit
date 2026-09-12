@@ -1,0 +1,2407 @@
+{
+ "wood": {
+  "name": "Wood",
+  "type": "material",
+  "sell": 2,
+  "icon": 388,
+  "desc": "A sturdy building material."
+ },
+ "stone": {
+  "name": "Stone",
+  "type": "material",
+  "sell": 2,
+  "icon": 390,
+  "desc": "A common material with many uses in crafting and building."
+ },
+ "fiber": {
+  "name": "Fiber",
+  "type": "material",
+  "sell": 1,
+  "icon": 771,
+  "desc": "Raw material sourced from plants."
+ },
+ "sap": {
+  "name": "Sap",
+  "type": "material",
+  "sell": 2,
+  "icon": 92,
+  "desc": "A fluid obtained from trees."
+ },
+ "fodder": {
+  "name": "Fodder",
+  "type": "material",
+  "sell": 5,
+  "buy": 20,
+  "icon": 178,
+  "desc": "A bundle of hay. Goats will walk a long way for it, then chew for ages."
+ },
+ "trinket": {
+  "name": "Trinket",
+  "type": "material",
+  "sell": 15,
+  "buy": 60,
+  "icon": 72,
+  "desc": "Something small and shiny. Crows can't leave it alone."
+ },
+ "hoe": {
+  "name": "Hoe",
+  "type": "tool",
+  "tool": "hoe",
+  "icon": {
+   "sheet": "tools",
+   "sx": 35,
+   "sy": 29,
+   "w": 13,
+   "h": 19
+  },
+  "desc": "Tills the soil for planting."
+ },
+ "can": {
+  "name": "Watering Can",
+  "type": "tool",
+  "tool": "can",
+  "icon": {
+   "sheet": "tools",
+   "sx": 18,
+   "sy": 33,
+   "w": 12,
+   "h": 15
+  },
+  "desc": "Waters crops. Refill at any water."
+ },
+ "axe": {
+  "name": "Axe",
+  "type": "tool",
+  "tool": "axe",
+  "icon": {
+   "sheet": "tools",
+   "sx": 3,
+   "sy": 29,
+   "w": 10,
+   "h": 19
+  },
+  "desc": "Chops trees, stumps and twigs."
+ },
+ "pickaxe": {
+  "name": "Pickaxe",
+  "type": "tool",
+  "tool": "pickaxe",
+  "icon": {
+   "sheet": "tools",
+   "sx": 67,
+   "sy": 31,
+   "w": 10,
+   "h": 17
+  },
+  "desc": "Breaks stones. Also un-tills dirt."
+ },
+ "scythe": {
+  "name": "Scythe",
+  "type": "tool",
+  "tool": "scythe",
+  "icon": {
+   "sheet": "tools",
+   "sx": 81,
+   "sy": 34,
+   "w": 15,
+   "h": 13
+  },
+  "desc": "Cuts weeds and grain."
+ },
+ "bread": {
+  "name": "Bread",
+  "type": "food",
+  "sell": 60,
+  "buy": 120,
+  "edible": 50,
+  "icon": 216,
+  "desc": "A crusty baguette."
+ },
+ "parsnip_seeds": {
+  "name": "Parsnip Seeds",
+  "type": "seed",
+  "crop": "parsnip",
+  "buy": 20,
+  "sell": 10,
+  "icon": 472,
+  "desc": "Plant in spring. Takes 4 days."
+ },
+ "parsnip": {
+  "name": "Parsnip",
+  "type": "crop",
+  "sell": 35,
+  "edible": 25,
+  "icon": 24,
+  "desc": "A spring tuber closely related to the carrot. It has an earthy taste and is full of nutrients."
+ },
+ "green_bean_seeds": {
+  "name": "Green Bean Seeds",
+  "type": "seed",
+  "crop": "green_bean",
+  "buy": 60,
+  "sell": 30,
+  "icon": 473,
+  "desc": "Plant in spring. Takes 10 days, regrows."
+ },
+ "green_bean": {
+  "name": "Green Bean",
+  "type": "crop",
+  "sell": 40,
+  "edible": 25,
+  "icon": 188,
+  "desc": ""
+ },
+ "cauliflower_seeds": {
+  "name": "Cauliflower Seeds",
+  "type": "seed",
+  "crop": "cauliflower",
+  "buy": 80,
+  "sell": 40,
+  "icon": 474,
+  "desc": "Plant in spring. Takes 12 days."
+ },
+ "cauliflower": {
+  "name": "Cauliflower",
+  "type": "crop",
+  "sell": 175,
+  "edible": 75,
+  "icon": 190,
+  "desc": ""
+ },
+ "potato_seeds": {
+  "name": "Potato Seeds",
+  "type": "seed",
+  "crop": "potato",
+  "buy": 50,
+  "sell": 25,
+  "icon": 475,
+  "desc": "Plant in spring. Takes 6 days."
+ },
+ "potato": {
+  "name": "Potato",
+  "type": "crop",
+  "sell": 80,
+  "edible": 25,
+  "icon": 192,
+  "desc": ""
+ },
+ "garlic_seeds": {
+  "name": "Garlic Seeds",
+  "type": "seed",
+  "crop": "garlic",
+  "buy": 40,
+  "sell": 20,
+  "icon": 476,
+  "desc": "Plant in spring. Takes 4 days."
+ },
+ "garlic": {
+  "name": "Garlic",
+  "type": "crop",
+  "sell": 60,
+  "edible": 20,
+  "icon": 248,
+  "desc": ""
+ },
+ "kale_seeds": {
+  "name": "Kale Seeds",
+  "type": "seed",
+  "crop": "kale",
+  "buy": 70,
+  "sell": 35,
+  "icon": 477,
+  "desc": "Plant in spring. Takes 6 days."
+ },
+ "kale": {
+  "name": "Kale",
+  "type": "crop",
+  "sell": 110,
+  "edible": 50,
+  "icon": 250,
+  "desc": ""
+ },
+ "rhubarb_seeds": {
+  "name": "Rhubarb Seeds",
+  "type": "seed",
+  "crop": "rhubarb",
+  "buy": 100,
+  "sell": 50,
+  "icon": 478,
+  "desc": "Plant in spring. Takes 13 days."
+ },
+ "rhubarb": {
+  "name": "Rhubarb",
+  "type": "crop",
+  "sell": 220,
+  "edible": 0,
+  "icon": 252,
+  "desc": ""
+ },
+ "strawberry_seeds": {
+  "name": "Strawberry Seeds",
+  "type": "seed",
+  "crop": "strawberry",
+  "buy": 100,
+  "sell": 50,
+  "icon": 745,
+  "desc": "Plant in spring. Takes 8 days, regrows."
+ },
+ "strawberry": {
+  "name": "Strawberry",
+  "type": "crop",
+  "sell": 120,
+  "edible": 50,
+  "icon": 400,
+  "desc": "A sweet, juicy favorite with an appealing red color."
+ },
+ "tulip_seeds": {
+  "name": "Tulip Seeds",
+  "type": "seed",
+  "crop": "tulip",
+  "buy": 20,
+  "sell": 10,
+  "icon": 427,
+  "desc": "Plant in spring. Takes 6 days."
+ },
+ "tulip": {
+  "name": "Tulip",
+  "type": "crop",
+  "sell": 30,
+  "edible": 0,
+  "icon": 591,
+  "desc": ""
+ },
+ "blue_jazz_seeds": {
+  "name": "Blue Jazz Seeds",
+  "type": "seed",
+  "crop": "blue_jazz",
+  "buy": 30,
+  "sell": 15,
+  "icon": 429,
+  "desc": "Plant in spring. Takes 7 days."
+ },
+ "blue_jazz": {
+  "name": "Blue Jazz",
+  "type": "crop",
+  "sell": 50,
+  "edible": 45,
+  "icon": 597,
+  "desc": ""
+ },
+ "melon_seeds": {
+  "name": "Melon Seeds",
+  "type": "seed",
+  "crop": "melon",
+  "buy": 80,
+  "sell": 40,
+  "icon": 479,
+  "desc": "Plant in summer. Takes 12 days."
+ },
+ "melon": {
+  "name": "Melon",
+  "type": "crop",
+  "sell": 250,
+  "edible": 113,
+  "icon": 254,
+  "desc": ""
+ },
+ "tomato_seeds": {
+  "name": "Tomato Seeds",
+  "type": "seed",
+  "crop": "tomato",
+  "buy": 50,
+  "sell": 25,
+  "icon": 480,
+  "desc": "Plant in summer. Takes 11 days, regrows."
+ },
+ "tomato": {
+  "name": "Tomato",
+  "type": "crop",
+  "sell": 60,
+  "edible": 20,
+  "icon": 256,
+  "desc": ""
+ },
+ "blueberry_seeds": {
+  "name": "Blueberry Seeds",
+  "type": "seed",
+  "crop": "blueberry",
+  "buy": 80,
+  "sell": 40,
+  "icon": 481,
+  "desc": "Plant in summer. Takes 13 days, regrows."
+ },
+ "blueberry": {
+  "name": "Blueberry",
+  "type": "crop",
+  "sell": 50,
+  "edible": 25,
+  "icon": 258,
+  "desc": ""
+ },
+ "hot_pepper_seeds": {
+  "name": "Hot Pepper Seeds",
+  "type": "seed",
+  "crop": "hot_pepper",
+  "buy": 40,
+  "sell": 20,
+  "icon": 482,
+  "desc": "Plant in summer. Takes 5 days, regrows."
+ },
+ "hot_pepper": {
+  "name": "Hot Pepper",
+  "type": "crop",
+  "sell": 40,
+  "edible": 13,
+  "icon": 260,
+  "desc": ""
+ },
+ "wheat_seeds": {
+  "name": "Wheat Seeds",
+  "type": "seed",
+  "crop": "wheat",
+  "buy": 10,
+  "sell": 5,
+  "icon": 483,
+  "desc": "Plant in summer/fall. Takes 4 days."
+ },
+ "wheat": {
+  "name": "Wheat",
+  "type": "crop",
+  "sell": 25,
+  "edible": 0,
+  "icon": 262,
+  "desc": ""
+ },
+ "radish_seeds": {
+  "name": "Radish Seeds",
+  "type": "seed",
+  "crop": "radish",
+  "buy": 40,
+  "sell": 20,
+  "icon": 484,
+  "desc": "Plant in summer. Takes 6 days."
+ },
+ "radish": {
+  "name": "Radish",
+  "type": "crop",
+  "sell": 90,
+  "edible": 45,
+  "icon": 264,
+  "desc": "A spring root in the Brassicaceae family."
+ },
+ "red_cabbage_seeds": {
+  "name": "Red Cabbage Seeds",
+  "type": "seed",
+  "crop": "red_cabbage",
+  "buy": 100,
+  "sell": 50,
+  "icon": 485,
+  "desc": "Plant in summer. Takes 9 days."
+ },
+ "red_cabbage": {
+  "name": "Red Cabbage",
+  "type": "crop",
+  "sell": 260,
+  "edible": 75,
+  "icon": 266,
+  "desc": ""
+ },
+ "starfruit_seeds": {
+  "name": "Starfruit Seeds",
+  "type": "seed",
+  "crop": "starfruit",
+  "buy": 400,
+  "sell": 200,
+  "icon": 486,
+  "desc": "Plant in summer. Takes 13 days."
+ },
+ "starfruit": {
+  "name": "Starfruit",
+  "type": "crop",
+  "sell": 750,
+  "edible": 125,
+  "icon": 268,
+  "desc": ""
+ },
+ "corn_seeds": {
+  "name": "Corn Seeds",
+  "type": "seed",
+  "crop": "corn",
+  "buy": 150,
+  "sell": 75,
+  "icon": 487,
+  "desc": "Plant in summer/fall. Takes 14 days, regrows."
+ },
+ "corn": {
+  "name": "Corn",
+  "type": "crop",
+  "sell": 50,
+  "edible": 25,
+  "icon": 270,
+  "desc": ""
+ },
+ "hops_seeds": {
+  "name": "Hops Seeds",
+  "type": "seed",
+  "crop": "hops",
+  "buy": 60,
+  "sell": 30,
+  "icon": 302,
+  "desc": "Plant in summer. Takes 11 days, regrows."
+ },
+ "hops": {
+  "name": "Hops",
+  "type": "crop",
+  "sell": 25,
+  "edible": 45,
+  "icon": 304,
+  "desc": ""
+ },
+ "poppy_seeds": {
+  "name": "Poppy Seeds",
+  "type": "seed",
+  "crop": "poppy",
+  "buy": 100,
+  "sell": 50,
+  "icon": 453,
+  "desc": "Plant in summer. Takes 7 days."
+ },
+ "poppy": {
+  "name": "Poppy",
+  "type": "crop",
+  "sell": 140,
+  "edible": 45,
+  "icon": 376,
+  "desc": ""
+ },
+ "summer_spangle_seeds": {
+  "name": "Summer Spangle Seeds",
+  "type": "seed",
+  "crop": "summer_spangle",
+  "buy": 50,
+  "sell": 25,
+  "icon": 455,
+  "desc": "Plant in summer. Takes 8 days."
+ },
+ "summer_spangle": {
+  "name": "Summer Spangle",
+  "type": "crop",
+  "sell": 90,
+  "edible": 45,
+  "icon": 593,
+  "desc": ""
+ },
+ "sunflower_seeds": {
+  "name": "Sunflower Seeds",
+  "type": "seed",
+  "crop": "sunflower",
+  "buy": 200,
+  "sell": 100,
+  "icon": 431,
+  "desc": "Plant in summer/fall. Takes 8 days."
+ },
+ "sunflower": {
+  "name": "Sunflower",
+  "type": "crop",
+  "sell": 80,
+  "edible": 45,
+  "icon": 421,
+  "desc": ""
+ },
+ "eggplant_seeds": {
+  "name": "Eggplant Seeds",
+  "type": "seed",
+  "crop": "eggplant",
+  "buy": 20,
+  "sell": 10,
+  "icon": 488,
+  "desc": "Plant in fall. Takes 5 days, regrows."
+ },
+ "eggplant": {
+  "name": "Eggplant",
+  "type": "crop",
+  "sell": 60,
+  "edible": 20,
+  "icon": 272,
+  "desc": ""
+ },
+ "pumpkin_seeds": {
+  "name": "Pumpkin Seeds",
+  "type": "seed",
+  "crop": "pumpkin",
+  "buy": 100,
+  "sell": 50,
+  "icon": 490,
+  "desc": "Plant in fall. Takes 13 days."
+ },
+ "pumpkin": {
+  "name": "Pumpkin",
+  "type": "crop",
+  "sell": 320,
+  "edible": 0,
+  "icon": 276,
+  "desc": ""
+ },
+ "bok_choy_seeds": {
+  "name": "Bok Choy Seeds",
+  "type": "seed",
+  "crop": "bok_choy",
+  "buy": 50,
+  "sell": 25,
+  "icon": 491,
+  "desc": "Plant in fall. Takes 4 days."
+ },
+ "bok_choy": {
+  "name": "Bok Choy",
+  "type": "crop",
+  "sell": 80,
+  "edible": 25,
+  "icon": 278,
+  "desc": ""
+ },
+ "yam_seeds": {
+  "name": "Yam Seeds",
+  "type": "seed",
+  "crop": "yam",
+  "buy": 60,
+  "sell": 30,
+  "icon": 492,
+  "desc": "Plant in fall. Takes 10 days."
+ },
+ "yam": {
+  "name": "Yam",
+  "type": "crop",
+  "sell": 160,
+  "edible": 45,
+  "icon": 280,
+  "desc": ""
+ },
+ "cranberry_seeds": {
+  "name": "Cranberry Seeds",
+  "type": "seed",
+  "crop": "cranberry",
+  "buy": 240,
+  "sell": 120,
+  "icon": 493,
+  "desc": "Plant in fall. Takes 7 days, regrows."
+ },
+ "cranberry": {
+  "name": "Cranberry",
+  "type": "crop",
+  "sell": 75,
+  "edible": 38,
+  "icon": 282,
+  "desc": ""
+ },
+ "beet_seeds": {
+  "name": "Beet Seeds",
+  "type": "seed",
+  "crop": "beet",
+  "buy": 20,
+  "sell": 10,
+  "icon": 494,
+  "desc": "Plant in fall. Takes 6 days."
+ },
+ "beet": {
+  "name": "Beet",
+  "type": "crop",
+  "sell": 100,
+  "edible": 30,
+  "icon": 284,
+  "desc": ""
+ },
+ "artichoke_seeds": {
+  "name": "Artichoke Seeds",
+  "type": "seed",
+  "crop": "artichoke",
+  "buy": 30,
+  "sell": 15,
+  "icon": 489,
+  "desc": "Plant in fall. Takes 8 days."
+ },
+ "artichoke": {
+  "name": "Artichoke",
+  "type": "crop",
+  "sell": 160,
+  "edible": 30,
+  "icon": 274,
+  "desc": ""
+ },
+ "amaranth_seeds": {
+  "name": "Amaranth Seeds",
+  "type": "seed",
+  "crop": "amaranth",
+  "buy": 70,
+  "sell": 35,
+  "icon": 299,
+  "desc": "Plant in fall. Takes 7 days."
+ },
+ "amaranth": {
+  "name": "Amaranth",
+  "type": "crop",
+  "sell": 150,
+  "edible": 50,
+  "icon": 300,
+  "desc": ""
+ },
+ "grape_seeds": {
+  "name": "Grape Seeds",
+  "type": "seed",
+  "crop": "grape",
+  "buy": 60,
+  "sell": 30,
+  "icon": 301,
+  "desc": "Plant in fall. Takes 10 days, regrows."
+ },
+ "grape": {
+  "name": "Grape",
+  "type": "crop",
+  "sell": 80,
+  "edible": 38,
+  "icon": 398,
+  "desc": ""
+ },
+ "fairy_rose_seeds": {
+  "name": "Fairy Rose Seeds",
+  "type": "seed",
+  "crop": "fairy_rose",
+  "buy": 200,
+  "sell": 100,
+  "icon": 425,
+  "desc": "Plant in fall. Takes 12 days."
+ },
+ "fairy_rose": {
+  "name": "Fairy Rose",
+  "type": "crop",
+  "sell": 290,
+  "edible": 45,
+  "icon": 595,
+  "desc": ""
+ },
+ "ancient_fruit_seeds": {
+  "name": "Ancient Fruit Seeds",
+  "type": "seed",
+  "crop": "ancient_fruit",
+  "buy": 0,
+  "sell": 1,
+  "icon": 499,
+  "desc": "Plant in spring/summer/fall. Takes 28 days, regrows."
+ },
+ "ancient_fruit": {
+  "name": "Ancient Fruit",
+  "type": "crop",
+  "sell": 550,
+  "edible": 0,
+  "icon": 454,
+  "desc": ""
+ },
+ "coffee_seeds": {
+  "name": "Coffee Bean Seeds",
+  "type": "seed",
+  "crop": "coffee",
+  "buy": 0,
+  "sell": 1,
+  "icon": 433,
+  "desc": "Plant in spring/summer. Takes 10 days, regrows."
+ },
+ "coffee": {
+  "name": "Coffee Bean",
+  "type": "crop",
+  "sell": 15,
+  "edible": 0,
+  "icon": 433,
+  "desc": ""
+ },
+ "rice_seeds": {
+  "name": "Rice Seeds",
+  "type": "seed",
+  "crop": "rice",
+  "buy": 40,
+  "sell": 20,
+  "icon": 273,
+  "desc": "Plant in spring. Takes 8 days."
+ },
+ "rice": {
+  "name": "Rice",
+  "type": "crop",
+  "sell": 30,
+  "edible": 0,
+  "icon": 271,
+  "desc": ""
+ },
+ "basil_seeds": {
+  "name": "Basil Seeds",
+  "type": "seed",
+  "crop": "basil",
+  "buy": 15,
+  "sell": 7,
+  "desc": "Plant in spring. Takes 3 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 0,
+   "sy": 0
+  }
+ },
+ "basil": {
+  "name": "Basil",
+  "type": "crop",
+  "sell": 30,
+  "edible": 8,
+  "desc": "A sweet and fragrant herb, these leaves are used in dishes worldwide.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 16,
+   "sy": 0
+  }
+ },
+ "bell_pepper_seeds": {
+  "name": "Bell Pepper Seeds",
+  "type": "seed",
+  "crop": "bell_pepper",
+  "buy": 35,
+  "sell": 17,
+  "desc": "Plant in summer. Takes 10 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 32,
+   "sy": 0
+  }
+ },
+ "bell_pepper": {
+  "name": "Bell Pepper",
+  "type": "crop",
+  "sell": 70,
+  "edible": 15,
+  "desc": "A large and sweet type of pepper that isn't spicy at all.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 48,
+   "sy": 0
+  }
+ },
+ "turnip_seeds": {
+  "name": "Turnip Seeds",
+  "type": "seed",
+  "crop": "turnip",
+  "buy": 37,
+  "sell": 18,
+  "desc": "Plant in fall. Takes 6 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 64,
+   "sy": 0
+  }
+ },
+ "turnip": {
+  "name": "Turnip",
+  "type": "crop",
+  "sell": 75,
+  "edible": 10,
+  "desc": "When you have nothing else, there's always turnips.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 80,
+   "sy": 0
+  }
+ },
+ "cotton_boll_seeds": {
+  "name": "Cotton Boll Seeds",
+  "type": "seed",
+  "crop": "cotton_boll",
+  "buy": 40,
+  "sell": 20,
+  "desc": "Plant in summer/fall. Takes 8 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 96,
+   "sy": 0
+  }
+ },
+ "cotton_boll": {
+  "name": "Cotton Boll",
+  "type": "crop",
+  "sell": 80,
+  "edible": 0,
+  "desc": "Fluffy and white, it can be used to make thread.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 112,
+   "sy": 0
+  }
+ },
+ "cucumber_seeds": {
+  "name": "Cucumber Seeds",
+  "type": "seed",
+  "crop": "cucumber",
+  "buy": 42,
+  "sell": 21,
+  "desc": "Plant in summer. Takes 11 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 128,
+   "sy": 0
+  }
+ },
+ "cucumber": {
+  "name": "Cucumber",
+  "type": "crop",
+  "sell": 85,
+  "edible": 20,
+  "desc": "Cool, crisp, and great for pickles.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 144,
+   "sy": 0
+  }
+ },
+ "lettuce_seeds": {
+  "name": "Lettuce Seeds",
+  "type": "seed",
+  "crop": "lettuce",
+  "buy": 32,
+  "sell": 16,
+  "desc": "Plant in summer. Takes 6 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 160,
+   "sy": 0
+  }
+ },
+ "lettuce": {
+  "name": "Lettuce",
+  "type": "crop",
+  "sell": 65,
+  "edible": 20,
+  "desc": "An essential base for any salad.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 176,
+   "sy": 0
+  }
+ },
+ "onion_seeds": {
+  "name": "Onion Seeds",
+  "type": "seed",
+  "crop": "onion",
+  "buy": 57,
+  "sell": 28,
+  "desc": "Plant in spring. Takes 8 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 192,
+   "sy": 0
+  }
+ },
+ "onion": {
+  "name": "Onion",
+  "type": "crop",
+  "sell": 115,
+  "edible": 8,
+  "desc": "I'm not crying, you're crying.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 208,
+   "sy": 0
+  }
+ },
+ "peanut_seeds": {
+  "name": "Peanut Seeds",
+  "type": "seed",
+  "crop": "peanut",
+  "buy": 42,
+  "sell": 21,
+  "desc": "Plant in fall. Takes 20 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 224,
+   "sy": 0
+  }
+ },
+ "peanut": {
+  "name": "Peanut",
+  "type": "crop",
+  "sell": 85,
+  "edible": 18,
+  "desc": "A tasty nut that can be used to make oil.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 240,
+   "sy": 0
+  }
+ },
+ "spinach_seeds": {
+  "name": "Spinach Seeds",
+  "type": "seed",
+  "crop": "spinach",
+  "buy": 17,
+  "sell": 8,
+  "desc": "Plant in spring/fall. Takes 4 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 0,
+   "sy": 16
+  }
+ },
+ "spinach": {
+  "name": "Spinach",
+  "type": "crop",
+  "sell": 35,
+  "edible": 20,
+  "desc": "He's strong to the finish because he eats his spinach!",
+  "icon": {
+   "sheet": "icons",
+   "sx": 16,
+   "sy": 16
+  }
+ },
+ "watermelon_seeds": {
+  "name": "Watermelon Seeds",
+  "type": "seed",
+  "crop": "watermelon",
+  "buy": 320,
+  "sell": 160,
+  "desc": "Plant in summer. Takes 12 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 32,
+   "sy": 16
+  }
+ },
+ "watermelon": {
+  "name": "Watermelon",
+  "type": "crop",
+  "sell": 640,
+  "edible": 50,
+  "desc": "A huge melon variety from overseas. It has an interesting green color with red insides.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 48,
+   "sy": 16
+  }
+ },
+ "zucchini_seeds": {
+  "name": "Zucchini Seeds",
+  "type": "seed",
+  "crop": "zucchini",
+  "buy": 30,
+  "sell": 15,
+  "desc": "Plant in fall. Takes 14 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 64,
+   "sy": 16
+  }
+ },
+ "zucchini": {
+  "name": "Zucchini",
+  "type": "crop",
+  "sell": 60,
+  "edible": 18,
+  "desc": "A green squash that's wonderful baked or grilled.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 80,
+   "sy": 16
+  }
+ },
+ "adzuki_bean_seeds": {
+  "name": "Adzuki Bean Seeds",
+  "type": "seed",
+  "crop": "adzuki_bean",
+  "buy": 30,
+  "sell": 15,
+  "desc": "Plant in summer. Takes 9 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 96,
+   "sy": 16
+  }
+ },
+ "adzuki_bean": {
+  "name": "Adzuki Bean",
+  "type": "crop",
+  "sell": 60,
+  "edible": 10,
+  "desc": "This bean creates a sweet paste when it's mashed.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 112,
+   "sy": 16
+  }
+ },
+ "asparagus_seeds": {
+  "name": "Asparagus Seeds",
+  "type": "seed",
+  "crop": "asparagus",
+  "buy": 70,
+  "sell": 35,
+  "desc": "Plant in spring. Takes 5 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 128,
+   "sy": 16
+  }
+ },
+ "asparagus": {
+  "name": "Asparagus",
+  "type": "crop",
+  "sell": 140,
+  "edible": 12,
+  "desc": "These hearty shoots are an excellent source of fiber.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 144,
+   "sy": 16
+  }
+ },
+ "barley_seeds": {
+  "name": "Barley Seeds",
+  "type": "seed",
+  "crop": "barley",
+  "buy": 12,
+  "sell": 6,
+  "desc": "Plant in fall. Takes 4 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 160,
+   "sy": 16
+  }
+ },
+ "barley": {
+  "name": "Barley",
+  "type": "crop",
+  "sell": 25,
+  "edible": 0,
+  "desc": "A dark grain that has a more earthy taste when processed than wheat.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 176,
+   "sy": 16
+  }
+ },
+ "black_beans_seeds": {
+  "name": "Black Beans Seeds",
+  "type": "seed",
+  "crop": "black_beans",
+  "buy": 10,
+  "sell": 5,
+  "desc": "Plant in fall. Takes 10 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 192,
+   "sy": 16
+  }
+ },
+ "black_beans": {
+  "name": "Black Beans",
+  "type": "crop",
+  "sell": 15,
+  "edible": 0,
+  "desc": "A savory bean that's earthy and rich in flavor.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 208,
+   "sy": 16
+  }
+ },
+ "buckwheat_seeds": {
+  "name": "Buckwheat Seeds",
+  "type": "seed",
+  "crop": "buckwheat",
+  "buy": 12,
+  "sell": 6,
+  "desc": "Plant in spring. Takes 4 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 224,
+   "sy": 16
+  }
+ },
+ "buckwheat": {
+  "name": "Buckwheat",
+  "type": "crop",
+  "sell": 25,
+  "edible": 0,
+  "desc": "A more wild kind of grain, it's somewhat bitter.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 240,
+   "sy": 16
+  }
+ },
+ "butternut_squash_seeds": {
+  "name": "Butternut Squash Seeds",
+  "type": "seed",
+  "crop": "butternut_squash",
+  "buy": 100,
+  "sell": 50,
+  "desc": "Plant in summer. Takes 10 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 0,
+   "sy": 32
+  }
+ },
+ "butternut_squash": {
+  "name": "Butternut Squash",
+  "type": "crop",
+  "sell": 200,
+  "edible": 8,
+  "desc": "It has a sweet, nutty taste similar to that of a pumpkin.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 16,
+   "sy": 32
+  }
+ },
+ "cabbage_seeds": {
+  "name": "Cabbage Seeds",
+  "type": "seed",
+  "crop": "cabbage",
+  "buy": 65,
+  "sell": 32,
+  "desc": "Plant in spring. Takes 7 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 32,
+   "sy": 32
+  }
+ },
+ "cabbage": {
+  "name": "Cabbage",
+  "type": "crop",
+  "sell": 130,
+  "edible": 20,
+  "desc": "Cabbages are versatile and can be used in salad, pickling, and stews!",
+  "icon": {
+   "sheet": "icons",
+   "sx": 48,
+   "sy": 32
+  }
+ },
+ "canary_melon_seeds": {
+  "name": "Canary Melon Seeds",
+  "type": "seed",
+  "crop": "canary_melon",
+  "buy": 112,
+  "sell": 56,
+  "desc": "Plant in spring. Takes 12 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 64,
+   "sy": 32
+  }
+ },
+ "canary_melon": {
+  "name": "Canary Melon",
+  "type": "crop",
+  "sell": 225,
+  "edible": 45,
+  "desc": "A bright yellow melon, it's distinctively sweet and tangy.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 80,
+   "sy": 32
+  }
+ },
+ "canola_flower_seeds": {
+  "name": "Canola Flower Seeds",
+  "type": "seed",
+  "crop": "canola_flower",
+  "buy": 20,
+  "sell": 10,
+  "desc": "Plant in spring/summer. Takes 7 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 96,
+   "sy": 32
+  }
+ },
+ "canola_flower": {
+  "name": "Canola Flower",
+  "type": "crop",
+  "sell": 40,
+  "edible": 18,
+  "desc": "A flower that can be used to make oil.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 112,
+   "sy": 32
+  }
+ },
+ "cantaloupe_seeds": {
+  "name": "Cantaloupe Seeds",
+  "type": "seed",
+  "crop": "cantaloupe",
+  "buy": 90,
+  "sell": 45,
+  "desc": "Plant in spring. Takes 8 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 128,
+   "sy": 32
+  }
+ },
+ "cantaloupe": {
+  "name": "Cantaloupe",
+  "type": "crop",
+  "sell": 180,
+  "edible": 35,
+  "desc": "A sweet melon that often tastes great with citrus or salty compliments.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 144,
+   "sy": 32
+  }
+ },
+ "cassava_seeds": {
+  "name": "Cassava Seeds",
+  "type": "seed",
+  "crop": "cassava",
+  "buy": 40,
+  "sell": 20,
+  "desc": "Plant in summer. Takes 7 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 160,
+   "sy": 32
+  }
+ },
+ "cassava": {
+  "name": "Cassava",
+  "type": "crop",
+  "sell": 80,
+  "edible": 0,
+  "desc": "A hardy tuber from tropical climates, it has a woody flavor.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 176,
+   "sy": 32
+  }
+ },
+ "celery_seeds": {
+  "name": "Celery Seeds",
+  "type": "seed",
+  "crop": "celery",
+  "buy": 22,
+  "sell": 11,
+  "desc": "Plant in fall. Takes 4 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 192,
+   "sy": 32
+  }
+ },
+ "celery": {
+  "name": "Celery",
+  "type": "crop",
+  "sell": 45,
+  "edible": 8,
+  "desc": "Crisp and refreshing, it has little inherent taste on its own.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 208,
+   "sy": 32
+  }
+ },
+ "chickpea_seeds": {
+  "name": "Chickpea Seeds",
+  "type": "seed",
+  "crop": "chickpea",
+  "buy": 27,
+  "sell": 13,
+  "desc": "Plant in summer. Takes 10 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 224,
+   "sy": 32
+  }
+ },
+ "chickpea": {
+  "name": "Chickpea",
+  "type": "crop",
+  "sell": 55,
+  "edible": 0,
+  "desc": "A coastal staple. Roasted or boiled, they have a slightly nutty and salty taste.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 240,
+   "sy": 32
+  }
+ },
+ "daikon_seeds": {
+  "name": "Daikon Seeds",
+  "type": "seed",
+  "crop": "daikon",
+  "buy": 97,
+  "sell": 48,
+  "desc": "Plant in fall. Takes 8 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 0,
+   "sy": 48
+  }
+ },
+ "daikon": {
+  "name": "Daikon",
+  "type": "crop",
+  "sell": 195,
+  "edible": 18,
+  "desc": "A large radish that's a favorite for making pickles!",
+  "icon": {
+   "sheet": "icons",
+   "sx": 16,
+   "sy": 48
+  }
+ },
+ "durum_seeds": {
+  "name": "Durum Seeds",
+  "type": "seed",
+  "crop": "durum",
+  "buy": 12,
+  "sell": 6,
+  "desc": "Plant in fall. Takes 4 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 32,
+   "sy": 48
+  }
+ },
+ "durum": {
+  "name": "Durum",
+  "type": "crop",
+  "sell": 25,
+  "edible": 0,
+  "desc": "A hardy grain that's used to make couscous and authentic pastas.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 48,
+   "sy": 48
+  }
+ },
+ "green_peas_seeds": {
+  "name": "Green Peas Seeds",
+  "type": "seed",
+  "crop": "green_peas",
+  "buy": 17,
+  "sell": 8,
+  "desc": "Plant in summer. Takes 8 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 64,
+   "sy": 48
+  }
+ },
+ "green_peas": {
+  "name": "Green Peas",
+  "type": "crop",
+  "sell": 35,
+  "edible": 10,
+  "desc": "The average green pea. It's not very flavorful on its own.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 80,
+   "sy": 48
+  }
+ },
+ "groundcherries_seeds": {
+  "name": "Groundcherries Seeds",
+  "type": "seed",
+  "crop": "groundcherries",
+  "buy": 30,
+  "sell": 15,
+  "desc": "Plant in summer/fall. Takes 9 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 96,
+   "sy": 48
+  }
+ },
+ "groundcherries": {
+  "name": "Groundcherries",
+  "type": "crop",
+  "sell": 60,
+  "edible": 10,
+  "desc": "These tiny tomato-like berries grow inside a leafy shell.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 112,
+   "sy": 48
+  }
+ },
+ "habanero_seeds": {
+  "name": "Habanero Seeds",
+  "type": "seed",
+  "crop": "habanero",
+  "buy": 60,
+  "sell": 30,
+  "desc": "Plant in fall. Takes 10 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 128,
+   "sy": 48
+  }
+ },
+ "habanero": {
+  "name": "Habanero",
+  "type": "crop",
+  "sell": 120,
+  "edible": 5,
+  "desc": "A popular ingredient in hot sauces and other spicy foods.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 144,
+   "sy": 48
+  }
+ },
+ "honeydew_seeds": {
+  "name": "Honeydew Seeds",
+  "type": "seed",
+  "crop": "honeydew",
+  "buy": 90,
+  "sell": 45,
+  "desc": "Plant in summer. Takes 8 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 160,
+   "sy": 48
+  }
+ },
+ "honeydew": {
+  "name": "Honeydew",
+  "type": "crop",
+  "sell": 180,
+  "edible": 35,
+  "desc": "A simple melon that's a popular fruit salad addition.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 176,
+   "sy": 48
+  }
+ },
+ "jalapeno_seeds": {
+  "name": "Jalape\u00f1o Seeds",
+  "type": "seed",
+  "crop": "jalapeno",
+  "buy": 20,
+  "sell": 10,
+  "desc": "Plant in spring. Takes 8 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 192,
+   "sy": 48
+  }
+ },
+ "jalapeno": {
+  "name": "Jalape\u00f1o",
+  "type": "crop",
+  "sell": 40,
+  "edible": 5,
+  "desc": "A moderately spicy pepper. A festive staple.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 208,
+   "sy": 48
+  }
+ },
+ "kidney_beans_seeds": {
+  "name": "Kidney Beans Seeds",
+  "type": "seed",
+  "crop": "kidney_beans",
+  "buy": 17,
+  "sell": 8,
+  "desc": "Plant in fall. Takes 10 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 224,
+   "sy": 48
+  }
+ },
+ "kidney_beans": {
+  "name": "Kidney Beans",
+  "type": "crop",
+  "sell": 35,
+  "edible": 0,
+  "desc": "They contain a high amount of phytohemagglutinin which makes them more toxic than other beans.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 240,
+   "sy": 48
+  }
+ },
+ "navy_beans_seeds": {
+  "name": "Navy Beans Seeds",
+  "type": "seed",
+  "crop": "navy_beans",
+  "buy": 10,
+  "sell": 5,
+  "desc": "Plant in summer. Takes 10 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 0,
+   "sy": 64
+  }
+ },
+ "navy_beans": {
+  "name": "Navy Beans",
+  "type": "crop",
+  "sell": 15,
+  "edible": 0,
+  "desc": "A handful of beans. They have a mild flavor.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 16,
+   "sy": 64
+  }
+ },
+ "oats_seeds": {
+  "name": "Oats Seeds",
+  "type": "seed",
+  "crop": "oats",
+  "buy": 12,
+  "sell": 6,
+  "desc": "Plant in fall. Takes 4 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 32,
+   "sy": 64
+  }
+ },
+ "oats": {
+  "name": "Oats",
+  "type": "crop",
+  "sell": 25,
+  "edible": 1,
+  "desc": "Associated with lower blood cholesterol and good fiber!",
+  "icon": {
+   "sheet": "icons",
+   "sx": 48,
+   "sy": 64
+  }
+ },
+ "okra_seeds": {
+  "name": "Okra Seeds",
+  "type": "seed",
+  "crop": "okra",
+  "buy": 30,
+  "sell": 15,
+  "desc": "Plant in summer/fall. Takes 10 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 64,
+   "sy": 64
+  }
+ },
+ "okra": {
+  "name": "Okra",
+  "type": "crop",
+  "sell": 60,
+  "edible": 8,
+  "desc": "Wet and slimy on the inside, but delicious when fried.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 80,
+   "sy": 64
+  }
+ },
+ "pinto_beans_seeds": {
+  "name": "Pinto Beans Seeds",
+  "type": "seed",
+  "crop": "pinto_beans",
+  "buy": 10,
+  "sell": 5,
+  "desc": "Plant in spring. Takes 10 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 96,
+   "sy": 64
+  }
+ },
+ "pinto_beans": {
+  "name": "Pinto Beans",
+  "type": "crop",
+  "sell": 15,
+  "edible": 0,
+  "desc": "Eating too many of these beans can produce large amounts of gas!",
+  "icon": {
+   "sheet": "icons",
+   "sx": 112,
+   "sy": 64
+  }
+ },
+ "quinoa_seeds": {
+  "name": "Quinoa Seeds",
+  "type": "seed",
+  "crop": "quinoa",
+  "buy": 15,
+  "sell": 7,
+  "desc": "Plant in summer. Takes 6 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 128,
+   "sy": 64
+  }
+ },
+ "quinoa": {
+  "name": "Quinoa",
+  "type": "crop",
+  "sell": 30,
+  "edible": 0,
+  "desc": "Rich in protein, fiber, B vitamins, and dietary minerals in amounts greater than in many grains.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 144,
+   "sy": 64
+  }
+ },
+ "red_onion_seeds": {
+  "name": "Red Onion Seeds",
+  "type": "seed",
+  "crop": "red_onion",
+  "buy": 57,
+  "sell": 28,
+  "desc": "Plant in spring. Takes 8 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 160,
+   "sy": 64
+  }
+ },
+ "red_onion": {
+  "name": "Red Onion",
+  "type": "crop",
+  "sell": 115,
+  "edible": 8,
+  "desc": "A sweeter variety of onion.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 176,
+   "sy": 64
+  }
+ },
+ "shallot_seeds": {
+  "name": "Shallot Seeds",
+  "type": "seed",
+  "crop": "shallot",
+  "buy": 57,
+  "sell": 28,
+  "desc": "Plant in spring. Takes 8 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 192,
+   "sy": 64
+  }
+ },
+ "shallot": {
+  "name": "Shallot",
+  "type": "crop",
+  "sell": 115,
+  "edible": 8,
+  "desc": "A smaller and milder version of an onion.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 208,
+   "sy": 64
+  }
+ },
+ "sugar_beet_seeds": {
+  "name": "Sugar Beet Seeds",
+  "type": "seed",
+  "crop": "sugar_beet",
+  "buy": 90,
+  "sell": 45,
+  "desc": "Plant in spring. Takes 8 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 224,
+   "sy": 64
+  }
+ },
+ "sugar_beet": {
+  "name": "Sugar Beet",
+  "type": "crop",
+  "sell": 180,
+  "edible": 12,
+  "desc": "This tuber has a high concentration of sucrose. It's good for processing into sugar!",
+  "icon": {
+   "sheet": "icons",
+   "sx": 240,
+   "sy": 64
+  }
+ },
+ "sweet_potato_seeds": {
+  "name": "Sweet Potato Seeds",
+  "type": "seed",
+  "crop": "sweet_potato",
+  "buy": 90,
+  "sell": 45,
+  "desc": "Plant in fall. Takes 8 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 0,
+   "sy": 80
+  }
+ },
+ "sweet_potato": {
+  "name": "Sweet Potato",
+  "type": "crop",
+  "sell": 180,
+  "edible": 10,
+  "desc": "The nicer cousin of the potato. It's sweet and earthy when baked.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 16,
+   "sy": 80
+  }
+ },
+ "wasabi_root_seeds": {
+  "name": "Wasabi Root Seeds",
+  "type": "seed",
+  "crop": "wasabi_root",
+  "buy": 82,
+  "sell": 41,
+  "desc": "Plant in summer. Takes 8 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 32,
+   "sy": 80
+  }
+ },
+ "wasabi_root": {
+  "name": "Wasabi Root",
+  "type": "crop",
+  "sell": 165,
+  "edible": 5,
+  "desc": "A root that can be used to make wasabi paste. It has a strong flavor!",
+  "icon": {
+   "sheet": "icons",
+   "sx": 48,
+   "sy": 80
+  }
+ },
+ "white_grape_seeds": {
+  "name": "White Grape Seeds",
+  "type": "seed",
+  "crop": "white_grape",
+  "buy": 40,
+  "sell": 20,
+  "desc": "Plant in fall. Takes 10 days, regrows.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 64,
+   "sy": 80
+  }
+ },
+ "white_grape": {
+  "name": "White Grape",
+  "type": "crop",
+  "sell": 80,
+  "edible": 15,
+  "desc": "A different cultivar of grape. It can be used to make sparkling wine.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 80,
+   "sy": 80
+  }
+ },
+ "chives_seeds": {
+  "name": "Chives Seeds",
+  "type": "seed",
+  "crop": "chives",
+  "buy": 17,
+  "sell": 8,
+  "desc": "Plant in summer. Takes 5 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 96,
+   "sy": 80
+  }
+ },
+ "chives": {
+  "name": "Chives",
+  "type": "crop",
+  "sell": 35,
+  "edible": 8,
+  "desc": "A small relative of the spring onion. It's often used in cooking and has a slightly sweet flavor.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 112,
+   "sy": 80
+  }
+ },
+ "cilantro_seeds": {
+  "name": "Cilantro Seeds",
+  "type": "seed",
+  "crop": "cilantro",
+  "buy": 17,
+  "sell": 8,
+  "desc": "Plant in fall. Takes 5 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 128,
+   "sy": 80
+  }
+ },
+ "cilantro": {
+  "name": "Cilantro",
+  "type": "crop",
+  "sell": 35,
+  "edible": 8,
+  "desc": "The leaves of the coriander plant are called cilantro. It's the flavor of citrus, light and sweet.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 144,
+   "sy": 80
+  }
+ },
+ "dill_seeds": {
+  "name": "Dill Seeds",
+  "type": "seed",
+  "crop": "dill",
+  "buy": 32,
+  "sell": 16,
+  "desc": "Plant in spring. Takes 7 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 160,
+   "sy": 80
+  }
+ },
+ "dill": {
+  "name": "Dill",
+  "type": "crop",
+  "sell": 65,
+  "edible": 8,
+  "desc": "Fresh leaves that have a mildly sharp, green taste with a delicate, sweet crunch.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 176,
+   "sy": 80
+  }
+ },
+ "fennel_seeds": {
+  "name": "Fennel Seeds",
+  "type": "seed",
+  "crop": "fennel",
+  "buy": 17,
+  "sell": 8,
+  "desc": "Plant in fall. Takes 5 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 192,
+   "sy": 80
+  }
+ },
+ "fennel": {
+  "name": "Fennel",
+  "type": "crop",
+  "sell": 35,
+  "edible": 8,
+  "desc": "A feathery herb that can be eaten as is or cooked.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 208,
+   "sy": 80
+  }
+ },
+ "fenugreek_seeds": {
+  "name": "Fenugreek Seeds",
+  "type": "seed",
+  "crop": "fenugreek",
+  "buy": 17,
+  "sell": 8,
+  "desc": "Plant in spring. Takes 5 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 224,
+   "sy": 80
+  }
+ },
+ "fenugreek": {
+  "name": "Fenugreek",
+  "type": "crop",
+  "sell": 35,
+  "edible": 8,
+  "desc": "An annual herb with a favor described as a cross between celery and maple.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 240,
+   "sy": 80
+  }
+ },
+ "marjoram_seeds": {
+  "name": "Marjoram Seeds",
+  "type": "seed",
+  "crop": "marjoram",
+  "buy": 25,
+  "sell": 12,
+  "desc": "Plant in spring. Takes 6 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 0,
+   "sy": 96
+  }
+ },
+ "marjoram": {
+  "name": "Marjoram",
+  "type": "crop",
+  "sell": 50,
+  "edible": 8,
+  "desc": "It has complicated flavor notes and can be slightly bitter.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 16,
+   "sy": 96
+  }
+ },
+ "mint_seeds": {
+  "name": "Mint Seeds",
+  "type": "seed",
+  "crop": "mint",
+  "buy": 25,
+  "sell": 12,
+  "desc": "Plant in winter. Takes 5 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 32,
+   "sy": 96
+  }
+ },
+ "mint": {
+  "name": "Mint",
+  "type": "crop",
+  "sell": 50,
+  "edible": 8,
+  "desc": "The world's most familiar mint scent is the aroma of peppermint.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 48,
+   "sy": 96
+  }
+ },
+ "oregano_seeds": {
+  "name": "Oregano Seeds",
+  "type": "seed",
+  "crop": "oregano",
+  "buy": 25,
+  "sell": 12,
+  "desc": "Plant in summer. Takes 5 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 64,
+   "sy": 96
+  }
+ },
+ "oregano": {
+  "name": "Oregano",
+  "type": "crop",
+  "sell": 50,
+  "edible": 8,
+  "desc": "A warm and aromatic, yet slightly bitter, herb in the mint family.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 80,
+   "sy": 96
+  }
+ },
+ "parsley_seeds": {
+  "name": "Parsley Seeds",
+  "type": "seed",
+  "crop": "parsley",
+  "buy": 22,
+  "sell": 11,
+  "desc": "Plant in spring. Takes 5 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 96,
+   "sy": 96
+  }
+ },
+ "parsley": {
+  "name": "Parsley",
+  "type": "crop",
+  "sell": 45,
+  "edible": 8,
+  "desc": "A leafy green that is used as an accent in food presentation.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 112,
+   "sy": 96
+  }
+ },
+ "perilla_leaves_seeds": {
+  "name": "Perilla Leaves Seeds",
+  "type": "seed",
+  "crop": "perilla_leaves",
+  "buy": 25,
+  "sell": 12,
+  "desc": "Plant in summer. Takes 5 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 128,
+   "sy": 96
+  }
+ },
+ "perilla_leaves": {
+  "name": "Perilla Leaves",
+  "type": "crop",
+  "sell": 50,
+  "edible": 8,
+  "desc": "An herb from far away with a unique scent, often used for cooking.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 144,
+   "sy": 96
+  }
+ },
+ "rosemary_seeds": {
+  "name": "Rosemary Seeds",
+  "type": "seed",
+  "crop": "rosemary",
+  "buy": 37,
+  "sell": 18,
+  "desc": "Plant in fall. Takes 7 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 160,
+   "sy": 96
+  }
+ },
+ "rosemary": {
+  "name": "Rosemary",
+  "type": "crop",
+  "sell": 75,
+  "edible": 8,
+  "desc": "The smell of rosemary is piney and fresh; familiar but also distinctive.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 176,
+   "sy": 96
+  }
+ },
+ "sage_seeds": {
+  "name": "Sage Seeds",
+  "type": "seed",
+  "crop": "sage",
+  "buy": 35,
+  "sell": 17,
+  "desc": "Plant in fall. Takes 5 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 192,
+   "sy": 96
+  }
+ },
+ "sage": {
+  "name": "Sage",
+  "type": "crop",
+  "sell": 70,
+  "edible": 8,
+  "desc": "Burned ceremonially to cleanse the spirit and welcome positive thoughts.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 208,
+   "sy": 96
+  }
+ },
+ "tarragon_seeds": {
+  "name": "Tarragon Seeds",
+  "type": "seed",
+  "crop": "tarragon",
+  "buy": 30,
+  "sell": 15,
+  "desc": "Plant in fall. Takes 6 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 224,
+   "sy": 96
+  }
+ },
+ "tarragon": {
+  "name": "Tarragon",
+  "type": "crop",
+  "sell": 60,
+  "edible": 8,
+  "desc": "Tarragon has a slightly bittersweet flavor. It goes well with fish, meat, soups and stews.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 240,
+   "sy": 96
+  }
+ },
+ "thyme_seeds": {
+  "name": "Thyme Seeds",
+  "type": "seed",
+  "crop": "thyme",
+  "buy": 25,
+  "sell": 12,
+  "desc": "Plant in fall. Takes 5 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 0,
+   "sy": 112
+  }
+ },
+ "thyme": {
+  "name": "Thyme",
+  "type": "crop",
+  "sell": 50,
+  "edible": 8,
+  "desc": "An aromatic herb in the mint family, with small rounded leaves and pink flowers.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 16,
+   "sy": 112
+  }
+ },
+ "mustard_seeds": {
+  "name": "Mustard Seeds",
+  "type": "seed",
+  "crop": "mustard",
+  "buy": 20,
+  "sell": 10,
+  "desc": "Plant in winter. Takes 4 days.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 32,
+   "sy": 112
+  }
+ },
+ "mustard": {
+  "name": "Mustard",
+  "type": "crop",
+  "sell": 40,
+  "edible": 5,
+  "desc": "",
+  "icon": {
+   "sheet": "icons",
+   "sx": 48,
+   "sy": 112
+  }
+ },
+ "ja_brussel_sprouts_seeds": {
+  "name": "Brussel Sprout Seeds",
+  "type": "seed",
+  "crop": "ja_brussel_sprouts",
+  "buy": 40,
+  "sell": 20,
+  "desc": "Matures in 7 days, and produces every 3 days after. Plant in winter.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 64,
+   "sy": 112
+  }
+ },
+ "ja_brussel_sprouts": {
+  "name": "Brussel Sprout",
+  "type": "crop",
+  "sell": 25,
+  "edible": 5,
+  "desc": "",
+  "icon": {
+   "sheet": "icons",
+   "sx": 80,
+   "sy": 112
+  }
+ },
+ "ja_christmas_rose_seeds": {
+  "name": "Christmas Rose Seeds",
+  "type": "seed",
+  "crop": "ja_christmas_rose",
+  "buy": 15,
+  "sell": 7,
+  "desc": "Blooms after 6 days. Plant in Winter.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 96,
+   "sy": 112
+  }
+ },
+ "ja_christmas_rose": {
+  "name": "Christmas Rose",
+  "type": "crop",
+  "sell": 30,
+  "edible": 20,
+  "desc": "",
+  "icon": {
+   "sheet": "icons",
+   "sx": 112,
+   "sy": 112
+  }
+ },
+ "ja_iceberg_lettuce_seeds": {
+  "name": "Iceberg Lettuce Seeds",
+  "type": "seed",
+  "crop": "ja_iceberg_lettuce",
+  "buy": 50,
+  "sell": 25,
+  "desc": "Grows in 8 days. Plant in winter.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 128,
+   "sy": 112
+  }
+ },
+ "ja_iceberg_lettuce": {
+  "name": "Iceberg Lettuce",
+  "type": "crop",
+  "sell": 80,
+  "edible": 25,
+  "desc": "",
+  "icon": {
+   "sheet": "icons",
+   "sx": 144,
+   "sy": 112
+  }
+ },
+ "ja_mahonia_plant_seeds": {
+  "name": "Mahonia Seeds",
+  "type": "seed",
+  "crop": "ja_mahonia_plant",
+  "buy": 10,
+  "sell": 5,
+  "desc": "Blooms after 4 days. Plant in winter.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 160,
+   "sy": 112
+  }
+ },
+ "ja_mahonia_plant": {
+  "name": "Mahonia",
+  "type": "crop",
+  "sell": 25,
+  "edible": 15,
+  "desc": "",
+  "icon": {
+   "sheet": "icons",
+   "sx": 176,
+   "sy": 112
+  }
+ },
+ "ja_nettles_seeds": {
+  "name": "Nettle Starter",
+  "type": "seed",
+  "crop": "ja_nettles",
+  "buy": 45,
+  "sell": 22,
+  "desc": "Grows in 5 days, and reproduces every 3 days. Plant in winter and grows on a trellis.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 192,
+   "sy": 112
+  }
+ },
+ "ja_nettles": {
+  "name": "Nettle Leaves",
+  "type": "crop",
+  "sell": 50,
+  "edible": 0,
+  "desc": "",
+  "icon": {
+   "sheet": "icons",
+   "sx": 208,
+   "sy": 112
+  }
+ },
+ "ja_winter_carrot_plant_seeds": {
+  "name": "Winter Carrot Seeds",
+  "type": "seed",
+  "crop": "ja_winter_carrot_plant",
+  "buy": 25,
+  "sell": 12,
+  "desc": "Grows in 5 days. Plant in winter.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 224,
+   "sy": 112
+  }
+ },
+ "ja_winter_carrot_plant": {
+  "name": "Winter Carrot",
+  "type": "crop",
+  "sell": 40,
+  "edible": 15,
+  "desc": "",
+  "icon": {
+   "sheet": "icons",
+   "sx": 240,
+   "sy": 112
+  }
+ },
+ "ja_winter_onion_plant_seeds": {
+  "name": "Winter Onion Seeds",
+  "type": "seed",
+  "crop": "ja_winter_onion_plant",
+  "buy": 35,
+  "sell": 17,
+  "desc": "Grows in 6 days. Plant in winter.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 0,
+   "sy": 128
+  }
+ },
+ "ja_winter_onion_plant": {
+  "name": "Winter Onion",
+  "type": "crop",
+  "sell": 55,
+  "edible": 23,
+  "desc": "",
+  "icon": {
+   "sheet": "icons",
+   "sx": 16,
+   "sy": 128
+  }
+ },
+ "ja_winter_spinach_plant_seeds": {
+  "name": "Winter Spinach Seeds",
+  "type": "seed",
+  "crop": "ja_winter_spinach_plant",
+  "buy": 40,
+  "sell": 20,
+  "desc": "Grows in 7 days. Plant in winter and harvest with a scythe.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 32,
+   "sy": 128
+  }
+ },
+ "ja_winter_spinach_plant": {
+  "name": "Winter Spinach",
+  "type": "crop",
+  "sell": 60,
+  "edible": 30,
+  "desc": "",
+  "icon": {
+   "sheet": "icons",
+   "sx": 48,
+   "sy": 128
+  }
+ },
+ "ja_winter_squash_plant_seeds": {
+  "name": "Winter Squash Seeds",
+  "type": "seed",
+  "crop": "ja_winter_squash_plant",
+  "buy": 100,
+  "sell": 50,
+  "desc": "Grows in 12 days. Plant in winter.",
+  "icon": {
+   "sheet": "icons",
+   "sx": 64,
+   "sy": 128
+  }
+ },
+ "ja_winter_squash_plant": {
+  "name": "Winter Squash",
+  "type": "crop",
+  "sell": 220,
+  "edible": 50,
+  "desc": "",
+  "icon": {
+   "sheet": "icons",
+   "sx": 80,
+   "sy": 128
+  }
+ }
+}

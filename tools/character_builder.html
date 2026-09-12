@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Character builder</title>
+<style>
+  body { margin: 0; font: 13px 'Segoe UI', sans-serif; background: #2b2118; color: #f0e6d2; display: flex; height: 100vh; overflow: hidden; }
+  #left { width: 380px; padding: 12px; overflow-y: auto; background: #1f170f; border-right: 2px solid #5a3f2a; box-sizing: border-box; }
+  #right { flex: 1; padding: 12px; overflow-y: auto; }
+  h1 { font-size: 16px; margin: 0 0 8px; color: #ffd86b; }
+  h2 { font-size: 12px; margin: 14px 0 4px; color: #c9b48a; text-transform: uppercase; letter-spacing: .06em; }
+  canvas { image-rendering: pixelated; image-rendering: crisp-edges; }
+  #preview { background: #4d8f3c; border: 2px solid #5a3f2a; }
+  #sheetview { background: #333; border: 1px solid #5a3f2a; margin-top: 8px; }
+  .grid { display: flex; flex-wrap: wrap; gap: 2px; max-height: 190px; overflow-y: auto; background: #120d08; padding: 4px; border: 1px solid #5a3f2a; }
+  .grid canvas { cursor: pointer; border: 2px solid transparent; background: #3a2a1c; }
+  .grid canvas.sel { border-color: #ffd86b; }
+  select, input[type=text], button { background: #3a2a1c; color: #f0e6d2; border: 1px solid #8a5a2b; padding: 3px 6px; font: inherit; }
+  button { cursor: pointer; } button:hover { background: #5a3f2a; }
+  .row { display: flex; gap: 6px; align-items: center; margin: 3px 0; flex-wrap: wrap; }
+  .sw { width: 18px; height: 18px; border: 1px solid #000; cursor: pointer; display: inline-block; }
+  .sw.sel { outline: 2px solid #ffd86b; }
+  input[type=color] { width: 28px; height: 22px; padding: 0; border: 1px solid #8a5a2b; background: none; }
+  #status { color: #9fd88a; min-height: 16px; }
+  small { color: #a09080; }
+</style>
+</head>
+<body>
+<div id="left">
+  <h1>Character builder</h1>
+  <small>Composites a Stardew-style farmer from your packs, the way the game's renderer does (body, pants, shirt, hair, hat, arms with per-frame offsets), and exports a 4-direction walk sheet the game can use for the player or any NPC. Offsets follow Stardew's FarmerRenderer.</small>
+
+  <h2>Body</h2>
+  <div class="row">
+    <select id="body"><option value="female">Female</option><option value="male">Male</option></select>
+    <span>Skin:</span> <span id="skins"></span> <input type="color" id="skinCustom" value="#f8d3b9">
+  </div>
+  <div class="row"><span>Eyes:</span> <span id="eyeColors"></span> <input type="color" id="eyeCustom" value="#682b0f"></div>
+
+  <h2>Hair</h2>
+  <div class="row"><select id="hairSheet"></select> <span>Color:</span> <span id="hairColors"></span> <input type="color" id="hairCustom" value="#6b3f1e"></div>
+  <div class="grid" id="hairGrid"></div>
+
+  <h2>Shirt</h2>
+  <div class="row"><select id="shirtSheet"></select></div>
+  <div class="grid" id="shirtGrid"></div>
+
+  <h2>Pants</h2>
+  <div class="row"><select id="pantsSheet"></select> <span>Color:</span> <span id="pantsColors"></span> <input type="color" id="pantsCustom" value="#3d5a8a"></div>
+  <div class="grid" id="pantsGrid"></div>
+
+
+  <h2>Shoes</h2>
+  <div class="row"><select id="shoesSheet"></select> <span>Color:</span> <span id="shoeColors"></span> <input type="color" id="shoeCustom" value="#5b1f24"> <button id="shoeReset" title="keep the sheet's own colours">as drawn</button></div>
+  <div class="grid" id="shoesGrid"></div>
+
+  <h2>Hat</h2>
+  <div class="row"><select id="hatSheet"></select> <button id="noHat">No hat</button></div>
+  <div class="grid" id="hatGrid"></div>
+
+  <h2>Save</h2>
+  <div class="row"><input type="text" id="name" placeholder="name (e.g. Alyssa)" value=""> <button id="save">Save to game</button> <button id="download">Download PNG</button></div>
+  <div class="row"><span>Use as:</span> <select id="useAs"><option value="player">a player look</option></select></div>
+  <div id="status"></div>
+  <small>"Save to game" writes assets/characters/custom_&lt;name&gt;.png and registers it; player looks appear on the title screen, NPC choices replace that character's sprite. Random: press R.</small>
+</div>
+<div id="right">
+  <div class="row"><span>Preview</span> <button id="anim">Walk: on</button> <span>Zoom</span> <select id="zoom"><option>4</option><option selected>6</option><option>8</option></select></div>
+  <canvas id="preview" width="600" height="300"></canvas>
+  <div class="row"><span>Exported sheet (96x144: 24x36 cells with a 4 px margin so hats aren't clipped; rows: down / right / up / left, frames: idle, step, idle, step)</span></div>
+  <canvas id="sheetview" width="384" height="576"></canvas>
+</div>
+<script>
+// ---------------------------------------------------------------- data
+const P = {};                       // parts.json
+const IMG = {};                     // loaded images by file
+const S = { body: "female", skin: 0, hairSheet: "vanilla", hair: 0, hairColor: "#6b3f1e", shirtSheet: "vanilla", shirt: 0,
+            pantsSheet: "plain", pants: 0, pantsColor: "#3d5a8a", hatSheet: "vanilla", hat: -1, glasses: "none", glassColor: "#222222", skinColor: null, eyeColor: "#68280f", shoesSheet: "none", shoes: 0, shoesColor: null };
+// Stardew FarmerRenderer tables (frames 0..17 cover the three walking rows)
+const FY = [1, 2, 2, 0, 5, 6, 1, 2, 2, 1, 0, 2, 0, 1, 1, 0, 2, 2];
+const HAT_OFF = [0, 0, 0, 4, 0, 0, 3, 0, 4, 0, 0, 0, 0, 0, 0, 0];
+// walk cycles per facing: base frame indices [idle, step, idle, step]; left = right flipped
+const WALK = { down: [0, 1, 0, 2], right: [6, 7, 6, 8], up: [12, 13, 12, 14], left: [6, 7, 6, 8] };
+const HAIR_Y = { down: 0, right: 32, up: 64, left: 32 };       // 16x32 blocks in the 16x96 style column
+const SHIRT_Y = { down: 0, right: 8, up: 24, left: 16 };
+const HAT_Y = { down: 0, right: 20, up: 60, left: 40 };       // hats and shirts have their own left view (not mirrored)
+const EYES = ["#68280f", "#2b1a10", "#3f7a3c", "#3e5f9a", "#6fa3d8", "#7a5aa0", "#8a8a8a", "#c9a24a"];
+const GLASS = ["#222222", "#5a3a1e", "#b08a4a", "#c9c9c9", "#3e5f9a", "#8a2f1e", "#f2f2f2"];
+// where the eyes are on the base sprites (rows relative to the frame's feature offset, columns in the 16px frame)
+const EYE_GEO = { female: { down: { top: 10, lenses: [[5, 6], [9, 10]] }, side: { top: 9, lens: [7, 9] } },
+                  male:   { down: { top: 9, lenses: [[4, 6], [9, 11]] }, side: { top: 8, lens: [7, 9] } } };
+const IRIS = [104, 43, 15];   // the base sprite's brown iris, recoloured by the eye picker
+// exported cell: the 16x32 body plus a 4 px margin on every side (hats are 20 wide and rise up to 3 px above the frame)
+const MX = 4, MY = 4, FW = 16 + 2 * MX, FH = 32 + MY;
+const SKINS = [ // light / mid / dark per tone
+  ["#f8d3b9", "#e9b18e", "#c7805a"], ["#f5c4a6", "#dc9a73", "#b9704d"], ["#e9b28c", "#c98858", "#9f6337"], ["#d99b6d", "#b3763f", "#8a5527"],
+  ["#c48155", "#9d5f34", "#75421f"], ["#a86a44", "#7f4b2a", "#5b3218"], ["#8a5236", "#673a22", "#452414"], ["#6b3d28", "#4d2818", "#331a0e"],
+  ["#dfe6c0", "#b6c58a", "#8a9a5e"], ["#cfd7e8", "#9fb0cd", "#6f80a0"], ["#e0c9e6", "#b89ac4", "#8a6a98"], ["#c9c9c9", "#9a9a9a", "#6a6a6a"]];
+const HAIRS = ["#2b1c12", "#4a2c17", "#6b3f1e", "#8c5a2b", "#b07a3c", "#d9a95e", "#f0d78c", "#f5e9c8", "#8a2f1e", "#c8412b", "#e4762c", "#5a5a5a",
+               "#c9c9c9", "#f2f2f2", "#3e5f9a", "#6fa3d8", "#3f7a3c", "#7ecb6a", "#7a3d9a", "#c98bd9", "#d94f8a", "#f4a7c8"];
+const SHOES = ["#5b1f24", "#2b1c12", "#6b3f1e", "#8c5a2b", "#1e1e1e", "#f0f0f0", "#8a2f2f", "#3d5a8a", "#4a6b3a", "#c86a3a", "#7a5aa0", "#d9c9a8"];
+const BOOTS = [[61, 17, 35], [107, 0, 58], [91, 31, 36], [119, 41, 26]];   // the base sprite's own boot colours (dark -> light)
+const PANTS = ["#3d5a8a", "#2c3e5c", "#6b4a2b", "#3a3a3a", "#8a2f2f", "#4a6b3a", "#7a5aa0", "#d9c9a8", "#f0f0f0", "#c86a3a", "#2f7a7a", "#c94a8a"];
+
+const $ = (id) => document.getElementById(id);
+function load(file) { return new Promise((res, rej) => { const im = new Image(); im.onload = () => res(im); im.onerror = rej; im.src = "../assets/charparts/" + file + "?v=" + Date.now(); }); }
+
+async function boot() {
+  Object.assign(P, await (await fetch("../assets/charparts/parts.json?v=" + Date.now())).json());
+  const files = new Set();
+  for (const cat of ["bases", "hair", "shirts", "hats", "pants", "shoes"]) for (const k in P[cat] || {}) files.add(P[cat][k].file);
+  await Promise.all([...files].map(async (f) => { IMG[f] = await load(f); }));
+  buildBaseInfo();
+  fillSelect("hairSheet", P.hair, "hairSheet"); fillSelect("shirtSheet", P.shirts, "shirtSheet");
+  fillSelect("hatSheet", P.hats, "hatSheet");
+  P.shoes = Object.assign({ none: { file: null, label: "Default boots", count: 1 } }, P.shoes || {});
+  fillSelect("shoesSheet", P.shoes, "shoesSheet");
+  P.pants.plain = { file: null, label: "Plain trousers (from body)", count: 1 };
+  fillSelect("pantsSheet", P.pants, "pantsSheet");
+  swatches("skins", SKINS.map((t) => t[1]), (i) => { S.skin = i; S.skinColor = null; render(); }, () => S.skinColor ? -1 : S.skin);
+  $("skinCustom").oninput = (e) => { S.skinColor = e.target.value; render(); };
+  swatches("eyeColors", EYES, (i) => { S.eyeColor = EYES[i]; $("eyeCustom").value = EYES[i]; render(); }, () => EYES.indexOf(S.eyeColor));
+  $("eyeCustom").oninput = (e) => { S.eyeColor = e.target.value; render(); };
+  swatches("hairColors", HAIRS, (i) => { S.hairColor = HAIRS[i]; $("hairCustom").value = HAIRS[i]; render(); }, () => HAIRS.indexOf(S.hairColor));
+  swatches("pantsColors", PANTS, (i) => { S.pantsColor = PANTS[i]; $("pantsCustom").value = PANTS[i]; render(); }, () => PANTS.indexOf(S.pantsColor));
+  $("hairCustom").oninput = (e) => { S.hairColor = e.target.value; render(); };
+  $("pantsCustom").oninput = (e) => { S.pantsColor = e.target.value; render(); };
+  swatches("shoeColors", SHOES, (i) => { S.shoesColor = SHOES[i]; $("shoeCustom").value = SHOES[i]; render(); }, () => SHOES.indexOf(S.shoesColor));
+  $("shoeCustom").oninput = (e) => { S.shoesColor = e.target.value; render(); };
+  $("shoeReset").onclick = () => { S.shoesColor = null; render(); $("shoeColors")._refresh && $("shoeColors")._refresh(); };
+  $("body").onchange = (e) => { S.body = e.target.value; buildBaseInfo(); render(); };
+  $("noHat").onclick = () => { S.hat = -1; render(); };
+  $("anim").onclick = () => { animate = !animate; $("anim").textContent = "Walk: " + (animate ? "on" : "off"); };
+  $("zoom").onchange = render;
+  $("save").onclick = saveToGame; $("download").onclick = download;
+  window.addEventListener("keydown", (e) => { if (e.key === "r" && document.activeElement.tagName !== "INPUT") randomize(); });
+  if (!KIT) try { const npcs = await (await fetch("../data/npcs.json")).json(); for (const id in npcs) { const o = document.createElement("option"); o.value = "npc:" + id; o.textContent = "NPC: " + npcs[id].name; $("useAs").appendChild(o); } } catch (e) {}
+  rebuildGrids(); render();
+  setInterval(() => { if (animate) { frameT = (frameT + 1) % 4; renderPreview(); } }, 200);
+}
+
+// ---------------------------------------------------------------- base analysis (skin palette)
+let BASE = null;   // {img, skin:[light,mid,dark] as [r,g,b]}
+function buildBaseInfo() {
+  const img = IMG[P.bases[S.body].file];
+  const c = document.createElement("canvas"); c.width = 16; c.height = 32;
+  const g = c.getContext("2d"); g.drawImage(img, 0, 0, 16, 32, 0, 0, 16, 32);
+  const d = g.getImageData(0, 0, 16, 32).data, cnt = new Map();
+  for (let i = 0; i < d.length; i += 4) { if (d[i + 3] < 200) continue; const k = d[i] + "," + d[i + 1] + "," + d[i + 2]; cnt.set(k, (cnt.get(k) || 0) + 1); }
+  // skin = the warm, light colours; pick the three most common with r > g > b and r > 150
+  const skin = [...cnt.entries()].map(([k, n]) => [k.split(",").map(Number), n]).filter(([c]) => c[0] > 180 && c[0] - c[2] > 60 && c[1] > 80).sort((a, b) => b[1] - a[1]).slice(0, 2).map((e) => e[0]);
+  skin.sort((a, b) => (b[0] + b[1] + b[2]) - (a[0] + a[1] + a[2]));   // light, mid
+  BASE = { img: img, skin: skin };
+}
+
+// ---------------------------------------------------------------- compositing
+const hex = (h) => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
+function tmp(w, h) { const c = document.createElement("canvas"); c.width = w; c.height = h; return c; }
+
+// draw a region with skin palette swap
+function drawSkinned(g, img, sx, sy, w, h, dx, dy, flip) {
+  const c = tmp(w, h), cg = c.getContext("2d");
+  cg.drawImage(img, sx, sy, w, h, 0, 0, w, h);
+  const id = cg.getImageData(0, 0, w, h), d = id.data, tone = skinTone(), eye = hex(S.eyeColor);
+  for (let i = 0; i < d.length; i += 4) {
+    if (d[i + 3] === 0) continue;
+    if (d[i] === IRIS[0] && d[i + 1] === IRIS[1] && d[i + 2] === IRIS[2]) { d[i] = eye[0]; d[i + 1] = eye[1]; d[i + 2] = eye[2]; continue; }
+    for (let k = 0; k < BASE.skin.length; k++) {
+      const s = BASE.skin[k];
+      if (d[i] === s[0] && d[i + 1] === s[1] && d[i + 2] === s[2]) { d[i] = tone[k][0]; d[i + 1] = tone[k][1]; d[i + 2] = tone[k][2]; break; }
+    }
+  }
+  cg.putImageData(id, 0, 0);
+  blit(g, c, 0, 0, w, h, dx, dy, flip);
+}
+// light + mid skin colours: a palette tone, or a custom colour with the vanilla light->mid ratio
+function skinTone() {
+  if (!S.skinColor) return SKINS[S.skin].map(hex);
+  const c = hex(S.skinColor);
+  return [c, [Math.round(c[0] * 0.9), Math.round(c[1] * 0.62), Math.round(c[2] * 0.74)]];
+}
+// glasses drawn from the eye geometry: full rim (box around each eye) or half rim (top + sides)
+function drawGlasses(g, facing, fy, flip) {
+  const geo = EYE_GEO[S.body], full = S.glasses === "full";
+  g.fillStyle = S.glassColor;
+  const px = (x, y) => { if (flip) x = 15 - x; g.fillRect(x, y, 1, 1); };
+  if (facing === "down") {
+    const top = geo.down.top + fy, [l, r] = geo.down.lenses;
+    for (let x = l[0] - 1; x <= r[1] + 1; x++) px(x, top - 1);                  // browline bar over both eyes
+    px(l[0] - 1, top); px(r[1] + 1, top);                                         // outer sides
+    if (full) { px(l[0] - 1, top + 1); px(r[1] + 1, top + 1); for (let x = l[0]; x <= l[1]; x++) px(x, top + 2); for (let x = r[0]; x <= r[1]; x++) px(x, top + 2); }
+  } else if (facing !== "up") {
+    const top = geo.side.top + fy, [x0, x1] = geo.side.lens;
+    for (let x = x0 - 1; x <= x1 + 1; x++) px(x, top - 1);
+    px(x1 + 1, top);
+    if (full) { px(x1 + 1, top + 1); for (let x = x0; x <= x1; x++) px(x, top + 2); }
+    px(x0 - 2, top); px(x0 - 3, top);                                             // temple arm
+  }
+}
+// draw a region as shades of one colour (luminance keeps the shading): shoe sheets in a chosen colour
+function drawShaded(g, img, sx, sy, w, h, dx, dy, flip, color) {
+  const c = tmp(w, h), cg = c.getContext("2d"); cg.drawImage(img, sx, sy, w, h, 0, 0, w, h);
+  const id = cg.getImageData(0, 0, w, h), d = id.data, col = hex(color);
+  for (let i = 0; i < d.length; i += 4) {
+    if (d[i + 3] === 0) continue;
+    const lum = Math.min(1.15, (0.3 * d[i] + 0.59 * d[i + 1] + 0.11 * d[i + 2]) / 150);
+    d[i] = Math.min(255, col[0] * lum); d[i + 1] = Math.min(255, col[1] * lum); d[i + 2] = Math.min(255, col[2] * lum);
+  }
+  cg.putImageData(id, 0, 0); blit(g, c, 0, 0, w, h, dx, dy, flip);
+}
+// the base body's own boots (bottom rows, four fixed colours) -> shades of the chosen colour
+function recolourBoots(g, color) {
+  const id = g.getImageData(MX, MY + 20, 16, 12), d = id.data, col = hex(color);
+  for (let i = 0; i < d.length; i += 4) {
+    if (d[i + 3] === 0) continue;
+    const k = BOOTS.findIndex((b) => b[0] === d[i] && b[1] === d[i + 1] && b[2] === d[i + 2]);
+    if (k < 0) continue;
+    const shade = [0.5, 0.62, 0.8, 1.0][k];
+    d[i] = col[0] * shade; d[i + 1] = col[1] * shade; d[i + 2] = col[2] * shade;
+  }
+  g.putImageData(id, MX, MY + 20);
+}
+// draw a region tinted (multiply) by a colour
+function drawTinted(g, img, sx, sy, w, h, dx, dy, flip, color) {
+  const c = tmp(w, h), cg = c.getContext("2d");
+  cg.drawImage(img, sx, sy, w, h, 0, 0, w, h);
+  cg.globalCompositeOperation = "multiply"; cg.fillStyle = color; cg.fillRect(0, 0, w, h);
+  cg.globalCompositeOperation = "destination-in"; cg.drawImage(img, sx, sy, w, h, 0, 0, w, h);
+  blit(g, c, 0, 0, w, h, dx, dy, flip);
+}
+function blit(g, src, sx, sy, w, h, dx, dy, flip) {
+  if (!flip) { g.drawImage(src, sx, sy, w, h, dx, dy, w, h); return; }
+  g.save(); g.translate(16, 0); g.scale(-1, 1); g.drawImage(src, sx, sy, w, h, 16 - dx - w, dy, w, h); g.restore();
+}
+// plain trousers: the body's leg pixels (rows 22-31 of the frame that are skin) recoloured; boots are not skin so they stay
+function drawPlainPants(g, frame, flip, color) {
+  const w = 16, h = 32, sx = (frame % 6) * 16, sy = Math.floor(frame / 6) * 32;
+  const c = tmp(w, h), cg = c.getContext("2d"); cg.drawImage(BASE.img, sx, sy, w, h, 0, 0, w, h);
+  const id = cg.getImageData(0, 0, w, h), d = id.data, col = hex(color);
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+    const i = (y * w + x) * 4;
+    if (d[i + 3] === 0 || y < 22) { d[i + 3] = 0; continue; }
+    const isSkin = BASE.skin.some((s) => Math.abs(d[i] - s[0]) < 8 && Math.abs(d[i + 1] - s[1]) < 8 && Math.abs(d[i + 2] - s[2]) < 8);
+    if (!isSkin) { d[i + 3] = 0; continue; }
+    const k = BASE.skin.findIndex((s) => Math.abs(d[i] - s[0]) < 8 && Math.abs(d[i + 1] - s[1]) < 8);
+    const shade = k === 0 ? 1.0 : k === 1 ? 0.8 : 0.6;
+    d[i] = col[0] * shade; d[i + 1] = col[1] * shade; d[i + 2] = col[2] * shade;
+  }
+  cg.putImageData(id, 0, 0); blit(g, c, 0, 0, w, h, 0, 0, flip);
+}
+
+// one composed 16x32 frame for a facing + cycle index
+function composeFrame(facing, k) {
+  const frame = WALK[facing][k], flip = facing === "left";
+  const c = tmp(FW, FH), g = c.getContext("2d");
+  g.translate(MX, MY);          // everything below is in 16x32 body coordinates
+  const sx = (frame % 6) * 16, sy = Math.floor(frame / 6) * 32;
+  const fy = FY[frame] || 0;
+  // body
+  drawSkinned(g, BASE.img, sx, sy, 16, 32, 0, 0, flip);
+  // pants
+  if (S.pantsSheet === "plain") drawPlainPants(g, frame, flip, S.pantsColor);
+  else {
+    const ps = P.pants[S.pantsSheet]; const pimg = IMG[ps.file];
+    const bx = (S.pants % 10) * 192 + sx, by = Math.floor(S.pants / 10) * 688 + sy;
+    if (S.pantsSheet === "pants_coii_skirts") drawTinted(g, pimg, bx, by, 16, 32, 0, 0, flip, S.pantsColor);
+    else blit(g, pimg, bx, by, 16, 32, 0, 0, flip);
+  }
+  // shoes: a full frame sheet laid over the body's boots (same frame index as the body)
+  if (S.shoesSheet !== "none" && P.shoes[S.shoesSheet] && IMG[P.shoes[S.shoesSheet].file]) {
+    const sh0 = P.shoes[S.shoesSheet], scols = sh0.cols || 1;
+    if (S.shoesColor) drawShaded(g, IMG[sh0.file], (S.shoes % scols) * 96 + sx, Math.floor(S.shoes / scols) * 672 + sy, 16, 32, 0, 0, flip, S.shoesColor);
+    else blit(g, IMG[sh0.file], (S.shoes % scols) * 96 + sx, Math.floor(S.shoes / scols) * 672 + sy, 16, 32, 0, 0, flip);
+  } else if (S.shoesColor) recolourBoots(g, S.shoesColor);
+  // shirt (8x8) at (4, 14 + fy); the sheet has its own left view, so never mirrored
+  const sh = P.shirts[S.shirtSheet], simg = IMG[sh.file];
+  const shx = (S.shirt * 8) % 128, shy = Math.floor((S.shirt * 8) / 128) * 32 + SHIRT_Y[facing];
+  blit(g, simg, shx, shy, 8, 8, 4, 14 + fy, false);
+  // glasses sit on the eyes, under the hair like the game's accessories
+  const vanillaHair = S.hairSheet === "vanilla", hairIdx = S.hair;
+  // hair (16x32) at (0, fy + adjust): vanilla styles 0-15 are drawn for the male head (1 px higher),
+  // 16+ (and every mod pack) for the female head; the back view sits one pixel lower
+  const hs = P.hair[S.hairSheet], himg = IMG[hs.file], hcols = hs.cols || 8;
+  const hx = (hairIdx % hcols) * 16, hy = Math.floor(hairIdx / hcols) * 96 + HAIR_Y[facing];
+  const hairKind = vanillaHair ? hairIdx : 16;
+  const hairAdj = (S.body === "female" && hairKind < 16) ? 1 : (S.body === "male" && hairKind >= 16 ? -1 : 0);
+  drawTinted(g, himg, hx, hy, 16, 32, 0, fy + hairAdj + (facing === "up" ? 1 : 0), flip, S.hairColor);
+  // arms (base sheet, +96) on top
+  drawSkinned(g, BASE.img, sx + 96, sy, 16, 32, 0, 0, flip);
+  // hat (20x20) at (-2, fy - 3 + hatOffset); the sheet has front/right/left/back views, so never mirrored
+  if (S.hat >= 0) {
+    const ht = P.hats[S.hatSheet], hatimg = IMG[ht.file], cols = ht.cols || 12;
+    const hcx = (S.hat % cols) * 20, hcy = Math.floor(S.hat / cols) * 80 + HAT_Y[facing];
+    const hoy = vanillaHair ? Math.round(HAT_OFF[hairIdx % 16] / 4) : 0;
+    g.drawImage(hatimg, hcx, hcy, 20, 20, -2, fy - 3 + hoy, 20, 20);
+  }
+  return c;
+}
+
+function composeSheet() {
+  const sheet = tmp(FW * 4, FH * 4), g = sheet.getContext("2d");
+  ["down", "right", "up", "left"].forEach((f, row) => { for (let k = 0; k < 4; k++) g.drawImage(composeFrame(f, k), k * FW, row * FH); });
+  return sheet;
+}
+
+// ---------------------------------------------------------------- UI
+let animate = true, frameT = 0;
+function fillSelect(id, cat, key) {
+  const sel = $(id); sel.innerHTML = "";
+  for (const k in cat) { const o = document.createElement("option"); o.value = k; o.textContent = cat[k].label + " (" + cat[k].count + ")"; sel.appendChild(o); }
+  sel.value = S[key] in cat ? S[key] : Object.keys(cat)[0]; S[key] = sel.value;
+  sel.onchange = () => { S[key] = sel.value; if (key === "hairSheet") S.hair = 0; if (key === "shirtSheet") S.shirt = 0; if (key === "pantsSheet") S.pants = 0; if (key === "hatSheet") S.hat = 0; if (key === "shoesSheet") S.shoes = 0; rebuildGrids(); render(); };
+}
+function swatches(id, colors, onpick, current) {
+  const el = $(id); el.innerHTML = "";
+  colors.forEach((c, i) => { const s = document.createElement("span"); s.className = "sw"; s.style.background = c; s.onclick = () => { onpick(i); refreshSw(); }; el.appendChild(s); });
+  const refreshSw = () => { [...el.children].forEach((s, i) => s.classList.toggle("sel", i === current())); };
+  refreshSw(); el._refresh = refreshSw;
+}
+function grid(id, count, draw, get, set) {
+  const el = $(id); el.innerHTML = "";
+  for (let i = 0; i < count; i++) {
+    const c = document.createElement("canvas"); c.width = 20; c.height = 32; c.style.width = "40px"; c.style.height = "64px";
+    draw(c.getContext("2d"), i); c.onclick = () => { set(i); render(); [...el.children].forEach((x, j) => x.classList.toggle("sel", j === get())); };
+    if (i === get()) c.classList.add("sel");
+    el.appendChild(c);
+  }
+}
+function rebuildGrids() {
+  const hs = P.hair[S.hairSheet], hc = hs.cols || 8; grid("hairGrid", hs.count, (g, i) => g.drawImage(IMG[hs.file], (i % hc) * 16, Math.floor(i / hc) * 96, 16, 32, 2, 0, 16, 32), () => S.hair, (i) => S.hair = i);
+  const sh = P.shirts[S.shirtSheet]; grid("shirtGrid", sh.count, (g, i) => g.drawImage(IMG[sh.file], (i * 8) % 128, Math.floor((i * 8) / 128) * 32, 8, 8, 2, 8, 16, 16), () => S.shirt, (i) => S.shirt = i);
+  const ps = P.pants[S.pantsSheet];
+  if (S.pantsSheet === "plain") grid("pantsGrid", 1, (g) => { g.fillStyle = S.pantsColor; g.fillRect(4, 18, 12, 10); }, () => 0, () => S.pants = 0);
+  else grid("pantsGrid", ps.count, (g, i) => g.drawImage(IMG[ps.file], (i % 10) * 192, Math.floor(i / 10) * 688, 16, 32, 2, 0, 16, 32), () => S.pants, (i) => S.pants = i);
+  const ht = P.hats[S.hatSheet], tc = ht.cols || 12; grid("hatGrid", ht.count, (g, i) => g.drawImage(IMG[ht.file], (i % tc) * 20, Math.floor(i / tc) * 80, 20, 20, 0, 6, 20, 20), () => S.hat, (i) => S.hat = i);
+  const so = P.shoes[S.shoesSheet];
+  if (S.shoesSheet === "none" || !so || !IMG[so.file]) grid("shoesGrid", 1, (g) => { g.fillStyle = "#6b3f1e"; g.fillRect(4, 22, 12, 6); }, () => 0, () => S.shoes = 0);
+  else { const sc = so.cols || 1; grid("shoesGrid", so.count, (g, i) => g.drawImage(IMG[so.file], (i % sc) * 96, Math.floor(i / sc) * 672 + 16, 16, 16, 2, 8, 16, 16), () => S.shoes, (i) => S.shoes = i); }
+}
+function render() {
+  if (!BASE) return;
+  const sheet = composeSheet();
+  const sv = $("sheetview"), sg = sv.getContext("2d"); sg.imageSmoothingEnabled = false; sg.clearRect(0, 0, sv.width, sv.height); sg.drawImage(sheet, 0, 0, FW * 4, FH * 4, 0, 0, FW * 16, FH * 16);
+  window._sheet = sheet;
+  renderPreview();
+  ["skins", "hairColors", "pantsColors", "shoeColors"].forEach((id) => $(id)._refresh && $(id)._refresh());
+}
+function renderPreview() {
+  const z = +$("zoom").value, pv = $("preview"), g = pv.getContext("2d");
+  const pw = 20 + 4 * (FW * z + 24), ph = FH * z + 50;
+  if (pv.width !== pw || pv.height !== ph) { pv.width = pw; pv.height = ph; }
+  g.imageSmoothingEnabled = false; g.clearRect(0, 0, pv.width, pv.height);
+  const sheet = window._sheet; if (!sheet) return;
+  ["down", "right", "up", "left"].forEach((f, row) => {
+    const k = animate ? frameT : 0;
+    g.drawImage(sheet, k * FW, row * FH, FW, FH, 20 + row * (FW * z + 24), 40, FW * z, FH * z);
+    g.fillStyle = "#fff"; g.font = "12px sans-serif"; g.fillText(f, 20 + row * (FW * z + 24), 30);
+  });
+}
+function randomize() {
+  const pick = (o) => { const k = Object.keys(o); return k[Math.floor(Math.random() * k.length)]; };
+  S.skin = Math.floor(Math.random() * 8); S.hairSheet = pick(P.hair); S.hair = Math.floor(Math.random() * P.hair[S.hairSheet].count);
+  S.hairColor = HAIRS[Math.floor(Math.random() * HAIRS.length)]; S.shirtSheet = pick(P.shirts); S.shirt = Math.floor(Math.random() * P.shirts[S.shirtSheet].count);
+  S.pantsSheet = Math.random() < 0.6 ? "plain" : "pants_coii_skirts"; S.pants = Math.floor(Math.random() * (P.pants[S.pantsSheet].count || 1)); S.pantsColor = PANTS[Math.floor(Math.random() * PANTS.length)];
+  S.hat = Math.random() < 0.3 ? Math.floor(Math.random() * P.hats[S.hatSheet].count) : -1;
+  S.glasses = "none"; S.glassColor = GLASS[Math.floor(Math.random() * GLASS.length)];
+  S.eyeColor = EYES[Math.floor(Math.random() * EYES.length)]; S.skinColor = null;
+  S.shoesColor = Math.random() < 0.5 ? SHOES[Math.floor(Math.random() * SHOES.length)] : null;
+  const shoeKeys = Object.keys(P.shoes); S.shoesSheet = shoeKeys[Math.floor(Math.random() * shoeKeys.length)]; S.shoes = Math.floor(Math.random() * (P.shoes[S.shoesSheet].count || 1)); $("shoesSheet").value = S.shoesSheet;
+  $("hairSheet").value = S.hairSheet; $("shirtSheet").value = S.shirtSheet; $("pantsSheet").value = S.pantsSheet;
+  rebuildGrids(); render();
+}
+function slug(s) { return s.trim().toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "") || "custom"; }
+const KIT = new URLSearchParams(location.search).has("kit");
+async function saveToGame() {
+  const name = $("name").value.trim(); if (!name) { $("status").textContent = "Give it a name first."; return; }
+  const file = "custom_" + slug(name);
+  const png = window._sheet.toDataURL("image/png");
+  if (KIT) {                                   // design kit: no server; kit.html packs this into the zip
+    try {
+      const look = { name: name, file: file, png: png, recipe: S };
+      localStorage.setItem("kit.look", JSON.stringify(look));
+      const all = JSON.parse(localStorage.getItem("kit.looks") || "{}"); all[slug(name)] = look; localStorage.setItem("kit.looks", JSON.stringify(all));
+      $("status").textContent = "Saved '" + name + "' in this browser. Open the house from the kit page to see it walk around.";
+    }
+    catch (e) { $("status").textContent = "Save failed: " + e.message; }
+    return;
+  }
+  const r = await fetch("/__save_png/assets/characters/" + file + ".png", { method: "POST", body: png });
+  if (!r.ok) { $("status").textContent = "Save failed: " + r.status + " (run the game server: play.bat)"; return; }
+  const use = $("useAs").value;
+  if (use === "player") {
+    let list = []; try { list = await (await fetch("../data/custom_characters.json?v=" + Date.now())).json(); } catch (e) {}
+    list = list.filter((c) => c.sheet !== file); list.push({ name: name, sheet: file, recipe: S });
+    await fetch("/__save/data/custom_characters.json", { method: "POST", body: JSON.stringify(list, null, 1) });
+    $("status").textContent = "Saved. '" + name + "' is now a look on the title screen (New game).";
+  } else {
+    const id = use.slice(4);
+    const npcs = await (await fetch("../data/npcs.json?v=" + Date.now())).json();
+    npcs[id].sheet = file;
+    await fetch("/__save/data/npcs.json", { method: "POST", body: JSON.stringify(npcs, null, 1) });
+    $("status").textContent = "Saved. " + npcs[id].name + " now uses this sprite (restart the game).";
+  }
+}
+function download() {
+  const a = document.createElement("a"); a.href = window._sheet.toDataURL("image/png"); a.download = "custom_" + slug($("name").value || "character") + ".png"; a.click();
+}
+boot();
+</script>
+</body>
+</html>

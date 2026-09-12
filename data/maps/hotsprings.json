@@ -1,0 +1,310 @@
+{
+ "id": "hotsprings",
+ "name": "Hot Springs",
+ "w": 48,
+ "h": 40,
+ "tileset": "outdoors",
+ "music": "chill_06.mus",
+ "terrain": [
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "ggggggggggggggggggggggdddddggggggggggggggggggggg",
+  "gggggggggggggggggggggdddddddgggggggggggggggggggg",
+  "ggggggggggggggggggggdddddddddggggggggggggggggggg",
+  "gggggggggggggggggggdddddddddddgggggggggggggggggg",
+  "ggggggggggggggggggdddddgggdddddggggggggggggggggg",
+  "gggggggggggggggggdddddgggggdddddgggggggggggggggg",
+  "gggggggggggggggddddddgggggggdddddggggggggggggggg",
+  "gggggggggggggdddddddgggggggggdddddgggggggggggggg",
+  "ggggggggggggdddddddgggggggggggdddddggggggggggggg",
+  "ggggggggggdddddddggggggggggggggdddddgggggggggggg",
+  "gggggggggddddddgggggggggggggggggdddddggggggggggg",
+  "gggggggdddddddgggggggggggggggggggdddddgggggggggg",
+  "gggggdddddddggggggggggggggggggggggddddgggggggggg",
+  "ggggdddddddggggggggggggggggggggggggdddgggggggggg",
+  "ggdddddddggggggggggggggggggggwwwgggdddggwggggggg",
+  "dddddddgggggggggggggggggggggwwwwwggdddgggggggggg",
+  "ddddddggggggggggggggggggggggwwwwwggdddgggggggggg",
+  "ddddggggggggggggggggggggggggwwwwwggdddgggggggggg",
+  "ddggggggggggggggggggggggggggwwwwwggdddgggggggggg",
+  "gggggggggggggggggggggggggggggwwwgggggggggggggggg",
+  "ggggggggggggggggggggggggggggggggggggwggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggg"
+ ],
+ "props": [
+  {
+   "name": "witchy_bath",
+   "x": 6,
+   "y": 4,
+   "id": "bathhouse",
+   "note": "The bathhouse. Closed until someone finds the key.",
+   "door": {
+    "to": "bathhouse",
+    "tx": 7,
+    "ty": 10,
+    "dir": 2
+   }
+  },
+  {
+   "name": "sign_post",
+   "x": 26,
+   "y": 4,
+   "note": "Hot springs. Mind the steam. West: the quarry."
+  },
+  {
+   "name": "bench",
+   "x": 26,
+   "y": 33,
+   "note": "A warm bench. The stone under it is heated by the spring."
+  },
+  {
+   "name": "oak_a",
+   "x": 41,
+   "y": 14
+  },
+  {
+   "name": "pine",
+   "x": 44,
+   "y": 4
+  },
+  {
+   "name": "oak_a",
+   "x": 45,
+   "y": 7
+  },
+  {
+   "name": "oak_a",
+   "x": 33,
+   "y": 5
+  },
+  {
+   "name": "oak_a",
+   "x": 21,
+   "y": 20
+  },
+  {
+   "name": "pine",
+   "x": 23,
+   "y": 33
+  },
+  {
+   "name": "pine",
+   "x": 44,
+   "y": 24
+  },
+  {
+   "name": "pine",
+   "x": 35,
+   "y": -1
+  },
+  {
+   "name": "pine",
+   "x": 18,
+   "y": 29
+  },
+  {
+   "name": "pine",
+   "x": 17,
+   "y": -4
+  },
+  {
+   "name": "oak_a",
+   "x": 39,
+   "y": 1
+  },
+  {
+   "name": "pine",
+   "x": 3,
+   "y": 31
+  },
+  {
+   "name": "pine",
+   "x": 39,
+   "y": 9
+  },
+  {
+   "name": "pine",
+   "x": 2,
+   "y": -1
+  },
+  {
+   "name": "oak_a",
+   "x": 2,
+   "y": 18
+  },
+  {
+   "name": "pine",
+   "x": 18,
+   "y": 22
+  },
+  {
+   "name": "oak_a",
+   "x": 17,
+   "y": 33
+  },
+  {
+   "name": "pine",
+   "x": 38,
+   "y": 15
+  },
+  {
+   "name": "oak_a",
+   "x": 44,
+   "y": 32
+  },
+  {
+   "name": "pine",
+   "x": 13,
+   "y": 26
+  },
+  {
+   "name": "oak_a",
+   "x": 7,
+   "y": -4
+  },
+  {
+   "name": "pine",
+   "x": 34,
+   "y": 9
+  },
+  {
+   "name": "pine",
+   "x": 0,
+   "y": 11
+  },
+  {
+   "name": "pine",
+   "x": 24,
+   "y": 21
+  },
+  {
+   "name": "oak_a",
+   "x": 30,
+   "y": 33
+  },
+  {
+   "name": "pine",
+   "x": 43,
+   "y": 28
+  },
+  {
+   "name": "pine",
+   "x": 29,
+   "y": -2
+  },
+  {
+   "name": "pine",
+   "x": 45,
+   "y": -3
+  },
+  {
+   "name": "pine",
+   "x": 44,
+   "y": 11
+  },
+  {
+   "name": "pine",
+   "x": 28,
+   "y": 3
+  },
+  {
+   "name": "weeds_a",
+   "x": 38,
+   "y": 5
+  },
+  {
+   "name": "weeds_a",
+   "x": 41,
+   "y": 15
+  },
+  {
+   "name": "weeds_a",
+   "x": 11,
+   "y": 30
+  },
+  {
+   "name": "weeds_a",
+   "x": 10,
+   "y": 17
+  },
+  {
+   "name": "weeds_a",
+   "x": 35,
+   "y": 6
+  },
+  {
+   "name": "stone_a",
+   "x": 20,
+   "y": 30
+  },
+  {
+   "name": "stone_b",
+   "x": 8,
+   "y": 30
+  },
+  {
+   "name": "weeds_a",
+   "x": 31,
+   "y": 15
+  },
+  {
+   "name": "weeds_a",
+   "x": 40,
+   "y": 2
+  },
+  {
+   "name": "stone_b",
+   "x": 39,
+   "y": 10
+  },
+  {
+   "name": "stone_b",
+   "x": 38,
+   "y": 2
+  },
+  {
+   "name": "weeds_a",
+   "x": 34,
+   "y": 3
+  }
+ ],
+ "warps": [
+  {
+   "x": 23,
+   "y": 0,
+   "w": 3,
+   "h": 1,
+   "to": "town",
+   "tx": 53,
+   "ty": 78,
+   "dir": 2
+  },
+  {
+   "x": 0,
+   "y": 30,
+   "w": 1,
+   "h": 3,
+   "to": "quarry",
+   "tx": 46,
+   "ty": 31,
+   "dir": 3
+  }
+ ],
+ "spawns": {}
+}

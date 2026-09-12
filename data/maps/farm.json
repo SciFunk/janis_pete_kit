@@ -1,0 +1,1181 @@
+{
+ "id": "farm",
+ "name": "Farm",
+ "w": 64,
+ "h": 48,
+ "tileset": "outdoors",
+ "music": "chill_01.mus",
+ "terrain": [
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "ggggggggggggggddgggggggggggggggggggggggggggggggggggggggggggggggg",
+  "ggggggggggggdddddggggggggggggggggggggggggggggggggggggggggggggggg",
+  "ggggggggggddddddddgggggggggggggggggggggggggggggggggggggggggggggg",
+  "ddddddddddddddddddddddddddddddddddddddddddgggggggggggggggggggggg",
+  "ddddddddddddddddddddddddddddddddddddddddddgggggggggggggggggggggg",
+  "ddddddddddddddddddddddddddddddddddddddddddgggggggggggggggggggggg",
+  "ggggggggggddddddddgggggggggggggggggggggdddgggggggggggggggggggggg",
+  "ggggggggggggddddddgggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggggwwwwwgggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggwwwwwwwwggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddggggwwwwwwwwwggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddggggwwwwwwwwwggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddggggwwwwwwwwwggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddggggwwwwwwwwwggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddggggwwwwwwwwwggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggdddgggggwwwwwwwwggggggggg",
+  "ggggggggggggggggggggggggggggggggggggggggggggggggwwwwwwgggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggwwwgggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+ ],
+ "props": [
+  {
+   "name": "farmhouse",
+   "x": 8,
+   "y": 5,
+   "id": "home",
+   "door": {
+    "to": "farmhouse",
+    "tx": 7,
+    "ty": 10,
+    "dir": 2
+   }
+  },
+  {
+   "name": "shipping_bin",
+   "x": 20,
+   "y": 12,
+   "id": "bin"
+  },
+  {
+   "name": "pine",
+   "x": 16,
+   "y": 21
+  },
+  {
+   "name": "pine",
+   "x": 0,
+   "y": 0
+  },
+  {
+   "name": "oak_a",
+   "x": 54,
+   "y": 6
+  },
+  {
+   "name": "tree_small",
+   "x": 9,
+   "y": 38
+  },
+  {
+   "name": "oak_b",
+   "x": 35,
+   "y": 34
+  },
+  {
+   "name": "tree_small",
+   "x": 36,
+   "y": -2
+  },
+  {
+   "name": "oak_a",
+   "x": 33,
+   "y": 24
+  },
+  {
+   "name": "pine",
+   "x": 32,
+   "y": 19
+  },
+  {
+   "name": "oak_b",
+   "x": 26,
+   "y": 18
+  },
+  {
+   "name": "tree_small",
+   "x": 47,
+   "y": 1
+  },
+  {
+   "name": "oak_b",
+   "x": 34,
+   "y": 28
+  },
+  {
+   "name": "oak_a",
+   "x": 30,
+   "y": 28
+  },
+  {
+   "name": "oak_a",
+   "x": 4,
+   "y": 21
+  },
+  {
+   "name": "tree_big",
+   "x": 28,
+   "y": 1
+  },
+  {
+   "name": "tree_big",
+   "x": 18,
+   "y": 38
+  },
+  {
+   "name": "tree_small",
+   "x": 48,
+   "y": 16
+  },
+  {
+   "name": "tree_big",
+   "x": 16,
+   "y": 29
+  },
+  {
+   "name": "tree_big",
+   "x": 1,
+   "y": 39
+  },
+  {
+   "name": "tree_big",
+   "x": 47,
+   "y": 24
+  },
+  {
+   "name": "oak_a",
+   "x": 5,
+   "y": 36
+  },
+  {
+   "name": "tree_small",
+   "x": 32,
+   "y": -4
+  },
+  {
+   "name": "tree_big",
+   "x": 7,
+   "y": 28
+  },
+  {
+   "name": "pine",
+   "x": 31,
+   "y": 0
+  },
+  {
+   "name": "tree_small",
+   "x": 57,
+   "y": 27
+  },
+  {
+   "name": "tree_big",
+   "x": 24,
+   "y": 0
+  },
+  {
+   "name": "pine",
+   "x": 31,
+   "y": 37
+  },
+  {
+   "name": "tree_small",
+   "x": 16,
+   "y": -4
+  },
+  {
+   "name": "tree_small",
+   "x": 26,
+   "y": 39
+  },
+  {
+   "name": "oak_b",
+   "x": -1,
+   "y": -2
+  },
+  {
+   "name": "oak_b",
+   "x": -1,
+   "y": 42
+  },
+  {
+   "name": "oak_b",
+   "x": 2,
+   "y": -3
+  },
+  {
+   "name": "pine",
+   "x": 2,
+   "y": 41
+  },
+  {
+   "name": "oak_b",
+   "x": 5,
+   "y": -3
+  },
+  {
+   "name": "oak_b",
+   "x": 5,
+   "y": 41
+  },
+  {
+   "name": "oak_b",
+   "x": 8,
+   "y": -2
+  },
+  {
+   "name": "oak_a",
+   "x": 8,
+   "y": 42
+  },
+  {
+   "name": "oak_b",
+   "x": 11,
+   "y": -2
+  },
+  {
+   "name": "oak_a",
+   "x": 11,
+   "y": 41
+  },
+  {
+   "name": "oak_a",
+   "x": 14,
+   "y": -3
+  },
+  {
+   "name": "oak_a",
+   "x": 14,
+   "y": 42
+  },
+  {
+   "name": "oak_b",
+   "x": 17,
+   "y": -3
+  },
+  {
+   "name": "pine",
+   "x": 17,
+   "y": 42
+  },
+  {
+   "name": "oak_a",
+   "x": 20,
+   "y": -2
+  },
+  {
+   "name": "oak_a",
+   "x": 20,
+   "y": 42
+  },
+  {
+   "name": "oak_b",
+   "x": 23,
+   "y": -2
+  },
+  {
+   "name": "oak_a",
+   "x": 23,
+   "y": 41
+  },
+  {
+   "name": "oak_a",
+   "x": 26,
+   "y": -2
+  },
+  {
+   "name": "pine",
+   "x": 26,
+   "y": 42
+  },
+  {
+   "name": "oak_b",
+   "x": 29,
+   "y": -2
+  },
+  {
+   "name": "pine",
+   "x": 29,
+   "y": 41
+  },
+  {
+   "name": "oak_b",
+   "x": 32,
+   "y": -2
+  },
+  {
+   "name": "oak_b",
+   "x": 32,
+   "y": 42
+  },
+  {
+   "name": "oak_a",
+   "x": 35,
+   "y": 42
+  },
+  {
+   "name": "oak_a",
+   "x": 38,
+   "y": 42
+  },
+  {
+   "name": "oak_b",
+   "x": 41,
+   "y": -2
+  },
+  {
+   "name": "oak_a",
+   "x": 41,
+   "y": 41
+  },
+  {
+   "name": "pine",
+   "x": 44,
+   "y": -3
+  },
+  {
+   "name": "pine",
+   "x": 44,
+   "y": 42
+  },
+  {
+   "name": "oak_b",
+   "x": 47,
+   "y": -2
+  },
+  {
+   "name": "oak_a",
+   "x": 47,
+   "y": 42
+  },
+  {
+   "name": "oak_b",
+   "x": 50,
+   "y": -3
+  },
+  {
+   "name": "oak_b",
+   "x": 50,
+   "y": 42
+  },
+  {
+   "name": "oak_b",
+   "x": 53,
+   "y": -3
+  },
+  {
+   "name": "oak_b",
+   "x": 53,
+   "y": 41
+  },
+  {
+   "name": "oak_a",
+   "x": 56,
+   "y": -2
+  },
+  {
+   "name": "pine",
+   "x": 56,
+   "y": 41
+  },
+  {
+   "name": "oak_a",
+   "x": 59,
+   "y": -2
+  },
+  {
+   "name": "oak_b",
+   "x": 59,
+   "y": 42
+  },
+  {
+   "name": "oak_a",
+   "x": 62,
+   "y": -2
+  },
+  {
+   "name": "oak_b",
+   "x": 62,
+   "y": 41
+  },
+  {
+   "name": "pine",
+   "x": 61,
+   "y": -2
+  },
+  {
+   "name": "oak_b",
+   "x": 61,
+   "y": 1
+  },
+  {
+   "name": "pine",
+   "x": 61,
+   "y": 4
+  },
+  {
+   "name": "pine",
+   "x": 61,
+   "y": 7
+  },
+  {
+   "name": "oak_a",
+   "x": 61,
+   "y": 10
+  },
+  {
+   "name": "pine",
+   "x": 61,
+   "y": 13
+  },
+  {
+   "name": "oak_a",
+   "x": 61,
+   "y": 16
+  },
+  {
+   "name": "oak_a",
+   "x": 61,
+   "y": 19
+  },
+  {
+   "name": "pine",
+   "x": 61,
+   "y": 22
+  },
+  {
+   "name": "oak_b",
+   "x": 61,
+   "y": 25
+  },
+  {
+   "name": "oak_b",
+   "x": 61,
+   "y": 28
+  },
+  {
+   "name": "pine",
+   "x": 61,
+   "y": 31
+  },
+  {
+   "name": "oak_a",
+   "x": 61,
+   "y": 34
+  },
+  {
+   "name": "pine",
+   "x": 61,
+   "y": 37
+  },
+  {
+   "name": "oak_b",
+   "x": 61,
+   "y": 43
+  },
+  {
+   "name": "oak_b",
+   "x": 61,
+   "y": 46
+  },
+  {
+   "name": "weeds_a",
+   "x": 33,
+   "y": 32
+  },
+  {
+   "name": "weeds_a",
+   "x": 21,
+   "y": 25
+  },
+  {
+   "name": "weeds_b",
+   "x": 50,
+   "y": 22
+  },
+  {
+   "name": "weeds_a",
+   "x": 44,
+   "y": 21
+  },
+  {
+   "name": "stone_a",
+   "x": 45,
+   "y": 31
+  },
+  {
+   "name": "weeds_c",
+   "x": 7,
+   "y": 19
+  },
+  {
+   "name": "weeds_c",
+   "x": 60,
+   "y": 37
+  },
+  {
+   "name": "weeds_c",
+   "x": 14,
+   "y": 27
+  },
+  {
+   "name": "stone_b",
+   "x": 8,
+   "y": 26
+  },
+  {
+   "name": "twig_a",
+   "x": 27,
+   "y": 32
+  },
+  {
+   "name": "weeds_b",
+   "x": 36,
+   "y": 19
+  },
+  {
+   "name": "twig_b",
+   "x": 20,
+   "y": 27
+  },
+  {
+   "name": "weeds_a",
+   "x": 6,
+   "y": 37
+  },
+  {
+   "name": "weeds_c",
+   "x": 11,
+   "y": 38
+  },
+  {
+   "name": "stone_a",
+   "x": 43,
+   "y": 19
+  },
+  {
+   "name": "weeds_b",
+   "x": 20,
+   "y": 21
+  },
+  {
+   "name": "weeds_b",
+   "x": 28,
+   "y": 34
+  },
+  {
+   "name": "stone_b",
+   "x": 22,
+   "y": 7
+  },
+  {
+   "name": "twig_a",
+   "x": 5,
+   "y": 33
+  },
+  {
+   "name": "weeds_b",
+   "x": 3,
+   "y": 10
+  },
+  {
+   "name": "weeds_b",
+   "x": 57,
+   "y": 35
+  },
+  {
+   "name": "twig_a",
+   "x": 12,
+   "y": 39
+  },
+  {
+   "name": "stone_a",
+   "x": 9,
+   "y": 35
+  },
+  {
+   "name": "stone_a",
+   "x": 38,
+   "y": 8
+  },
+  {
+   "name": "stone_b",
+   "x": 53,
+   "y": 14
+  },
+  {
+   "name": "twig_a",
+   "x": 39,
+   "y": 8
+  },
+  {
+   "name": "stone_b",
+   "x": 48,
+   "y": 25
+  },
+  {
+   "name": "weeds_c",
+   "x": 43,
+   "y": 22
+  },
+  {
+   "name": "twig_a",
+   "x": 43,
+   "y": 33
+  },
+  {
+   "name": "stone_a",
+   "x": 51,
+   "y": 13
+  },
+  {
+   "name": "weeds_c",
+   "x": 7,
+   "y": 25
+  },
+  {
+   "name": "weeds_c",
+   "x": 3,
+   "y": 6
+  },
+  {
+   "name": "weeds_a",
+   "x": 22,
+   "y": 35
+  },
+  {
+   "name": "weeds_b",
+   "x": 23,
+   "y": 21
+  },
+  {
+   "name": "weeds_c",
+   "x": 36,
+   "y": 21
+  },
+  {
+   "name": "stone_a",
+   "x": 29,
+   "y": 25
+  },
+  {
+   "name": "stone_b",
+   "x": 8,
+   "y": 22
+  },
+  {
+   "name": "weeds_a",
+   "x": 45,
+   "y": 33
+  },
+  {
+   "name": "stone_a",
+   "x": 17,
+   "y": 37
+  },
+  {
+   "name": "weeds_a",
+   "x": 48,
+   "y": 32
+  },
+  {
+   "name": "stone_b",
+   "x": 46,
+   "y": 31
+  },
+  {
+   "name": "twig_a",
+   "x": 3,
+   "y": 24
+  },
+  {
+   "name": "stone_a",
+   "x": 57,
+   "y": 38
+  },
+  {
+   "name": "stone_b",
+   "x": 16,
+   "y": 37
+  },
+  {
+   "name": "stone_b",
+   "x": 17,
+   "y": 35
+  },
+  {
+   "name": "stone_a",
+   "x": 19,
+   "y": 24
+  },
+  {
+   "name": "weeds_b",
+   "x": 60,
+   "y": 20
+  },
+  {
+   "name": "weeds_c",
+   "x": 29,
+   "y": 9
+  },
+  {
+   "name": "stone_a",
+   "x": 12,
+   "y": 31
+  },
+  {
+   "name": "stone_b",
+   "x": 48,
+   "y": 9
+  },
+  {
+   "name": "twig_a",
+   "x": 60,
+   "y": 26
+  },
+  {
+   "name": "stone_b",
+   "x": 13,
+   "y": 27
+  },
+  {
+   "name": "twig_a",
+   "x": 14,
+   "y": 39
+  },
+  {
+   "name": "weeds_a",
+   "x": 32,
+   "y": 8
+  },
+  {
+   "name": "twig_b",
+   "x": 45,
+   "y": 30
+  },
+  {
+   "name": "weeds_b",
+   "x": 26,
+   "y": 27
+  },
+  {
+   "name": "weeds_a",
+   "x": 3,
+   "y": 11
+  },
+  {
+   "name": "weeds_b",
+   "x": 8,
+   "y": 28
+  },
+  {
+   "name": "weeds_c",
+   "x": 59,
+   "y": 13
+  },
+  {
+   "name": "weeds_b",
+   "x": 51,
+   "y": 19
+  },
+  {
+   "name": "twig_b",
+   "x": 25,
+   "y": 25
+  },
+  {
+   "name": "weeds_c",
+   "x": 15,
+   "y": 29
+  },
+  {
+   "name": "weeds_a",
+   "x": 15,
+   "y": 26
+  },
+  {
+   "name": "stone_b",
+   "x": 4,
+   "y": 32
+  },
+  {
+   "name": "stone_a",
+   "x": 54,
+   "y": 31
+  },
+  {
+   "name": "weeds_b",
+   "x": 27,
+   "y": 8
+  },
+  {
+   "name": "weeds_c",
+   "x": 50,
+   "y": 10
+  },
+  {
+   "name": "weeds_a",
+   "x": 24,
+   "y": 29
+  },
+  {
+   "name": "twig_a",
+   "x": 5,
+   "y": 22
+  },
+  {
+   "name": "weeds_a",
+   "x": 48,
+   "y": 26
+  },
+  {
+   "name": "twig_a",
+   "x": 22,
+   "y": 6
+  },
+  {
+   "name": "stone_a",
+   "x": 4,
+   "y": 20
+  },
+  {
+   "name": "twig_b",
+   "x": 33,
+   "y": 35
+  },
+  {
+   "name": "stone_b",
+   "x": 11,
+   "y": 37
+  },
+  {
+   "name": "twig_b",
+   "x": 3,
+   "y": 25
+  },
+  {
+   "name": "weeds_c",
+   "x": 47,
+   "y": 15
+  },
+  {
+   "name": "weeds_b",
+   "x": 58,
+   "y": 26
+  },
+  {
+   "name": "stone_b",
+   "x": 8,
+   "y": 38
+  },
+  {
+   "name": "stone_b",
+   "x": 37,
+   "y": 26
+  },
+  {
+   "name": "stone_a",
+   "x": 30,
+   "y": 12
+  },
+  {
+   "name": "stone_a",
+   "x": 8,
+   "y": 19
+  },
+  {
+   "name": "twig_a",
+   "x": 29,
+   "y": 37
+  },
+  {
+   "name": "weeds_c",
+   "x": 29,
+   "y": 35
+  },
+  {
+   "name": "twig_a",
+   "x": 60,
+   "y": 21
+  },
+  {
+   "name": "twig_b",
+   "x": 37,
+   "y": 13
+  },
+  {
+   "name": "weeds_a",
+   "x": 56,
+   "y": 24
+  },
+  {
+   "name": "weeds_a",
+   "x": 20,
+   "y": 29
+  },
+  {
+   "name": "stone_b",
+   "x": 15,
+   "y": 34
+  },
+  {
+   "name": "stone_b",
+   "x": 14,
+   "y": 21
+  },
+  {
+   "name": "weeds_c",
+   "x": 12,
+   "y": 24
+  },
+  {
+   "name": "weeds_c",
+   "x": 19,
+   "y": 21
+  },
+  {
+   "name": "twig_a",
+   "x": 36,
+   "y": 20
+  },
+  {
+   "name": "twig_a",
+   "x": 54,
+   "y": 12
+  },
+  {
+   "name": "twig_b",
+   "x": 33,
+   "y": 20
+  },
+  {
+   "name": "stone_a",
+   "x": 31,
+   "y": 29
+  },
+  {
+   "name": "stone_b",
+   "x": 59,
+   "y": 24
+  },
+  {
+   "name": "twig_b",
+   "x": 26,
+   "y": 38
+  },
+  {
+   "name": "weeds_c",
+   "x": 14,
+   "y": 34
+  },
+  {
+   "name": "stone_a",
+   "x": 19,
+   "y": 6
+  },
+  {
+   "name": "stone_a",
+   "x": 25,
+   "y": 19
+  },
+  {
+   "name": "stone_a",
+   "x": 16,
+   "y": 22
+  },
+  {
+   "name": "twig_b",
+   "x": 55,
+   "y": 6
+  },
+  {
+   "name": "twig_a",
+   "x": 23,
+   "y": 32
+  },
+  {
+   "name": "weeds_c",
+   "x": 5,
+   "y": 37
+  },
+  {
+   "name": "weeds_b",
+   "x": 33,
+   "y": 10
+  },
+  {
+   "name": "stone_a",
+   "x": 12,
+   "y": 40
+  },
+  {
+   "name": "weeds_b",
+   "x": 44,
+   "y": 16
+  },
+  {
+   "name": "weeds_b",
+   "x": 47,
+   "y": 23
+  },
+  {
+   "name": "weeds_a",
+   "x": 22,
+   "y": 42
+  },
+  {
+   "name": "stone_a",
+   "x": 29,
+   "y": 32
+  },
+  {
+   "name": "twig_a",
+   "x": 58,
+   "y": 29
+  },
+  {
+   "name": "twig_a",
+   "x": 15,
+   "y": 31
+  },
+  {
+   "name": "stone_a",
+   "x": 28,
+   "y": 19
+  },
+  {
+   "name": "twig_b",
+   "x": 30,
+   "y": 13
+  },
+  {
+   "name": "weeds_c",
+   "x": 8,
+   "y": 42
+  },
+  {
+   "name": "stone_b",
+   "x": 25,
+   "y": 24
+  },
+  {
+   "name": "twig_b",
+   "x": 27,
+   "y": 37
+  },
+  {
+   "name": "weeds_a",
+   "x": 54,
+   "y": 18
+  },
+  {
+   "name": "weeds_c",
+   "x": 23,
+   "y": 9
+  },
+  {
+   "name": "stone_a",
+   "x": 43,
+   "y": 30
+  },
+  {
+   "name": "twig_a",
+   "x": 47,
+   "y": 16
+  },
+  {
+   "name": "weeds_c",
+   "x": 53,
+   "y": 20
+  },
+  {
+   "name": "twig_b",
+   "x": 57,
+   "y": 18
+  },
+  {
+   "name": "weeds_c",
+   "x": 5,
+   "y": 31
+  },
+  {
+   "name": "weeds_a",
+   "x": 13,
+   "y": 30
+  },
+  {
+   "name": "twig_a",
+   "x": 56,
+   "y": 8
+  },
+  {
+   "name": "stone_a",
+   "x": 56,
+   "y": 26
+  },
+  {
+   "name": "twig_a",
+   "x": 57,
+   "y": 25
+  },
+  {
+   "name": "twig_a",
+   "x": 30,
+   "y": 30
+  },
+  {
+   "name": "weeds_c",
+   "x": 26,
+   "y": 34
+  }
+ ],
+ "warps": [
+  {
+   "x": 0,
+   "y": 15,
+   "w": 1,
+   "h": 3,
+   "to": "town",
+   "tx": 94,
+   "ty": 33,
+   "dir": 3
+  }
+ ],
+ "spawns": {
+  "start": [
+   14,
+   15
+  ],
+  "cat": [
+   18,
+   14
+  ]
+ },
+ "tillable": true
+}

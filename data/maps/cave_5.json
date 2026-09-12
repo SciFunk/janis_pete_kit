@@ -1,0 +1,102 @@
+{
+ "id": "cave_5",
+ "name": "Across the Chasm",
+ "w": 11,
+ "h": 7,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_08.mus",
+ "floor": "floors_cave:0",
+ "wallpaper": "walls_cave:0",
+ "terrain": [
+  "WWWWWWWWWWW",
+  "WffffffCffW",
+  "WffffffCffW",
+  "fffffffCffW",
+  "WffffffCffW",
+  "WffffffCffW",
+  "WWfWWWWWWWW"
+ ],
+ "props": [],
+ "warps": [
+  {
+   "x": 2,
+   "y": 6,
+   "to": "cave_hub",
+   "tx": 19,
+   "ty": 2,
+   "dir": 0,
+   "roomExit": true
+  }
+ ],
+ "spawns": {
+  "start": [
+   2,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    2,
+    6,
+    "mine",
+    100,
+    0
+   ]
+  ]
+ },
+ "puzzle": {
+  "start": [
+   2,
+   5
+  ],
+  "prints": [
+   "crow"
+  ],
+  "animals": [
+   {
+    "sp": "crow",
+    "x": 2,
+    "y": 2
+   }
+  ],
+  "items": [
+   {
+    "kind": "shiny",
+    "x": 8,
+    "y": 1
+   }
+  ],
+  "plates": [
+   {
+    "id": "p1",
+    "x": 8,
+    "y": 2,
+    "need": 1
+   }
+  ],
+  "gates": [
+   {
+    "x": 0,
+    "y": 3,
+    "plates": [
+     "p1"
+    ],
+    "latch": false,
+    "next": "cave_6",
+    "final": false
+   }
+  ],
+  "beams": [],
+  "levers": [],
+  "hedges": [],
+  "nests": [
+   {
+    "x": 8,
+    "y": 2
+   }
+  ],
+  "doors": []
+ }
+}

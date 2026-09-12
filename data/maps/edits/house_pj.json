@@ -1,0 +1,14 @@
+{
+ "added": [
+  {
+   "name": "plant_pot",
+   "x": 2,
+   "y": 8
+  }
+ ],
+ "removed": [],
+ "tiles": [],
+ "paint": [],
+ "floor": [],
+ "wall": []
+}

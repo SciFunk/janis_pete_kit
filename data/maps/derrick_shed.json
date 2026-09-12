@@ -1,0 +1,96 @@
+{
+ "id": "derrick_shed",
+ "name": "Derrick's Shed",
+ "w": 14,
+ "h": 12,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_08.mus",
+ "floor": 4,
+ "wallpaper": 10,
+ "terrain": [
+  "xxxxxxxxxxxxxx",
+  "xWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWx",
+  "xWWWWWWWWWWWWx",
+  "xffffffffffffx",
+  "xffffffffffffx",
+  "xffffffffffffx",
+  "xffffffffffffx",
+  "xffffffffffffx",
+  "xffffffffffffx",
+  "xffffffffffffx",
+  "xxxxxxxxxxxxxx"
+ ],
+ "props": [
+  {
+   "name": "chest",
+   "x": 3,
+   "y": 4,
+   "note": "A crate labeled 'BOLTS'."
+  },
+  {
+   "name": "chest",
+   "x": 4,
+   "y": 4,
+   "note": "A crate labeled 'GEARS'."
+  },
+  {
+   "name": "chest",
+   "x": 5,
+   "y": 4,
+   "note": "A crate labeled 'OIL'."
+  },
+  {
+   "name": "chest",
+   "x": 6,
+   "y": 4,
+   "note": "A crate labeled 'NOT OIL'."
+  },
+  {
+   "name": "chest",
+   "x": 7,
+   "y": 4,
+   "note": "A crate labeled 'SPARE ARM'."
+  },
+  {
+   "name": "table_small",
+   "x": 8,
+   "y": 7
+  }
+ ],
+ "warps": [
+  {
+   "x": 7,
+   "y": 10,
+   "to": "quarry",
+   "tx": 35,
+   "ty": 16,
+   "dir": 0
+  }
+ ],
+ "spawns": {
+  "bed": [
+   5,
+   5
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    7,
+    10,
+    "town_interiors",
+    88,
+    0
+   ],
+   [
+    7,
+    11,
+    "town_interiors",
+    120,
+    0
+   ]
+  ]
+ }
+}

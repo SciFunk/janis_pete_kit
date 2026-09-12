@@ -1,0 +1,81 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Design kit for Pete & Janis</title>
+<style>
+ body{margin:0;background:#1f170f;color:#f0e6d2;font:16px 'Segoe UI',sans-serif}
+ main{max-width:720px;margin:40px auto;padding:0 20px}
+ h1{color:#ffd86b;font-weight:normal} .step{background:#2a2018;border:1px solid #5a3f2a;padding:16px 20px;margin:14px 0}
+ .step h2{margin:0 0 8px;font-size:18px;color:#ffd86b;font-weight:normal}
+ a.btn,button{display:inline-block;background:#3a2a1c;color:#f0e6d2;border:1px solid #c9955a;padding:8px 14px;text-decoration:none;font-size:16px;cursor:pointer;margin-top:8px}
+ .hint{color:#a09080;font-size:14px} #out{color:#9fd88a;margin-top:8px} #state{color:#c9b48a;font-size:14px;margin-top:6px}
+</style></head><body><main>
+<h1>Hi Pete & Janis. Make yourself at home.</h1>
+<p>One sprite each, the house you share, then one button. Then some lines to say. Everything you do is kept in this browser until you pack it up, so use the same browser throughout.</p>
+<div class="step"><h2>1. Your characters</h2>
+ <p>Pick a body, hair, clothes, glasses, hat. Type the name exactly as shown (<b>Pete, Janis</b>) and click <b>Save to game</b>. Save as often as you like; the last save under each name counts.</p>
+ <a class="btn" href="tools/character_builder.html?kit=1" target="_blank">Open the character builder</a></div>
+<div class="step"><h2>2. The house</h2>
+ <p>You start inside with the editor open on the right. <b>Props</b> places furniture (search the list, click a thumbnail, click the floor; right-click removes). <b>Floor</b> and <b>Wallpaper</b> change the room. Walk with WASD. Press <b>F7</b> (or the Save button) whenever you like what you see.</p>
+ <a class="btn" href="play.html?kit=house_pj&name=Pete" target="_blank">Open the house</a>
+ <p class="hint">Rugs and small things can be made walkable with X. There is no door out; that's on purpose.</p></div>
+<div class="step"><h2>3. Things you say</h2>
+ <p>Add lines the character says when the farmer talks to them. Pick who, pick when, write the line, <b>Add</b>. As many as you like.</p>
+ <div><select id="who"></select> <select id="when">
+  <option value="any">any day</option><option value="rain">on rainy days</option>
+  <option value="spring">in spring</option><option value="summer">in summer</option><option value="fall">in fall</option><option value="winter">in winter</option>
+  <option value="day">on one particular day</option></select>
+  <span id="dayPick" style="display:none"> <select id="daySeason"><option>spring</option><option>summer</option><option>fall</option><option>winter</option></select> day <input id="dayNum" type="number" min="1" max="28" value="1" style="width:56px"></span></div>
+ <div><textarea id="lineText" rows="2" style="width:100%;margin-top:6px;background:#3a2a1c;color:#f0e6d2;border:1px solid #8a5a2b;font:15px 'Segoe UI',sans-serif" placeholder="e.g. Watch where you step around the ponds. The frogs were here first."></textarea></div>
+ <button onclick="addLine()">Add</button>
+ <ul id="lines" style="padding-left:18px"></ul></div>
+<div class="step"><h2>4. Pack it up</h2>
+ <p>This downloads <b>send_back_pete_janis.zip</b>. Send that file back. It only contains your character and your house.</p>
+ <button onclick="pack()">Pack it up</button><div id="state"></div><div id="out"></div></div>
+<script>
+try { if (!localStorage.getItem('kit.edits.house_pj')) localStorage.setItem('kit.edits.house_pj', "{\"added\": [{\"name\": \"plant_pot\", \"x\": 2, \"y\": 8}], \"removed\": [], \"tiles\": [], \"paint\": [], \"floor\": [], \"wall\": []}"); } catch (e) {}
+
+const INFO = {"name": "Pete & Janis", "slug": "pete_janis", "map": "house_pj", "people": [{"id": "pete", "name": "Pete"}, {"id": "janis", "name": "Janis"}], "created": "2026-09-12", "kit_version": 2};
+function crc32(buf){ let c, crc = 0xFFFFFFFF; for (let i = 0; i < buf.length; i++) { c = (crc ^ buf[i]) & 0xFF; for (let k = 0; k < 8; k++) c = c & 1 ? (c >>> 1) ^ 0xEDB88320 : c >>> 1; crc = (crc >>> 8) ^ c; } return (crc ^ 0xFFFFFFFF) >>> 0; }
+function zip(files){ // files: [{name, data: Uint8Array}] -> Blob (stored, no compression)
+  const enc = new TextEncoder(), parts = [], central = []; let off = 0;
+  const u16 = (n) => [n & 255, (n >> 8) & 255], u32 = (n) => [n & 255, (n >> 8) & 255, (n >> 16) & 255, (n >>> 24) & 255];
+  for (const f of files) { const nm = enc.encode(f.name), crc = crc32(f.data), sz = f.data.length;
+    const loc = new Uint8Array([...u32(0x04034b50), ...u16(20), ...u16(0), ...u16(0), ...u16(0), ...u16(0), ...u32(crc), ...u32(sz), ...u32(sz), ...u16(nm.length), ...u16(0), ...nm]);
+    parts.push(loc, f.data);
+    central.push(new Uint8Array([...u32(0x02014b50), ...u16(20), ...u16(20), ...u16(0), ...u16(0), ...u16(0), ...u16(0), ...u32(crc), ...u32(sz), ...u32(sz), ...u16(nm.length), ...u16(0), ...u16(0), ...u16(0), ...u16(0), ...u32(0), ...u32(off), ...nm]));
+    off += loc.length + sz; }
+  const cd = central.reduce((a, c) => a + c.length, 0);
+  const end = new Uint8Array([...u32(0x06054b50), ...u16(0), ...u16(0), ...u16(files.length), ...u16(files.length), ...u32(cd), ...u32(off), ...u16(0)]);
+  return new Blob([...parts, ...central, end], { type: "application/zip" }); }
+function looks(){ let all = {}; try { all = JSON.parse(localStorage.getItem("kit.looks") || "{}"); } catch (e) {} const one = localStorage.getItem("kit.look"); if (one && !Object.keys(all).length) { const l = JSON.parse(one); all[l.file.replace(/^custom_/, "")] = l; } return all; }
+function linesAll(){ try { return JSON.parse(localStorage.getItem("kit.lines") || "{}"); } catch (e) { return {}; } }
+function whenLabel(w){ return w === "any" ? "any day" : w === "rain" ? "rainy days" : w.indexOf("_") > 0 ? w.replace("_", " ") : w; }
+function renderLines(){ const all = linesAll(), ul = document.getElementById("lines"); ul.innerHTML = "";
+  for (const who in all) for (let i = 0; i < all[who].length; i++) { const l = all[who][i], li = document.createElement("li");
+    li.innerHTML = "<b>" + who + "</b> (" + whenLabel(l.when) + "): " + l.text.replace(/</g, "&lt;") + " ";
+    const x = document.createElement("button"); x.textContent = "remove"; x.style.cssText = "font-size:12px;padding:2px 6px;margin:2px 0 2px 8px"; x.onclick = () => { all[who].splice(i, 1); if (!all[who].length) delete all[who]; localStorage.setItem("kit.lines", JSON.stringify(all)); renderLines(); };
+    li.appendChild(x); ul.appendChild(li); } }
+function addLine(){ const who = document.getElementById("who").value, text = document.getElementById("lineText").value.trim(); if (!text) return;
+  let when = document.getElementById("when").value; if (when === "day") when = document.getElementById("daySeason").value + "_" + Math.max(1, Math.min(28, +document.getElementById("dayNum").value || 1));
+  const all = linesAll(); (all[who] = all[who] || []).push({ when: when, text: text }); localStorage.setItem("kit.lines", JSON.stringify(all));
+  document.getElementById("lineText").value = ""; renderLines(); }
+(function(){ const w = document.getElementById("who"); for (const p of INFO.people) { const o = document.createElement("option"); o.value = p.name; o.textContent = p.name; w.appendChild(o); }
+  document.getElementById("when").onchange = (e) => { document.getElementById("dayPick").style.display = e.target.value === "day" ? "inline" : "none"; }; renderLines(); })();
+function showState(){ const all = looks(), ed = localStorage.getItem("kit.edits." + INFO.map);
+  const who = INFO.people.map((p) => p.name + ": " + (Object.values(all).some((l) => l.name.trim().toLowerCase() === p.name.toLowerCase()) ? "saved" : "not saved yet")).join("   |   ");
+  const nl = Object.values(linesAll()).reduce((a, l) => a + l.length, 0);
+  document.getElementById("state").textContent = who + "   |   house: " + (ed ? "saved" : "not saved yet") + "   |   lines: " + nl; }
+async function pack(){ const o = document.getElementById("out"); o.textContent = "packing...";
+  try { const enc = new TextEncoder(), files = [];
+    files.push({ name: "kit.json", data: enc.encode(JSON.stringify(INFO)) });
+    const house = await (await fetch("data/maps/" + INFO.map + ".json", { cache: "no-store" })).text(); files.push({ name: "data/maps/" + INFO.map + ".json", data: enc.encode(house) });
+    const ed = localStorage.getItem("kit.edits." + INFO.map); if (ed) files.push({ name: "data/maps/edits/" + INFO.map + ".json", data: enc.encode(ed) });
+    const all = Object.values(looks()), list = [];
+    for (const look of all) { const bin = atob(look.png.split(",")[1]), u8 = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i);
+      files.push({ name: "assets/characters/" + look.file + ".png", data: u8 }); list.push({ name: look.name, sheet: look.file, recipe: look.recipe }); }
+    if (list.length) files.push({ name: "data/custom_characters.json", data: enc.encode(JSON.stringify(list)) });
+    const ln = linesAll(); if (Object.keys(ln).length) files.push({ name: "data/kit_lines.json", data: enc.encode(JSON.stringify(ln)) });
+    const blob = zip(files), a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "send_back_" + INFO.slug + ".zip"; a.click();
+    o.textContent = "Downloaded send_back_" + INFO.slug + ".zip" + (list.length ? "" : " (no character in it yet)") + (ed ? "" : " (no house changes in it yet)"); }
+  catch (e) { o.textContent = "Failed: " + e; } }
+showState(); setInterval(showState, 1500);
+</script></main></body></html>

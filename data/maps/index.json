@@ -1,0 +1,182 @@
+[
+ {
+  "id": "bakery",
+  "name": "Sabine's Bakery",
+  "indoor": true
+ },
+ {
+  "id": "bathhouse",
+  "name": "Bathhouse",
+  "indoor": true
+ },
+ {
+  "id": "cave_1",
+  "name": "The Long Lunch",
+  "indoor": true
+ },
+ {
+  "id": "cave_2",
+  "name": "The Pocket",
+  "indoor": true
+ },
+ {
+  "id": "cave_3",
+  "name": "The Chew Timer",
+  "indoor": true
+ },
+ {
+  "id": "cave_4",
+  "name": "One Step Behind",
+  "indoor": true
+ },
+ {
+  "id": "cave_5",
+  "name": "Across the Chasm",
+  "indoor": true
+ },
+ {
+  "id": "cave_6",
+  "name": "Two Latches",
+  "indoor": true
+ },
+ {
+  "id": "cave_hub",
+  "name": "The Cave",
+  "indoor": true
+ },
+ {
+  "id": "cc",
+  "name": "Community Center",
+  "indoor": true
+ },
+ {
+  "id": "derrick_shed",
+  "name": "Derrick's Shed",
+  "indoor": true
+ },
+ {
+  "id": "farm",
+  "name": "Farm",
+  "indoor": false
+ },
+ {
+  "id": "farmhouse",
+  "name": "Farmhouse",
+  "indoor": true
+ },
+ {
+  "id": "finn_house",
+  "name": "Finn's Cottage",
+  "indoor": true
+ },
+ {
+  "id": "forest",
+  "name": "Forest",
+  "indoor": false
+ },
+ {
+  "id": "gallery",
+  "name": "Building gallery",
+  "indoor": false
+ },
+ {
+  "id": "hotsprings",
+  "name": "Hot Springs",
+  "indoor": false
+ },
+ {
+  "id": "house_amora",
+  "name": "Amora's Cottage",
+  "indoor": true
+ },
+ {
+  "id": "house_beaux",
+  "name": "Beaux's Cottage",
+  "indoor": true
+ },
+ {
+  "id": "house_cara",
+  "name": "Cara's Cottage",
+  "indoor": true
+ },
+ {
+  "id": "house_luke",
+  "name": "Luke's House",
+  "indoor": true
+ },
+ {
+  "id": "house_missy",
+  "name": "Missy's House",
+  "indoor": true
+ },
+ {
+  "id": "house_pj",
+  "name": "Pete & Janis's House",
+  "indoor": true
+ },
+ {
+  "id": "house_vesper",
+  "name": "Vesper's House",
+  "indoor": true
+ },
+ {
+  "id": "lake",
+  "name": "Lake",
+  "indoor": false
+ },
+ {
+  "id": "library",
+  "name": "Library",
+  "indoor": true
+ },
+ {
+  "id": "mountains",
+  "name": "Mountain Path",
+  "indoor": false
+ },
+ {
+  "id": "museum",
+  "name": "Museum",
+  "indoor": true
+ },
+ {
+  "id": "nature",
+  "name": "Nature Walk",
+  "indoor": false
+ },
+ {
+  "id": "observatory",
+  "name": "Observatory",
+  "indoor": true
+ },
+ {
+  "id": "quarry",
+  "name": "Quarry",
+  "indoor": false
+ },
+ {
+  "id": "rue_hut",
+  "name": "Rue's Hut",
+  "indoor": true
+ },
+ {
+  "id": "shop",
+  "name": "Fresh Finds",
+  "indoor": true
+ },
+ {
+  "id": "tally_nest",
+  "name": "The Gilded Nest",
+  "indoor": true
+ },
+ {
+  "id": "town",
+  "name": "Town",
+  "indoor": false
+ },
+ {
+  "id": "witch",
+  "name": "Witch's Clearing",
+  "indoor": false
+ }
+]
