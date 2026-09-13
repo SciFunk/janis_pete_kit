@@ -127,6 +127,10 @@ export const Actions = {
       }
       if (kind === "sign") { w.say(prop.note || "..."); return true; }
       if (kind === "board") { w.openBoard(); return true; }
+      if (kind === "cook") {                             // the cookbot: lines for now, the cooking menu comes next
+        const L = ["Stirring. Always stirring. Bring me something to stir.", "I have three settings: simmer, simmer harder, and off.", "Sabine says I over-salt. Sabine has never been a robot.", "Recipes: none yet. Confidence: total."];
+        w.say(L[Math.floor((Clock.dayIndex() + Clock.hour) % L.length)], { speaker: "Cookbot" }); return true;
+      }
     }
     if (prop && prop.door && prop.doorTile && prop.doorTile[0] === tx && prop.doorTile[1] === ty) {
       w.goto(prop.door.to, prop.door.tx, prop.door.ty, prop.door.dir, true); return true;

@@ -233,7 +233,7 @@ export class GameMap {
   }
 
   propAt(tx, ty) {
-    for (const p of this.props) if (p.containsTile(tx, ty)) return p;
+    for (let i = this.props.length - 1; i >= 0; i--) if (this.props[i].containsTile(tx, ty)) return this.props[i];   // last placed wins: the thing on the counter, not the counter
     return null;
   }
   propById(id) { return this.props.find((p) => p.id === id) || null; }

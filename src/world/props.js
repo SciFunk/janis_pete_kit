@@ -16,7 +16,7 @@ export class Prop {
     this.sx = def.sx; this.sy = def.sy; this.sw = def.sw; this.sh = def.sh;
     this.tw = Math.ceil(this.sw / TS); this.th = Math.ceil(this.sh / TS);
     this.px = this.x * TS; this.py = this.y * TS;
-    this.baseY = this.py + this.sh;                // depth key (bottom edge)
+    this.baseY = this.py + this.sh + (def.stack ? 8 : 0);   // depth key (bottom edge); "stack" things sit on top of whatever shares their tile
     this.hp = def.hp || 0;                          // debris hit points
     this.index = -1; this.map = null;               // set by GameMap
     this.kind = def.kind || "prop";

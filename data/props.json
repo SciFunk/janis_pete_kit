@@ -101148,5 +101148,23 @@
   "drops": {
    "wood": 2
   }
+ },
+ "cookbot": {
+  "sheet": "cookbot",
+  "sx": 0,
+  "sy": 0,
+  "sw": 32,
+  "sh": 32,
+  "solid": "bottom:1",
+  "kind": "furniture",
+  "cat": "kitchen",
+  "cat_locked": true,
+  "anim": {
+   "frames": 4,
+   "ms": 350
+  },
+  "interact": "cook",
+  "note": "The cookbot. It stirs whether or not there's anything in the pot.",
+  "stack": true
  }
 }
