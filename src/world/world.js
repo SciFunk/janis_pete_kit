@@ -211,6 +211,7 @@ export const World = {
     const list = [];
     for (const p of this.map.props) {
       if (p.px + p.sw < cx || p.py + p.sh < cy || p.px > cx + vw || p.py > cy + vh) continue;
+      if (!p.solidRect && p.kind === "furniture") { p.draw(ctx, cx, cy); continue; }     // rugs and other walk-over things lie on the floor
       list.push(p);
     }
     for (const n of this.npcs) list.push(n);

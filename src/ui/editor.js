@@ -180,7 +180,7 @@ export const Editor = {
       else if (this.kind !== "all" && k !== this.kind) continue;
       if (window.KIT && !this.outdoorKit() && k !== "furniture") continue;
       if (this.set !== "all" && this.setOf(id) !== this.set) continue;
-      if (this.cat !== "all" && k === "furniture" && (d.cat || "decor") !== this.cat) continue;
+      if (this.cat !== "all" && (k !== "furniture" || (d.cat || "decor") !== this.cat)) continue;
       if (this.filter && id.indexOf(this.filter) < 0) continue;
       out.push([id, d]);
     }

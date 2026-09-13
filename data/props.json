@@ -84180,10 +84180,10 @@
   "sx": 96,
   "sy": 0,
   "sw": 64,
-  "sh": 96,
+  "sh": 112,
   "solid": [
    1,
-   5,
+   6,
    2,
    1
   ],
@@ -84200,8 +84200,13 @@
   "sx": 208,
   "sy": 0,
   "sw": 48,
-  "sh": 80,
-  "solid": "trunk",
+  "sh": 48,
+  "solid": [
+   1,
+   2,
+   1,
+   1
+  ],
   "kind": "tree",
   "tool": "axe",
   "hp": 6,
@@ -101118,5 +101123,25 @@
    "winter": "winter_hime_outdoorplants"
   },
   "cat": "plants"
+ },
+ "bush_round": {
+  "sheet": "outdoors_spring",
+  "seasonal": true,
+  "sx": 208,
+  "sy": 48,
+  "sw": 48,
+  "sh": 32,
+  "solid": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "kind": "tree",
+  "tool": "axe",
+  "hp": 4,
+  "drops": {
+   "wood": 2
+  }
  }
 }

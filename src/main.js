@@ -89,8 +89,8 @@ function handleInput() {
   if (Input.justPressed("KeyC") || (Input.mouse.pressed && !onBar)) Actions.useSelected(Input.mouse.pressed ? Input.mouse : null);
   else if (Input.justPressed("Space", "KeyE", "Enter") || Input.mouse.rpressed) {
     if (!Actions.interact()) {
-      const id = p.inventory.selectedId; const d = id ? Items.get(id) : null;
-      if (d && d.type !== "tool") Actions.useSelected(null);
+      const id = p.inventory.selectedId;
+      if (id) Actions.useSelected(null);          // nothing to talk to or open: use what's in hand (tools included)
     }
   }
   // debug keys
@@ -166,6 +166,7 @@ async function startGame(useSave, name, look, opts) {
     }
     if (sp && (start === "farm" || (opts && opts.map)) && !params.get("x")) { World.player.x = sp[0] * 16 + 8; World.player.y = sp[1] * 16 + 16; World.updateCamera(); }
   }
+  for (const [id, n] of STARTING_ITEMS) if (Items.get(id) && Items.get(id).type === "tool" && !World.player.inventory.has(id, 1)) World.player.inventory.add(id, n);   // older saves: the basic tools
   Friendship.dayIndex = Clock.dayIndex();
   if (Quests.lastGenDay < 0) Quests.newDay();
   World.started = true;

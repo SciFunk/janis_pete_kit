@@ -13,7 +13,7 @@ import { Critter } from "../entities/critter.js";
 
 const OUT_COLS = 25, TOWN_COLS = 32;             // vanilla sheet widths the learned indices refer to
 const GRASS_PLAIN = [175, 175];   // Ridgeside's plain grass; its decorations (tufts, animated flowers) share this base tone
-const GRASS_DECOR = [150, 151, 275, 300, 304, 305, 400, 401];   // 150/151 animate
+const GRASS_DECOR = [];   // the sheet's tufts sit on a darker grass square than 175; none match, so plain grass only
 const WATER_PLAIN = [1231, 1274, 1231, 1231];
 const SHORE_BLOCK = (i) => { const c = i % OUT_COLS, r = Math.floor(i / OUT_COLS); return r >= 24 && r <= 28 && c >= 4 && c <= 7; };
 // bank overlays the real maps draw on water cells next to land (Buildings layer): the dirt-cliff rim
@@ -139,10 +139,13 @@ export class GameMap {
         if (wm && R) { const opts = R.shore[wm]; idx = opts && opts.length ? pick(opts, hsh) : 175; }
         else idx = (hsh % 17 === 0) ? GRASS_DECOR[(hsh >>> 8) % GRASS_DECOR.length] : GRASS_PLAIN[(hsh >>> 4) % 2];
         this.ground[i] = this.oid(idx);
-      } else if (c === 100) {                            // d
-        const m = neighbourMask(isNotDirt, x, y);
-        const opts = R ? R.dirt[m] : null;
-        this.ground[i] = this.oid(opts && opts.length ? pick(opts, hsh) : 226);
+      } else if (c === 100) {                            // d: dirt, grass fringe on the sides that meet grass
+        const nd = (xx, yy) => this.inBounds(xx, yy) && this.t(xx, yy) !== 100;
+        const n = nd(x, y - 1), e = nd(x + 1, y), s = nd(x, y + 1), w2 = nd(x - 1, y), v = (hsh >>> 2) % 2;
+        let idx = v ? 227 : 226;
+        if (n && w2) idx = 184; else if (n && e) idx = 187; else if (s && w2) idx = 266; else if (s && e) idx = 269;
+        else if (n) idx = v ? 186 : 185; else if (s) idx = v ? 268 : 267; else if (w2) idx = 225; else if (e) idx = 228;
+        this.ground[i] = this.oid(idx);
       } else if (c === 119) {                            // w: shoreline is drawn on the water tile, as in the real maps
         const lm = neighbourMask(isLand, x, y);
         const opts = lm && R ? R.wedge[lm] : null;

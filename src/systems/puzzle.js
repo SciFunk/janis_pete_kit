@@ -407,7 +407,8 @@ export const Puzzle = {
     const dx = Math.sign(tx - p.tx), dy = Math.sign(ty - p.ty);
     let t = this.terr(tx, ty), lx = tx, ly = ty;
     if (t === T_FENCE || t === T_CHASM) {
-      lx += dx; ly += dy; const t2 = this.terr(lx, ly);
+      lx += dx; ly += dy; let t2 = this.terr(lx, ly), hops = 1;
+      while (t === T_FENCE && t2 === T_FENCE && hops < 3) { lx += dx; ly += dy; t2 = this.terr(lx, ly); hops++; }   // over a pen's corner: keep going
       if (t2 === T_CHASM || t2 === T_FENCE || t2 === T_WALL || t2 === T_VOID) {
         if (t === T_CHASM || t2 === T_CHASM) { p.inventory.remove(id, 1); w.toast("It fell into the dark."); return true; }
         w.toast("Can't throw that far"); return true;
