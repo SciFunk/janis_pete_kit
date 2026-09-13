@@ -1045,10 +1045,10 @@
    "name": "witchy_elliot",
    "x": 2,
    "y": 37,
-   "id": "house_amora",
-   "note": "Amora's cottage. A rock hammer leans by the door.",
+   "id": "house_alymsa",
+   "note": "Alymsa's cottage. A rock hammer leans by the door.",
    "door": {
-    "to": "house_amora",
+    "to": "house_alymsa",
     "tx": 7,
     "ty": 10,
     "dir": 2
@@ -1058,10 +1058,10 @@
    "name": "witchy_leah",
    "x": 9,
    "y": 37,
-   "id": "house_beaux",
-   "note": "Beaux's cottage. A cat is asleep in the window.",
+   "id": "house_alyrsa",
+   "note": "Alyrsa's cottage. A cat is asleep in the window.",
    "door": {
-    "to": "house_beaux",
+    "to": "house_alyrsa",
     "tx": 7,
     "ty": 10,
     "dir": 2
@@ -1071,10 +1071,10 @@
    "name": "witchy_mouse",
    "x": 19,
    "y": 37,
-   "id": "house_cara",
-   "note": "Cara's cottage. Half a cabinet sits on the porch.",
+   "id": "house_alytsa",
+   "note": "Alytsa's cottage. Half a cabinet sits on the porch.",
    "door": {
-    "to": "house_cara",
+    "to": "house_alytsa",
     "tx": 7,
     "ty": 10,
     "dir": 2
@@ -1106,11 +1106,11 @@
    "name": "cabin_plank",
    "x": 84,
    "y": 37,
-   "id": "finn_house",
+   "id": "moonlight_house",
    "sheet": "cabins_cobleskill",
-   "note": "Finn's cottage. Signs point to INVENTORY, SAVE POINT and FAST TRAVEL.",
+   "note": "Moonlight Foxstar's cottage. Signs point to INVENTORY, SAVE POINT and FAST TRAVEL.",
    "door": {
-    "to": "finn_house",
+    "to": "moonlight_house",
     "tx": 7,
     "ty": 10,
     "dir": 2
@@ -1121,7 +1121,7 @@
    "x": 84,
    "y": 22,
    "id": "tally_nest",
-   "note": "The Gilded Nest. Tally's curios. Something shiny in every window.",
+   "note": "The Shiny Shelf. Tally's curios. Something shiny in every window.",
    "door": {
     "to": "tally_nest",
     "tx": 7,

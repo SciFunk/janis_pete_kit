@@ -1,13 +1,13 @@
 {
- "id": "house_amora",
- "name": "Amora's Cottage",
+ "id": "moonlight_house",
+ "name": "Moonlight Foxstar's Cottage",
  "w": 16,
  "h": 13,
  "indoor": true,
  "tileset": "town_interiors",
- "music": "chill_07.mus",
- "floor": 5,
- "wallpaper": 13,
+ "music": "chill_10.mus",
+ "floor": 2,
+ "wallpaper": 2,
  "terrain": [
   "xxxxxxxxxxxxxxxx",
   "xWWWWWWWWWWWWWWx",
@@ -27,18 +27,49 @@
   {
    "name": "bed_single",
    "x": 2,
-   "y": 3
-  },
-  {
-   "name": "table_small",
-   "x": 8,
-   "y": 6
+   "y": 3,
+   "note": "A wooden sign hangs over the bed: SAVE POINT"
   },
   {
    "name": "chest",
-   "x": 12,
+   "x": 6,
    "y": 4,
-   "note": "A half-knit sweater, unravelled back three rows. A note: 'error, row 41'."
+   "note": "A chest labeled 'Wood'."
+  },
+  {
+   "name": "chest",
+   "x": 7,
+   "y": 4,
+   "note": "A chest labeled 'Stone'."
+  },
+  {
+   "name": "chest",
+   "x": 8,
+   "y": 4,
+   "note": "A chest labeled 'Crafting'."
+  },
+  {
+   "name": "chest",
+   "x": 9,
+   "y": 4,
+   "note": "A chest labeled 'Misc.'."
+  },
+  {
+   "name": "chest",
+   "x": 10,
+   "y": 4,
+   "note": "A chest labeled 'Rare'."
+  },
+  {
+   "name": "chest",
+   "x": 11,
+   "y": 4,
+   "note": "A chest labeled 'Definitely Important'."
+  },
+  {
+   "name": "plant_pot",
+   "x": 13,
+   "y": 3
   }
  ],
  "warps": [
@@ -46,7 +77,7 @@
    "x": 7,
    "y": 11,
    "to": "town",
-   "tx": 5,
+   "tx": 86,
    "ty": 44,
    "dir": 0
   }

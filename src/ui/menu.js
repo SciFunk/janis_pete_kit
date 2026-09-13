@@ -72,7 +72,7 @@ export const InventoryMenu = {
     fillRect(0, 0, Screen.vw, Screen.vh, "rgba(0,0,0,0.45)");
     drawPanel(r.x, r.y, r.w, r.h);
     drawText("Inventory", r.x + 8, r.y + 6, { size: 8, bold: true, color: "#f4e4c1" });
-    const KEYS = [["WASD", "walk"], ["Space / E", "talk, open, use"], ["click / C", "tool in hand"], ["1-0", "slot"], ["Tab / I", "bag"], ["L", "friends & hearts"], ["Esc", "close"], ["F6", "editor"]];
+    const KEYS = [["WASD", "walk"], ["Space / E", "talk, use"], ["click / C", "tool"], ["1-0", "slot"], ["Tab / I", "bag"], ["L", "friends"], ["Esc", "close"], ["F6", "editor"]];
     const ky0 = r.y + 22 + r.rows * (SLOT + PAD) + 1;
     KEYS.forEach(([k, what], i) => { const kx = r.x + 8 + (i % 4) * ((r.w - 16) / 4), ky = ky0 + Math.floor(i / 4) * 9; drawText(k, kx, ky, { size: 5.5, bold: true, color: "#ffd86b" }); drawText(what, kx + k.length * 3.3 + 3, ky, { size: 5.5, color: "#e8dcc8" }); });
     const x0 = r.x + 4 + PAD, y0 = r.y + 22;

@@ -1,13 +1,13 @@
 {
- "id": "house_cara",
- "name": "Cara's Cottage",
+ "id": "house_alymsa",
+ "name": "Alymsa's Cottage",
  "w": 16,
  "h": 13,
  "indoor": true,
  "tileset": "town_interiors",
  "music": "chill_07.mus",
- "floor": 7,
- "wallpaper": 15,
+ "floor": 5,
+ "wallpaper": 13,
  "terrain": [
   "xxxxxxxxxxxxxxxx",
   "xWWWWWWWWWWWWWWx",
@@ -38,7 +38,7 @@
    "name": "chest",
    "x": 12,
    "y": 4,
-   "note": "A bin with a half-knit sweater, the needles still in."
+   "note": "A half-knit sweater, unravelled back three rows. A note: 'error, row 41'."
   }
  ],
  "warps": [
@@ -46,8 +46,8 @@
    "x": 7,
    "y": 11,
    "to": "town",
-   "tx": 23,
-   "ty": 45,
+   "tx": 5,
+   "ty": 44,
    "dir": 0
   }
  ],

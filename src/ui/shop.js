@@ -90,7 +90,7 @@ export const Shop = {
     const r = this.rect(), p = this.world.player, inv = p.inventory;
     fillRect(0, 0, Screen.vw, Screen.vh, "rgba(0,0,0,0.45)");
     drawPanel(r.x, r.y, r.w, r.h);
-    drawText({ general: "Fresh Finds", bakery: "Sabine's Bakery", curios: "The Gilded Nest" }[this.kind] || "Shop", r.x + 8, r.y + 6, { size: 8, bold: true, color: "#f4e4c1" });
+    drawText({ general: "Fresh Finds", bakery: "Sabine's Bakery", curios: "The Shiny Shelf" }[this.kind] || "Shop", r.x + 8, r.y + 6, { size: 8, bold: true, color: "#f4e4c1" });
     drawText(p.gold + "g", r.x + r.w - 8, r.y + 7, { size: 8, bold: true, align: "right", color: "#ffd86b" });
     drawText("Buy (click; right-click x5)", r.x + 8, r.y + 18, { size: 5.5, color: "#c9b48a" });
     const listW = r.w - (6 * (SLOT + PAD)) - 24;

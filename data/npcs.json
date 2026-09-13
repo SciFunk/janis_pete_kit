@@ -525,15 +525,15 @@
    ]
   }
  },
- "finn": {
-  "name": "Finn",
+ "moonlight": {
+  "name": "Moonlight Foxstar",
   "sheet": "sc_sam",
   "birthday": [
    "summer",
    20
   ],
   "home": {
-   "map": "finn_house",
+   "map": "moonlight_house",
    "x": 7,
    "y": 7,
    "dir": 0
@@ -551,7 +551,7 @@
    "default": [
     [
      360,
-     "finn_house",
+     "moonlight_house",
      7,
      7,
      0
@@ -572,7 +572,7 @@
     ],
     [
      1200,
-     "finn_house",
+     "moonlight_house",
      7,
      7,
      0
@@ -631,8 +631,8 @@
    ]
   }
  },
- "pip": {
-  "name": "Pip",
+ "mote": {
+  "name": "Mote",
   "sheet": "pip_ice",
   "birthday": [
    "winter",
@@ -706,15 +706,15 @@
    32
   ]
  },
- "amora": {
-  "name": "Amora",
-  "sheet": "sc_maru",
+ "alymsa": {
+  "name": "Alymsa",
+  "sheet": "alymsa",
   "birthday": [
    "summer",
    1
   ],
   "home": {
-   "map": "house_amora",
+   "map": "house_alymsa",
    "x": 7,
    "y": 7,
    "dir": 0
@@ -734,7 +734,7 @@
    "default": [
     [
      360,
-     "house_amora",
+     "house_alymsa",
      7,
      7,
      0
@@ -748,7 +748,7 @@
     ],
     [
      1080,
-     "house_amora",
+     "house_alymsa",
      7,
      7,
      0
@@ -756,15 +756,15 @@
    ]
   }
  },
- "beaux": {
-  "name": "Beaux",
-  "sheet": "sc_abigail",
+ "alyrsa": {
+  "name": "Alyrsa",
+  "sheet": "alyrsa",
   "birthday": [
    "summer",
    2
   ],
   "home": {
-   "map": "house_beaux",
+   "map": "house_alyrsa",
    "x": 7,
    "y": 7,
    "dir": 0
@@ -784,7 +784,7 @@
    "default": [
     [
      360,
-     "house_beaux",
+     "house_alyrsa",
      7,
      7,
      0
@@ -798,7 +798,7 @@
     ],
     [
      1080,
-     "house_beaux",
+     "house_alyrsa",
      7,
      7,
      0
@@ -806,15 +806,15 @@
    ]
   }
  },
- "cara": {
-  "name": "Cara",
-  "sheet": "sc_emily",
+ "alytsa": {
+  "name": "Alytsa",
+  "sheet": "alytsa",
   "birthday": [
    "summer",
    3
   ],
   "home": {
-   "map": "house_cara",
+   "map": "house_alytsa",
    "x": 7,
    "y": 7,
    "dir": 0
@@ -834,7 +834,7 @@
    "default": [
     [
      360,
-     "house_cara",
+     "house_alytsa",
      7,
      7,
      0
@@ -848,7 +848,7 @@
     ],
     [
      1080,
-     "house_cara",
+     "house_alytsa",
      7,
      7,
      0

@@ -65,8 +65,8 @@
   "indoor": true
  },
  {
-  "id": "finn_house",
-  "name": "Finn's Cottage",
+  "id": "moonlight_house",
+  "name": "Moonlight Foxstar's Cottage",
   "indoor": true
  },
  {
@@ -85,18 +85,18 @@
   "indoor": false
  },
  {
-  "id": "house_amora",
-  "name": "Amora's Cottage",
+  "id": "house_alymsa",
+  "name": "Alymsa's Cottage",
   "indoor": true
  },
  {
-  "id": "house_beaux",
-  "name": "Beaux's Cottage",
+  "id": "house_alyrsa",
+  "name": "Alyrsa's Cottage",
   "indoor": true
  },
  {
-  "id": "house_cara",
-  "name": "Cara's Cottage",
+  "id": "house_alytsa",
+  "name": "Alytsa's Cottage",
   "indoor": true
  },
  {
@@ -166,7 +166,7 @@
  },
  {
   "id": "tally_nest",
-  "name": "The Gilded Nest",
+  "name": "The Shiny Shelf",
   "indoor": true
  },
  {

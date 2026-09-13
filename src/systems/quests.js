@@ -175,5 +175,11 @@ export const Quests = {
   finish(q) { q.complete = true; q.completedDay = Clock.dayIndex(); this.world.player.gold += q.reward; this.done += 1; },
 
   save() { return { list: this.list, lastGenDay: this.lastGenDay, done: this.done, visits: this.visits }; },
-  load(d) { if (d) { this.list = d.list || []; this.lastGenDay = d.lastGenDay; this.done = d.done || 0; this.visits = d.visits || {}; } },
+  load(d) {
+    if (!d) return;
+    this.list = d.list || []; this.lastGenDay = d.lastGenDay; this.done = d.done || 0; this.visits = d.visits || {};
+    const NPC = { pip: "mote", finn: "moonlight", amora: "alymsa", beaux: "alyrsa", cara: "alytsa" }, MAP = { finn_house: "moonlight_house", house_amora: "house_alymsa", house_beaux: "house_alyrsa", house_cara: "house_alytsa" };
+    for (const q of this.list) { if (NPC[q.npc]) q.npc = NPC[q.npc]; if (MAP[q.map]) q.map = MAP[q.map]; }
+    for (const o in MAP) if (this.visits[o] !== undefined) { this.visits[MAP[o]] = this.visits[o]; delete this.visits[o]; }
+  },
 };

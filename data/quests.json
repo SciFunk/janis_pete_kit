@@ -2,25 +2,129 @@
  "stale_days": 3,
  "first_nudge_day": 4,
  "places": {
-  "town":        {"asker": "finn",    "title": "Finn needs a second opinion", "text": "\"The notice board's crooked. Or the town is. Come and tell me which.\" - Finn", "arrive": "You had a look round town."},
-  "forest":      {"asker": "pip",     "title": "Something in the forest",      "text": "\"The pond's gone quiet. Would you go and see?\" - Pip", "arrive": "You checked on the forest."},
-  "lake":        {"asker": "pete",    "title": "Pete saw something in the lake", "text": "\"Something big, under the surface. Go and have a look, I'm not going back alone.\" - Pete", "arrive": "You went down to the lake."},
-  "nature":      {"asker": "janis",   "title": "Are the wildflowers out?",      "text": "\"Walk the nature trail for me and tell me what's blooming.\" - Janis", "arrive": "You walked the nature trail."},
-  "mountains":   {"asker": "derrick", "title": "Rocks on the mountain path",    "text": "\"Heard a fall up there last night. Make sure the path's clear.\" - Derrick", "arrive": "The mountain path is clear."},
-  "quarry":      {"asker": "derrick", "title": "Derrick left a tool behind",    "text": "\"Left my good spade at the quarry. Just check nobody's walked off with it.\" - Derrick", "arrive": "The spade is where Derrick left it."},
-  "hotsprings":  {"asker": "vesper",  "title": "Is the spring steaming?",       "text": "\"The hot springs steam when the weather turns. Go and see if it has.\" - Vesper", "arrive": "You visited the hot springs."},
-  "witch":       {"asker": "rue",     "title": "Rue wonders if you remember the way", "text": "\"Nobody comes up to the clearing any more. Prove me wrong.\" - Rue", "arrive": "You found Rue's clearing again."},
-  "library":     {"asker": "quire",   "title": "A book set aside",             "text": "\"I've kept one back for you. It won't wait forever.\" - Quire", "arrive": "You stopped by the library."},
-  "museum":      {"asker": "tally",   "title": "The museum looks lonely",      "text": "\"Nobody's been in for days. Go and keep the display case company.\" - Tally", "arrive": "You looked in on the museum."},
-  "observatory": {"asker": "vesper",  "title": "Clear skies tonight",          "text": "\"Come up to the observatory. You'll want to see this.\" - Vesper", "arrive": "You climbed up to the observatory."},
-  "bakery":      {"asker": "sabine",  "title": "Sabine wants an opinion",      "text": "\"New loaf. Needs a taster. Come by the bakery.\" - Sabine", "arrive": "You dropped in at the bakery."},
-  "shop":        {"asker": "fig",     "title": "Something new at Fresh Finds", "text": "\"Got something on the shelf you haven't seen. Come and look.\" - Fig", "arrive": "You browsed Fresh Finds."},
-  "tally_nest":  {"asker": "tally",   "title": "A curious thing at the Gilded Nest", "text": "\"I can't place it. You might. Come by.\" - Tally", "arrive": "You visited the Gilded Nest."},
-  "cc":          {"asker": "missy",   "title": "A hand at the community center", "text": "\"The place needs airing out. Come and help me open the windows.\" - Missy", "arrive": "You helped air out the community center."},
-  "bathhouse":   {"asker": "lucas",   "title": "The bathhouse is warm again",  "text": "\"Finally got the boiler going. Come and see.\" - Luke", "arrive": "You looked in on the bathhouse."}
+  "town": {
+   "asker": "moonlight",
+   "title": "Moonlight Foxstar needs a second opinion",
+   "text": "\"This town's collision boxes are off. Or the town is. Come and tell me which, NPC.\" - Moonlight Foxstar",
+   "arrive": "You had a look round town."
+  },
+  "forest": {
+   "asker": "mote",
+   "title": "Something in the forest",
+   "text": "\"The pond's gone quiet. Would you go and see?\" - Mote",
+   "arrive": "You checked on the forest."
+  },
+  "lake": {
+   "asker": "pete",
+   "title": "Pete saw something in the lake",
+   "text": "\"Something big, under the surface. Go and have a look, I'm not going back alone.\" - Pete",
+   "arrive": "You went down to the lake."
+  },
+  "nature": {
+   "asker": "janis",
+   "title": "Are the wildflowers out?",
+   "text": "\"Walk the nature trail for me and tell me what's blooming.\" - Janis",
+   "arrive": "You walked the nature trail."
+  },
+  "mountains": {
+   "asker": "derrick",
+   "title": "Rocks on the mountain path",
+   "text": "\"Heard a fall up there last night. Make sure the path's clear.\" - Derrick",
+   "arrive": "The mountain path is clear."
+  },
+  "quarry": {
+   "asker": "derrick",
+   "title": "Derrick left a tool behind",
+   "text": "\"Left my good spade at the quarry. Just check nobody's walked off with it.\" - Derrick",
+   "arrive": "The spade is where Derrick left it."
+  },
+  "hotsprings": {
+   "asker": "vesper",
+   "title": "Is the spring steaming?",
+   "text": "\"The hot springs steam when the weather turns. Go and see if it has.\" - Vesper",
+   "arrive": "You visited the hot springs."
+  },
+  "witch": {
+   "asker": "rue",
+   "title": "Rue wonders if you remember the way",
+   "text": "\"Nobody comes up to the clearing any more. Prove me wrong.\" - Rue",
+   "arrive": "You found Rue's clearing again."
+  },
+  "library": {
+   "asker": "quire",
+   "title": "A book set aside",
+   "text": "\"I've kept one back for you. It won't wait forever.\" - Quire",
+   "arrive": "You stopped by the library."
+  },
+  "museum": {
+   "asker": "tally",
+   "title": "The museum looks lonely",
+   "text": "\"Nobody's been in for days. Go and keep the display case company.\" - Tally",
+   "arrive": "You looked in on the museum."
+  },
+  "observatory": {
+   "asker": "vesper",
+   "title": "Clear skies tonight",
+   "text": "\"Come up to the observatory. You'll want to see this.\" - Vesper",
+   "arrive": "You climbed up to the observatory."
+  },
+  "bakery": {
+   "asker": "sabine",
+   "title": "Sabine wants an opinion",
+   "text": "\"New loaf. Needs a taster. Come by the bakery.\" - Sabine",
+   "arrive": "You dropped in at the bakery."
+  },
+  "shop": {
+   "asker": "fig",
+   "title": "Something new at Fresh Finds",
+   "text": "\"Got something on the shelf you haven't seen. Come and look.\" - Fig",
+   "arrive": "You browsed Fresh Finds."
+  },
+  "tally_nest": {
+   "asker": "tally",
+   "title": "A curious thing at the Shiny Shelf",
+   "text": "\"I can't place it. You might. Come by.\" - Tally",
+   "arrive": "You visited the Shiny Shelf."
+  },
+  "cc": {
+   "asker": "missy",
+   "title": "A hand at the community center",
+   "text": "\"The place needs airing out. Come and help me open the windows.\" - Missy",
+   "arrive": "You helped air out the community center."
+  },
+  "bathhouse": {
+   "asker": "lucas",
+   "title": "The bathhouse is warm again",
+   "text": "\"Finally got the boiler going. Come and see.\" - Luke",
+   "arrive": "You looked in on the bathhouse."
+  }
  },
- "talk": ["\"Come find me when you have a minute.\"", "\"I've been meaning to ask you something.\"", "\"Stop by. Nothing urgent.\""],
- "gift": ["\"Rough week. Something nice would help.\"", "\"It's been a grey few days.\""],
- "rewards": {"visit": [40, 90], "talk": [30, 50], "gift": [60, 100]},
- "friendship": {"visit": 30, "talk": 40, "gift": 30}
+ "talk": [
+  "\"Come find me when you have a minute.\"",
+  "\"I've been meaning to ask you something.\"",
+  "\"Stop by. Nothing urgent.\""
+ ],
+ "gift": [
+  "\"Rough week. Something nice would help.\"",
+  "\"It's been a grey few days.\""
+ ],
+ "rewards": {
+  "visit": [
+   40,
+   90
+  ],
+  "talk": [
+   30,
+   50
+  ],
+  "gift": [
+   60,
+   100
+  ]
+ },
+ "friendship": {
+  "visit": 30,
+  "talk": 40,
+  "gift": 30
+ }
 }

@@ -24,4 +24,4 @@ export const Settings = {
     return !!d.confirmStores[store];
   },
 };
-export const STORE_NAMES = { general: "Fresh Finds (grocery)", bakery: "Sabine's Bakery", curios: "The Gilded Nest (museum)", shipping: "Shipping bin" };
+export const STORE_NAMES = { general: "Fresh Finds (grocery)", bakery: "Sabine's Bakery", curios: "The Shiny Shelf (museum)", shipping: "Shipping bin" };

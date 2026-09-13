@@ -17,5 +17,7 @@ export const Friendship = {
   recordGift(id, itemId, pts, reaction) { const f = this.get(id); f.giftedDay = this.dayIndex; f.given[itemId] = (f.given[itemId] || 0) + 1; if (!f.known) f.known = {}; f.known[itemId] = reaction; this.add(id, pts); },
 
   save() { return { data: this.data, dayIndex: this.dayIndex }; },
-  load(d) { if (d) { this.data = d.data || {}; this.dayIndex = d.dayIndex || 0; } },
+  // NPC ids that changed after saves existed (2026-09-13): keep the hearts
+  RENAMED: { pip: "mote", finn: "moonlight", amora: "alymsa", beaux: "alyrsa", cara: "alytsa" },
+  load(d) { if (d) { this.data = d.data || {}; this.dayIndex = d.dayIndex || 0; for (const o in this.RENAMED) if (this.data[o] && !this.data[this.RENAMED[o]]) { this.data[this.RENAMED[o]] = this.data[o]; delete this.data[o]; } } },
 };

@@ -192,7 +192,7 @@
    "If it's bleeding, apply pressure. If it isn't, why are you here?"
   ]
  },
- "pip": {
+ "mote": {
   "intro": [
    "You didn't jump! Most people jump. Jumping's fair, I get it, but it's nice when someone new doesn't."
   ],
@@ -222,39 +222,42 @@
    "Overdue books are a personal failing."
   ]
  },
- "finn": {
+ "moonlight": {
   "intro": [
-   "Ah! The new player character has arrived.#$b#Don't worry, I know how these stories go.#$b#You're probably looking for your first quest."
+   "A new NPC! I wonder what your liked and disliked items are.#$b#Don't worry, I know how these stories go. You'll want to give me a quest."
   ],
   "any": [
-   "The music feels unusually peaceful today.",
-   "I'm saving this. You never know when a fetch quest will appear.",
-   "Someone around here definitely has dialogue that changes after sunset.",
-   "You should talk to everyone twice.",
-   "Always check behind waterfalls.",
-   "I'd wave, but I'm waiting for my idle animation.",
-   "You can't fool me. That suspicious-looking wall is hiding something.",
-   "The developers love hiding treasure in barrels.",
-   "Every village has one oddly important chicken.",
-   "I think I just completed a side quest."
+   "Hold still, I'm checking whether you have a heart meter.",
+   "I talked to you already today. Your dialogue shouldn't have changed yet.",
+   "Are you the one with the changing schedule, or is that the raccoon?",
+   "I've been waiting for my idle animation. Any second now.",
+   "Someone in this town has a secret cutscene. My money's on the baker.",
+   "Always check behind waterfalls. That's free advice, NPC to player.",
+   "If you ever start following me around, that's a party mechanic. Just so you know.",
+   "I'd give you a quest but I think it's the other way round here.",
+   "You should talk to everyone twice. Even me. Especially me.",
+   "Every village has one oddly important chicken. I'm keeping a list."
   ],
   "rain": [
-   "Rain usually means better fishing loot.",
-   "Weather systems always increase rare spawn rates."
+   "Rain usually means better fishing loot. Go on, test it. Report back.",
+   "Weather systems always increase rare spawn rates. I'm counting."
   ],
   "gift_neutral": "Quest item? No... crafting ingredient.",
   "gift_dislike": "...Vendor trash.",
-  "gift_love": "...Legendary? I'll know eventually.",
+  "gift_love": "...Legendary drop! From an NPC, no less.",
   "moving_in": [
-   "I've been waiting for the opening cutscene.",
-   "You're probably looking for your first quest."
+   "A new NPC! I wonder what your liked and disliked items are.",
+   "You're probably about to give me my first quest. Take your time."
   ]
  },
- "amora": {
+ "alymsa": {
   "intro": [
-   "You're the new variable. Amora. I do rocks, mostly. Don't say 'geology' like it's a hobby."
+   "Alymsa. The one with the animals. Mind the hedgehog, she's in a mood."
   ],
   "any": [
+   "The cat's been on the roof since Tuesday. She'll come down when she's ready.",
+   "Everyone here has one animal that follows them. Mine has four.",
+   "If you find a rabbit in your fields, it's probably not mine. Probably.",
    "The effect is trending toward significance, but n is small.",
    "This one's a chert. That one's also a chert. They're different cherts.",
    "I don't 'like' things. I record them. Recording is going well."
@@ -262,22 +265,28 @@
   "gift_love": "...I don't have this one. Where did you find it? Exactly where.",
   "gift_dislike": "Noted. Filed under 'given'."
  },
- "beaux": {
+ "alyrsa": {
   "intro": [
-   "Oh! Hello! Sorry, the cat wanted to see you first. She's decided you're fine."
+   "Alyrsa. I measure things. Today it's how long you'll stay talking to me."
   ],
   "any": [
+   "The pond loses a hand's width of water a day in summer. I have the notebook.",
+   "My sisters think the weather is luck. It's a table.",
+   "Don't touch the jars on the sill. Some of them are experiments.",
    "The cat picked this out for you. Don't ask what it is.",
    "Every heart event I've ever had, there was a cat in it. Uninvited.",
    "She's asleep on the sweater again. I'm not moving her."
   ],
   "gift_love": "The cat says thank you. I say thank you too, but she said it first."
  },
- "cara": {
+ "alytsa": {
   "intro": [
-   "Cara. I've got half a cabinet, half a sweater, and a board game we'll play once we get four people. You count."
+   "Alytsa. I'm between hobbies. Ask me next week what the new one is."
   ],
   "any": [
+   "This week it's knitting. Last week it was the telescope.",
+   "I have half of everything. Half a sweater, half a boat, half a map.",
+   "If you ever need a thing nobody else has started, I probably have it.",
    "Finishing is overrated. Starting is where the good feeling lives.",
    "The second sleeve is coming. It has been coming for two years.",
    "Wood or yarn? Don't answer, I've already started both."
