@@ -16,7 +16,7 @@ export const InventoryMenu = {
   rect() {
     const inv = window.World.player.inventory;
     const rows = Math.ceil(inv.slots.length / ROW);
-    const w = ROW * (SLOT + PAD) + PAD * 2 + 8, h = rows * (SLOT + PAD) + PAD * 2 + 34 + 22;
+    const w = ROW * (SLOT + PAD) + PAD * 2 + 8, h = rows * (SLOT + PAD) + PAD * 2 + 34 + 20;
     return { x: Math.floor((Screen.vw - w) / 2), y: Math.floor((Screen.vh - h) / 2), w: w, h: h, rows: rows };
   },
 
@@ -73,8 +73,8 @@ export const InventoryMenu = {
     drawPanel(r.x, r.y, r.w, r.h);
     drawText("Inventory", r.x + 8, r.y + 6, { size: 8, bold: true, color: "#f4e4c1" });
     const KEYS = [["WASD", "walk"], ["Space / E", "talk, open, use"], ["click / C", "tool in hand"], ["1-0", "slot"], ["Tab / I", "bag"], ["L", "friends & hearts"], ["Esc", "close"], ["F6", "editor"]];
-    const kyy = r.y + 22 + r.rows * (SLOT + PAD) + 2; let kxx = r.x + 8;
-    for (const [k, what] of KEYS) { drawText(k, kxx, kyy, { size: 5.5, bold: true, color: "#ffd86b" }); kxx += k.length * 3.4 + 3; drawText(what, kxx, kyy, { size: 5.5, color: "#e8dcc8" }); kxx += what.length * 3.1 + 9; }
+    const ky0 = r.y + 22 + r.rows * (SLOT + PAD) + 1;
+    KEYS.forEach(([k, what], i) => { const kx = r.x + 8 + (i % 4) * ((r.w - 16) / 4), ky = ky0 + Math.floor(i / 4) * 9; drawText(k, kx, ky, { size: 5.5, bold: true, color: "#ffd86b" }); drawText(what, kx + k.length * 3.3 + 3, ky, { size: 5.5, color: "#e8dcc8" }); });
     const x0 = r.x + 4 + PAD, y0 = r.y + 22;
     for (let i = 0; i < inv.slots.length; i++) {
       const x = x0 + (i % ROW) * (SLOT + PAD), y = y0 + Math.floor(i / ROW) * (SLOT + PAD);
