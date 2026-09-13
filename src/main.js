@@ -213,7 +213,7 @@ async function boot() {
   Shop.init(World);
   Talk.init(Assets.data.dialogue);
   Quests.init(World); Board.init(World); Social.init(World); World.quests = Quests;
-  Wildlife.init(World); window.Wildlife = Wildlife;
+  Wildlife.init(World); window.Wildlife = Wildlife; window.Actions = Actions;
   World.onBoard = () => Board.open();
   World.onSleep = () => Day.endDay(false);
   World.onShip = () => Shipping.open();

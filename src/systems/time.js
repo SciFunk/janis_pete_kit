@@ -25,11 +25,12 @@ export const Clock = {
   get pastBedtime() { return this.minutes >= 26 * 60; },
 
   // fraction of darkness 0..1 for the lighting overlay
+  // when dusk begins today, in minutes (summer evenings are long, winter ones short)
+  get duskStart() { return this.season === 1 ? 19 * 60 : this.season === 3 ? 16 * 60 + 30 : 18 * 60; },
+  hm(mins) { const h = Math.floor(mins / 60) % 24, m = mins % 60; return ((h + 11) % 12 + 1) + (m ? ":" + (m < 10 ? "0" : "") + m : "") + (h < 12 ? " am" : " pm"); },
   darkness() {
     const m = this.minutes;
-    let start = 18 * 60, end = 21 * 60; // dusk window (varies by season)
-    if (this.season === 1) { start = 19 * 60; end = 22 * 60; }
-    if (this.season === 3) { start = 16 * 60 + 30; end = 19 * 60 + 30; }
+    let start = this.duskStart, end = start + 3 * 60; // dusk window (varies by season)
     if (m <= start) return 0;
     if (m >= end) return 1;
     return (m - start) / (end - start);

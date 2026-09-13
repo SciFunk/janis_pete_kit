@@ -1,4 +1,4 @@
-// HUD: date/time/gold box (top-right), energy bar (bottom-right).
+// HUD: energy bar (bottom-right) and the date/time/gold box just left of it, above the hotbar's right end.
 import { Screen } from "../engine/screen.js";
 import { drawText, drawPanel, fillRect } from "./text.js";
 import { Clock } from "../systems/time.js";
@@ -8,7 +8,7 @@ export function drawHud() {
   const vw = Screen.vw, vh = Screen.vh;
   const p = World.player;
   // clock box
-  const bw = 78, bh = 40, bx = vw - bw - 4, by = 4;
+  const bw = 78, bh = 40, bx = vw - bw - 22, by = vh - bh - 6;
   drawPanel(bx, by, bw, bh);
   const seasonName = Clock.seasonName.charAt(0).toUpperCase() + Clock.seasonName.slice(1);
   drawText(Clock.dateString() + "  " + seasonName, bx + 5, by + 4, { size: 6.5, color: "#f4e4c1" });

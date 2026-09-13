@@ -147,12 +147,19 @@ export class GameMap {
         if (n && w2) idx = 328; else if (n && e) idx = 331; else if (s && w2) idx = 410; else if (s && e) idx = 413;
         else if (n) idx = v ? 330 : 329; else if (s) idx = v ? 412 : 411; else if (w2) idx = 369; else if (e) idx = 372;
         this.ground[i] = idx;
-      } else if (c === 119) {                            // w: shoreline is drawn on the water tile, as in the real maps
-        const lm = neighbourMask(isLand, x, y);
-        const opts = lm && R ? R.wedge[lm] : null;
-        this.ground[i] = this.oid(opts && opts.length ? pick(opts, hsh) : WATER_PLAIN[(hsh >>> 5) % WATER_PLAIN.length]);
+      } else if (c === 119) {                            // w: plain water, with a sandy rim drawn over the cells that touch land
+        this.ground[i] = this.oid(WATER_PLAIN[(hsh >>> 5) % WATER_PLAIN.length]);
         this.waterCells.push(x, y);
-        if (lm && R) { const bo = R.bank[lm]; if (bo && bo.length) { this.bank.push([x, y, this.oid(bo[0])]); if (CLIFF_TOP(bo[0])) cliff.add(i); } }   // most common = consistent rim
+        if (R) {
+          // sheet ids of the rim set: foam along a far bank, sand down the sides and along the near bank
+          const L = (xx, yy) => this.inBounds(xx, yy) && this.t(xx, yy) !== 119;
+          const n = L(x, y - 1), s = L(x, y + 1), w2 = L(x - 1, y), e = L(x + 1, y);
+          let rim = 0;
+          if (s && w2) rim = 1279; else if (s && e) rim = 1281; else if (n) rim = 1198;          // the far bank is one flat line of foam, corners included
+          else if (s) rim = 1280; else if (w2) rim = 1238; else if (e) rim = 1240;
+          else if (L(x - 1, y + 1)) rim = 500; else if (L(x + 1, y + 1)) rim = 501; else if (L(x - 1, y - 1) || L(x + 1, y - 1)) rim = 1198;
+          if (rim) this.bank.push([x, y, rim]);
+        }
       } else if (c === 112) {                            // p: town-sheet plaza stone
         const m = neighbourMask(isNotPlaza, x, y);
         const opts = R ? R.plaza[m] : null;

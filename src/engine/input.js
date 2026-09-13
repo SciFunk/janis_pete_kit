@@ -13,7 +13,7 @@ export const Input = {
       this.down.add(e.code);
       this.pressed.add(e.code);
       if (e.key && e.key.length === 1) this.typed += e.key;
-      if (["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Tab"].includes(e.code)) e.preventDefault();
+      if (["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Tab"].includes(e.code) || /^F[1-9]$/.test(e.code)) e.preventDefault();
     });
     window.addEventListener("keyup", (e) => { this.down.delete(e.code); this.released.add(e.code); });
     window.addEventListener("blur", () => { this.down.clear(); this.mouse.down = this.mouse.rdown = false; });

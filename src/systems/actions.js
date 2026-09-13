@@ -117,7 +117,14 @@ export const Actions = {
       const kind = prop.def.interact;
       if (kind === "sleep") { w.askSleep(); return true; }
       if (kind === "ship") { w.openShipping(); return true; }
-      if (kind === "shop") { w.openShop(prop.shop || prop.def.shop || "general"); return true; }
+      if (kind === "shop") {
+        const which = prop.shop || prop.def.shop || "general";
+        if (which === "general") {                       // Fresh Finds: mornings till noon, then again from an hour before dusk
+          const m = Clock.minutes, reopen = Clock.duskStart - 60;
+          if (m >= 12 * 60 && m < reopen) { w.say("Fig has the shutters down. \"Back at " + Clock.hm(reopen) + ". Come by in the morning, or after.\""); return true; }
+        }
+        w.openShop(which); return true;
+      }
       if (kind === "sign") { w.say(prop.note || "..."); return true; }
       if (kind === "board") { w.openBoard(); return true; }
     }

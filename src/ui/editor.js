@@ -109,9 +109,10 @@ export const Editor = {
       }
       this.refreshList();
     } else if (m === "terrain") {
-      help.textContent = "Click / drag to paint the ground. Edges and shores re-autotile as you go.";
-      for (const [ch, label] of TERRAIN) tools.appendChild(this.btn(label, this.terrain === ch, () => { this.terrain = ch; this.setMode("terrain"); }));
-      this.info("brush: " + this.terrain);
+      help.textContent = "Click / drag to paint the ground; edges and shores re-autotile as you go. Or click one of the single tiles below to stamp exactly that tile (right click erases a stamp).";
+      for (const [ch, label] of TERRAIN) tools.appendChild(this.btn(label, this.terrain === ch && !this.stamp, () => { this.terrain = ch; this.stamp = null; this.setMode("terrain"); }));
+      this.info(this.stamp ? "stamping tile " + this.stamp.idx + " of " + this.stamp.sheet : "brush: " + this.terrain);
+      this.terrainTiles();
     } else if (m === "tile") {
       help.textContent = "Pick a sheet, click a tile in it, then click / drag on the map. Right-click erases a stamped tile.";
       if (!this.index) { try { this.index = await Assets.loadJson("data/asset_index.json"); } catch (e) { this.index = []; } }
@@ -133,6 +134,27 @@ export const Editor = {
       bs.onchange = (e) => { this.brush = +e.target.value; };
       tools.append(bs, " ", this.btn("Fill the whole room", false, () => this.fillRoom(m)), " ", this.btn("More room →", false, () => this.grow(8, 0)), this.btn("More room ↓", false, () => this.grow(0, 8)));
     }
+  },
+
+  // the single tiles the autotiler uses for the chosen ground on this map (and the shoreline rim for water):
+  // click one to stamp it by hand through the paint layer
+  terrainTiles() {
+    if (!this.list) return; this.list.innerHTML = "";
+    const m = this.world.map, code = this.terrain.charCodeAt(0);
+    const key = m.indoor ? null : "outdoors_" + m.season; const img = key && Assets.img[key];
+    if (!img) { this.status(m.indoor ? "walls and floors: use the Wallpaper / Floor tabs for single tiles" : "no sheet loaded"); return; }
+    const ids = new Set();
+    for (let y = 0; y < m.h; y++) for (let x = 0; x < m.w; x++) if (m.t(x, y) === code && m.ground[y * m.w + x] >= 0) ids.add(m.ground[y * m.w + x]);
+    if (code === 119) for (const b of m.bank) ids.add(b[2]);
+    const cols = img.width / 16;
+    for (const id of [...ids].sort((a, b) => a - b)) {
+      const c = document.createElement("canvas"); c.width = 48; c.height = 48; c.title = key + " #" + id;
+      c.style.cssText = "background:#3a2a1c;border:2px solid " + (this.stamp && this.stamp.idx === id ? "#ffd86b" : "transparent") + ";cursor:pointer;image-rendering:pixelated";
+      const g = c.getContext("2d"); g.imageSmoothingEnabled = false; g.drawImage(img, (id % cols) * 16, Math.floor(id / cols) * 16, 16, 16, 8, 8, 32, 32);
+      c.onclick = () => { this.stamp = { sheet: key, idx: id }; this.tileSheet = key; this.tileIdx = id; this.tileSolid = code === 119 || code === 87 || code === 120; this.setMode("terrain"); };
+      this.list.appendChild(c);
+    }
+    this.status(ids.size + " tiles the " + this.terrain + " brush uses here");
   },
 
   // sheet picker for the Tile brush: the whole sheet at 1x in the scrolling list area
@@ -496,7 +518,7 @@ export const Editor = {
     } else if (Input.mouse.pressed || dragTo) {      // a click paints even if the button is up again by this frame
       this.lastPaint = t;
       if (this.mode === "door") { if (Input.mouse.pressed) this.setDoor(t[0], t[1]); }
-      else if (this.mode === "terrain") this.paintTerrain(t[0], t[1]);
+      else if (this.mode === "terrain") { if (this.stamp) this.paintTile(t[0], t[1]); else this.paintTerrain(t[0], t[1]); }
       else if (this.mode === "tile") this.paintTile(t[0], t[1]);
       else for (let dy = 0; dy < this.brush; dy++) for (let dx = 0; dx < this.brush; dx++) {
         if (this.mode === "floor") this.paintFloor(t[0] + dx, t[1] + dy);
@@ -506,7 +528,7 @@ export const Editor = {
     if (Input.mouse.rpressed) {
       const p = m.propAt(t[0], t[1]);
       if (p) this.remove(p);
-      else if (this.mode === "tile") this.eraseTile(t[0], t[1]);
+      else if (this.mode === "tile" || (this.mode === "terrain" && this.stamp)) this.eraseTile(t[0], t[1]);
       else if (this.mode === "floor" || this.mode === "wall") this.clearTile(t[0], t[1]);
     }
     return true;

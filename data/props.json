@@ -65,10 +65,9 @@
   }
  },
  "stump": {
-  "sheet": "outdoors_spring",
-  "seasonal": true,
-  "sx": 32,
-  "sy": 80,
+  "sheet": "stump_spring",
+  "sx": 0,
+  "sy": 0,
   "sw": 16,
   "sh": 16,
   "solid": "all",
@@ -77,6 +76,12 @@
   "hp": 3,
   "drops": {
    "wood": 2
+  },
+  "seasons": {
+   "spring": "stump_spring",
+   "summer": "stump_summer",
+   "fall": "stump_fall",
+   "winter": "stump_winter"
   }
  },
  "stone_a": {
