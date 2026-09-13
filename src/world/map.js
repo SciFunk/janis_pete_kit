@@ -137,15 +137,16 @@ export class GameMap {
         const wm = neighbourMask(isWater, x, y);
         let idx;
         if (wm && R) { const opts = R.shore[wm]; idx = opts && opts.length ? pick(opts, hsh) : 175; }
-        else idx = (hsh % 17 === 0) ? GRASS_DECOR[(hsh >>> 8) % GRASS_DECOR.length] : GRASS_PLAIN[(hsh >>> 4) % 2];
+        else idx = (GRASS_DECOR.length && hsh % 17 === 0) ? GRASS_DECOR[(hsh >>> 8) % GRASS_DECOR.length] : GRASS_PLAIN[(hsh >>> 4) % 2];
         this.ground[i] = this.oid(idx);
       } else if (c === 100) {                            // d: dirt, grass fringe on the sides that meet grass
         const nd = (xx, yy) => this.inBounds(xx, yy) && this.t(xx, yy) !== 100;
         const n = nd(x, y - 1), e = nd(x + 1, y), s = nd(x, y + 1), w2 = nd(x - 1, y), v = (hsh >>> 2) % 2;
-        let idx = v ? 227 : 226;
-        if (n && w2) idx = 184; else if (n && e) idx = 187; else if (s && w2) idx = 266; else if (s && e) idx = 269;
-        else if (n) idx = v ? 186 : 185; else if (s) idx = v ? 268 : 267; else if (w2) idx = 225; else if (e) idx = 228;
-        this.ground[i] = this.oid(idx);
+        // sheet ids (this tileset's own numbering, not the vanilla ids the learned tables use)
+        let idx = v ? 371 : 370;
+        if (n && w2) idx = 328; else if (n && e) idx = 331; else if (s && w2) idx = 410; else if (s && e) idx = 413;
+        else if (n) idx = v ? 330 : 329; else if (s) idx = v ? 412 : 411; else if (w2) idx = 369; else if (e) idx = 372;
+        this.ground[i] = idx;
       } else if (c === 119) {                            // w: shoreline is drawn on the water tile, as in the real maps
         const lm = neighbourMask(isLand, x, y);
         const opts = lm && R ? R.wedge[lm] : null;
