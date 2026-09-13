@@ -61,6 +61,7 @@ const MANIFEST = {
     crops: "data/crops.json",
     items: "data/items.json",
     npcs: "data/npcs.json",
+    quests: "data/quests.json",
     dialogue: "data/dialogue.json",
     outfits: "data/outfits_catalog.json",
     learned: "data/learned_tiles.json",
@@ -135,7 +136,7 @@ async function startGame(useSave, name, look, opts) {
   World.player = new Player({ sheet: sheet, displayName: name || "Farmer" });
   Save.disabled = false; World.sandbox = false;
   if (opts && opts.puzzle) {
-    // the cave try-out from the title screen: no save is read or written, six rooms off a hub
+    // the cave try-out from the title screen: no save is read or written, eight rooms off a hub
     Save.disabled = true; World.sandbox = true; Puzzle.party = [];
     for (const [id, n] of PUZZLE_ITEMS) World.player.inventory.add(id, n);
     Clock.minutes = 10 * 60;

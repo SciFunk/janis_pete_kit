@@ -64,7 +64,7 @@ export const Title = {
         drawText((i === this.sel ? "> " : "") + o, vw / 2, oy + 3, { size: 8, align: "center", color: i === 0 && !this.hasSave ? "#8a7a6a" : "#fff" });
       });
       drawText("Enter to choose", vw / 2, vh - 24, { size: 6, align: "center", color: "#a09080" });
-      if (this.sel === 2) drawText("A separate try-out: six animal-herding rooms. Nothing here touches your farm save.", vw / 2, vh / 2 + 62, { size: 5.5, align: "center", color: "#c9b48a" });
+      if (this.sel === 2) drawText("A separate try-out: eight animal-herding rooms. Nothing here touches your farm save.", vw / 2, vh / 2 + 62, { size: 5.5, align: "center", color: "#c9b48a" });
     } else if (this.mode === "look") {
       drawPanel(vw / 2 - 90, vh / 2 - 6, 180, 70);
       drawText("Choose your look  (left / right)", vw / 2, vh / 2, { size: 7, align: "center", color: "#f4e4c1" });

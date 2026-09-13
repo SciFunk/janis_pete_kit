@@ -1,0 +1,209 @@
+{
+ "id": "cave_7",
+ "name": "Sheep Bridge",
+ "w": 15,
+ "h": 9,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_08.mus",
+ "floor": "floors_cave:0",
+ "wallpaper": "walls_cave:0",
+ "terrain": [
+  "WWWWWWWWWWWWWWW",
+  "WffffffWffffffW",
+  "WffffffWffffffW",
+  "WffffffWWWWWffW",
+  "WffffFFFFFffffW",
+  "WffffFfffFffffW",
+  "WffffFFFFFffffW",
+  "Wffffffffffffff",
+  "WWfWWWWWWWWWWWW"
+ ],
+ "props": [],
+ "warps": [
+  {
+   "x": 2,
+   "y": 8,
+   "to": "cave_hub",
+   "tx": 12,
+   "ty": 8,
+   "dir": 2,
+   "roomExit": true
+  }
+ ],
+ "spawns": {
+  "start": [
+   2,
+   7
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    5,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    6,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    7,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    8,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    9,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    5,
+    5,
+    "mine",
+    37,
+    0
+   ],
+   [
+    9,
+    5,
+    "mine",
+    37,
+    0
+   ],
+   [
+    5,
+    6,
+    "mine",
+    37,
+    0
+   ],
+   [
+    6,
+    6,
+    "mine",
+    37,
+    0
+   ],
+   [
+    7,
+    6,
+    "mine",
+    37,
+    0
+   ],
+   [
+    8,
+    6,
+    "mine",
+    37,
+    0
+   ],
+   [
+    9,
+    6,
+    "mine",
+    37,
+    0
+   ],
+   [
+    2,
+    8,
+    "mine",
+    100,
+    0
+   ]
+  ]
+ },
+ "puzzle": {
+  "start": [
+   2,
+   7
+  ],
+  "prints": [
+   "sheep"
+  ],
+  "animals": [
+   {
+    "sp": "sheep",
+    "x": 8,
+    "y": 1
+   },
+   {
+    "sp": "sheep",
+    "x": 9,
+    "y": 1
+   },
+   {
+    "sp": "sheep",
+    "x": 8,
+    "y": 2
+   },
+   {
+    "sp": "sheep",
+    "x": 9,
+    "y": 2
+   },
+   {
+    "sp": "sheep",
+    "x": 3,
+    "y": 5
+   },
+   {
+    "sp": "sheep",
+    "x": 4,
+    "y": 5
+   }
+  ],
+  "items": [],
+  "plates": [
+   {
+    "id": "p1",
+    "x": 6,
+    "y": 5,
+    "need": 2
+   },
+   {
+    "id": "p2",
+    "x": 7,
+    "y": 5,
+    "need": 2
+   }
+  ],
+  "gates": [
+   {
+    "x": 14,
+    "y": 7,
+    "plates": [
+     "p1",
+     "p2"
+    ],
+    "latch": false,
+    "next": "cave_8",
+    "final": false
+   }
+  ],
+  "beams": [],
+  "levers": [],
+  "hedges": [],
+  "nests": [],
+  "doors": []
+ }
+}

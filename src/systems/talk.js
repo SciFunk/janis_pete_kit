@@ -44,6 +44,7 @@ export const Talk = {
 
   converse(world, npc) {
     if (world.quests && world.quests.tryDeliver(npc)) { Friendship.get(npc.id).met = true; return; }
+    if (world.quests && world.quests.tryTalk(npc)) { Friendship.get(npc.id).met = true; Friendship.recordTalk(npc.id, Clock.dayIndex()); return; }
     const day = Clock.dayIndex();
     const before = Friendship.talkCount(npc.id, day);
     const wasMet = Friendship.get(npc.id).met;
@@ -96,6 +97,6 @@ export const Talk = {
     const line = L["gift_" + r] || G["gift_" + r] || "Thanks.";
     npc.showEmote(r === "love" ? EMOTE.heart : r === "like" ? EMOTE.happy : r === "neutral" ? EMOTE.dots : EMOTE.sad, 2.5);
     npc.talking = true;
-    world.say(line.replace(/%item/g, Items.name(itemId)), { speaker: npc.def.name, portrait: this.portrait(npc), cb: () => { npc.talking = false; } });
+    world.say(line.replace(/%item/g, Items.name(itemId)), { speaker: npc.def.name, portrait: this.portrait(npc), cb: () => { npc.talking = false; if (world.quests) world.quests.tryGift(npc, r); } });
   },
 };

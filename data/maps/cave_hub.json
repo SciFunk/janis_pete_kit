@@ -18,7 +18,7 @@
   "WfffffffffffFfffFfffW",
   "WfffffffffffFFfFFfffW",
   "WfffffffffffffffffffW",
-  "WWWWWWWWWfWWWWWWWWWWW"
+  "WWWWWWfWWWWWfWWWWWfWW"
  ],
  "props": [],
  "warps": [
@@ -63,11 +63,27 @@
    "dir": 2
   },
   {
-   "x": 9,
+   "x": 6,
    "y": 9,
    "to": "cave_6",
    "tx": 2,
    "ty": 5,
+   "dir": 2
+  },
+  {
+   "x": 12,
+   "y": 9,
+   "to": "cave_7",
+   "tx": 2,
+   "ty": 7,
+   "dir": 2
+  },
+  {
+   "x": 18,
+   "y": 9,
+   "to": "cave_8",
+   "tx": 5,
+   "ty": 7,
    "dir": 2
   }
  ],
@@ -206,7 +222,21 @@
     0
    ],
    [
+    6,
     9,
+    "mine",
+    100,
+    0
+   ],
+   [
+    12,
+    9,
+    "mine",
+    100,
+    0
+   ],
+   [
+    18,
     9,
     "mine",
     100,
@@ -281,10 +311,22 @@
     "label": "5"
    },
    {
-    "x": 9,
+    "x": 6,
     "y": 9,
     "to": "cave_6",
     "label": "6"
+   },
+   {
+    "x": 12,
+    "y": 9,
+    "to": "cave_7",
+    "label": "7"
+   },
+   {
+    "x": 18,
+    "y": 9,
+    "to": "cave_8",
+    "label": "8"
    }
   ],
   "hub": true

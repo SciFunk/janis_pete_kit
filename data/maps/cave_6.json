@@ -23,7 +23,7 @@
    "x": 2,
    "y": 6,
    "to": "cave_hub",
-   "tx": 9,
+   "tx": 6,
    "ty": 8,
    "dir": 2,
    "roomExit": true
@@ -97,8 +97,8 @@
      "p2"
     ],
     "latch": true,
-    "next": "cave_hub",
-    "final": true
+    "next": "cave_7",
+    "final": false
    }
   ],
   "beams": [],

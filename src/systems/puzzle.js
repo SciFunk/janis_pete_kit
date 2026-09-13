@@ -236,6 +236,7 @@ export const Puzzle = {
       const hit = this.seek(a, test);
       if (hit) { a.stepTo(hit.step[0], hit.step[1]); return; }
       if (S.drive === "carry" && a.carrying) { a.timer = S.step * 3; return; }    // nest unreachable: wait
+      if (S.drive === "flock") { a.timer = S.step * 2; return; }                   // no flock to join: a sheep waits where it is
       this.wander(a); return;
     }
     // flee / charge / trail species stand still between beats

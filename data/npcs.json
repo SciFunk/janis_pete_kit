@@ -1,7 +1,7 @@
 {
  "janis": {
   "name": "Janis",
-  "sheet": "janis_custom",
+  "sheet": "claire",
   "birthday": [
    "fall",
    4
@@ -78,7 +78,7 @@
  },
  "pete": {
   "name": "Pete",
-  "sheet": "pete_custom",
+  "sheet": "raphael",
   "birthday": [
    "fall",
    26

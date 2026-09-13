@@ -180,6 +180,16 @@
   "indoor": false
  },
  {
+  "id": "cave_7",
+  "name": "Sheep Bridge",
+  "indoor": true
+ },
+ {
+  "id": "cave_8",
+  "name": "The Bull Elevator",
+  "indoor": true
+ },
+ {
   "id": "yard_pete_janis",
   "name": "Outside Pete & Janis's house",
   "indoor": false

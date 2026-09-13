@@ -1,0 +1,105 @@
+{
+ "id": "cave_8",
+ "name": "The Bull Elevator",
+ "w": 11,
+ "h": 9,
+ "indoor": true,
+ "tileset": "town_interiors",
+ "music": "chill_08.mus",
+ "floor": "floors_cave:0",
+ "wallpaper": "walls_cave:0",
+ "terrain": [
+  "WWWWWWWWWWW",
+  "WfWfffffffW",
+  "WfWfffffffW",
+  "WfWfffffffW",
+  "WfFfffffffW",
+  "WfWfffffffW",
+  "WfWfffffffW",
+  "Wffffffffff",
+  "WWWWWfWWWWW"
+ ],
+ "props": [],
+ "warps": [
+  {
+   "x": 5,
+   "y": 8,
+   "to": "cave_hub",
+   "tx": 18,
+   "ty": 8,
+   "dir": 2,
+   "roomExit": true
+  }
+ ],
+ "spawns": {
+  "start": [
+   5,
+   7
+  ]
+ },
+ "layers": {
+  "paint": [
+   [
+    2,
+    4,
+    "mine",
+    37,
+    0
+   ],
+   [
+    5,
+    8,
+    "mine",
+    100,
+    0
+   ]
+  ]
+ },
+ "puzzle": {
+  "start": [
+   5,
+   7
+  ],
+  "prints": [
+   "bull"
+  ],
+  "animals": [
+   {
+    "sp": "bull",
+    "x": 1,
+    "y": 1
+   },
+   {
+    "sp": "pig",
+    "x": 4,
+    "y": 6
+   }
+  ],
+  "items": [],
+  "plates": [
+   {
+    "id": "p1",
+    "x": 1,
+    "y": 3,
+    "need": 4
+   }
+  ],
+  "gates": [
+   {
+    "x": 10,
+    "y": 7,
+    "plates": [
+     "p1"
+    ],
+    "latch": false,
+    "next": "cave_hub",
+    "final": true
+   }
+  ],
+  "beams": [],
+  "levers": [],
+  "hedges": [],
+  "nests": [],
+  "doors": []
+ }
+}
