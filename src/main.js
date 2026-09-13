@@ -18,6 +18,7 @@ import { Shipping } from "./systems/shipping.js";
 import { Friendship } from "./systems/friendship.js";
 import { Talk } from "./systems/talk.js";
 import { Quests } from "./systems/quests.js";
+import { Wildlife } from "./systems/wildlife.js";
 import { Shop } from "./ui/shop.js";
 import { Board } from "./ui/board.js";
 import { Social } from "./ui/social.js";
@@ -62,6 +63,7 @@ const MANIFEST = {
     items: "data/items.json",
     npcs: "data/npcs.json",
     quests: "data/quests.json",
+    wildlife: "data/wildlife.json",
     dialogue: "data/dialogue.json",
     outfits: "data/outfits_catalog.json",
     learned: "data/learned_tiles.json",
@@ -211,6 +213,7 @@ async function boot() {
   Shop.init(World);
   Talk.init(Assets.data.dialogue);
   Quests.init(World); Board.init(World); Social.init(World); World.quests = Quests;
+  Wildlife.init(World); window.Wildlife = Wildlife;
   World.onBoard = () => Board.open();
   World.onSleep = () => Day.endDay(false);
   World.onShip = () => Shipping.open();
